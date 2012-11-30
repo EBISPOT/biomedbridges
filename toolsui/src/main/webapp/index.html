@@ -1,0 +1,473 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+
+
+<link rel="stylesheet" type="text/css" href="transforms/layout.css" />
+
+<!-- Menu -->
+<link rel="stylesheet" href="jqwidgets/jqwidgets/styles/jqx.darkblue.css" type="text/css" />
+
+
+
+<html lang="en">
+<head>
+<!-- Grid -->
+<title id='Description'>Mock-up of BioMedBridges service registry</title>
+<link rel="stylesheet" href="jqwidgets/jqwidgets/styles/jqx.base.css" type="text/css" />
+<script type="text/javascript" src="jqwidgets/scripts/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxcore.js"></script>
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxdata.js"></script>
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxbuttons.js"></script>
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxscrollbar.js"></script>
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxcheckbox.js"></script>
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxlistbox.js"></script>
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxdropdownlist.js"></script>
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxgrid.js"></script>
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxgrid.sort.js"></script>
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxgrid.pager.js"></script>
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxgrid.selection.js"></script>
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxgrid.edit.js"></script>
+<script type="text/javascript" src="jqwidgets/scripts/gettheme.js"></script>
+
+<!-- Filter -->
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxgrid.filter.js"></script>
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxpanel.js"></script>
+
+<!-- Show / hide columns -->
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxgrid.columnsresize.js"></script>
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxlistbox.js"></script>
+
+<!-- Menu -->
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxmenu.js"></script>
+
+<!-- Tool tips -->
+<script type="text/javascript" src="jqwidgets/jqwidgets/jqxtooltip.js"></script>
+
+
+<!-- Grid -->
+<script type="text/javascript">
+    $(document).ready(function ()
+    {
+        var theme = getTheme();
+
+        var url = "tools.xml";
+        // prepare the data
+        var source =
+        {
+            datatype: "xml",
+            datafields: [
+                { name: 'collection' },
+                { name: 'name' },
+                { name: 'desc' },
+                { name: 'type' },
+                { name: 'topic' },
+                { name: 'function' },
+                { name: 'input' },
+                { name: 'InputFormat' },
+                { name: 'output' },
+                { name: 'OutputFormat' },
+                { name: 'provider' },
+                { name: 'contact' },
+                { name: 'WorkPackage' },
+                { name: 'Infrastructure' },
+                { name: 'home' },
+                { name: 'Downloads', type: 'float' },
+                { name: 'Available', type: 'bool' }
+            ],
+//            root: "Products",
+//            record: "Product",
+//            id: 'ProductID',
+
+            root: "tools",
+            record: "tool",
+            id: 'toolid',
+
+            url: url
+        };
+
+
+        <!-- Filter -->
+        var addfilter = function ()
+        {
+            var filtergroup = new $.jqx.filter();
+            var filter_or_operator = 1;
+            var filtervalue = 'Beate';
+            var filtercondition = 'contains';
+            var filter1 = filtergroup.createfilter('stringfilter', filtervalue, filtercondition);
+            filtervalue = 'Andrew';
+            filtercondition = 'starts_with';
+            var filter2 = filtergroup.createfilter('stringfilter', filtervalue, filtercondition);
+
+            filtergroup.addfilter(filter_or_operator, filter1);
+            filtergroup.addfilter(filter_or_operator, filter2);
+            // add the filters.
+            $("#jqxgrid").jqxGrid('addfilter', 'firstname', filtergroup);
+            // apply the filters.
+            $("#jqxgrid").jqxGrid('applyfilters');
+        }
+
+        var cellsrenderer = function (row, columnfield, value, defaulthtml, columnproperties)
+        {
+            if (value < 20) {
+                return '<span style="margin: 4px; float: ' + columnproperties.cellsalign + '; color: #ff0000;">' + value + '</span>';
+            }
+            else {
+                return '<span style="margin: 4px; float: ' + columnproperties.cellsalign + '; color: #008000;">' + value + '</span>';
+            }
+        }
+        var dataAdapter = new $.jqx.dataAdapter(source,
+        {
+            downloadComplete: function (data, status, xhr) { },
+            loadComplete: function (data) { },
+            loadError: function (xhr, status, error) { }
+        });
+
+
+        // initialize jqxGrid
+        $("#jqxgrid").jqxGrid(
+                {
+                    <!-- Filter -->
+                    filterable: true,
+                    autoshowfiltericon: true,
+                    width: 725,
+                    source: dataAdapter,
+                    theme: theme,
+                    pageable: true,
+                    autoheight: true,
+                    sortable: true,
+                    altrows: true,
+                    enabletooltips: true,
+                    editable: false,
+                    selectionmode: 'multiplecellsextended',
+                    columns: [
+                        { text: 'Collection', datafield: 'collection', width: 75, hidden: true },
+                        { text: 'Name', datafield: 'name', width: 100 },
+                        { text: 'Description', datafield: 'desc', width: 225},
+                        { text: 'Type', datafield: 'type', width: 100, hidden: true  },
+                        { text: 'Topic', datafield: 'topic', width: 125 },
+                        { text: 'Function', datafield: 'function', width: 125 },
+                        { text: 'Input', datafield: 'input', width: 150},
+                        { text: 'Input format', datafield: 'InputFormat', width: 75, hidden: true },
+                        { text: 'Output', datafield: 'output', width: 150, hidden: true  },
+                        { text: 'Output format', datafield: 'OutputFormat', width: 75, hidden: true },
+                        { text: 'Provider', datafield: 'provider', width: 75, hidden: true },
+                        { text: 'Contact', datafield: 'contact', width: 150, hidden: true },
+                        { text: 'Work package', datafield: 'WorkPackage', width: 75, hidden: true },
+                        { text: 'Infrastructure', datafield: 'Infrastructure', width: 75, hidden: true },
+                        { text: 'Homepage', datafield: 'home', width: 125, hidden: true },
+                        { text: 'Downloads', datafield: 'Downloads', cellsalign: 'right', cellsrenderer: cellsrenderer, width: 50, hidden: true },
+                        { text: 'Available', columntype: 'checkbox', datafield: 'Available', width: 50, hidden: true}
+                    ]
+                });
+
+
+        <!-- Filter -->
+        $('#events').jqxPanel({ width: 300, height: 80, theme: theme });
+        $("#jqxgrid").bind("filter", function (event)
+        {
+            $("#events").jqxPanel('clearcontent');
+            var filterinfo = $("#jqxgrid").jqxGrid('getfilterinformation');
+            var eventData = "Triggered 'filter' event";
+            for (i = 0; i < filterinfo.length; i++) {
+                var eventData = "Filter Column: " + filterinfo[i].filtercolumntext;
+                $('#events').jqxPanel('prepend', '<div style="margin-top: 5px;">' + eventData + '</div>');
+            }
+        });
+        $('#clearfilteringbutton').jqxButton({ height: 25, theme: theme });
+        $('#filterbackground').jqxCheckBox({ checked: true, height: 25, theme: theme });
+        $('#filtericons').jqxCheckBox({ checked: false, height: 25, theme: theme });
+        // clear the filtering.
+        $('#clearfilteringbutton').click(function () {
+            $("#jqxgrid").jqxGrid('clearfilters');
+        });
+        // show/hide filter background
+        $('#filterbackground').bind('change', function (event)
+        {
+            $("#jqxgrid").jqxGrid({ showfiltercolumnbackground: event.args.checked });
+        });
+        // show/hide filter icons
+        $('#filtericons').bind('change', function (event)
+        {
+            $("#jqxgrid").jqxGrid({ autoshowfiltericon: !event.args.checked });
+        });
+
+
+        <!-- ListBox (show / hide columns) -->
+/*
+ To support tooltips, we must specify the ListBox elements must have an ID, i.e. be given within a <span>.
+ If tooltips weren't needed we could simply have used 'label' instead:
+           { label: 'Package', value: 'package', checked: false},
+*/
+
+
+        var listSource = [
+            { html: '<span id="ListBoxCollection">Collection</span>',  value: 'collection', checked: false},
+            { html: '<span id="ListBoxName">Name</span>', value: 'name', checked: true },
+            { html: '<span id="ListBoxDescription">Description</span>', value: 'desc', checked: true},
+            { html: '<span id="ListBoxType">Type</span>', value: 'type', checked: false},
+            { html: '<span id="ListBoxTopic">Topic</span>', value: 'topic', checked: true },
+            { html: '<span id="ListBoxFunction">Function</span>', value: 'function', checked: true },
+            { html: '<span id="ListBoxInput">Input</span>', value: 'input', checked: true},
+            { html: '<span id="ListBoxInputFormat">Input format</span>', value: 'InputFormat', checked: false },
+            { html: '<span id="ListBoxOutput">Output</span>', value: 'output', checked: false},
+            { html: '<span id="ListBoxOutputFormat">Output format</span>', value: 'OutputFormat', checked: false},
+            { html: '<span id="ListBoxProvider">Provider</span>', value: 'provider', checked: false},
+            { html: '<span id="ListBoxContact">Contact</span>', value: 'contact', checked: false},
+            { html: '<span id="ListBoxWorkPackage">BMB work package</span>', value: 'WorkPackage', checked: false},
+            { html: '<span id="ListBoxInfrastructure">Infrastructure</span>', value: 'Infrastructure', checked: false},
+            { html: '<span id="ListBoxHomepage">Homepage</span>', value: 'home', checked: false},
+            { html: '<span id="ListBoxDownloads">Downloads</span>', value: 'Downloads', checked: false},
+            { html: '<span id="ListBoxAvailable">Available</span>', value: 'Available', checked: false}];
+        $("#jqxlistbox").jqxListBox({ source: listSource, width: 170, height: 327, theme: theme, checkboxes: true });
+        $("#jqxlistbox").bind('checkChange', function (event)
+        {
+            if (event.args.checked) {
+                $("#jqxgrid").jqxGrid('showcolumn', event.args.value);
+            }
+            else {
+                $("#jqxgrid").jqxGrid('hidecolumn', event.args.value);
+            }
+        });
+
+
+        // Create jqxTooltip
+        $("#MenuMyTools").jqxTooltip({ content: 'Manage your own tools', position: 'mouse', theme: theme });
+        $("#MenuMyToolsLogin").jqxTooltip({ content: 'You will need to login to use items in this menu', position: 'mouse', theme: theme });
+        $("#MenuMyToolsShow").jqxTooltip({ content: 'This will show in the grid below only tools you have registered', position: 'mouse', theme: theme });
+        $("#MenuMyToolsRegister").jqxTooltip({ content: 'Register new tools, update tool descriptions or delete old entries', position: 'mouse', theme: theme });
+        $("#MenuExport").jqxTooltip({ content: 'Export tool information in a variety of formats', position: 'mouse', theme: theme });
+        $("#MenuUseCases").jqxTooltip({ content: 'Tool use cases organised by BioMedBridge work package', position: 'mouse', theme: theme });
+        $("#MenuCommunities").jqxTooltip({ content: 'Links to folks who provide or use the tools', position: 'mouse', theme: theme });
+        $("#MenuAbout").jqxTooltip({ content: 'Useful links', position: 'mouse', theme: theme });
+        $("#MenuSearchBox").jqxTooltip({ content: 'Search all tools (all fields and available text); the result will show in the grid below', position: 'mouse', theme: theme });
+
+        $("#ListBoxCollection").jqxTooltip({ content: 'Name of the bundle, package, suite or other collection that the tool belongs to', position: 'mouse', theme: theme });
+        $("#ListBoxName").jqxTooltip({ content: 'Name of the tool', position: 'mouse', theme: theme });
+        $("#ListBoxDescription").jqxTooltip({ content: 'Short description of the tool in one or two sentences', position: 'mouse', theme: theme });
+        $("#ListBoxType").jqxTooltip({ content: 'Basic type of tool, for example Web service, web application or command-line tool', position: 'mouse', theme: theme });
+        $("#ListBoxTopic").jqxTooltip({ content: 'General domain the tool serves, such as comparative genomics or proteomics', position: 'mouse', theme: theme });
+        $("#ListBoxFunction").jqxTooltip({ content: 'Tool function: what it does (not how it does it)', position: 'mouse', theme: theme });
+        $("#ListBoxInput").jqxTooltip({ content: 'Type(s) of primary input data, for example, gene name or protein sequence', position: 'mouse', theme: theme });
+        $("#ListBoxInputFormat").jqxTooltip({ content: 'Allowed format(s) of the primary tool inputs', position: 'mouse', theme: theme });
+        $("#ListBoxOutput").jqxTooltip({ content: 'Type(s) of primary output data, e.g. gene report or sequence alignment', position: 'mouse', theme: theme });
+        $("#ListBoxOutputFormat").jqxTooltip({ content: 'Format(s) in which output data may be had, e.g. FASTA or XML', position: 'mouse', theme: theme });
+        $("#ListBoxProvider").jqxTooltip({ content: 'Name of the institution that provides / hosts the tool', position: 'mouse', theme: theme });
+        $("#ListBoxContact").jqxTooltip({ content: 'Email address of contact person', position: 'mouse', theme: theme });
+        $("#ListBoxWorkPackage").jqxTooltip({ content: 'BioMedBridges Work Package in which the tool was developed', position: 'mouse', theme: theme });
+        $("#ListBoxInfrastructure").jqxTooltip({ content: 'Research infrastructure in which the tool was developed', position: 'mouse', theme: theme });
+        $("#ListBoxHomepage").jqxTooltip({ content: 'Tool homepage (URL)', position: 'mouse', theme: theme });
+        $("#ListBoxDownloads").jqxTooltip({ content: 'Tool downloads page (URL)', position: 'mouse', theme: theme });
+        $("#ListBoxAvailable").jqxTooltip({ content: 'Whether the tool or service is available for use', position: 'mouse', theme: theme });
+    });
+</script>
+
+
+</head>
+
+
+
+<body class='default'>
+
+
+<div id='header'></div>
+
+<!-- List box -->
+<div id="leftcol">
+    <div id="jqxlistbox"style="font-size: 13px; font-family: Verdana; float: left; "></div>
+</div>
+
+
+<div id="content">
+
+    <!-- Menu -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var theme = getTheme();
+            switch (theme) {
+                case 'shinyblack':
+                    $($.find('.megamenu-ul li a:link')).css('color', '#fff');
+                    $($.find('.megamenu-ul li a:hover')).css('color', '#fff');
+                    $($.find('.megamenu-ul li a:visited')).css('color', '#fff');
+                    $($.find('.jqx-menuitem-header')).css('color', '#fff');
+                    break;
+                default:
+                    $($.find('.megamenu-ul li a:link')).css('color', '#2d628a');
+                    $($.find('.megamenu-ul li a:hover')).css('color', '#2d628a');
+                    $($.find('.megamenu-ul li a:visited')).css('color', '#2d628a');
+                    $($.find('.jqx-menuitem-header')).css('color', '#2d628a');
+                    break;
+            }
+            // Create a jqxMenu
+            $("#jqxMenu").jqxMenu({ width: '725', height: '30px', autoOpen: false, autoCloseOnMouseLeave: false, showTopLevelArrows: true, theme: theme });
+            $("#jqxMenu").css('visibility', 'visible');
+            $(".jqx-menu-search").jqxButton({ width: 60, height: 18, theme: theme });
+        });
+    </script>
+
+
+
+    <!--<div id='jqxWidgetMenu' style='height: 300px;'>-->
+    <div id='jqxWidgetMenu'>
+        <div id='jqxMenu' style='visibility: hidden; margin-left: 20px; float: left'>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+
+                <!-- Must wrap in div to support tool tip -->
+                <div><li><span id="MenuMyTools">MyTools</span>
+                    <ul style='width: 200px;'>
+                        <li><a id="MenuMyToolsLogin" href="#Login">Login</a></li>
+                        <li type='separator'></li>
+                        <li><a id="MenuMyToolsShow" href="#Show">Show</a></li>
+                        <li><a id="MenuMyToolsRegister" href="#Register">Register</a>
+                            <ul>
+                                <li><a href="#Add">Add</a></li>
+                                <li><a href="#Update">Update</a></li>
+                                <li><a href="#Delete">Delete</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li></div>
+
+
+                <div><li><span id="MenuExport">Export</span>
+                    <ul style='width: 200px;'>
+                        <li><a href="#Excel">Excel</a></li>
+                        <li><a href="#CSV">CSV</a></li>
+                        <li><a href="#HTML">HTML</a></li>
+                        <li><a href="#XML">XML</a></li>
+                        <li><a href="#TSV">TSV</a></li>
+                        <li><a href="#JSON">JSON</a></li>
+                    </ul>
+                </li></div>
+
+
+                <div><li><span id="MenuUseCases">Use-cases</span>
+                    <ul style='width: 325px;'>
+                        <li style='list-style: none;' ignoretheme='true'>
+                            <div>
+                                <div style='float: left; width: 50%;'>
+                                    <div class='jqx-menuitem-header' style='color: inherit; margin-left: 5px; padding-top: 5px; padding-bottom: 5px;'>
+                                        <b><a href="http://www.biomedbridges.eu/workpackages/wp6" target="_blank"> "WP6 - Image data sets</a></b></div>
+                                    <ul class='megamenu-ul'>
+                                        <li><a href="#wp6use1">Tools use case 1</a></li>
+                                        <li><a href="#wp6use2">Tools Use case 2</a></li>
+                                        <li><a href="#wp6use1">Tools Use case 3</a></li>
+                                    </ul>
+                                    <div class='jqx-menuitem-header' style='margin-left: 5px; padding-top: 5px; padding-bottom: 5px;'>
+                                        <b><a href="http://www.biomedbridges.eu/workpackages/wp7-0" target="_blank"> "WP7 - PhenoBridge</a></b></div>
+                                    <ul class='megamenu-ul'>
+                                        <li><a href="#wp7use1">Tools use case 1</a></li>
+                                        <li><a href="#wp7use2">Tools Use case 2</a></li>
+                                        <li><a href="#wp7use3">Tools Use case 3</a></li>
+                                    </ul>
+                                    <div class='jqx-menuitem-header' style='margin-left: 5px; padding-top: 5px; padding-bottom: 5px;'>
+                                        <b><a href="http://www.biomedbridges.eu/workpackages/wp8" target="_blank"> "WP8 - Personalized Medicine</a></b></div>
+                                    <ul class='megamenu-ul'>
+                                        <li><a href="#wp8use1">Tools use case 1</a></li>
+                                        <li><a href="#wp8use2">Tools Use case 2</a></li>
+                                        <li><a href="#wp8use3">Tools Use case 3</a></li>
+                                    </ul>
+                                </div>
+                                <div style='float: left; width: 50%;'>
+                                    <div class='jqx-menuitem-header' style='margin-left: 5px; padding-top: 5px; padding-bottom: 5px;'>
+                                        <b><a href="http://www.biomedbridges.eu/workpackages/wp9" target="_blank"> "WP9 - Structural data integration</a></b></div>
+                                    <ul class='megamenu-ul'>
+                                        <li><a href="#wp9use1">Tools use case 1</a></li>
+                                        <li><a href="#wp9use2">Tools Use case 2</a></li>
+                                        <li><a href="#wp9use1">Tools Use case 3</a></li>
+                                    </ul>
+                                    <div class='jqx-menuitem-header' style='margin-left: 5px; padding-top: 5px; padding-bottom: 5px;'>
+                                        <b><a href="http://www.biomedbridges.eu/workpackages/wp10" target="_blank"> "WP10 - Disease data amd terminology</a></b></div>
+                                    <ul class='megamenu-ul'>
+                                        <li><a href="#wp10use1">Tool use case 1</a></li>
+                                        <li><a href="#wp10use2">Tool use case 2</a></li>
+                                        <li><a href="#wp10use3">Tool use case 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li></div>
+
+
+                <div><li><span id="MenuCommunities">Communities</span>
+                    <ul style='width: 150px;'>
+                        <li><a href="#Users">Tool users</a></li>
+                        <li><a href="#Developers">Tool developers</a></li>
+                        <li type='separator'></li>
+                        <li>BioMedBridges Partners
+                            <ul>
+                                <li><a href="#PartnerA">PartnerA</a></li>
+                                <li><a href="#PartnerB">PartnerB</a></li>
+                                <li><a href="#PartnerC">PartnerC</a></li>
+                                <li><a href="#PartnerD">PartnerD</a></li>
+                                <li><a href="#PartnerE">PartnerE</a></li>
+                                <li><a href="#PartnerF">PartnerF</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li></div>
+
+
+                <div><li><span id="MenuAbout">About</span>
+                    <ul style='width: 170px;' class='megamenu-ul'>
+                        <li ignoretheme='true'><a href='#News'>News</a></li>
+                        <li ignoretheme='true'><a href='#Events'>Events</a></li>
+                        <li ignoretheme='true'><a href='#Mission'>Our Mission</a></li>
+                        <li ignoretheme='true'><a href='#Contact'>Contact Us</a></li>
+                    </ul>
+                </li></div>
+
+                <div><li style='list-style: none;' ignoretheme='true'>
+                    <div style='float: left; height: 30px; margin-top: 1px; margin-left: 55px;'>
+                        <input class="jqx-input jqx-widget-content" style='float: left; height: 22px; width: 130px;' /></div>
+                    <span id="MenuSearchBox" class='jqx-menu-search' style='margin-top: 1px; margin-left: 3px; padding: 2px; float: left;'>Search</span>
+                </li></div>
+            </ul>
+        </div>
+        <br />
+    </div>
+
+
+    <!-- Grid -->
+    <div style="font-size: 13px; font-family: Verdana; clear: both; margin-left: 20px;"
+         id="jqxgrid"></div>
+
+</div>
+
+
+
+<div id="rightcol"></div>
+<div id="footer"></div>
+
+
+<!--
+<div id='jqxWidget' style="font-size: 13px; font-family: Verdana; float: left;">
+    <div style="float: left;" id="jqxlistbox"></div>
+    <div style="margin-left: 20px; float: left;" id="jqxgrid"></div>
+</div>
+-->
+
+
+</body>
+</html>
+
+
+
+
+<!--
+<div id="header">Header Section</div>
+<div id="leftcol">Left Section</div>
+<div id="content">Content Section</div>
+<div id="footer">Footer Section</div>
+-->
+
+
+<!--
+<div id="footer">
+     <a title='BioMedBridges' target='_blank' href="http://www.biomedbridges.eu/">BioMedBridges</a> |
+     <a title='Contact Us'    target='_blank' href="mailto:contact@bmbtools@gmail.com">Contact Us</a> |
+     <a title='Follow Us'     target='_blank' href="http://bmbtools.net/follow/">Follow Us</a> |
+     <a title='Purchase'      target='_blank' href="http://bmbtools.net/info/">Info</a>
+</div>
+-->

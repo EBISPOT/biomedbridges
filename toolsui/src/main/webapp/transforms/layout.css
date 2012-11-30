@@ -1,0 +1,41 @@
+<!-- Page settings, e.g. background colour -->
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+#header
+{
+ text-align: center;
+    width: 100%;
+}
+
+#leftcol
+{
+    /*background: #f00; */
+    float: left;
+    width: 20%;
+}
+
+#rightcol
+{
+    background: #f00;
+    float: right;
+    width: 20%;
+}
+
+#content
+{
+    background: #fff;
+    float: left;
+    width: 80%;
+}
+
+#footer
+{
+    /*background: #0f0;*/
+    clear: both;
+    width: 100%;
+    text-align: right
+}
