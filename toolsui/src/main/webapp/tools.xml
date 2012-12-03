@@ -6,7 +6,7 @@
 <input>Amino acid index</input>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/aaindexextract.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Extract amino acid property data from AAINDEX</desc>
 <collection>EMBOSS</collection>
@@ -27,7 +27,7 @@
 <output>Sequence trace image</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/abiview.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display the trace in an ABI sequencer file</desc>
 <collection>EMBOSS</collection>
@@ -44,7 +44,7 @@
 <topic>Data handling</topic>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/acdc.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Test an application ACD file</desc>
 <collection>EMBOSS</collection>
@@ -61,7 +61,7 @@
 <topic>Data handling</topic>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/acdpretty.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Correctly reformat an application ACD file</desc>
 <collection>EMBOSS</collection>
@@ -78,7 +78,7 @@
 <topic>Data handling</topic>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/acdtable.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate an HTML table of parameters from an application ACD file</desc>
 <collection>EMBOSS</collection>
@@ -95,7 +95,7 @@
 <topic>Data handling</topic>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/acdtrace.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Trace processing of an application ACD file (for testing)</desc>
 <collection>EMBOSS</collection>
@@ -112,7 +112,7 @@
 <topic>Data handling</topic>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/acdvalid.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Validate an application ACD file</desc>
 <collection>EMBOSS</collection>
@@ -131,7 +131,7 @@
 <output>Sequence alignment</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/aligncopy.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Read and write alignments</desc>
 <collection>EMBOSS</collection>
@@ -150,7 +150,7 @@
 <output>Sequence alignment (pair)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/aligncopypair.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Read and write pairs from alignments</desc>
 <collection>EMBOSS</collection>
@@ -169,7 +169,7 @@
 <output>Peptide immunogenicity data</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/antigenic.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find antigenic sites in proteins</desc>
 <collection>EMBOSS</collection>
@@ -188,7 +188,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/assemblyget.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get assembly of sequence reads</desc>
 <collection>EMBOSS</collection>
@@ -207,7 +207,7 @@
 <output>Sequence record (nucleic acid)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/backtranambig.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Back-translate a protein sequence to ambiguous nucleotide sequence</desc>
 <collection>EMBOSS</collection>
@@ -227,7 +227,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/backtranseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Back-translate a protein sequence to a nucleotide sequence</desc>
 <collection>EMBOSS</collection>
@@ -248,7 +248,7 @@
 <output>Nucleic acid property</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/banana.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Plot bending and curvature data for B-DNA</desc>
 <collection>EMBOSS</collection>
@@ -268,7 +268,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/biosed.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Replace or delete sequence sections</desc>
 <collection>EMBOSS</collection>
@@ -289,7 +289,7 @@
 <output>Nucleic acid property</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/btwisted.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate the twisting in a B-DNA sequence</desc>
 <collection>EMBOSS</collection>
@@ -308,7 +308,7 @@
 <output>Report</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/cachedas.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate server cache file for DAS servers or for the DAS registry</desc>
 <collection>EMBOSS</collection>
@@ -327,7 +327,7 @@
 <output>Report</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/cachedbfetch.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate server cache file for Dbfetch/WSDbfetch data sources</desc>
 <collection>EMBOSS</collection>
@@ -346,7 +346,7 @@
 <output>Report</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/cacheebeyesearch.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate server cache file for EB-eye search domains</desc>
 <collection>EMBOSS</collection>
@@ -365,7 +365,7 @@
 <output>Report</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/cacheensembl.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate server cache file for an Ensembl server</desc>
 <collection>EMBOSS</collection>
@@ -385,7 +385,7 @@
 <output>Codon usage bias</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/cai.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate codon adaptation index</desc>
 <collection>EMBOSS</collection>
@@ -404,7 +404,7 @@
 <output>Sequence composition plot</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/chaos.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw a chaos game representation plot for a nucleotide sequence</desc>
 <collection>EMBOSS</collection>
@@ -425,7 +425,7 @@
 <output>Protein charge plot</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/charge.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw a protein charge plot</desc>
 <collection>EMBOSS</collection>
@@ -446,7 +446,7 @@
 <output>Protein features</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/checktrans.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Report STOP codons and ORF statistics of a protein</desc>
 <collection>EMBOSS</collection>
@@ -465,7 +465,7 @@
 <output>Codon usage bias</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/chips.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate Nc codon usage statistic</desc>
 <collection>EMBOSS</collection>
@@ -484,7 +484,7 @@
 <output>Genetic map</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/cirdna.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw circular map of DNA constructs</desc>
 <collection>EMBOSS</collection>
@@ -504,7 +504,7 @@
 <output>Codon usage fraction difference</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/codcmp.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Codon usage table comparison</desc>
 <collection>EMBOSS</collection>
@@ -523,7 +523,7 @@
 <output>Codon usage table</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/codcopy.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Copy and reformat a codon usage table</desc>
 <collection>EMBOSS</collection>
@@ -548,7 +548,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/coderet.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Extract CDS, mRNA and translations from feature tables</desc>
 <collection>EMBOSS</collection>
@@ -568,7 +568,7 @@
 <output>Sequence composition</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/compseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate the composition of unique words in sequences</desc>
 <collection>EMBOSS</collection>
@@ -589,7 +589,7 @@
 <output>Raw sequence</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/cons.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Create a consensus sequence from a multiple alignment</desc>
 <collection>EMBOSS</collection>
@@ -608,7 +608,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/consambig.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Create an ambiguous consensus sequence from a multiple alignment</desc>
 <collection>EMBOSS</collection>
@@ -629,7 +629,7 @@
 <output>Nucleic acid features</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/cpgplot.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Identify and plot CpG islands in nucleotide sequence(s)</desc>
 <collection>EMBOSS</collection>
@@ -649,7 +649,7 @@
 <output>Nucleic acid features</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/cpgreport.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Identify and report CpG-rich regions in nucleotide sequence(s)</desc>
 <collection>EMBOSS</collection>
@@ -668,7 +668,7 @@
 <output>Codon usage table</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/cusp.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Create a codon usage table from nucleotide sequence(s)</desc>
 <collection>EMBOSS</collection>
@@ -687,7 +687,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/cutgextract.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Extract codon usage tables from CUTG database</desc>
 <collection>EMBOSS</collection>
@@ -706,7 +706,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/cutseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Remove a section from a sequence</desc>
 <collection>EMBOSS</collection>
@@ -726,7 +726,7 @@
 <output>Nucleic acid melting profile</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dan.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate nucleic acid melting temperature</desc>
 <collection>EMBOSS</collection>
@@ -744,7 +744,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dbiblast.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Index a BLAST database</desc>
 <collection>EMBOSS</collection>
@@ -762,7 +762,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dbifasta.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Index a fasta file database</desc>
 <collection>EMBOSS</collection>
@@ -780,7 +780,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dbiflat.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Index a flat file database</desc>
 <collection>EMBOSS</collection>
@@ -798,7 +798,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dbigcg.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Index a GCG formatted database</desc>
 <collection>EMBOSS</collection>
@@ -816,7 +816,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dbtell.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display information about a public database</desc>
 <collection>EMBOSS</collection>
@@ -834,7 +834,7 @@
 <output>Report</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dbxcompress.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Compress an uncompressed dbx index</desc>
 <collection>EMBOSS</collection>
@@ -852,7 +852,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dbxedam.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Index the EDAM ontology using b+tree indices</desc>
 <collection>EMBOSS</collection>
@@ -870,7 +870,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dbxfasta.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Index a fasta file database using b+tree indices</desc>
 <collection>EMBOSS</collection>
@@ -888,7 +888,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dbxflat.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Index a flat file database using b+tree indices</desc>
 <collection>EMBOSS</collection>
@@ -906,7 +906,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dbxgcg.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Index a GCG formatted database using b+tree indices</desc>
 <collection>EMBOSS</collection>
@@ -924,7 +924,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dbxobo.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Index an obo ontology using b+tree indices</desc>
 <collection>EMBOSS</collection>
@@ -942,7 +942,7 @@
 <output>Report</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dbxreport.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Validate index and report internals for dbx databases</desc>
 <collection>EMBOSS</collection>
@@ -960,7 +960,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dbxresource.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Index a data resource catalogue using b+tree indices</desc>
 <collection>EMBOSS</collection>
@@ -978,7 +978,7 @@
 <output>Report</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dbxstat.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Dump statistics for dbx databases</desc>
 <collection>EMBOSS</collection>
@@ -996,7 +996,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dbxtax.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Index NCBI taxonomy using b+tree indices</desc>
 <collection>EMBOSS</collection>
@@ -1014,7 +1014,7 @@
 <output>Report</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dbxuncompress.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Uncompress a compressed dbx index</desc>
 <collection>EMBOSS</collection>
@@ -1033,7 +1033,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/degapseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Remove non-alphabetic (e.g. gap) characters from sequences</desc>
 <collection>EMBOSS</collection>
@@ -1053,7 +1053,7 @@
 <output>Nucleic acid density plot</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/density.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw a nucleic acid density plot</desc>
 <collection>EMBOSS</collection>
@@ -1072,7 +1072,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/descseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Alter the name or description of a sequence</desc>
 <collection>EMBOSS</collection>
@@ -1094,7 +1094,7 @@
 <output>Feature record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/diffseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Compare and report features of two similar sequences</desc>
 <collection>EMBOSS</collection>
@@ -1113,7 +1113,7 @@
 <output>Sequence distance matrix</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/distmat.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Create a distance matrix from a multiple sequence alignment</desc>
 <collection>EMBOSS</collection>
@@ -1135,7 +1135,7 @@
 <output>Dotplot</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dotmatcher.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw a threshold dotplot of two sequences</desc>
 <collection>EMBOSS</collection>
@@ -1156,7 +1156,7 @@
 <output>Dotplot</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dotpath.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw a non-overlapping wordmatch dotplot of two sequences</desc>
 <collection>EMBOSS</collection>
@@ -1178,7 +1178,7 @@
 <output>Dotplot</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dottup.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display a wordmatch dotplot of two sequences</desc>
 <collection>EMBOSS</collection>
@@ -1199,7 +1199,7 @@
 <output>Sequence features (motifs)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/dreg.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Regular expression search of nucleotide sequence(s)</desc>
 <collection>EMBOSS</collection>
@@ -1217,7 +1217,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/drfinddata.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find public databases by data type</desc>
 <collection>EMBOSS</collection>
@@ -1235,7 +1235,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/drfindformat.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find public databases by format</desc>
 <collection>EMBOSS</collection>
@@ -1253,7 +1253,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/drfindid.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find public databases by identifier</desc>
 <collection>EMBOSS</collection>
@@ -1271,7 +1271,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/drfindresource.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find public databases by resource</desc>
 <collection>EMBOSS</collection>
@@ -1290,7 +1290,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/drget.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get data resource entries</desc>
 <collection>EMBOSS</collection>
@@ -1309,7 +1309,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/drtext.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get data resource entries complete text</desc>
 <collection>EMBOSS</collection>
@@ -1327,7 +1327,7 @@
 <output>Ontology metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/edamdef.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find EDAM ontology terms by definition</desc>
 <collection>EMBOSS</collection>
@@ -1345,7 +1345,7 @@
 <output>Ontology metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/edamhasinput.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find EDAM ontology terms by has_input relation</desc>
 <collection>EMBOSS</collection>
@@ -1363,7 +1363,7 @@
 <output>Ontology metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/edamhasoutput.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find EDAM ontology terms by has_output relation</desc>
 <collection>EMBOSS</collection>
@@ -1381,7 +1381,7 @@
 <output>Ontology metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/edamisformat.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find EDAM ontology terms by is_format_of relation</desc>
 <collection>EMBOSS</collection>
@@ -1399,7 +1399,7 @@
 <output>Ontology metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/edamisid.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find EDAM ontology terms by is_identifier_of relation</desc>
 <collection>EMBOSS</collection>
@@ -1417,7 +1417,7 @@
 <output>Ontology metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/edamname.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find EDAM ontology terms by name</desc>
 <collection>EMBOSS</collection>
@@ -1437,7 +1437,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/edialign.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Local multiple alignment of sequences</desc>
 <collection>EMBOSS</collection>
@@ -1458,7 +1458,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/einverted.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find inverted repeats in nucleotide sequences</desc>
 <collection>EMBOSS</collection>
@@ -1477,7 +1477,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/embossdata.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find and retrieve EMBOSS data files</desc>
 <collection>EMBOSS</collection>
@@ -1495,7 +1495,7 @@
 <output>Tool version information</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/embossupdate.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Check for more recent updates to EMBOSS</desc>
 <collection>EMBOSS</collection>
@@ -1513,7 +1513,7 @@
 <output>Tool version information</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/embossversion.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Report the current EMBOSS version number</desc>
 <collection>EMBOSS</collection>
@@ -1536,7 +1536,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/emma.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Multiple sequence alignment (ClustalW wrapper)</desc>
 <collection>EMBOSS</collection>
@@ -1558,7 +1558,7 @@
 <output>Peptide molecular weight hits</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/emowse.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Search protein sequences by digest fragment molecular weight</desc>
 <collection>EMBOSS</collection>
@@ -1577,7 +1577,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/entret.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Retrieve sequence entries from flatfile databases and files</desc>
 <collection>EMBOSS</collection>
@@ -1598,7 +1598,7 @@
 <output>Protein features (cleavage sites)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/epestfind.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find PEST motifs as potential proteolytic cleavage sites</desc>
 <collection>EMBOSS</collection>
@@ -1620,7 +1620,7 @@
 <output>Nucleic acid features (primers)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/eprimer3.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Pick PCR primers and hybridization oligos</desc>
 <collection>EMBOSS</collection>
@@ -1642,7 +1642,7 @@
 <output>Nucleic acid features (primers)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/eprimer32.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Pick PCR primers and hybridization oligos</desc>
 <collection>EMBOSS</collection>
@@ -1662,7 +1662,7 @@
 <output>Sequence features (repeats)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/equicktandem.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find tandem repeats in nucleotide sequences</desc>
 <collection>EMBOSS</collection>
@@ -1682,7 +1682,7 @@
 <output>Nucleic acid features (coding sequence)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/est2genome.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Align EST sequences to genomic DNA sequence</desc>
 <collection>EMBOSS</collection>
@@ -1702,7 +1702,7 @@
 <output>Sequence features (repeats)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/etandem.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find tandem repeats in a nucleotide sequence</desc>
 <collection>EMBOSS</collection>
@@ -1721,7 +1721,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/extractalign.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Extract regions from a sequence alignment</desc>
 <collection>EMBOSS</collection>
@@ -1740,7 +1740,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/extractfeat.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Extract features from sequence(s)</desc>
 <collection>EMBOSS</collection>
@@ -1759,7 +1759,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/extractseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Extract regions from a sequence</desc>
 <collection>EMBOSS</collection>
@@ -1778,7 +1778,7 @@
 <output>Feature record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/featcopy.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Read and write a feature table</desc>
 <collection>EMBOSS</collection>
@@ -1798,7 +1798,7 @@
 <output>Feature record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/featmerge.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Merge two overlapping feature tables</desc>
 <collection>EMBOSS</collection>
@@ -1818,7 +1818,7 @@
 <output>Feature record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/featreport.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Read and write a feature table</desc>
 <collection>EMBOSS</collection>
@@ -1837,7 +1837,7 @@
 <output>Feature record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/feattext.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Return a feature table original text</desc>
 <collection>EMBOSS</collection>
@@ -1858,7 +1858,7 @@
 <output>Hanes Woolf plot</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/findkm.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate and plot enzyme reaction data</desc>
 <collection>EMBOSS</collection>
@@ -1878,7 +1878,7 @@
 <output>Sequence composition</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/freak.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate residue/base frequency table or plot</desc>
 <collection>EMBOSS</collection>
@@ -1899,7 +1899,7 @@
 <output>Sequence features (motifs)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/fuzznuc.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Search for patterns in nucleotide sequences</desc>
 <collection>EMBOSS</collection>
@@ -1920,7 +1920,7 @@
 <output>Sequence features (motifs)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/fuzzpro.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Search for patterns in protein sequences</desc>
 <collection>EMBOSS</collection>
@@ -1942,7 +1942,7 @@
 <output>Sequence features (motifs)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/fuzztran.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Search for patterns in protein sequences (translated)</desc>
 <collection>EMBOSS</collection>
@@ -1961,7 +1961,7 @@
 <output>Protein features (secondary structure)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/garnier.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Predict protein secondary structure using GOR method</desc>
 <collection>EMBOSS</collection>
@@ -1980,7 +1980,7 @@
 <output>Nucleic acid features (CpG island and isochore)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/geecee.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate fractional GC content of nucleic acid sequences</desc>
 <collection>EMBOSS</collection>
@@ -2000,7 +2000,7 @@
 <output>Sequence record (protein)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/getorf.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find and extract open reading frames (ORFs)</desc>
 <collection>EMBOSS</collection>
@@ -2018,7 +2018,7 @@
 <output>Ontology metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/godef.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find GO ontology terms by definition</desc>
 <collection>EMBOSS</collection>
@@ -2036,7 +2036,7 @@
 <output>Ontology metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/goname.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find GO ontology terms by name</desc>
 <collection>EMBOSS</collection>
@@ -2056,7 +2056,7 @@
 <output>Protein features (nucleic acid binding sites)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/helixturnhelix.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Identify nucleic acid-binding motifs in protein sequences</desc>
 <collection>EMBOSS</collection>
@@ -2077,7 +2077,7 @@
 <output>Peptide hydrophobic moment</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/hmoment.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate and plot hydrophobic moment for protein sequence(s)</desc>
 <collection>EMBOSS</collection>
@@ -2097,7 +2097,7 @@
 <output>Protein isoelectric point</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/iep.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate the isoelectric point of proteins</desc>
 <collection>EMBOSS</collection>
@@ -2118,7 +2118,7 @@
 <output>Sequence alignment metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/infoalign.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display basic information about a multiple sequence alignment</desc>
 <collection>EMBOSS</collection>
@@ -2136,7 +2136,7 @@
 <input>Sequence record</input>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/infoassembly.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display information about assemblies</desc>
 <collection>EMBOSS</collection>
@@ -2154,7 +2154,7 @@
 <output>Nucleotide base annotation</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/infobase.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Return information on a given nucleotide base</desc>
 <collection>EMBOSS</collection>
@@ -2174,7 +2174,7 @@
 <output>Amino acid annotation</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/inforesidue.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Return information on a given amino acid residue</desc>
 <collection>EMBOSS</collection>
@@ -2193,7 +2193,7 @@
 <output>Sequence metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/infoseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display basic information about sequences</desc>
 <collection>EMBOSS</collection>
@@ -2213,7 +2213,7 @@
 <output>Nucleic acid features (CpG island and isochore)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/isochore.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Plot isochores in DNA sequences</desc>
 <collection>EMBOSS</collection>
@@ -2230,7 +2230,7 @@
 <topic>Transcription</topic>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/jaspextract.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Extract data from JASPAR</desc>
 <collection>EMBOSS</collection>
@@ -2249,7 +2249,7 @@
 <output>Gene features (TFBS)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/jaspscan.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Scan DNA sequences for transcription factors</desc>
 <collection>EMBOSS</collection>
@@ -2268,7 +2268,7 @@
 <output>Genetic map</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/lindna.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw linear maps of DNA constructs</desc>
 <collection>EMBOSS</collection>
@@ -2288,7 +2288,7 @@
 <output>EMBOSS listfile</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/listor.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Write a list file of the logical OR of two sets of sequences</desc>
 <collection>EMBOSS</collection>
@@ -2307,7 +2307,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/makenucseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Create random nucleotide sequences</desc>
 <collection>EMBOSS</collection>
@@ -2326,7 +2326,7 @@
 <output>Sequence record (protein)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/makeprotseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Create random protein sequences</desc>
 <collection>EMBOSS</collection>
@@ -2345,7 +2345,7 @@
 <output>Nucleic acid features</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/marscan.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find matrix/scaffold recognition (MRS) signatures in DNA sequences</desc>
 <collection>EMBOSS</collection>
@@ -2364,7 +2364,7 @@
 <output>Sequence record (nucleic acid)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/maskambignuc.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Mask all ambiguity characters in nucleotide sequences with N</desc>
 <collection>EMBOSS</collection>
@@ -2383,7 +2383,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/maskambigprot.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Mask all ambiguity characters in protein sequences with X</desc>
 <collection>EMBOSS</collection>
@@ -2402,7 +2402,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/maskfeat.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Write a sequence with masked features</desc>
 <collection>EMBOSS</collection>
@@ -2421,7 +2421,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/maskseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Write a sequence with masked regions</desc>
 <collection>EMBOSS</collection>
@@ -2442,7 +2442,7 @@
 <output>Sequence alignment (pair)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/matcher.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Waterman-Eggert local alignment of two sequences</desc>
 <collection>EMBOSS</collection>
@@ -2464,7 +2464,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/megamerger.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Merge two large overlapping DNA sequences</desc>
 <collection>EMBOSS</collection>
@@ -2487,7 +2487,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/merger.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Merge two overlapping sequences</desc>
 <collection>EMBOSS</collection>
@@ -2507,7 +2507,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/msbar.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Mutate a sequence</desc>
 <collection>EMBOSS</collection>
@@ -2526,7 +2526,7 @@
 <output>Amino acid index (molecular weight)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/mwcontam.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find weights common to multiple molecular weights files</desc>
 <collection>EMBOSS</collection>
@@ -2546,7 +2546,7 @@
 <output>Amino acid index (molecular weight)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/mwfilter.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Filter noisy data from molecular weights file</desc>
 <collection>EMBOSS</collection>
@@ -2567,7 +2567,7 @@
 <output>Sequence alignment (pair)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/needle.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Needleman-Wunsch global alignment of two sequences</desc>
 <collection>EMBOSS</collection>
@@ -2589,7 +2589,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/needleall.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Many-to-many pairwise alignments of two sequence sets</desc>
 <collection>EMBOSS</collection>
@@ -2608,7 +2608,7 @@
 <output>Nucleic acid features (CpG island and isochore)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/newcpgreport.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Identify CpG islands in nucleotide sequence(s)</desc>
 <collection>EMBOSS</collection>
@@ -2627,7 +2627,7 @@
 <output>Nucleic acid features (CpG island and isochore)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/newcpgseek.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Identify and report CpG-rich regions in nucleotide sequence(s)</desc>
 <collection>EMBOSS</collection>
@@ -2645,7 +2645,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/newseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Create a sequence file from a typed-in sequence</desc>
 <collection>EMBOSS</collection>
@@ -2664,7 +2664,7 @@
 <output>Report</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/nohtml.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Remove mark-up (e.g. HTML tags) from an ASCII text file</desc>
 <collection>EMBOSS</collection>
@@ -2683,7 +2683,7 @@
 <output>Report</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/noreturn.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Remove carriage return from ASCII files</desc>
 <collection>EMBOSS</collection>
@@ -2702,7 +2702,7 @@
 <output>Report</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/nospace.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Remove whitespace from an ASCII text file</desc>
 <collection>EMBOSS</collection>
@@ -2721,7 +2721,7 @@
 <output>Report</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/notab.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Replace tabs with spaces in an ASCII text file</desc>
 <collection>EMBOSS</collection>
@@ -2741,7 +2741,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/notseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Write to file a subset of an input stream of sequences</desc>
 <collection>EMBOSS</collection>
@@ -2760,7 +2760,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/nthseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Write to file a single sequence from an input stream of sequences</desc>
 <collection>EMBOSS</collection>
@@ -2779,7 +2779,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/nthseqset.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Read and write (return) one set of sequences from many</desc>
 <collection>EMBOSS</collection>
@@ -2799,7 +2799,7 @@
 <output>Protein sequence hydropathy plot</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/octanol.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw a White-Wimley protein hydropathy plot</desc>
 <collection>EMBOSS</collection>
@@ -2819,7 +2819,7 @@
 <output>EMBOSS listfile</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/oddcomp.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Identify proteins with specified sequence word composition</desc>
 <collection>EMBOSS</collection>
@@ -2837,7 +2837,7 @@
 <output>Ontology metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/ontocount.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Count ontology term(s)</desc>
 <collection>EMBOSS</collection>
@@ -2855,7 +2855,7 @@
 <output>Ontology term</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/ontoget.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get ontology term(s)</desc>
 <collection>EMBOSS</collection>
@@ -2873,7 +2873,7 @@
 <output>Ontology term</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/ontogetcommon.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get common ancestor for terms</desc>
 <collection>EMBOSS</collection>
@@ -2891,7 +2891,7 @@
 <output>Ontology term</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/ontogetdown.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get ontology term(s) by parent id</desc>
 <collection>EMBOSS</collection>
@@ -2909,7 +2909,7 @@
 <output>Ontology term</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/ontogetobsolete.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get ontology ontology terms</desc>
 <collection>EMBOSS</collection>
@@ -2927,7 +2927,7 @@
 <output>Ontology term</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/ontogetroot.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get ontology root terms by child identifier</desc>
 <collection>EMBOSS</collection>
@@ -2945,7 +2945,7 @@
 <output>Ontology term</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/ontogetsibs.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get ontology term(s) by id with common parent</desc>
 <collection>EMBOSS</collection>
@@ -2963,7 +2963,7 @@
 <output>Ontology term</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/ontogetup.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get ontology term(s) by id of child</desc>
 <collection>EMBOSS</collection>
@@ -2981,7 +2981,7 @@
 <output>Ontology metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/ontoisobsolete.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Report whether an ontology term id is obsolete</desc>
 <collection>EMBOSS</collection>
@@ -2999,7 +2999,7 @@
 <output>Ontology term</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/ontotext.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get ontology term(s) original full text</desc>
 <collection>EMBOSS</collection>
@@ -3019,7 +3019,7 @@
 <output>Sequence features (repeats)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/palindrome.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find inverted repeats in nucleotide sequence(s)</desc>
 <collection>EMBOSS</collection>
@@ -3039,7 +3039,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/pasteseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Insert one sequence into another</desc>
 <collection>EMBOSS</collection>
@@ -3059,7 +3059,7 @@
 <output>Sequence features (motifs)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/patmatdb.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Search protein sequences with a sequence motif</desc>
 <collection>EMBOSS</collection>
@@ -3079,7 +3079,7 @@
 <output>Sequence features (motifs)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/patmatmotifs.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Scan a protein sequence with motifs from the PROSITE database</desc>
 <collection>EMBOSS</collection>
@@ -3098,7 +3098,7 @@
 <output>Protein features (super-secondary)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/pepcoil.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Predict coiled coil regions in protein sequences</desc>
 <collection>EMBOSS</collection>
@@ -3118,7 +3118,7 @@
 <output>Protein features (cleavage sites)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/pepdigest.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Report on protein proteolytic enzyme or reagent cleavage sites</desc>
 <collection>EMBOSS</collection>
@@ -3140,7 +3140,7 @@
 <output>Protein property</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/pepinfo.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Plot amino acid properties of a protein sequence in parallel</desc>
 <collection>EMBOSS</collection>
@@ -3160,7 +3160,7 @@
 <output>Helical net</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/pepnet.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw a helical net for a protein sequence</desc>
 <collection>EMBOSS</collection>
@@ -3181,7 +3181,7 @@
 <output>Protein property</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/pepstats.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate statistics of protein properties</desc>
 <collection>EMBOSS</collection>
@@ -3200,7 +3200,7 @@
 <output>Helical wheel</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/pepwheel.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw a helical wheel diagram for a protein sequence</desc>
 <collection>EMBOSS</collection>
@@ -3220,7 +3220,7 @@
 <output>Protein sequence hydropathy plot</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/pepwindow.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw a hydropathy plot for a protein sequence</desc>
 <collection>EMBOSS</collection>
@@ -3240,7 +3240,7 @@
 <output>Protein sequence hydropathy plot</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/pepwindowall.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw Kyte-Doolittle hydropathy plot for a protein alignment</desc>
 <collection>EMBOSS</collection>
@@ -3260,7 +3260,7 @@
 <output>Sequence similarity plot</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/plotcon.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Plot conservation of a sequence alignment</desc>
 <collection>EMBOSS</collection>
@@ -3279,7 +3279,7 @@
 <output>Nucleic acid features (coding sequence)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/plotorf.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Plot potential open reading frames in a nucleotide sequence</desc>
 <collection>EMBOSS</collection>
@@ -3299,7 +3299,7 @@
 <output>Dotplot</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/polydot.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw dotplots for all-against-all comparison of a sequence set</desc>
 <collection>EMBOSS</collection>
@@ -3320,7 +3320,7 @@
 <output>Sequence features (motifs)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/preg.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Regular expression search of protein sequence(s)</desc>
 <collection>EMBOSS</collection>
@@ -3341,7 +3341,7 @@
 <output>Sequence alignment image</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/prettyplot.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw a sequence alignment with pretty formatting</desc>
 <collection>EMBOSS</collection>
@@ -3361,7 +3361,7 @@
 <output>Nucleic acid features (coding sequence)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/prettyseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Write a nucleotide sequence and its translation to file</desc>
 <collection>EMBOSS</collection>
@@ -3381,7 +3381,7 @@
 <output>Nucleic acid features (primers)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/primersearch.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Search DNA sequences for matches with primer pairs</desc>
 <collection>EMBOSS</collection>
@@ -3399,7 +3399,7 @@
 <input>Fingerprint</input>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/printsextract.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Extract data from PRINTS database for use by pscan</desc>
 <collection>EMBOSS</collection>
@@ -3419,7 +3419,7 @@
 <output>Sequence-profile alignment</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/profit.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Scan one or more sequences with a simple frequency matrix</desc>
 <collection>EMBOSS</collection>
@@ -3439,7 +3439,7 @@
 <output>Sequence profile</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/prophecy.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Create frequency matrix or profile from a multiple alignment</desc>
 <collection>EMBOSS</collection>
@@ -3459,7 +3459,7 @@
 <output>Sequence alignment</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/prophet.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Scan one or more sequences with a Gribskov or Henikoff profile</desc>
 <collection>EMBOSS</collection>
@@ -3477,7 +3477,7 @@
 <input>Sequence motif</input>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/prosextract.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Process the PROSITE motif database for use by patmatmotifs</desc>
 <collection>EMBOSS</collection>
@@ -3498,7 +3498,7 @@
 <output>Sequence-profile alignment (fingerprint)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/pscan.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Scan protein sequence(s) with fingerprints from the PRINTS database</desc>
 <collection>EMBOSS</collection>
@@ -3517,7 +3517,7 @@
 <output>Ramachandran plot</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/psiphi.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculates phi and psi torsion angles from protein coordinates</desc>
 <collection>EMBOSS</collection>
@@ -3536,7 +3536,7 @@
 <input>Restriction enzyme property</input>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/rebaseextract.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Process the REBASE database for use by restriction enzyme applications</desc>
 <collection>EMBOSS</collection>
@@ -3555,7 +3555,7 @@
 <output>Nucleic acid features (restriction sites)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/recoder.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find restriction sites to remove (mutate) with no translation change</desc>
 <collection>EMBOSS</collection>
@@ -3573,7 +3573,7 @@
 <output>Restriction enzyme property</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/redata.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Retrieve information from REBASE restriction enzyme database</desc>
 <collection>EMBOSS</collection>
@@ -3592,7 +3592,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/refseqget.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get reference sequence</desc>
 <collection>EMBOSS</collection>
@@ -3613,7 +3613,7 @@
 <output>Nucleic acid features (restriction sites)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/remap.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display restriction enzyme binding sites in a nucleotide sequence</desc>
 <collection>EMBOSS</collection>
@@ -3634,7 +3634,7 @@
 <output>Nucleic acid features (restriction sites)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/restover.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find restriction enzymes producing a specific overhang</desc>
 <collection>EMBOSS</collection>
@@ -3655,7 +3655,7 @@
 <output>Nucleic acid features (restriction sites)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/restrict.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Report restriction enzyme cleavage sites in a nucleotide sequence</desc>
 <collection>EMBOSS</collection>
@@ -3674,7 +3674,7 @@
 <output>Sequence record (nucleic acid)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/revseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Reverse and complement a nucleotide sequence</desc>
 <collection>EMBOSS</collection>
@@ -3692,7 +3692,7 @@
 <output>Tool metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/seealso.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find programs with similar function to a specified program</desc>
 <collection>EMBOSS</collection>
@@ -3712,7 +3712,7 @@
 <output>Report</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/seqcount.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Read and count sequences</desc>
 <collection>EMBOSS</collection>
@@ -3731,7 +3731,7 @@
 <output>Sequence alignment (pair)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/seqmatchall.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>All-against-all word comparison of a sequence set</desc>
 <collection>EMBOSS</collection>
@@ -3751,7 +3751,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/seqret.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Read and write (return) sequences</desc>
 <collection>EMBOSS</collection>
@@ -3771,7 +3771,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/seqretsetall.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Read and write (return) many sets of sequences</desc>
 <collection>EMBOSS</collection>
@@ -3791,7 +3791,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/seqretsplit.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Read sequences and write them to individual files</desc>
 <collection>EMBOSS</collection>
@@ -3810,7 +3810,7 @@
 <output>Data reference</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/seqxref.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Retrieve all database cross-references for a sequence entry</desc>
 <collection>EMBOSS</collection>
@@ -3829,7 +3829,7 @@
 <output>Data reference</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/seqxrefget.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Retrieve all cross-referenced data for a sequence entry</desc>
 <collection>EMBOSS</collection>
@@ -3847,7 +3847,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/servertell.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display information about a public server</desc>
 <collection>EMBOSS</collection>
@@ -3868,7 +3868,7 @@
 <output>Sequence alignment</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/showalign.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display a multiple sequence alignment in pretty format</desc>
 <collection>EMBOSS</collection>
@@ -3886,7 +3886,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/showdb.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display information on configured databases</desc>
 <collection>EMBOSS</collection>
@@ -3905,7 +3905,7 @@
 <output>Feature record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/showfeat.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display features of a sequence in pretty format</desc>
 <collection>EMBOSS</collection>
@@ -3926,7 +3926,7 @@
 <output>Nucleic acid features (coding sequence)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/showorf.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display a nucleotide sequence and translation in pretty format</desc>
 <collection>EMBOSS</collection>
@@ -3945,7 +3945,7 @@
 <output>Protein features</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/showpep.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display protein sequences with features in pretty format</desc>
 <collection>EMBOSS</collection>
@@ -3967,7 +3967,7 @@
 <output>Nucleic acid features</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/showseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display sequences with features in pretty format</desc>
 <collection>EMBOSS</collection>
@@ -3985,7 +3985,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/showserver.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display information on configured servers</desc>
 <collection>EMBOSS</collection>
@@ -4004,7 +4004,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/shuffleseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Shuffle a set of sequences maintaining composition</desc>
 <collection>EMBOSS</collection>
@@ -4023,7 +4023,7 @@
 <output>Protein features (signal peptides)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/sigcleave.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Report on signal cleavage sites in a protein sequence</desc>
 <collection>EMBOSS</collection>
@@ -4042,7 +4042,7 @@
 <output>Nucleic acid features (restriction sites)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/silent.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find restriction sites to insert (mutate) with no translation change</desc>
 <collection>EMBOSS</collection>
@@ -4062,7 +4062,7 @@
 <output>Sequence record (nucleic acid)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/sirna.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find siRNA duplexes in mRNA</desc>
 <collection>EMBOSS</collection>
@@ -4084,7 +4084,7 @@
 <output>Sequence record (protein)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/sixpack.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display a DNA sequence with 6-frame translation and ORFs</desc>
 <collection>EMBOSS</collection>
@@ -4103,7 +4103,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/sizeseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Sort sequences by size</desc>
 <collection>EMBOSS</collection>
@@ -4126,7 +4126,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/skipredundant.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Remove redundant sequences from an input set</desc>
 <collection>EMBOSS</collection>
@@ -4146,7 +4146,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/skipseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Read and write (return) sequences, skipping first few</desc>
 <collection>EMBOSS</collection>
@@ -4165,7 +4165,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/splitsource.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Split sequence(s) into original source sequences</desc>
 <collection>EMBOSS</collection>
@@ -4184,7 +4184,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/splitter.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Split sequence(s) into smaller sequences</desc>
 <collection>EMBOSS</collection>
@@ -4205,7 +4205,7 @@
 <output>Sequence alignment (pair)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/stretcher.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Needleman-Wunsch rapid global alignment of two sequences</desc>
 <collection>EMBOSS</collection>
@@ -4225,7 +4225,7 @@
 <output>Nucleic acid features (primers)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/stssearch.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Search a DNA database for matches with a set of STS primers</desc>
 <collection>EMBOSS</collection>
@@ -4247,7 +4247,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/supermatcher.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate approximate local pair-wise alignments of larger sequences</desc>
 <collection>EMBOSS</collection>
@@ -4269,7 +4269,7 @@
 <output>Codon usage bias plot</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/syco.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw synonymous codon usage statistic plot for a nucleotide sequence</desc>
 <collection>EMBOSS</collection>
@@ -4287,7 +4287,7 @@
 <output>Ontology concept</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/taxget.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get taxon(s)</desc>
 <collection>EMBOSS</collection>
@@ -4305,7 +4305,7 @@
 <output>Ontology concept</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/taxgetdown.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get descendants of taxon(s)</desc>
 <collection>EMBOSS</collection>
@@ -4323,7 +4323,7 @@
 <output>Ontology concept</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/taxgetrank.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get parents of taxon(s)</desc>
 <collection>EMBOSS</collection>
@@ -4341,7 +4341,7 @@
 <output>Ontology concept</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/taxgetspecies.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get all species under taxon(s)</desc>
 <collection>EMBOSS</collection>
@@ -4359,7 +4359,7 @@
 <output>Ontology concept</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/taxgetup.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get parents of taxon(s)</desc>
 <collection>EMBOSS</collection>
@@ -4380,7 +4380,7 @@
 <output>Fickett testcode plot</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/tcode.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Identify protein-coding regions using Fickett TESTCODE statistic</desc>
 <collection>EMBOSS</collection>
@@ -4399,7 +4399,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/textget.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get text data entries</desc>
 <collection>EMBOSS</collection>
@@ -4418,7 +4418,7 @@
 <output>Sequence metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/textsearch.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Search the textual description of sequence(s)</desc>
 <collection>EMBOSS</collection>
@@ -4436,7 +4436,7 @@
 <input>Protein report</input>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/tfextract.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Process TRANSFAC transcription factor database for use by tfscan</desc>
 <collection>EMBOSS</collection>
@@ -4454,7 +4454,7 @@
 <output>Tool metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/tfm.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Display full documentation for an application</desc>
 <collection>EMBOSS</collection>
@@ -4474,7 +4474,7 @@
 <output>Gene features (TFBS)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/tfscan.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Identify transcription factor binding sites in DNA sequences</desc>
 <collection>EMBOSS</collection>
@@ -4494,7 +4494,7 @@
 <output>Protein features (membrane regions)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/tmap.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Predict and plot transmembrane segments in protein sequences</desc>
 <collection>EMBOSS</collection>
@@ -4515,7 +4515,7 @@
 <output>Sequence record (nucleic acid)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/tranalign.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate an alignment of nucleic coding regions from aligned proteins</desc>
 <collection>EMBOSS</collection>
@@ -4534,7 +4534,7 @@
 <output>Sequence record (protein)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/transeq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Translate nucleic acid sequences</desc>
 <collection>EMBOSS</collection>
@@ -4555,7 +4555,7 @@
 <output>Sequence record (nucleic acid)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/trimest.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Remove poly-A tails from nucleotide sequences</desc>
 <collection>EMBOSS</collection>
@@ -4575,7 +4575,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/trimseq.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Remove unwanted characters from start and end of sequence(s)</desc>
 <collection>EMBOSS</collection>
@@ -4594,7 +4594,7 @@
 <output>Report</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/trimspace.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Remove extra whitespace from an ASCII text file</desc>
 <collection>EMBOSS</collection>
@@ -4613,7 +4613,7 @@
 <output>Feature record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/twofeat.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find neighbouring pairs of features in sequence(s)</desc>
 <collection>EMBOSS</collection>
@@ -4633,7 +4633,7 @@
 <output>Sequence set</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/union.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Concatenate multiple sequences into a single sequence</desc>
 <collection>EMBOSS</collection>
@@ -4652,7 +4652,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/urlget.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get URLs of data resources</desc>
 <collection>EMBOSS</collection>
@@ -4671,7 +4671,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/variationget.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get sequence variations</desc>
 <collection>EMBOSS</collection>
@@ -4693,7 +4693,7 @@
 <output>Sequence record (nucleic acid)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/vectorstrip.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Remove vectors from the ends of nucleotide sequence(s)</desc>
 <collection>EMBOSS</collection>
@@ -4714,7 +4714,7 @@
 <output>Sequence alignment (pair)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/water.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Smith-Waterman local alignment of sequences</desc>
 <collection>EMBOSS</collection>
@@ -4732,7 +4732,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/whichdb.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Search all sequence databases for an entry and retrieve it</desc>
 <collection>EMBOSS</collection>
@@ -4752,7 +4752,7 @@
 <output>Sequence composition (base position variability)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/wobble.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Plot third base position variability in a nucleotide sequence</desc>
 <collection>EMBOSS</collection>
@@ -4771,7 +4771,7 @@
 <output>Sequence composition (base words)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/wordcount.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Count and extract unique words in molecular sequence(s)</desc>
 <collection>EMBOSS</collection>
@@ -4794,7 +4794,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/wordfinder.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Match large sequences against one or more other sequences</desc>
 <collection>EMBOSS</collection>
@@ -4817,7 +4817,7 @@
 <output>Feature record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/wordmatch.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find regions of identity (exact matches) of two sequences</desc>
 <collection>EMBOSS</collection>
@@ -4835,7 +4835,7 @@
 <output>Tool metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/wossdata.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find programs by EDAM data</desc>
 <collection>EMBOSS</collection>
@@ -4853,7 +4853,7 @@
 <output>Tool metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/wossinput.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find programs by EDAM input data</desc>
 <collection>EMBOSS</collection>
@@ -4871,7 +4871,7 @@
 <output>Tool metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/wossname.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find programs by keywords in their short description</desc>
 <collection>EMBOSS</collection>
@@ -4889,7 +4889,7 @@
 <output>Tool metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/wossoperation.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find programs by EDAM operation</desc>
 <collection>EMBOSS</collection>
@@ -4907,7 +4907,7 @@
 <output>Tool metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/wossoutput.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find programs by EDAM output data</desc>
 <collection>EMBOSS</collection>
@@ -4925,7 +4925,7 @@
 <output>Tool metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/wossparam.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find programs by EDAM parameter</desc>
 <collection>EMBOSS</collection>
@@ -4943,7 +4943,7 @@
 <output>Tool metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/wosstopic.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find programs by EDAM topic</desc>
 <collection>EMBOSS</collection>
@@ -4962,7 +4962,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/xmlget.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get XML data</desc>
 <collection>EMBOSS</collection>
@@ -4981,7 +4981,7 @@
 <output>Database metadata</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/xmltext.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Get XML document original full text</desc>
 <collection>EMBOSS</collection>
@@ -5000,7 +5000,7 @@
 <output>EMBOSS listfile</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/apps/yank.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Add a sequence reference (a full USA) to a list file</desc>
 <collection>EMBOSS</collection>
@@ -5019,7 +5019,7 @@
 <output>Report</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/appendixd/crystalball.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Answer every drug discovery question about a sequence</desc>
 <collection>EMBOSS</collection>
@@ -5038,7 +5038,7 @@
 <output>Protein features (signal peptides)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/cbstools/echlorop.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Report presence of chloroplast transit peptides</desc>
 <collection>EMBOSS</collection>
@@ -5057,7 +5057,7 @@
 <output>Protein features (signal peptides)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/cbstools/elipop.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Predict lipoproteins</desc>
 <collection>EMBOSS</collection>
@@ -5076,7 +5076,7 @@
 <output>Protein features (post-translation modifications)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/cbstools/enetnglyc.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Report N-glycosylation sites in human proteins</desc>
 <collection>EMBOSS</collection>
@@ -5095,7 +5095,7 @@
 <output>Protein features (post-translation modifications)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/cbstools/enetoglyc.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Reports mucin type GalNAc O-glycosylation sites in mammalian proteins</desc>
 <collection>EMBOSS</collection>
@@ -5114,7 +5114,7 @@
 <output>Protein features (post-translation modifications)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/cbstools/enetphos.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Report Ser, Thr and Tyr phosphorylation sites in eukaryotic proteins</desc>
 <collection>EMBOSS</collection>
@@ -5133,7 +5133,7 @@
 <output>Protein features (cleavage sites)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/cbstools/eprop.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Report propeptide cleavage sites in proteins</desc>
 <collection>EMBOSS</collection>
@@ -5152,7 +5152,7 @@
 <output>Protein features (signal peptides)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/cbstools/esignalp.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Report protein signal cleavage sites</desc>
 <collection>EMBOSS</collection>
@@ -5171,7 +5171,7 @@
 <output>Protein features (membrane regions)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/cbstools/etmhmm.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Reports transmembrane helices</desc>
 <collection>EMBOSS</collection>
@@ -5190,7 +5190,7 @@
 <output>Protein features (post-translation modifications)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/cbstools/eyinoyang.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Report O-(beta)-GlcNAc attachment sites</desc>
 <collection>EMBOSS</collection>
@@ -5213,7 +5213,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/clustalomega/eomega.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Multiple sequence alignment (ClustalO wrapper)</desc>
 <collection>EMBOSS</collection>
@@ -5238,7 +5238,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/clustalomega/eomegapp.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Profile with profile (ClustalO wrapper)</desc>
 <collection>EMBOSS</collection>
@@ -5262,7 +5262,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/clustalomega/eomegaps.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Single sequence with profile (ClustalO wrapper)</desc>
 <collection>EMBOSS</collection>
@@ -5286,7 +5286,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/clustalomega/eomegash.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Sequence with HMM (ClustalO wrapper)</desc>
 <collection>EMBOSS</collection>
@@ -5310,7 +5310,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/clustalomega/eomegasp.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Sequence with profile (ClustalO wrapper)</desc>
 <collection>EMBOSS</collection>
@@ -5333,7 +5333,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/domainatrix/cathparse.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate DCF file from raw CATH files</desc>
 <collection>EMBOSS</collection>
@@ -5355,7 +5355,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/domainatrix/domainnr.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Remove redundant domains from a DCF file</desc>
 <collection>EMBOSS</collection>
@@ -5375,7 +5375,7 @@
 <output>Protein domain classification</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/domainatrix/domainreso.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Remove low resolution domains from a DCF file</desc>
 <collection>EMBOSS</collection>
@@ -5398,7 +5398,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/domainatrix/domainseqs.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Add sequence records to a DCF file</desc>
 <collection>EMBOSS</collection>
@@ -5419,7 +5419,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/domainatrix/domainsse.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Add secondary structure records to a DCF file</desc>
 <collection>EMBOSS</collection>
@@ -5440,7 +5440,7 @@
 <output>Protein domain classification</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/domainatrix/scopparse.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate DCF file from raw SCOP files</desc>
 <collection>EMBOSS</collection>
@@ -5463,7 +5463,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/domainatrix/ssematch.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Search a DCF file for secondary structure matches</desc>
 <collection>EMBOSS</collection>
@@ -5485,7 +5485,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/domalign/allversusall.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Sequence similarity data from all-versus-all comparison</desc>
 <collection>EMBOSS</collection>
@@ -5508,7 +5508,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/domalign/domainalign.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate alignments (DAF file) for nodes in a DCF file</desc>
 <collection>EMBOSS</collection>
@@ -5527,7 +5527,7 @@
 <output>Protein domain classification</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/domalign/domainrep.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Reorder DCF file to identify representative structures</desc>
 <collection>EMBOSS</collection>
@@ -5549,7 +5549,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/domalign/seqalign.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Extend alignments (DAF file) with sequences (DHF file)</desc>
 <collection>EMBOSS</collection>
@@ -5568,7 +5568,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/domsearch/seqfraggle.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Remove fragment sequences from DHF files</desc>
 <collection>EMBOSS</collection>
@@ -5592,7 +5592,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/domsearch/seqnr.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Remove redundancy from DHF files</desc>
 <collection>EMBOSS</collection>
@@ -5613,7 +5613,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/domsearch/seqsearch.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate PSI-BLAST hits (DHF file) from a DAF file</desc>
 <collection>EMBOSS</collection>
@@ -5634,7 +5634,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/domsearch/seqsort.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Remove ambiguous classified sequences from DHF files</desc>
 <collection>EMBOSS</collection>
@@ -5655,7 +5655,7 @@
 <output>Database hits (sequence)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/domsearch/seqwords.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate DHF files from keyword search of UniProt</desc>
 <collection>EMBOSS</collection>
@@ -5672,7 +5672,7 @@
 <topic>Data handling</topic>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/emnu/emnu.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Simple menu of EMBOSS applications</desc>
 <collection>EMBOSS</collection>
@@ -5693,7 +5693,7 @@
 <output>Sequence alignment (hybrid)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/esim4/esim4.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Align an mRNA to a genomic DNA sequence</desc>
 <collection>EMBOSS</collection>
@@ -5715,7 +5715,7 @@
 <output>Sequence alignment (protein)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/hmmernew/ehmmalign.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Align sequences to an HMM profile</desc>
 <collection>EMBOSS</collection>
@@ -5739,7 +5739,7 @@
 <output>HMM emission and transition counts</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/hmmernew/ehmmbuild.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Build a profile HMM from an alignment</desc>
 <collection>EMBOSS</collection>
@@ -5759,7 +5759,7 @@
 <output>Image</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/hmmernew/ehmmcalibrate.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calibrate HMM search statistics</desc>
 <collection>EMBOSS</collection>
@@ -5778,7 +5778,7 @@
 <output>Hidden Markov model</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/hmmernew/ehmmconvert.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Convert between profile HMM file formats</desc>
 <collection>EMBOSS</collection>
@@ -5797,7 +5797,7 @@
 <output>Sequence record (protein)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/hmmernew/ehmmemit.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate sequences from a profile HMM</desc>
 <collection>EMBOSS</collection>
@@ -5816,7 +5816,7 @@
 <output>Hidden Markov model</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/hmmernew/ehmmfetch.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Retrieve an HMM from an HMM database</desc>
 <collection>EMBOSS</collection>
@@ -5834,7 +5834,7 @@
 <input>Hidden Markov model</input>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/hmmernew/ehmmindex.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Create a binary SSI index for an HMM database</desc>
 <collection>EMBOSS</collection>
@@ -5854,7 +5854,7 @@
 <output>Sequence-profile alignment</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/hmmernew/ehmmpfam.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Search one or more sequences against an HMM database</desc>
 <collection>EMBOSS</collection>
@@ -5874,7 +5874,7 @@
 <output>Sequence-profile alignment</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/hmmernew/ehmmsearch.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Search a sequence database with a profile HMM</desc>
 <collection>EMBOSS</collection>
@@ -5893,7 +5893,7 @@
 <output>Sequence features (motifs)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/iprscan/eiprscan.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Motif detection</desc>
 <collection>EMBOSS</collection>
@@ -5912,7 +5912,7 @@
 <output>Sequence features (motifs)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/meme/omeme.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Motif detection</desc>
 <collection>EMBOSS</collection>
@@ -5933,7 +5933,7 @@
 <output>Sequence alignment</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/memenew/emast.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Motif detection</desc>
 <collection>EMBOSS</collection>
@@ -5954,7 +5954,7 @@
 <output>Sequence features (motifs)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/memenew/ememe.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Multiple EM for motif elicitation</desc>
 <collection>EMBOSS</collection>
@@ -5976,7 +5976,7 @@
 <output>Sequence record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/memenew/ememetext.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Multiple EM for motif elicitation, text file only</desc>
 <collection>EMBOSS</collection>
@@ -6004,7 +6004,7 @@
 <input>Sequence trace</input>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/mira/emira.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>MIRA fragment assembly program</desc>
 <collection>EMBOSS</collection>
@@ -6029,7 +6029,7 @@
 <input>Sequence trace</input>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/mira/emiraest.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>MIRAest fragment assembly program</desc>
 <collection>EMBOSS</collection>
@@ -6048,7 +6048,7 @@
 <output>Sequence alignment</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/mse/mse.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Multiple sequence editor</desc>
 <collection>EMBOSS</collection>
@@ -6071,7 +6071,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fclique.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Largest clique program</desc>
 <collection>EMBOSS</collection>
@@ -6091,7 +6091,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fconsense.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Majority-rule and strict consensus tree</desc>
 <collection>EMBOSS</collection>
@@ -6112,7 +6112,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fcontml.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Gene frequency and continuous character maximum likelihood</desc>
 <collection>EMBOSS</collection>
@@ -6132,7 +6132,7 @@
 <output>Phylogenetic character contrasts</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fcontrast.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Continuous character contrasts</desc>
 <collection>EMBOSS</collection>
@@ -6158,7 +6158,7 @@
 <output>Phylogenetic discrete data</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fdiscboot.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Bootstrapped discrete sites algorithm</desc>
 <collection>EMBOSS</collection>
@@ -6180,7 +6180,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fdnacomp.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>DNA compatibility algorithm</desc>
 <collection>EMBOSS</collection>
@@ -6201,7 +6201,7 @@
 <output>Sequence distance matrix</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fdnadist.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Nucleic acid sequence distance matrix program</desc>
 <collection>EMBOSS</collection>
@@ -6221,7 +6221,7 @@
 <output>Phylogenetic invariants</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fdnainvar.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Nucleic acid sequence invariants method</desc>
 <collection>EMBOSS</collection>
@@ -6244,7 +6244,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fdnaml.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Estimate nucleotide phylogeny by maximum likelihood</desc>
 <collection>EMBOSS</collection>
@@ -6267,7 +6267,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fdnamlk.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Estimates nucleotide phylogeny by maximum likelihood</desc>
 <collection>EMBOSS</collection>
@@ -6288,7 +6288,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fdnamove.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Interactive DNA parsimony</desc>
 <collection>EMBOSS</collection>
@@ -6310,7 +6310,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fdnapars.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>DNA parsimony algorithm</desc>
 <collection>EMBOSS</collection>
@@ -6331,7 +6331,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fdnapenny.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Penny algorithm for DNA</desc>
 <collection>EMBOSS</collection>
@@ -6354,7 +6354,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fdollop.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Dollo and polymorphism parsimony algorithm</desc>
 <collection>EMBOSS</collection>
@@ -6377,7 +6377,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fdolmove.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Interactive Dollo or polymorphism parsimony</desc>
 <collection>EMBOSS</collection>
@@ -6399,7 +6399,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fdolpenny.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Penny algorithm Dollo or polymorphism</desc>
 <collection>EMBOSS</collection>
@@ -6418,7 +6418,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fdrawgram.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Plots a cladogram- or phenogram-like rooted tree diagram</desc>
 <collection>EMBOSS</collection>
@@ -6437,7 +6437,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fdrawtree.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Plots an unrooted tree diagram</desc>
 <collection>EMBOSS</collection>
@@ -6458,7 +6458,7 @@
 <output>Phylogenetic discrete data</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/ffactor.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Multistate to binary recoding program</desc>
 <collection>EMBOSS</collection>
@@ -6478,7 +6478,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/ffitch.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Fitch-Margoliash and least-squares distance methods</desc>
 <collection>EMBOSS</collection>
@@ -6498,7 +6498,7 @@
 <output>Sequence set (bootstrapped)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/ffreqboot.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Bootstrapped genetic frequencies algorithm</desc>
 <collection>EMBOSS</collection>
@@ -6517,7 +6517,7 @@
 <output>Sequence distance matrix</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fgendist.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Compute genetic distances from gene frequencies</desc>
 <collection>EMBOSS</collection>
@@ -6537,7 +6537,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fkitsch.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Fitch-Margoliash method with contemporary tips</desc>
 <collection>EMBOSS</collection>
@@ -6561,7 +6561,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fmix.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Mixed parsimony algorithm</desc>
 <collection>EMBOSS</collection>
@@ -6584,7 +6584,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fmove.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Interactive mixed method parsimony</desc>
 <collection>EMBOSS</collection>
@@ -6603,7 +6603,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fneighbor.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Phylogenies from distance matrix by N-J or UPGMA method</desc>
 <collection>EMBOSS</collection>
@@ -6625,7 +6625,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fpars.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Discrete character parsimony</desc>
 <collection>EMBOSS</collection>
@@ -6648,7 +6648,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fpenny.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Penny algorithm, branch-and-bound</desc>
 <collection>EMBOSS</collection>
@@ -6671,7 +6671,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fproml.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Protein phylogeny by maximum likelihood</desc>
 <collection>EMBOSS</collection>
@@ -6694,7 +6694,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fpromlk.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Protein phylogeny by maximum likelihood</desc>
 <collection>EMBOSS</collection>
@@ -6715,7 +6715,7 @@
 <output>Sequence distance matrix</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fprotdist.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Protein distance algorithm</desc>
 <collection>EMBOSS</collection>
@@ -6737,7 +6737,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fprotpars.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Protein parsimony algorithm</desc>
 <collection>EMBOSS</collection>
@@ -6757,7 +6757,7 @@
 <output>Sequence set (bootstrapped)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/frestboot.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Bootstrapped restriction sites algorithm</desc>
 <collection>EMBOSS</collection>
@@ -6776,7 +6776,7 @@
 <output>Sequence distance matrix</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/frestdist.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate distance matrix from restriction sites or fragments</desc>
 <collection>EMBOSS</collection>
@@ -6798,7 +6798,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/frestml.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Restriction site maximum likelihood method</desc>
 <collection>EMBOSS</collection>
@@ -6817,7 +6817,7 @@
 <output>Phylogenetic tree</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fretree.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Interactive tree rearrangement</desc>
 <collection>EMBOSS</collection>
@@ -6838,7 +6838,7 @@
 <output>Sequence set (bootstrapped)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fseqboot.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Bootstrapped sequences algorithm</desc>
 <collection>EMBOSS</collection>
@@ -6862,7 +6862,7 @@
 <output>Sequence set (bootstrapped)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/fseqbootall.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Bootstrapped sequences algorithm</desc>
 <collection>EMBOSS</collection>
@@ -6881,7 +6881,7 @@
 <output>Phylogenetic tree report (tree distances)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/ftreedist.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate distances between trees</desc>
 <collection>EMBOSS</collection>
@@ -6901,7 +6901,7 @@
 <output>Phylogenetic tree report (tree distances)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/phylipnew/ftreedistpair.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate distance between two sets of trees</desc>
 <collection>EMBOSS</collection>
@@ -6921,7 +6921,7 @@
 <output>Sequence profile</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/signature/libgen.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate discriminating elements from alignments</desc>
 <collection>EMBOSS</collection>
@@ -6945,7 +6945,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/signature/matgen3d.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate a 3D-1D scoring matrix from CCF files</desc>
 <collection>EMBOSS</collection>
@@ -6965,7 +6965,7 @@
 <output>Database hits (sequence)</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/signature/rocon.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate a hits file from comparing two DHF files</desc>
 <collection>EMBOSS</collection>
@@ -6985,7 +6985,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/signature/rocplot.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Perform ROC analysis on hits files</desc>
 <collection>EMBOSS</collection>
@@ -7007,7 +7007,7 @@
 <output>Sequence profile</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/signature/siggen.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate a sparse protein signature from an alignment</desc>
 <collection>EMBOSS</collection>
@@ -7029,7 +7029,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/signature/siggenlig.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate ligand-binding signatures from a CON file</desc>
 <collection>EMBOSS</collection>
@@ -7051,7 +7051,7 @@
 <output>Sequence-profile alignment</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/signature/sigscan.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate hits (DHF file) from a signature search</desc>
 <collection>EMBOSS</collection>
@@ -7074,7 +7074,7 @@
 <output>Sequence-profile alignment</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/signature/sigscanlig.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Search ligand-signature library and writes hits (LHF file)</desc>
 <collection>EMBOSS</collection>
@@ -7095,7 +7095,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/structure/contacts.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate intra-chain CON files from CCF files</desc>
 <collection>EMBOSS</collection>
@@ -7118,7 +7118,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/structure/domainer.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate domain CCF files from protein CCF files</desc>
 <collection>EMBOSS</collection>
@@ -7138,7 +7138,7 @@
 <output>Heterogen annotation</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/structure/hetparse.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Convert heterogen group dictionary to EMBL-like format</desc>
 <collection>EMBOSS</collection>
@@ -7159,7 +7159,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/structure/interface.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate inter-chain CON files from CCF files</desc>
 <collection>EMBOSS</collection>
@@ -7179,7 +7179,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/structure/pdbparse.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Parse PDB files and writes protein CCF files</desc>
 <collection>EMBOSS</collection>
@@ -7203,7 +7203,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/structure/pdbplus.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Add accessibility and secondary structure to a CCF file</desc>
 <collection>EMBOSS</collection>
@@ -7222,7 +7222,7 @@
 <output>Database cross-mapping</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/structure/pdbtosp.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Convert swissprot:PDB codes file to EMBL-like format</desc>
 <collection>EMBOSS</collection>
@@ -7246,7 +7246,7 @@
 <output>Tool log</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/structure/sites.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Generate residue-ligand CON files from CCF files</desc>
 <collection>EMBOSS</collection>
@@ -7265,7 +7265,7 @@
 <output>Image</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/topo/topo.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw an image of a transmembrane protein</desc>
 <collection>EMBOSS</collection>
@@ -7286,7 +7286,7 @@
 <output>RNA secondary structure record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrna2dfold.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate RNA structures and samples of k,l neighbourhoods</desc>
 <collection>EMBOSS</collection>
@@ -7307,7 +7307,7 @@
 <output>RNA secondary structure record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnaaliduplex.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>RNA duplex calculation for two sequence alignments</desc>
 <collection>EMBOSS</collection>
@@ -7331,7 +7331,7 @@
 <output>Sequence alignment image</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnaalifold.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate secondary structures for a set of aligned RNAs</desc>
 <collection>EMBOSS</collection>
@@ -7357,7 +7357,7 @@
 <output>Sequence alignment image</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnaalifoldpf.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate secondary structures for a set of aligned RNAs (partition)</desc>
 <collection>EMBOSS</collection>
@@ -7381,7 +7381,7 @@
 <output>RNA secondary structure image</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnacofold.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate secondary structures of RNA dimers</desc>
 <collection>EMBOSS</collection>
@@ -7416,7 +7416,7 @@
 <output>RNA secondary structure record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnacofoldconc.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate secondary structures of RNA dimers (concentrations)</desc>
 <collection>EMBOSS</collection>
@@ -7442,7 +7442,7 @@
 <output>RNA secondary structure record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnacofoldpf.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate secondary structures of RNA dimers (partitioning)</desc>
 <collection>EMBOSS</collection>
@@ -7461,7 +7461,7 @@
 <output>RNA secondary structure record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnadistance.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate distances between RNA secondary structures</desc>
 <collection>EMBOSS</collection>
@@ -7482,7 +7482,7 @@
 <output>RNA secondary structure record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnaduplex.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Predict RNA duplex (hybridization) sites and structure</desc>
 <collection>EMBOSS</collection>
@@ -7503,7 +7503,7 @@
 <output>Nucleic acid thermodynamic data</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnaeval.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate energy of RNA sequences with a given secondary structure</desc>
 <collection>EMBOSS</collection>
@@ -7526,7 +7526,7 @@
 <output>Nucleic acid thermodynamic data</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnaevalpair.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate energy of RNA sequences on given secondary structure</desc>
 <collection>EMBOSS</collection>
@@ -7548,7 +7548,7 @@
 <output>RNA secondary structure image</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnafold.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate min. energy RNA secondary structures and pair probabilities</desc>
 <collection>EMBOSS</collection>
@@ -7574,7 +7574,7 @@
 <output>RNA secondary structure image</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnafoldpf.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate min. energy RNA structures / pair probabilities (partition)</desc>
 <collection>EMBOSS</collection>
@@ -7594,7 +7594,7 @@
 <output>RNA secondary structure record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnaheat.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate specific heat of RNA melting</desc>
 <collection>EMBOSS</collection>
@@ -7615,7 +7615,7 @@
 <output>RNA secondary structure record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnainverse.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Find RNA sequences with a given secondary structure</desc>
 <collection>EMBOSS</collection>
@@ -7637,7 +7637,7 @@
 <output>Sequence alignment image</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnalalifoldpf.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate secondary structures for a set of aligned RNAs (partition)</desc>
 <collection>EMBOSS</collection>
@@ -7657,7 +7657,7 @@
 <output>RNA secondary structure record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnalfold.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate locally stable secondary structures of RNAs</desc>
 <collection>EMBOSS</collection>
@@ -7677,7 +7677,7 @@
 <output>RNA secondary structure record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnalfoldz.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate locally stable secondary structures of RNAs plus zscore</desc>
 <collection>EMBOSS</collection>
@@ -7698,7 +7698,7 @@
 <output>RNA secondary structure image</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnapkplex.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate RNA structures plus pseudoknots</desc>
 <collection>EMBOSS</collection>
@@ -7720,7 +7720,7 @@
 <output>RNA secondary structure image</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnaplfold.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Compute avg. pair probabilities for local base pairs in RNA sequences</desc>
 <collection>EMBOSS</collection>
@@ -7740,7 +7740,7 @@
 <output>RNA secondary structure record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnaplot.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Draw RNA secondary structures</desc>
 <collection>EMBOSS</collection>
@@ -7761,7 +7761,7 @@
 <output>RNA secondary structure record</output>
 <provider>EMBOSS</provider>
 <home>http://emboss.open-bio.org/rel/rel6/embassy/vienna2/vrnasubopt.html</home>
-<contact>mailto:emboss-bug@emboss.open-bio.org</contact>
+<contact>emboss-bug@emboss.open-bio.org</contact>
 <type>Command-line tool </type>
 <desc>Calculate suboptimal secondary structures of RNAs</desc>
 <collection>EMBOSS</collection>
