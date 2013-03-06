@@ -1,4 +1,149 @@
-<!-- Page settings, e.g. background colour -->
+<!-- Page settings
+
+Order of elements isindex
+.menu
+.main-panel
+-->
+
+
+
+
+.menu
+{
+    visibility: visible;
+    height: 35px;
+}
+
+.menu-columns
+{
+  float: left;
+  width: 50%;
+}
+
+#menu-communities,
+#menu-filters
+{
+    width: 175px;
+}
+
+#menu-biomedbridges-partners
+{
+    width: 225px;
+}
+
+
+#SearchBox
+{
+    float: left;
+    margin-top: 1px;
+    width: 150px;
+    height: 22px;
+}
+
+
+#main-panel
+{
+-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #d2d2d2;
+    margin-top: 40px;
+    min-height: 650px;
+    height: 100%;
+    margin-bottom: 30px;
+    width:1000px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #fff;
+    }
+
+
+#blurb-container
+{
+    width: 100%;
+    height: 105px;
+}
+
+#logo-container
+{
+    float: left;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#blurb
+{
+ float: left;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width:750px;
+}
+
+
+#widget-container
+{
+    clear: both;
+    margin-top: 20px;
+    /*margin-left: 50px;*/
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+}
+
+#jqxlistbox
+{
+    float: left;
+}
+
+#jqxgrid
+{
+    float: left;
+}
+
+
+#bottom-banner-container
+{
+border-top: 1px solid #686868;
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    color: #777777;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+    width: 100%;
+    background: #1c1e24;
+}
+
+#bottom-table
+{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    color: #777777;
+    background: #1c1e24
+}
+
+#bottom-icon-anchor
+{
+    position: relative;
+    left: 3px;
+    top: 3px;
+    padding-top: 3px;
+}
+
+#bottom-icon
+{
+   border: 0 none;
+    width: 16px;
+    height: 16px;
+}
+
+
+/*
+
 body
 {
     margin: 0px;
@@ -13,7 +158,8 @@ body
 
 #leftcol
 {
-    /*background: #f00; */
+background: #f00;
+
     float: left;
     width: 20%;
 }
@@ -21,7 +167,7 @@ body
 #rightcol
 {
     background: #f00;
-    float: right;
+    float: left;
     width: 20%;
 }
 
@@ -34,8 +180,10 @@ body
 
 #footer
 {
-    /*background: #0f0;*/
+background: #0f0;
+
     clear: both;
     width: 100%;
     text-align: right
 }
+*/
