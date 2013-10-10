@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<feed xml:base="http://services.odata.org/Northwind/Northwind.svc/" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://www.w3.org/2005/Atom">
+<title type="text">Customers</title>
+<updated>2011-11-30T11:39:28Z</updated>
+<link rel="self" title="Customers" href="Customers" />
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id1</d:AttributeID>
+      <d:AttributeName>Collection</d:AttributeName>
+      <d:AttributeTerm>EBI databases</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id2</d:AttributeID>
+      <d:AttributeName>Collection</d:AttributeName>
+      <d:AttributeTerm>EBI tools</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeName>Collection</d:AttributeName>
+      <d:AttributeTerm>EMBOSS</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeName>Collection</d:AttributeName>
+      <d:AttributeTerm>Ensembl REST API</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id5</d:AttributeID>
+      <d:AttributeName>Collection</d:AttributeName>
+      <d:AttributeTerm>Ensembl tools</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeName>Type</d:AttributeName>
+      <d:AttributeTerm>Framework</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeName>Type</d:AttributeName>
+      <d:AttributeTerm>Package</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id5</d:AttributeID>
+      <d:AttributeName>Type</d:AttributeName>
+      <d:AttributeTerm>Database</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id6</d:AttributeID>
+      <d:AttributeName>Type</d:AttributeName>
+      <d:AttributeTerm>Tool</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id7</d:AttributeID>
+      <d:AttributeName>Type</d:AttributeName>
+      <d:AttributeTerm>Service</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<!--
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id8</d:AttributeID>
+      <d:AttributeGroup>Operational</d:AttributeGroup>
+      <d:AttributeName>Interfaces</d:AttributeName>
+      <d:AttributeTerm>REST API</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id9</d:AttributeID>
+      <d:AttributeGroup>Operational</d:AttributeGroup>
+      <d:AttributeName>Interfaces</d:AttributeName>
+      <d:AttributeTerm>SOAP API</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id10</d:AttributeID>
+      <d:AttributeGroup>Operational</d:AttributeGroup>
+      <d:AttributeName>Interfaces</d:AttributeName>
+      <d:AttributeTerm>Web UI</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id11</d:AttributeID>
+      <d:AttributeGroup>Operational</d:AttributeGroup>
+      <d:AttributeName>Interfaces</d:AttributeName>
+      <d:AttributeTerm>Command-line</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id12</d:AttributeID>
+      <d:AttributeGroup>Operational</d:AttributeGroup>
+      <d:AttributeName>Interfaces</d:AttributeName>
+      <d:AttributeTerm>Desktop GUI</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id13</d:AttributeID>
+      <d:AttributeGroup>DocsOther</d:AttributeGroup>
+      <d:AttributeName>Maturity</d:AttributeName>
+      <d:AttributeTerm>Alpha</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id14</d:AttributeID>
+      <d:AttributeGroup>DocsOther</d:AttributeGroup>
+      <d:AttributeName>Maturity</d:AttributeName>
+      <d:AttributeTerm>Beta</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id15</d:AttributeID>
+      <d:AttributeGroup>DocsOther</d:AttributeGroup>
+      <d:AttributeName>Maturity</d:AttributeName>
+      <d:AttributeTerm>Production</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id16</d:AttributeID>
+      <d:AttributeGroup>DocsOther</d:AttributeGroup>
+      <d:AttributeName>Cost</d:AttributeName>
+      <d:AttributeTerm>Free</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id17</d:AttributeID>
+      <d:AttributeGroup>DocsOther</d:AttributeGroup>
+      <d:AttributeName>Cost</d:AttributeName>
+      <d:AttributeTerm>Not free</d:AttributeTerm>
+    </m:properties>
+  </content>
+</entry>
+-->
+</feed>
+<!--      <d:AttributeTerm>Term4</d:AttributeTerm> -->
