@@ -3,9 +3,9 @@
 #header
 {
     width:        100%;
-    min-width:    525px;
+    min-width:    675px;  /* Jon - was 525px before new logo added */
     height:       70px;
-    background-color: #000000;
+/*    background-color: #000000; */  /* Jon - now default (white) */
 }
 
 #logo-container
@@ -13,8 +13,8 @@
     position:     relative;
     float:        left;
     top:          5px;
-    margin-left:  5%;
-    width:        200px;
+    margin-left:  1%;               /* Jon - was 5% */
+/*    width:        200px; */   /* Jon - Could specify larger size to exactly accommodate both logos */
     height:       60px;
     /*background-color: #ffff00;*/
 }
@@ -25,16 +25,20 @@
     float:        right;
     top:          20px;
     width:        200px;
-    height:       25px;
-    margin-right: 5%;
-    background-color: #0000FF;
+    height:       30px;
+    margin-right: 1%;   /* Jon - was 5% */
 }
 
 
 #mainmenu
 {
     float: right;
-    width: 200px;
+    width: 225px;
+}
+
+.mainmenu-text
+{
+    font-size: 14px !important;
 }
 
 #menu-partners,
@@ -60,24 +64,50 @@
     min-width:    525px;
     height:       95%;
     min-height:   600px;
-    background-color: #CCCCCC;
+/*    background-color: #CCCCCC; */  /* Old colour */
+/*    background-color:#bae0f2; */ /* New colour, matching the logos - not now needed*/
 }
 
 
-#widget-container, #blurb-container
+#widget-container
 {
     clear:        both;
     position:     relative;
-    top:          5%;
-    width:        90%;
-    height:       90%;
-    margin-right: 5%;
-    margin-left:  5%;
+    top:          0%;                /* Jon - was 5%, then 2%  */
+    width:        99%;               /* Jon - was 90%, then 98%*/
+    height:       100%;               /* Jon - was 90%, then 96% */
+    margin-right: 0%;                /* Jon - was 5%, then 1%  */
+    margin-left:  0%;                /* Jon - was 5%, then 1%  */
 
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 10px;
-    background-color: #EDEDED;
+    border-style: ridge;
+    border-width: 4px;
+    border-radius: 4px;
+    /*background-color: #EDEDED;       *//* Jon - was #EDEDED; *//* */
+}
+
+#blurb-container
+{
+    clear:        both;
+    position:     relative;
+    top:          5%;                /* Jon - was 5%, then 2%  */
+    width:        98%;               /* Jon - was 90%, then 98%*/
+    height:       96%;               /* Jon - was 90%, then 96% */
+    margin-right: 1%;                /* Jon - was 5%, then 1%  */
+    margin-left:  1%;                /* Jon - was 5%, then 1%  */
+
+    /*border-style: ridge;*/
+    /*border-width: 4px;*/
+    /*border-radius: 4px;*/
+    background-color: #e3f3fa;       /* Jon - was #EDEDED; #bae0f2*/
+}
+
+
+
+#blurb-container
+{
+border-style: solid;   /* Jon - adding this back for blurb pages */
+border-width: 1px;     /* Jon - adding this back for blurb pages */
+border-radius: 25px;   /* Jon - adding this back for blurb pages */
 }
 
 
@@ -103,10 +133,13 @@
     min-height:   25px;
     width:        100%;
 /*    background-color: #FFCCCC; */
+
+    /* Jon try bottom: 3px */
 }
 
 #jqxMenuGrid
 {
+    background-color:#e3f3fa;      /* Jon TRY bae0f2*/
     height:       100%;
     width:    100%;
 }
@@ -119,21 +152,41 @@
     margin-top:   2px;
 }
 
+.menuGridText
+{
+    font-size: 18px;
+    height:    25px;  /* Height of Apply/Clear Filters buttons */
+}
+
+.search
+{
+    height:    25px;  /* Height of Apply/Clear Filters buttons */
+    width:     25px;  /* To match height */
+    background: #e8e8e8;   /* was #d1d1d1 */
+    border-width: 1px;
+    border-style: solid;
+    border-color: #999;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
 #SearchBoxContainer, #SearchButtonContainer
+{}
 
 #SearchBox
 {
     float: right;
     /*margin-top: 1px;*/
     /*width: 150px;*/
-    /*height: 22px;*/
+    height: 25px;   /* Matches height of Apply/Clear Filters buttons */
 }
 
 #SearchButton
 {
     float: right;
     width:  40;
-    height: 22;
+    height: 25px;  /* Matches height of Apply/Clear Filters buttons */
+    /*background: lightgreen;*/
 }
 
 
@@ -145,8 +198,9 @@
     width:        15%;
     /*min-width:    150px;*/
     height:       95%;
-    background-color: #6699CC;
+    /*background-color: #6699CC;*/
 }
+
 
 #jqxtree
 {
@@ -155,17 +209,57 @@
 }
 
 
+/* For grid styling see: http://www.jqwidgets.com/jquery-widgets-documentation/documentation/jqxgrid/jquery-grid-styling-and-appearance.htm */
+
+
 #grid-container
 {
     float:        left;
     /* top:          2%; */
-    width:        85%;
+    width:        100%;  /* Jon - was 85% when facets-container was used */
     height:       95%;
     background-color: #A73111;
 }
 
 
+.jqx-grid-cell
+{
+    border-width: 0px 0px 0px 0px;   /* Jon - remove lines from grid */
+}
 
+.jqx-grid-cell-alt, .jqx-grid-cell-filter
+{
+    /* For different shades, see http://www.w3schools.com/tags/ref_colorpicker.asp?colorhex=%23A73111 */
+    background-color: #f8fcfe;  /* New colour, matching the logos */
+}
+
+.jqx-grid-cell-pinned
+{
+    background-color:#e3f3fa;      /* Jon TRY #bae0f2, #e8e8e8*/
+    /*background-color:#bae0f1;*/  /* Jon - blue */
+    /* #e5e5e5 */
+
+    border-width: 1px 3px 0px 0px;  /* Jon - consistent with jqx-grid-column-header */
+}
+
+
+.jqx-grid-column-header
+{
+    border-width: 1px 3px 0px 0px;   /* 1px gives top border, 2px makes border easier to pick for column resizing */
+    font-size: 14px !important;
+    background-color:#e3f3fa;      /* Jon TRY #bae0f2*/
+}
+
+#pagerjqxgrid
+{
+    background-color:#e3f3fa;      /* Jon TRY bae0f2*/
+}
+
+#jqxScrollAreaUpverticalScrollBarjqxgrid
+{
+    /*background-color:#bae0f2;      *//* Jon TRY */
+
+}
 
 /* height of body + footer = 100% */
 #footer
@@ -175,7 +269,7 @@
     min-width:    525px;
     height:       5%;
     min-height:   35px;
-    background-color: #000000;
+/*    background-color: #000000; */  /* Jon - old colour, now leave it default (white) */
 }
 
 #footer-container
@@ -188,13 +282,20 @@
     /*background-color: #00FF00;*/
 }
 
+.font
+{
+    font-family: Verdana,Arial,Helvetica,sans-serif,serif;
+    font-size: 11px;
+}
+
 
 .footer-text
 {
     float: left;
     font-family: Verdana,Arial,Helvetica,sans-serif,serif;
     text-decoration: underline;
-    color: white;
+    /*color: white;*/   /* Jon - old colour */
+    color: black;
     font-size: 11px;
     margin-right: 5px;
 }
