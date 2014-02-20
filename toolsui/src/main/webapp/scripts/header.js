@@ -8,9 +8,9 @@ function addheader(e)
     var header =
 
     "<div id=\"logo-container\">" +
-        "<a href=\"./index.html\"><img style=\"padding-left:10px\" src=\"./images/BioToolsRegistryLogo2_small.png\" alt=\"Tools and Data Services Registry\"></a>" +
-        "<a href=\"http://www.elixir-europe.org/\"><img style=\"padding-left:10px\" src=\"./images/ElixirNewLogo_small.png\" alt=\"ELIXIR\"></a>" +
-    "<a href=\"http://www.biomedbridges.eu/\"><img  style=\"padding-left:10px\" src=\"./images/BMBLogo_small.jpg\" alt=\"BioMedBridges\"></a>" +
+        "<a href=\"./index.html\"><img style=\"padding-left:10px\" src=\"./images/BioToolsLogo.png\" alt=\"Tools and Data Services Registry\"></a>" +
+        "<a href=\"http://www.elixir-europe.org/\"><img style=\"padding-left:10px\" src=\"./images/ElixirLogo.png\" alt=\"ELIXIR\"></a>" +
+    "<a href=\"http://www.biomedbridges.eu/\"><img  style=\"padding-left:10px\" src=\"./images/BMBLogo.jpg\" alt=\"BioMedBridges\"></a>" +
     "</div>" +
 
     "<div id=\"mainmenu-container\">" +

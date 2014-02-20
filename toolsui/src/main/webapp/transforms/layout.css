@@ -3,7 +3,7 @@
 #header
 {
     width:        100%;
-    min-width:    675px;  /* Jon - was 525px before new logo added */
+    min-width:    825px;  /* Jon - was 525px before new logo added */
     height:       70px;
 /*    background-color: #000000; */  /* Jon - now default (white) */
 }
@@ -190,6 +190,13 @@ border-radius: 25px;   /* Jon - adding this back for blurb pages */
 }
 
 
+#clearfilter
+{
+    color: #f8fcfe;
+    backgroundColor: #e8e8e8;
+    width: 100px;
+}
+
 
 
 #facets-container
@@ -235,7 +242,7 @@ border-radius: 25px;   /* Jon - adding this back for blurb pages */
 
 .jqx-grid-cell-pinned
 {
-    background-color:#e3f3fa;      /* Jon TRY #bae0f2, #e8e8e8*/
+    background-color:#f8fcfe;      /* Jon TRY #e3f3fa #bae0f2, #e8e8e8*/
     /*background-color:#bae0f1;*/  /* Jon - blue */
     /* #e5e5e5 */
 
