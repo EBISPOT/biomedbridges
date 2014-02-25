@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-W3CDTD HTML 4.01 TransitionalEN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+
+
+
+
+<!-- Export menu -->
+<li><span id="tipMenuExport">Export</span>
+    <ul style='width: 200px;'>
+        <li><a href="#Excel">Excel</a></li>
+        <li><a href="#CSV">CSV</a></li>
+        <li><a href="#HTML">HTML</a></li>
+        <li><a href="#XML">XML</a></li>
+        <li><a href="#TSV">TSV</a></li>
+        <li><a href="#JSON">JSON</a></li>
+    </ul>
+</li>
+
+
+
+<!-- Use-cases menu -->
+<div><li><span id="tipMenuUseCases">Use-cases</span>
+    <ul style='width: 325px;'>
+        <li style='list-style: none;' ignoretheme='true'>
+
+            <div class='menu-columns'> <!-- Column 1 -->
+                <div class='jqx-menuitem-header' style='color: inherit; margin-left: 5px; padding-top: 5px; padding-bottom: 5px;'>
+                    <b><a href="http://www.biomedbridges.eu/workpackages/wp6" target="_blank"> "WP6 - Image data sets</a></b></div>
+                <ul class='megamenu-ul'>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/61">Cellular image data sets</a></li>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/62">Mouse image data sets</a></li>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/63">Human image data sets</a></li>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/64">Mapping between image data sets</a></li>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/65">Predicted biomarkers</a></li>
+                </ul>
+                <div class='jqx-menuitem-header' style='margin-left: 5px; padding-top: 5px; padding-bottom: 5px;'>
+                    <b><a href="http://www.biomedbridges.eu/workpackages/wp7-0" target="_blank"> "WP7 - PhenoBridge</a></b></div>
+                <ul class='megamenu-ul'>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/71">Human-mouse ontology mapping</a></li>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/72">Co-annotated mouse-human datasets</a></li>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/73">Discovery tool for mouse-human phenotype</a></li>
+                </ul>
+                <div class='jqx-menuitem-header' style='margin-left: 5px; padding-top: 5px; padding-bottom: 5px;'>
+                    <b><a href="http://www.biomedbridges.eu/workpackages/wp8" target="_blank"> "WP8 - Personalized Medicine</a></b></div>
+                <ul class='megamenu-ul'>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/81">Secure sharing and access to PM data</a></li>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/82">Definition of PM data types</a></li>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/83">Interoperability of PM data</a></li>
+                </ul>
+            </div> <!-- Column 1 -->
+
+            <div class='menu-columns'> <!-- Column 2 -->
+                <div class='jqx-menuitem-header' style='margin-left: 5px; padding-top: 5px; padding-bottom: 5px;'>
+                    <b><a href="http://www.biomedbridges.eu/workpackages/wp9" target="_blank"> "WP9 - Structural data integration</a></b></div>
+                <ul class='megamenu-ul'>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/91">Shape-matching software</a></li>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/92">Web-based shape-matching service</a></li>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/93">web-service for volume data components</a></li>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/94">Conformation probability estimation</a></li>
+                </ul>
+                <div class='jqx-menuitem-header' style='margin-left: 5px; padding-top: 5px; padding-bottom: 5px;'>
+                    <b><a href="http://www.biomedbridges.eu/workpackages/wp10" target="_blank"> "WP10 - Disease data amd terminology</a></b></div>
+                <ul class='megamenu-ul'>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/101">Mapping between data elements</a></li>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/102">Linking ICD10/SNOMED CT concepts to Ensembl gene IDs</a></li>
+                    <li><a href="http://www.biomedbridges.eu/deliverables/103">Federated query interface</a></li>
+                </ul>
+            </div> <!-- Column 2 -->
+
+        </li>
+    </ul>
+</li></div> <!-- Use-cases menu -->
+
+
+
+<!-- ListBox (show / hide columns)
+   To support tooltips, we must specify the ListBox elements must have an ID, i.e. be given within a <span>.
+If tooltips weren't needed we could simply have used 'label' instead:
+{ label: 'Package', value: 'package', checked: false},
+-->
+<script type="text/javascript">
+    $(document).ready(function ()
+    {
+        var listSource = [
+            { html: '<span id="ListBoxName">Name</span>',  value: 'Name', checked: false},
+            { html: '<span id="ListBoxType">Type</span>',  value: 'Type', checked: false},
+            { html: '<span id="ListBoxCollection">Collection</span>',  value: 'Collection', checked: false},
+            { html: '<span id="ListBoxDescription">Description</span>',  value: 'Description', checked: false},
+            { html: '<span id="ListBoxTopics">Topics</span>',  value: 'Topics', checked: false},
+            { html: '<span id="ListBoxTags">Tags</span>',  value: 'Tags', checked: false},
+            { html: '<span id="ListBoxVersion">Version</span>',  value: 'Version', checked: false},
+            { html: '<span id="ListBoxMaturity">Maturity</span>',  value: 'Maturity', checked: false},
+            { html: '<span id="ListBoxAvailability">Availability</span>',  value: 'Availability', checked: false},
+            { html: '<span id="ListBoxDowntime">Downtime</span>',  value: 'Downtime', checked: false},
+            { html: '<span id="ListBoxFunctions">Functions</span>',  value: 'Functions', checked: false},
+            { html: '<span id="ListBoxFunctionNotes">Function notes</span>',  value: 'FunctionNotes', checked: false},
+            { html: '<span id="ListBoxFunctionHandle">Function handle</span>',  value: 'FunctionHandle', checked: false},
+            { html: '<span id="ListBoxInputTypes">Input types</span>',  value: 'InputTypes', checked: false},
+            { html: '<span id="ListBoxInputFormats">Input formats</span>',  value: 'InputFormats', checked: false},
+            { html: '<span id="ListBoxInputHandle">Input handle</span>',  value: 'InputHandle', checked: false},
+            { html: '<span id="ListBoxOutputTypes">Output types</span>',  value: 'OutputTypes', checked: false},
+            { html: '<span id="ListBoxOutputFormats">Output formats</span>',  value: 'OutputFormats', checked: false},
+            { html: '<span id="ListBoxOutputHandle">Output handle</span>',  value: 'OutputHandle', checked: false},
+            { html: '<span id="ListBoxInterfaces">Interfaces</span>',  value: 'Interfaces', checked: false},
+            { html: '<span id="ListBoxPlatforms">Platforms</span>',  value: 'Platforms', checked: false},
+            { html: '<span id="ListBoxLanguages">Languages</span>',  value: 'Languages', checked: false},
+            { html: '<span id="ListBoxDownload">Download</span>',  value: 'Download', checked: false},
+            { html: '<span id="ListBoxDocsEntry">Docs (entry page)</span>',  value: 'DocsEntry', checked: false},
+            { html: '<span id="ListBoxDocsCommandLine">Docs (command line)</span>',  value: 'DocsCommandLine', checked: false},
+            { html: '<span id="ListBoxDocsREST">Docs (REST)</span>',  value: 'DocsREST', checked: false},
+            { html: '<span id="ListBoxDocsSOAP">Docs (SOAP)</span>',  value: 'DocsSOAP', checked: false},
+            { html: '<span id="ListBoxDocsSPARQL">Docs (SPARQL)</span>',  value: 'DocsSPARQL', checked: false},
+            { html: '<span id="ListBoxWSDL">WSDL</span>',  value: 'WSDL', checked: false},
+            { html: '<span id="ListBoxContactName">Contact name</span>',  value: 'ContactName', checked: false},
+            { html: '<span id="ListBoxContact">Contact email/URL</span>',  value: 'ContactLink', checked: false},
+            { html: '<span id="ListBoxContactID">Contact ID</span>',  value: 'ContactID', checked: false},
+            { html: '<span id="ListBoxContactTel">Contact tel</span>',  value: 'ContactTel', checked: false},
+            { html: '<span id="ListBoxContributors">Contributors</span>',  value: 'Contributors', checked: false},
+            { html: '<span id="ListBoxInstitutions">Institutions</span>',  value: 'Institutions', checked: false},
+            { html: '<span id="ListBoxInfrastructures">Infrastructures</span>',  value: 'Infrastructures', checked: false},
+            { html: '<span id="ListBoxFunding">Funding</span>',  value: 'Funding', checked: false},
+            { html: '<span id="ListBoxWorkPackages">Work Packages</span>',  value: 'WorkPackages', checked: false},
+            { html: '<span id="ListBoxPublications">Publications</span>',  value: 'Publication', checked: false},
+            { html: '<span id="ListBoxCost">Cost</span>',  value: 'Cost', checked: false},
+            { html: '<span id="ListBoxLicense">License</span>',  value: 'License', checked: false},
+            { html: '<span id="ListBoxTermsOfUse">Terms of use</span>',  value: 'TermsOfUse', checked: false},
+            { html: '<span id="ListBoxEntryURI">Entry URI</span>',  value: 'EntryURI', checked: false},
+            { html: '<span id="ListBoxRegistrantName">Registrant name</span>',  value: 'RegistrantName', checked: false},
+            { html: '<span id="ListBoxRegistrantEmail">Registrant email</span>',  value: 'RegistrantEmail', checked: false},
+            { html: '<span id="ListBoxAdditionDate">Addition date</span>',  value: 'AdditionDate', checked: false},
+            { html: '<span id="ListBoxLastUpdate">Last update</span>',  value: 'LastUpdate', checked: false}];
+//        { html: '<span id="ListBoxName">Name</span>', value: 'Name', checked: true },
+
+//        $("#jqxlistbox").jqxListBox({ source: listSource, width: 170, height: 654, theme: theme, checkboxes: true });
+        $("#jqxlistbox").jqxListBox({ source: listSource, width: "15%", height: "500px", theme: theme, checkboxes: true });
+        $("#jqxlistbox").bind('checkChange', function (event)
+        {
+            if (event.args.checked)
+            {
+                $("#jqxgrid").jqxGrid('showcolumn', event.args.value);
+            }
+            else
+            {
+                $("#jqxgrid").jqxGrid('hidecolumn', event.args.value);
+            }
+        });
+    });
+
+
+
+
+    // Tree rendering code that works
+    $("#jqxtree").bind('checkChange', function (event)
+    {
+        try
+        {
+            var args = event.args;
+            var element = args.element;
+            var checked = args.checked;
+
+            var item   = $('#jqxtree').jqxTree('getItem', element);
+            var parent = $('#jqxtree').jqxTree('getItem', item.parentElement);
+
+            // Create new row filter for all tree nodes except top-level nodes
+            if(parent)
+            {
+                var filtergroup = new $.jqx.filter();
+                var filtervalue = item.label;
+
+                var filter = filtergroup.createfilter('stringfilter', filtervalue, 'EQUAL');
+
+                // 1st arg is the filter operator: 0 for "and", 1 for "or"
+                filtergroup.addfilter(0, filter);
+
+                // add and apply the filter
+                // parent.label is the datafield (column) to which the filter will be applied, 'true' means apply the filter
+                $('#jqxgrid').jqxGrid('addfilter', parent.label, filtergroup, true);
+
+                alert(item.label + " " + parent.label);
+            }
+
+        }
+        catch(e)
+        {alert(e);}
+    });
+
+
+
+    // Working code for checking / setting all filters in tree
+    $("#jqxtree").bind('checkChange', function (event)
+    {
+        try
+        {
+            var checkedItems = $('#jqxtree').jqxTree('getCheckedItems');
+
+            for (var i = 0; i < checkedItems.length; i++)
+            {
+                var node   = $('#jqxtree').jqxTree('getItem', checkedItems[i]);
+                var parent = $('#jqxtree').jqxTree('getItem', checkedItems[i].parentElement);
+
+                // Create new row filter for all tree nodes except top-level nodes
+                if(parent)
+                {
+                    var filtergroup = new $.jqx.filter();
+                    var filtervalue = checkedItems[i].label;
+
+                    var filter = filtergroup.createfilter('stringfilter', filtervalue, 'EQUAL');
+
+                    // 1st arg is the filter operator: 0 for "and", 1 for "or"
+                    filtergroup.addfilter(0, filter);
+
+                    // add and apply the filter
+                    // parent.label is the datafield (column) to which the filter will be applied, 'true' means apply the filter
+                    $('#jqxgrid').jqxGrid('addfilter', parent.label, filtergroup, true);
+
+                    alert(checkedItems[i].label + " " + parent.label)
+                }
+            }
+        }
+        catch(e)
+        {alert(e);}
+    });
+
+
+
+    // More tree code - forget what for :)
+    var items = $('#jqxTree').jqxTree('getCheckedItems');
+    var checkedParentItems = new Array();
+    for (var i = 0; i < items.length; i++)
+    {
+        var parentI = $('#jqxTree').jqxTree('getItem', items[i].parentElement);
+        if (parentI == null)
+        {
+            checkedParentItems.push(items[i]);
+        }
+        else if (parentI && parentI.checked != true)
+        {
+            checkedParentItems.push(items[i]);
+        };
+    };
+
+
+</script>
+</body>
+</html>

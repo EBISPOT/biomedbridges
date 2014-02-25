@@ -1,0 +1,307 @@
+<html>
+
+<!-- WARNING: The page layout breaks badly if this DOCTYPE line is included:
+<!DOCTYPE html>
+-->
+
+<head>
+    <!-- Meta information -->
+    <title id='Description'>BioMedBridges Software Tools Registry</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="description" content="BioMedBridges Software Tools Registry">
+    <meta name="keywords" content="bioinformatics resources, bioinformatics tools, bioinformatics applications, bioinformatics databases, bioinformatics, biological databases, Web services">
+
+    <!-- Include required jQWidgets CSS files -->
+    <link rel="stylesheet" href="jqwidgets/jqwidgets/styles/jqx.base.css" type="text/css">
+    <link rel="stylesheet" href="jqwidgets/jqwidgets/styles/jqx.darkblue.css" type="text/css" />
+    <link rel="stylesheet" href="jqwidgets/jqwidgets/styles/jqx.base.css" type="text/css" />
+
+    <!-- Include bespoke CSS file -->
+    <link rel="stylesheet" href="transforms/layout.css" type="text/css">
+
+    <!-- Include required jQWidgets javascript files -->
+    <script type="text/javascript" src="jqwidgets/scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="jqwidgets/scripts/gettheme.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxdockpanel.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxgrid.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxgrid.columnsresize.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxgrid.columnsreorder.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxgrid.filter.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxgrid.grouping.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxgrid.sort.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxgrid.pager.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxgrid.selection.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxgrid.edit.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxtooltip.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxtree.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxinput.js"></script>
+
+
+    <!-- Include bespoke javascript files -->
+    <script type="text/javascript" src="scripts/toolsui.js"></script>
+    <script type="text/javascript" src="scripts/header.js"></script>
+    <script type="text/javascript" src="scripts/footer.js"></script>
+
+
+    <!-- Sensible font-size for menu, grid and listbox -->
+    <style type="text/css">
+        .jqx-menu-item-top, .jqx-menu-item, .jqx-grid-column-header, .jqx-grid-cell, .jqx-listbox, .default-font
+        {
+            font-size:11px;
+            font-family: Verdana,Arial,Helvetica,sans-serif,serif;
+        }
+    </style>
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<!-- min-width was 1100px -->
+<body onload="init()">
+
+<div id="header"></div>
+<div id="body">
+
+    <!--<div style="margin-top: 40px; border-top: 1px solid #e6e6e6; margin-left: 50px; width: 890px;"></div>-->
+    <div id="widget-container">
+
+        <div id="gridmenu-container">
+            <div id="jqxMenuGrid" >   <!-- Menu -->
+                <ul class="menuGridItems">
+
+                    <!-- Must wrap in div to support tool tip -->
+                    <!-- Filters menu -->
+                    <!--<div><li><span id="tipMenuFilters">Filters</span>-->
+                        <!--<ul id="menu-filters" class='megamenu-ul' style="width:115px">-->
+                            <!--<li type='separator'></li>-->
+                            <!--<li >Clear all</li>-->
+                        <!--</ul>-->
+                    <!--</li></div> -->
+
+
+
+                    <!--<div style="float:right"> <li style='list-style: none' ignoretheme='true'>-->
+                    <!--<input type="button" value="Find" id="SearchButton" class="menuGridText"/>-->
+                    <!--</li></div>-->
+
+
+
+                    <div><li style='list-style: none; padding-left: 3px;' ignoretheme='true'>
+                    <span id="tipSearchBox">
+                        <input id="SearchBox" class="jqx-input jqx-widget-content menuGridText" style="float:left;"/>
+                        </span>
+                    </li>
+                    </div>
+
+                    <div style="float:left"><img id="search" alt="search"  src="jqwidgets/images/search_lg.png"
+                                                 style="
+                        height:    25px;
+                        width:     25px;
+                        background: #e8e8e8;
+                        border-width: 1px;
+                        border-style: solid;
+                        border-color: #999;
+                        -webkit-border-radius: 3px;
+                        border-radius: 3px;" /></div>
+
+                    <!--<div style="float:right"><li style='list-style: none' ignoretheme='true'>-->
+                    <!--<span id="tipSearchBox">-->
+                    <!--<input id="SearchBox" class="jqx-input jqx-widget-content menuGridText"/>-->
+                    <!--</span>-->
+                    <!--</li></div>-->
+
+
+                    <!--<input type="button" id="applyfilter" value="Apply filters" class="menuGridText"/>-->
+                    <div style="float:right;">
+                     <span id="tipClearFilters">
+                    <input type="button" id="clearfilter" value="(filters off)" class="menuGridText"/>
+                    </span></div>
+
+
+                    <!-- Show menu -->
+                    <div style="float:right"> <li><span id="tipMenuShow" class="menuGridText">Show columns</span>
+
+                        <ul id="menu-show" class='megamenu-ul' style="width:115px">
+                            <li>Summary
+                                <ul style="width:110px">
+                                    <!--<span id="tipName"><li><div style='float: left; margin-right: 5px;' id='showName'></div>Name</li></span>-->
+                                    <!--<span id="tipHomepage"><li><div style='float: left; margin-right: 5px;' id='showHomepage'></div>Homepage</li></span>-->
+                                    <span id="tipType"><li><div style='float: left; margin-right: 5px;' id='showType'></div>Type</li></span>
+                                    <span id="tipCollection"><li><div style='float: left; margin-right: 5px;' id='showCollection'></div>Collection</li></span>
+                                    <span id="tipDescription"><li><div style='float: left; margin-right: 5px;' id='showDescription'></div>Description</li></span>
+                                    <span id="tipTopics"><li><div style='float: left; margin-right: 5px;' id='showTopics'></div>Topics</li></span>
+                                    <span id="tipTags"><li><div style='float: left; margin-right: 5px;' id='showTags'></div>Tags</li></span>
+                                </ul></li>
+
+                            <li>Interfaces
+                                <ul style="width:115px">
+                                    <span id="tipInterfacesCommandLine"><li><div style='float: left; margin-right: 5px;' id='showInterfacesCommandLine'></div>Command line</li></span>
+                                    <span id="tipInterfacesWebUI"><li><div style='float: left; margin-right: 5px;' id='showInterfacesWebUI'></div>Web UI</li></span>
+                                    <span id="tipInterfacesDesktopGUI"><li><div style='float: left; margin-right: 5px;' id='showInterfacesDesktopGUI'></div>Desktop GUI</li></span>
+                                    <span id="tipInterfacesRESTAPI"><li><div style='float: left; margin-right: 5px;' id='showInterfacesRESTAPI'></div>REST API</li></span>
+                                    <span id="tipInterfacesSOAPAPI"><li><div style='float: left; margin-right: 5px;' id='showInterfacesSOAPAPI'></div>SOAP API</li></span>
+                                    <span id="tipInterfacesVMI"><li><div style='float: left; margin-right: 5px;' id='showInterfacesVMI'></div>VMI</li></span>
+                                </ul></li>
+
+                            <li>Operations
+                                <ul style="width:115px">
+                                    <span id="tipFunctions"><li><div style='float: left; margin-right: 5px;' id='showFunctions'></div>Functions</li></span>
+                                    <span id="tipFunctionDescription"><li><div style='float: left; margin-right: 5px;' id='showFunctionDescription'></div>Function notes</li></span>
+                                    <span id="tipFunctionHandle"><li><div style='float: left; margin-right: 5px;' id='showFunctionHandle'></div>Function handle</li></span>
+                                    <span id="tipInputTypes"><li><div style='float: left; margin-right: 5px;' id='showInputTypes'></div>Input types</li></span>
+                                    <span id="tipInputFormats"><li><div style='float: left; margin-right: 5px;' id='showInputFormats'></div>Input formats</li></span>
+                                    <span id="tipInputHandle"><li><div style='float: left; margin-right: 5px;' id='showInputHandle'></div>Input handle</li></span>
+                                    <span id="tipOutputTypes"><li><div style='float: left; margin-right: 5px;' id='showOutputTypes'></div>Output types</li></span>
+                                    <span id="tipOutputFormats"><li><div style='float: left; margin-right: 5px;' id='showOutputFormats'></div>Output formats</li></span>
+                                    <span id="tipOutputHandle"><li><div style='float: left; margin-right: 5px;' id='showOutputHandle'></div>Output handle</li></span>
+                                </ul></li>
+
+                            <li>Usage
+                                <ul style="width:115px">
+                                    <span id="tipPlatforms"><li><div style='float: left; margin-right: 5px;' id='showPlatforms'></div>Platforms</li></span>
+                                    <span id="tipLanguages"><li><div style='float: left; margin-right: 5px;' id='showLanguages'></div>Languages</li></span>
+                                    <span id="tipDownload"><li><div style='float: left; margin-right: 5px;' id='showDownload'></div>Download</li></span>
+                                </ul></li>
+
+                            <li>Docs
+                                <ul style="width:115px">
+                                    <span id="tipDocsHome"><li><div style='float: left; margin-right: 5px;' id='showDocsHome'></div>Entry page</li></span>
+                                    <span id="tipDocsCommandLine"><li><div style='float: left; margin-right: 5px;' id='showDocsCommandLine'></div>Command line</li></span>
+                                    <span id="tipDocsREST"><li><div style='float: left; margin-right: 5px;' id='showDocsREST'></div>REST</li></span>
+                                    <span id="tipDocsSOAP"><li><div style='float: left; margin-right: 5px;' id='showDocsSOAP'></div>SOAP</li></span>
+                                    <span id="tipDocsSPARQL"><li><div style='float: left; margin-right: 5px;' id='showDocsSPARQL'></div>SPARQL</li></span>
+                                    <span id="tipWSDL"><li><div style='float: left; margin-right: 5px;' id='showWSDL'></div>WSDL</li></span>
+                                </ul></li>
+
+                            <li>Status
+                                <ul style="width:115px">
+                                    <span id="tipVersion"><li><div style='float: left; margin-right: 5px;' id='showVersion'></div>Version</li></span>
+                                    <span id="tipMaturity"><li><div style='float: left; margin-right: 5px;' id='showMaturity'></div>Maturity</li></span>
+                                    <span id="tipAvailability"><li><div style='float: left; margin-right: 5px;' id='showAvailability'></div>Availability</li></span>
+                                    <span id="tipDowntime"><li><div style='float: left; margin-right: 5px;' id='showDowntime'></div>Downtime</li></span>
+                                </ul></li>
+
+                            <li>Restrictions
+                                <ul style="width:115px">
+                                    <span id="tipCost"><li><div style='float: left; margin-right: 5px;' id='showCost'></div>Cost</li></span>
+                                    <span id="tipLicense"><li><div style='float: left; margin-right: 5px;' id='showLicense'></div>License</li></span>
+                                    <span id="tipTermsOfUse"><li><div style='float: left; margin-right: 5px;' id='showTermsOfUse'></div>Terms of use</li></span>
+                                </ul></li>
+
+                            <li>Contacts
+                                <ul style="width:115px">
+                                    <span id="tipHelpdesk"><li><div style='float: left; margin-right: 5px;' id='showHelpdesk'></div>Helpdesk</li></span>
+                                    <span id="tipContactPage"><li><div style='float: left; margin-right: 5px;' id='showContactPage'></div>Contact page</li></span>
+                                    <span id="tipContactName"><li><div style='float: left; margin-right: 5px;' id='showContactName'></div>Contact name</li></span>
+                                    <!--<span id="tipContact"><li><div style='float: left; margin-right: 5px;' id='showContact'></div>Contact email/URL</li></span>-->
+                                    <!--<span id="tipContactID"><li><div style='float: left; margin-right: 5px;' id='showContactID'></div>Contact ID</li></span>-->
+                                    <span id="tipContactTel"><li><div style='float: left; margin-right: 5px;' id='showContactTel'></div>Contact Tel</li></span>
+                                </ul></li>
+
+                            <li>Credits
+                                <ul style="width:115px">
+                                    <span id="tipDeveloper"><li><div style='float: left; margin-right: 5px;' id='showDeveloper'></div>Developer</li></span>
+                                    <span id="tipDeveloperInterface"><li><div style='float: left; margin-right: 5px;' id='showDeveloperInterface'></div>Developer interface</li></span>
+                                    <span id="tipContributors"><li><div style='float: left; margin-right: 5px;' id='showContributors'></div>Contributors</li></span>
+                                    <span id="tipInstitutions"><li><div style='float: left; margin-right: 5px;' id='showInstitutions'></div>Institutions</li></span>
+                                    <span id="tipInfrastructures"><li><div style='float: left; margin-right: 5px;' id='showInfrastructures'></div>Infrastructures</li></span>
+                                    <span id="tipFunding"><li><div style='float: left; margin-right: 5px;' id='showFunding'></div>Funding</li></span>
+                                    <span id="tipWorkPackages"><li><div style='float: left; margin-right: 5px;' id='showWorkPackages'></div>Work packages</li></span>
+                                </ul></li>
+
+                            <li>Literature
+                                <ul style="width:115px">
+                                    <span id="tipPublications"><li><div style='float: left; margin-right: 5px;' id='showPublications'></div>Publications</li></span>
+                                    <span id="tipCitationMap"><li><div style='float: left; margin-right: 5px;' id='showCitationMap'></div>Citation map</li></span>
+                                    <span id="tipCitationOther"><li><div style='float: left; margin-right: 5px;' id='showCitationOther'></div>Citation other</li></span>
+                                </ul></li>
+
+                            <li>Registration
+                                <ul style="width:115px">
+                                    <span id="tipEntryURI"><li><div style='float: left; margin-right: 5px;' id='showEntryURI'></div>Entry URI</li></span>
+                                    <span id="tipRegistrantName"><li><div style='float: left; margin-right: 5px;' id='showRegistrantName'></div>Registrant name</li></span>
+                                    <span id="tipRegistrantEmail"><li><div style='float: left; margin-right: 5px;' id='showRegistrantEmail'></div>Registrant email</li></span>
+                                    <span id="tipAdditionDate"><li><div style='float: left; margin-right: 5px;' id='showAdditionDate'></div>Addition date</li></span>
+                                    <span id="tipLastUpdate"><li><div style='float: left; margin-right: 5px;' id='showLastUpdate'></div>Last update</li></span>
+                                </ul></li>
+                        </ul>
+                    </li></div> <!-- Show menu -->
+
+
+                    <!--<li>-->
+                    <!--<div style='float: left; margin-right: 5px;' id='checkbox'></div>Identity-->
+                    <!--</li>-->
+
+
+
+                </ul>  <!-- menu grid items -->
+            </div> <!-- Menu -->
+        </div>  <!-- gridmenu-container -->
+
+
+        <!--<div id="facets-container">-->
+            <!--<div style="float: left">-->
+                <!--<div class="font" style="margin-top: 5px">Filter rows by:</div>-->
+                <!--<div id="columnchooser"></div>-->
+                <!--<div style="margin-top: 10px;" id="filterbox"></div>-->
+                <!--<div style="margin-top: 10px;">-->
+                    <!--<input type="button" id="applyfilter" value="Apply filters" />-->
+                    <!--<input type="button" id="clearfilter" value="Clear filters" />-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--</div>  -->
+        <!-- facets-container -->
+
+
+
+        <div id="grid-container">
+            <div id="jqxgrid"></div>
+        </div>  <!-- grid-container -->
+    </div> <!-- widget-container -->
+</div> <!-- content -->
+
+<div id="footer">
+    <div id="footer-container"></div>
+</div> <!-- footer -->
+</body>
+
+
+<!-- Google analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42257535-1', 'tinyurl.com');
+    ga('send', 'pageview');
+
+</script>
+
+</html>
+
+
+
+
+
+
+
+

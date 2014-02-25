@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<feed xml:base="http://services.odata.org/Northwind/Northwind.svc/" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://www.w3.org/2005/Atom">
+<title type="text">Customers</title>
+<updated>2011-11-30T11:39:28Z</updated>
+<link rel="self" title="Customers" href="Customers" />
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id1</d:AttributeID>
+      <d:AttributeGroup>Identity</d:AttributeGroup>
+      <d:AttributeName>Tool name</d:AttributeName>
+      <d:AttributeDesc>Name of the tool</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id2</d:AttributeID>
+      <d:AttributeGroup>Identity</d:AttributeGroup>
+      <d:AttributeName>Version</d:AttributeName>
+      <d:AttributeDesc>Version of the tool, e.g. version number</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id2</d:AttributeID>
+      <d:AttributeGroup>Identity</d:AttributeGroup>
+      <d:AttributeName>Collection</d:AttributeName>
+      <d:AttributeDesc>Name of the bundle, package, suite, Web portal or other collection that the tool belongs to</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id2</d:AttributeID>
+      <d:AttributeGroup>Identity</d:AttributeGroup>
+      <d:AttributeName>Homepage</d:AttributeName>
+      <d:AttributeDesc>Tool homepage (URL)</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id2</d:AttributeID>
+      <d:AttributeGroup>Basic</d:AttributeGroup>
+      <d:AttributeName>Type</d:AttributeName>
+      <d:AttributeDesc>Basic entity type.  Typically "Collection", "Tool", "Data service".</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id2</d:AttributeID>
+      <d:AttributeGroup>Basic</d:AttributeGroup>
+      <d:AttributeName>Description</d:AttributeName>
+      <d:AttributeDesc>Short description of the tool</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id2</d:AttributeID>
+      <d:AttributeGroup>Basic</d:AttributeGroup>
+      <d:AttributeName>Topics</d:AttributeName>
+      <d:AttributeDesc>General domain the tool serves</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id2</d:AttributeID>
+      <d:AttributeGroup>Basic</d:AttributeGroup>
+      <d:AttributeName>Tags</d:AttributeName>
+      <d:AttributeDesc>Miscellaneous semantic annotations</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id2</d:AttributeID>
+      <d:AttributeGroup>Basic</d:AttributeGroup>
+      <d:AttributeName>Publications</d:AttributeName>
+      <d:AttributeDesc>Publications that should be cited, or other means of attribution</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id2</d:AttributeID>
+      <d:AttributeGroup>Basic</d:AttributeGroup>
+      <d:AttributeName>Publications</d:AttributeName>
+      <d:AttributeDesc></d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Functional</d:AttributeGroup>
+      <d:AttributeName>Functions</d:AttributeName>
+      <d:AttributeDesc>Tool function(s)</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Functional</d:AttributeGroup>
+      <d:AttributeName>FunctionNotes</d:AttributeName>
+      <d:AttributeDesc>Free-text description of the function</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Functional</d:AttributeGroup>
+      <d:AttributeName>FunctionHandle</d:AttributeName>
+      <d:AttributeDesc>One of WSDL operation name (SOAP services), URL scheme (REST services) or option/flag (command-line)</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Functional</d:AttributeGroup>
+      <d:AttributeName></d:AttributeName>
+      <d:AttributeDesc></d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Functional</d:AttributeGroup>
+      <d:AttributeName>InputTypes</d:AttributeName>
+      <d:AttributeDesc>Type(s) of primary input data for the operation</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Functional</d:AttributeGroup>
+      <d:AttributeName></d:AttributeName>
+      <d:AttributeDesc></d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Functional</d:AttributeGroup>
+      <d:AttributeName>InputFormats</d:AttributeName>
+      <d:AttributeDesc>Allowed format(s) of the primary operation inputs</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Functional</d:AttributeGroup>
+      <d:AttributeName>OutputTypes</d:AttributeName>
+      <d:AttributeDesc>Type(s) of primary output data for the operation</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Functional</d:AttributeGroup>
+      <d:AttributeName>OutputFormats</d:AttributeName>
+      <d:AttributeDesc>Allowed format(s) of the primary operation outputs</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Operational</d:AttributeGroup>
+      <d:AttributeName>Interfaces</d:AttributeName>
+      <d:AttributeDesc>Tool interface: REST service, SOAP service, Web application, Applet, Command-line tool, Desktop GUI</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Operational</d:AttributeGroup>
+      <d:AttributeName>Availability</d:AttributeName>
+      <d:AttributeDesc>Tool interface: REST service, SOAP service, Web application, Applet, Command-line tool, Desktop GUI
+Whether a Web service is available for use</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Operational</d:AttributeGroup>
+      <d:AttributeName>Downtime</d:AttributeName>
+      <d:AttributeDesc>The percentage of time a Web service has been unavailable</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Operational</d:AttributeGroup>
+      <d:AttributeName>Platforms</d:AttributeName>
+      <d:AttributeDesc>Platforms (OS and chipset combination) supported by a downloadable software package</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Operational</d:AttributeGroup>
+      <d:AttributeName>Languages</d:AttributeName>
+      <d:AttributeDesc>Languages (for APIs etc.) or technologies (for Web applications, applets etc.)</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Contact</d:AttributeGroup>
+      <d:AttributeName>ContactName</d:AttributeName>
+      <d:AttributeDesc>Name of contact person</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Contact</d:AttributeGroup>
+      <d:AttributeName>ContactLink</d:AttributeName>
+      <d:AttributeDesc>Email or Web address of contact person / helpdesk</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Contact</d:AttributeGroup>
+      <d:AttributeName>ContactID</d:AttributeName>
+      <d:AttributeDesc>ID of contact person</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Contact</d:AttributeGroup>
+      <d:AttributeName>ContactTel</d:AttributeName>
+      <d:AttributeDesc>Telephone no. of contact person</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Credits</d:AttributeGroup>
+      <d:AttributeName>Contributors</d:AttributeName>
+      <d:AttributeDesc>Name of the people that inspired or developed the tool</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Credits</d:AttributeGroup>
+      <d:AttributeName>Institutions</d:AttributeName>
+      <d:AttributeDesc>Name of the institution(s) that developed or provide the tool</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Credits</d:AttributeGroup>
+      <d:AttributeName>Infrastrutures</d:AttributeName>
+      <d:AttributeDesc>Research infrastructure(s) in which the tool was developed or provided</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Credits</d:AttributeGroup>
+      <d:AttributeName>Funding</d:AttributeName>
+      <d:AttributeDesc>Details of grant funding</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id3</d:AttributeID>
+      <d:AttributeGroup>Credits</d:AttributeGroup>
+      <d:AttributeName>WorkPackages</d:AttributeName>
+      <d:AttributeDesc>Work packages in which the tool was developed</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeGroup>DocsUsage</d:AttributeGroup>
+      <d:AttributeName>Documentation</d:AttributeName>
+      <d:AttributeDesc>Tool documentation entrypoint (URL)</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeGroup>DocsUsage</d:AttributeGroup>
+      <d:AttributeName>DocsCommandLine</d:AttributeName>
+      <d:AttributeDesc>Command-line documentation (URL)</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeGroup>DocsUsage</d:AttributeGroup>
+      <d:AttributeName>DocsREST</d:AttributeName>
+      <d:AttributeDesc>REST service documentation (URL)</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeGroup>DocsUsage</d:AttributeGroup>
+      <d:AttributeName>DocsSOAP</d:AttributeName>
+      <d:AttributeDesc>SOAP service documentation (URL)</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeGroup>DocsUsage</d:AttributeGroup>
+      <d:AttributeName>DocsSPARQL</d:AttributeName>
+      <d:AttributeDesc>SPARQL service documentation (URL)</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeGroup>DocsUsage</d:AttributeGroup>
+      <d:AttributeName>WSDL</d:AttributeName>
+      <d:AttributeDesc>Location of WSDL (URL)</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeGroup>DocsOther</d:AttributeGroup>
+      <d:AttributeName>Maturity</d:AttributeName>
+      <d:AttributeDesc>Software maturity: one of "alpha", "beta" or "production"</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeGroup>DocsOther</d:AttributeGroup>
+      <d:AttributeName>Download</d:AttributeName>
+      <d:AttributeDesc>Tool downloads page</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeGroup>DocsOther</d:AttributeGroup>
+      <d:AttributeName>Cost</d:AttributeName>
+      <d:AttributeDesc>Cost of purchase: one of "Free" or "Not free"</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeGroup>DocsOther</d:AttributeGroup>
+      <d:AttributeName>License</d:AttributeName>
+      <d:AttributeDesc>Tool license</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeGroup>DocsOther</d:AttributeGroup>
+      <d:AttributeName>TermsOfUse</d:AttributeName>
+      <d:AttributeDesc>Link to license text or terms of use</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeGroup>Registration</d:AttributeGroup>
+      <d:AttributeName>EntryURI</d:AttributeName>
+      <d:AttributeDesc>Stable unique accession (URI) identifying a registry entry</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeGroup>Registration</d:AttributeGroup>
+      <d:AttributeName>RegistrantName</d:AttributeName>
+      <d:AttributeDesc>Name of person who registered the software</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeGroup>Registration</d:AttributeGroup>
+      <d:AttributeName>RegistrantEmail</d:AttributeName>
+      <d:AttributeDesc>Email address of person who registered the software</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeGroup>Registration</d:AttributeGroup>
+      <d:AttributeName>AdditionDate</d:AttributeName>
+      <d:AttributeDesc>Date the software was registered with us</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+<entry>
+  <content type="application/xml">
+    <m:properties>
+      <d:AttributeID>id4</d:AttributeID>
+      <d:AttributeGroup>Registration</d:AttributeGroup>
+      <d:AttributeName>LastUpdate</d:AttributeName>
+      <d:AttributeDesc>Date the metadata was last updated</d:AttributeDesc>
+    </m:properties>
+  </content>
+</entry>
+</feed>
+
+<!--      <d:AttributeTerm>Term4</d:AttributeTerm> -->
