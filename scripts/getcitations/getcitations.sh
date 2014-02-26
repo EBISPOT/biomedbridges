@@ -1,4 +1,5 @@
 # Little script to get the number of citations given a file of PMIDs (pmids.txt)
+# See http://europepmc.org/RestfulWebService#cites
 # Tested on tcsh
 # curl -s makes it run in "silent" mode
 # <hitCount>\K.*?(?=<) is the magic that gets text between <hitCount> ... </hitCount>
