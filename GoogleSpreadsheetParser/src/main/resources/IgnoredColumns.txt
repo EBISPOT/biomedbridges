@@ -1,0 +1,39 @@
+
+
+EBI TOOLS CENSUS
+------------------
+owner (gtl)
+contactname2
+helpdeskurl
+infrastructures
+reliance on other tools web-services
+cluster
+avg. monthly interactive usage (number submissions/month)
+contact2
+avg. monthly interactive usage
+notes
+reliance on other web-service/tools
+helpdeskemail
+
+TOOLS REGISTRY CONTENT (PUBLIC)
+------------------
+httpsavailable
+contactname2
+todo
+number of url or email annotations
+contact2
+number of ontology term annotations
+reliance on other web-service/tools
+average monthly interactive usage (number submissions/month)
+owner (gtl)
+dataexposed
+source
+helpdeskurl
+citationprimaryid
+ipconsiderations
+docsbiojs
+infrastructures
+cluster
+number of free text annotations
+notes
+helpdeskemail
