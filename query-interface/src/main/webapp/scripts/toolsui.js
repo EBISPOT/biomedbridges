@@ -45,6 +45,24 @@ function init_headerfooter()
     }
     $("#mainmenu").jqxMenu({autoOpen: false, autoCloseOnMouseLeave: true, showTopLevelArrows: true, theme: theme, rtl: true});
     $("#mainmenu").css('visibility', 'visible');
+
+    $('#mainmenu').on('itemclick', function (event)
+    {
+        var item = $(event.target).text();
+
+        if(item == "Excel")
+            $("#jqxgrid").jqxGrid('exportdata', 'xls', 'jqxGrid');
+        else if(item == "CSV")
+            $("#jqxgrid").jqxGrid('exportdata', 'csv', 'jqxGrid');
+        else if(item == "HTML")
+            $("#jqxgrid").jqxGrid('exportdata', 'html', 'jqxGrid');
+        else if(item == "XML")
+            $("#jqxgrid").jqxGrid('exportdata', 'xml', 'jqxGrid');
+        else if(item == "TSV")
+            $("#jqxgrid").jqxGrid('exportdata', 'tsv', 'jqxGrid');
+        else if(item == "JSON")
+            $("#jqxgrid").jqxGrid('exportdata', 'json', 'jqxGrid');
+    });
 }
 
 
@@ -112,28 +130,31 @@ function create_showMenu()
     // "Summary" checkboxes
 //        $("#showName").jqxCheckBox({ checked: true, theme: theme });
 //    $("#showHomepage").jqxCheckBox({ checked: false, theme: theme });
+//    $("#showEntryID").jqxCheckBox({ checked: false, theme: theme });
     $("#showType").jqxCheckBox({ checked: true, theme: theme });
     $("#showCollection").jqxCheckBox({ checked: false, theme: theme });
+//    $("#showUses").jqxCheckBox({ checked: false, theme: theme });
     $("#showDescription").jqxCheckBox({ checked: true, theme: theme });
     $("#showTopics").jqxCheckBox({ checked: true, theme: theme });
     $("#showTags").jqxCheckBox({ checked: false, theme: theme });
+    $("#showVersion").jqxCheckBox({ checked: false, theme: theme });
+    $("#showDownload").jqxCheckBox({ checked: false, theme: theme });
 
     // "Status" checkboxes
-    $("#showVersion").jqxCheckBox({ checked: false, theme: theme });
     $("#showMaturity").jqxCheckBox({ checked: false, theme: theme });
-    $("#showAvailability").jqxCheckBox({ checked: false, theme: theme });
-    $("#showDowntime").jqxCheckBox({ checked: false, theme: theme });
+//    $("#showAvailability").jqxCheckBox({ checked: false, theme: theme });
+//    $("#showDowntime").jqxCheckBox({ checked: false, theme: theme });
 
     // "Operations" checkboxes
     $("#showFunctions").jqxCheckBox({ checked: true, theme: theme });
-    $("#showFunctionDescription").jqxCheckBox({ checked: false, theme: theme });
-    $("#showFunctionHandle").jqxCheckBox({ checked: false, theme: theme });
+//    $("#showFunctionDescription").jqxCheckBox({ checked: false, theme: theme });
+//    $("#showFunctionHandle").jqxCheckBox({ checked: false, theme: theme });
     $("#showInputTypes").jqxCheckBox({ checked: true, theme: theme });
     $("#showInputFormats").jqxCheckBox({ checked: false, theme: theme });
-    $("#showInputHandle").jqxCheckBox({ checked: false, theme: theme });
+//    $("#showInputHandle").jqxCheckBox({ checked: false, theme: theme });
     $("#showOutputTypes").jqxCheckBox({ checked: true, theme: theme });
     $("#showOutputFormats").jqxCheckBox({ checked: false, theme: theme });
-    $("#showOutputHandle").jqxCheckBox({ checked: false, theme: theme });
+//    $("#showOutputHandle").jqxCheckBox({ checked: false, theme: theme });
 
     // "Interfaces" checkboxes
     $("#showInterfacesCommandLine").jqxCheckBox({ checked: false, theme: theme });
@@ -143,10 +164,13 @@ function create_showMenu()
     $("#showInterfacesSOAPAPI").jqxCheckBox({ checked: false, theme: theme });
     $("#showInterfacesVMI").jqxCheckBox({ checked: false, theme: theme });
 
+    // "Platforms" checkboxes
+    $("#showPlatformsWindows").jqxCheckBox({ checked: false, theme: theme });
+    $("#showPlatformsLinux").jqxCheckBox({ checked: false, theme: theme });
+    $("#showPlatformsOSX").jqxCheckBox({ checked: false, theme: theme });
+
     // "Usage" checkboxes
-    $("#showPlatforms").jqxCheckBox({ checked: false, theme: theme });
     $("#showLanguages").jqxCheckBox({ checked: false, theme: theme });
-    $("#showDownload").jqxCheckBox({ checked: false, theme: theme });
 
     // "Docs" checkboxes
     $("#showDocsHome").jqxCheckBox({ checked: false, theme: theme });
@@ -158,7 +182,7 @@ function create_showMenu()
 
     // "Contacts" checkboxes
     $("#showHelpdesk").jqxCheckBox({ checked: false, theme: theme });
-    $("#showContactPage").jqxCheckBox({ checked: false, theme: theme });
+//    $("#showContactPage").jqxCheckBox({ checked: false, theme: theme });
     $("#showContactName").jqxCheckBox({ checked: false, theme: theme });
 //    $("#showContact").jqxCheckBox({ checked: false, theme: theme });
 //    $("#showContactID").jqxCheckBox({ checked: false, theme: theme });
@@ -174,9 +198,9 @@ function create_showMenu()
     $("#showWorkPackages").jqxCheckBox({ checked: false, theme: theme });
 
     // "Literature" checkboxes
-    $("#showPublications").jqxCheckBox({ checked: false, theme: theme });
-    $("#showCitationMap").jqxCheckBox({ checked: false, theme: theme });
-    $("#showCitationOther").jqxCheckBox({ checked: false, theme: theme });
+    $("#showPublicationsPrimary").jqxCheckBox({ checked: false, theme: theme });
+    $("#showPublicationsOther").jqxCheckBox({ checked: false, theme: theme });
+    $("#showCitations").jqxCheckBox({ checked: false, theme: theme });
 
     // "Restrictions" checkboxes
     $("#showCost").jqxCheckBox({ checked: false, theme: theme });
@@ -184,11 +208,10 @@ function create_showMenu()
     $("#showTermsOfUse").jqxCheckBox({ checked: false, theme: theme });
 
     // "Registration" checkboxes
-    $("#showEntryURI").jqxCheckBox({ checked: false, theme: theme });
-    $("#showRegistrantName").jqxCheckBox({ checked: false, theme: theme });
-    $("#showRegistrantEmail").jqxCheckBox({ checked: false, theme: theme });
-    $("#showAdditionDate").jqxCheckBox({ checked: false, theme: theme });
-    $("#showLastUpdate").jqxCheckBox({ checked: false, theme: theme });
+//    $("#showRegistrantName").jqxCheckBox({ checked: false, theme: theme });
+//    $("#showRegistrantEmail").jqxCheckBox({ checked: false, theme: theme });
+//    $("#showAdditionDate").jqxCheckBox({ checked: false, theme: theme });
+//    $("#showLastUpdate").jqxCheckBox({ checked: false, theme: theme });
 
 
 
@@ -196,28 +219,32 @@ function create_showMenu()
 // "Summary" checkboxes
 //        addColumnToggling($("#showName"), "Name");
 //    addColumnToggling($("#showHomepage"), "Homepage");
+    //    addColumnToggling($("#showEntryID"), "EntryID");
+
     addColumnToggling($("#showType"), "Type");
     addColumnToggling($("#showCollection"), "Collection");
+//    addColumnToggling($("#showUses"), "Uses");
     addColumnToggling($("#showDescription"), "Description");
     addColumnToggling($("#showTopics"), "Topics");
     addColumnToggling($("#showTags"), "Tags");
+    addColumnToggling($("#showVersion"), "Version");
+    addColumnToggling($("#showDownload"), "Download");
 
 // "Status" checkboxes
-    addColumnToggling($("#showVersion"), "Version");
     addColumnToggling($("#showMaturity"), "Maturity");
-    addColumnToggling($("#showAvailability"), "Availability");
-    addColumnToggling($("#showDowntime"), "Downtime");
+//    addColumnToggling($("#showAvailability"), "Availability");
+//    addColumnToggling($("#showDowntime"), "Downtime");
 
 // "Operations" checkboxes
     addColumnToggling($("#showFunctions"), "Functions");
-    addColumnToggling($("#showFunctionDescription"), "FunctionDescription");
-    addColumnToggling($("#showFunctionHandle"), "FunctionHandle");
+//    addColumnToggling($("#showFunctionDescription"), "FunctionDescription");
+//    addColumnToggling($("#showFunctionHandle"), "FunctionHandle");
     addColumnToggling($("#showInputTypes"), "InputTypes");
     addColumnToggling($("#showInputFormats"), "InputFormats");
-    addColumnToggling($("#showInputHandle"), "InputHandle");
+//    addColumnToggling($("#showInputHandle"), "InputHandle");
     addColumnToggling($("#showOutputTypes"), "OutputTypes");
     addColumnToggling($("#showOutputFormats"), "OutputFormats");
-    addColumnToggling($("#showOutputHandle"), "OutputHandle");
+//    addColumnToggling($("#showOutputHandle"), "OutputHandle");
 
 // "Interfaces" checkboxes
     addColumnToggling($("#showInterfacesCommandLine"), "InterfacesCommandLine");
@@ -227,10 +254,13 @@ function create_showMenu()
     addColumnToggling($("#showInterfacesSOAPAPI"), "InterfacesSOAPAPI");
     addColumnToggling($("#showInterfacesVMI"), "InterfacesVMI");
 
+    // "Platforms" checkboxes
+    addColumnToggling($("#showPlatformsWindows"), "PlatformsWindows");
+    addColumnToggling($("#showPlatformsLinux"), "PlatformsLinux");
+    addColumnToggling($("#showPlatformsOSX"), "PlatformsOSX");
+
 // "Usage" checkboxes
-    addColumnToggling($("#showPlatforms"), "Platforms");
     addColumnToggling($("#showLanguages"), "Languages");
-    addColumnToggling($("#showDownload"), "Download");
 
 // "DocsUsage" checkboxes
     addColumnToggling($("#showDocsHome"), "DocsHome");
@@ -242,7 +272,7 @@ function create_showMenu()
 
 // "Contacts" checkboxes
     addColumnToggling($("#showHelpdesk"), "Helpdesk");
-    addColumnToggling($("#showContactPage"), "ContactPage");
+//    addColumnToggling($("#showContactPage"), "ContactPage");
     addColumnToggling($("#showContactName"), "ContactName");
 //    addColumnToggling($("#showContact"), "Contact");
 //    addColumnToggling($("#showContactID"), "ContactID");
@@ -258,9 +288,9 @@ function create_showMenu()
     addColumnToggling($("#showWorkPackages"), "WorkPackages");
 
 // "Literature" checkboxes
-    addColumnToggling($("#showPublications"), "Publications");
-    addColumnToggling($("#showCitationMap"), "CitationMap");
-    addColumnToggling($("#showCitationOther"), "CitationOther");
+    addColumnToggling($("#showPublicationsPrimary"), "PublicationsPrimary");
+    addColumnToggling($("#showPublicationsOther"), "PublicationsOther");
+    addColumnToggling($("#showCitations"),    "Citations");
 
 // "Restrictions" checkboxes
     addColumnToggling($("#showCost"), "Cost");
@@ -268,11 +298,10 @@ function create_showMenu()
     addColumnToggling($("#showTermsOfUse"), "TermsOfUse");
 
 // "Registration" checkboxes
-    addColumnToggling($("#showEntryURI"), "EntryURI");
-    addColumnToggling($("#showRegistrantName"), "RegistrantName");
-    addColumnToggling($("#showRegistrantEmail"), "RegistrantEmail");
-    addColumnToggling($("#showAdditionDate"), "AdditionDate");
-    addColumnToggling($("#showLastUpdate"), "LastUpdate");
+//    addColumnToggling($("#showRegistrantName"), "RegistrantName");
+//    addColumnToggling($("#showRegistrantEmail"), "RegistrantEmail");
+//    addColumnToggling($("#showAdditionDate"), "AdditionDate");
+//    addColumnToggling($("#showLastUpdate"), "LastUpdate");
 }
 
 
@@ -296,8 +325,6 @@ function addColumnToggling(element, colName)
  */
 function create_searchBox()
 {
- try
- {
     var theme = getDemoTheme();
 
 //     var url = "SearchTerms.xml";
@@ -344,7 +371,7 @@ function create_searchBox()
    // Create a jqxInput
     $("#SearchBox").jqxInput({
             source: dataAdapter,
-            placeHolder: "Type search terms here",
+            placeHolder: "Filter terms",
             displayMember: "TermName",
             valueMember: "TermName",
             width: 200,
@@ -405,11 +432,6 @@ function create_searchBox()
      });
 
  }
-catch(err)
-    {
-        alert("???" +  err.message);
-    }
-}
 
 
 
@@ -647,26 +669,31 @@ function create_grid()
             ],
         datafields: [
             { name: 'Name' },
+//            { name: 'EntryID' },
             { name: 'Type' },
             { name: 'Collection' },
+//            { name: 'Uses' },
             { name: 'Description' },
             { name: 'Topics' },
             { name: 'Tags' },
-
             { name: 'Version' },
+            { name: 'Download' },
+
             { name: 'Maturity' },
-            { name: 'Availability', type: 'bool' },
-            { name: 'Downtime'},
+//            { name: 'Availability', type: 'bool' },
+//            { name: 'Downtime'},
 
             { name: 'Functions' },
-            { name: 'FunctionDescription' },
-            { name: 'FunctionHandle' },
+//            { name: 'FunctionDescription' },
+//            { name: 'FunctionHandle' },
             { name: 'InputTypes' },
+//            { name: 'InputFormats', map: 'input>dataFormat' },
             { name: 'InputFormats' },
-            { name: 'InputHandle' },
+//            { name: 'InputHandle' },
             { name: 'OutputTypes' },
-            { name: 'OutputFormats' },
-            { name: 'OutputHandle' },
+//            { name: 'OutputFormats', map: 'output>dataFormat'  },
+            { name: 'OutputFormats'},
+//            { name: 'OutputHandle' },
 
             { name: 'InterfacesCommandLine', type: 'bool'  },
             { name: 'InterfacesWebUI', type: 'bool'  },
@@ -675,9 +702,11 @@ function create_grid()
             { name: 'InterfacesSOAPAPI', type: 'bool'  },
             { name: 'InterfacesVMI', type: 'bool'  },
 
-            { name: 'Platforms' },
+            { name: 'PlatformsWindows', type: 'bool' },
+            { name: 'PlatformsLinux', type: 'bool' },
+            { name: 'PlatformsOSX', type: 'bool' },
+
             { name: 'Languages' },
-            { name: 'Download' },
 
             { name: 'DocsHome' },
             { name: 'DocsCommandLine' },
@@ -687,7 +716,7 @@ function create_grid()
             { name: 'WSDL' },
 
             { name: 'Helpdesk' },
-            { name: 'ContactPage' },
+//            { name: 'ContactPage' },
             { name: 'ContactName' },
 //            { name: 'Contact' },
 //            { name: 'ContactID' },
@@ -701,19 +730,18 @@ function create_grid()
             { name: 'Funding' },
             { name: 'WorkPackages' },
 
-            { name: 'Publications' },
-            { name: 'CitationMap' },
-            { name: 'CitationOther' },
+            { name: 'PublicationsPrimary' },
+            { name: 'PublicationsOther' },
+            { name: 'Citations', type: 'int'},
 
             { name: 'Cost' },
             { name: 'License' },
             { name: 'TermsOfUse' },
 
-            { name: 'EntryURI' },
-            { name: 'RegistrantName' },
-            { name: 'RegistrantEmail' },
-            { name: 'AdditionDate' },
-            { name: 'LastUpdate' },
+//            { name: 'RegistrantName' },
+//            { name: 'RegistrantEmail' },
+//            { name: 'AdditionDate' },
+//            { name: 'LastUpdate' },
 
             { name: 'SearchTerms' }
 
@@ -789,18 +817,126 @@ function create_grid()
 
 //        return $.jqx.dataFormat.formatlink(value, format);
 
-
-
 //        return html;
     };
 
+
+
+    /*
+     * Returns HTML to render an icon depending on a cell value ('value')
+     */
+    var iconrenderer = function (row, column, value)
+    {
+        if(value.length == 0)
+            return;
+
+        if (value == "Alpha ")
+        {
+            return "<div style='overflow: hidden; text-overflow: ellipsis; padding-bottom: 2px; text-align: center; margin-right: 2px; margin-left: 4px; margin-top: 4px;'>" +
+                "<img src=\"images/alpha.jpg\" />" +
+                "</div>";
+        }
+        else if (value == "Beta ")
+        {
+            return "<div style='overflow: hidden; text-overflow: ellipsis; padding-bottom: 2px; text-align: center; margin-right: 2px; margin-left: 4px; margin-top: 4px;'>" +
+                "<img src=\"images/beta.jpg\" />" +
+                "</div>";
+        }
+        if (value == "Production ")
+        {
+            return "<div style='overflow: hidden; text-overflow: ellipsis; padding-bottom: 2px; text-align: center; margin-right: 2px; margin-left: 4px; margin-top: 4px;'>" +
+                "<img src=\"images/production.jpg\" />" +
+                "</div>";
+        }
+        if ((value == "Free ") | (value=="Free for academic use ") | (value=="Free for non profit "))
+        {
+            return "<div style='overflow: hidden; text-overflow: ellipsis; padding-bottom: 2px; text-align: center; margin-right: 2px; margin-left: 4px; margin-top: 4px;'>" +
+                "<img src=\"images/free.jpg\" />" +
+                "</div>";
+        }
+        if (value == "Not free ")
+        {
+            return "<div style='overflow: hidden; text-overflow: ellipsis; padding-bottom: 2px; text-align: center; margin-right: 2px; margin-left: 4px; margin-top: 4px;'>" +
+                "<img src=\"images/notfree.jpg\" />" +
+                "</div>";
+        }
+    }
+
+
+    /*
+     * Returns HTML to render a link (as an icon) for 'value' (which is a URL)
+     * e.g. for this xml:
+     *   <Helpdesk>help@uniprot.org#mailto:help@uniprot.org</Helpdesk>
+     */
+    var iconlinkrenderer = function (row, column, value)
+    {
+        if(value.length == 0)
+        return;
+
+        if (value.indexOf('|') != -1)
+        {
+            value = value.substring(0, value.indexOf('|'));
+        }
+
+//        alert(column);
+
+        if(column== 'TermsOfUse')
+        {
+        // This harsh styling is copied from the standard cell renderer - so that we get nice spacing of cell contents for this custom renderer
+        return "<div style='overflow: hidden; text-overflow: ellipsis; padding-bottom: 2px; text-align: center; margin-right: 2px; margin-left: 4px; margin-top: 4px;'>" +
+            "<a href='" + value + "'>" +
+            "<img src=\"images/termsofuse.jpg\" />" +
+            "</ a>" +
+            "</div>";
+        }
+        else if(column== 'Helpdesk')
+        {
+            // This harsh styling is copied from the standard cell renderer - so that we get nice spacing of cell contents for this custom renderer
+            return "<div style='overflow: hidden; text-overflow: ellipsis; padding-bottom: 2px; text-align: center; margin-right: 2px; margin-left: 4px; margin-top: 4px;'>" +
+                "<a href='" + value + "'>" +
+                "<img src=\"images/helpdesk.jpg\" />" +
+                "</ a>" +
+                "</div>";
+        }
+        else if(column== 'Download')
+        {
+            // This harsh styling is copied from the standard cell renderer - so that we get nice spacing of cell contents for this custom renderer
+            return "<div style='overflow: hidden; text-overflow: ellipsis; padding-bottom: 2px; text-align: center; margin-right: 2px; margin-left: 4px; margin-top: 4px;'>" +
+                "<a href='" + value + "'>" +
+                "<img src=\"images/download.jpg\" />" +
+                "</ a>" +
+                "</div>";
+        }
+        else if( (column== 'DocsHome') | (column== 'DocsCommandLine') | (column== 'DocsREST') | (column== 'DocsSOAP') | (column== 'DocsSPARQL') | (column== 'WSDL'))
+        {
+            // This harsh styling is copied from the standard cell renderer - so that we get nice spacing of cell contents for this custom renderer
+            return "<div style='overflow: hidden; text-overflow: ellipsis; padding-bottom: 2px; text-align: center; margin-right: 2px; margin-left: 4px; margin-top: 4px;'>" +
+                "<a href='" + value + "'>" +
+                "<img src=\"images/docs.jpg\" />" +
+                "</ a>" +
+                "</div>";
+        }
+        else if( (column== 'PublicationsPrimary') | (column== 'PublicationsOther'))
+        {
+            // This harsh styling is copied from the standard cell renderer - so that we get nice spacing of cell contents for this custom renderer
+            return "<div style='overflow: hidden; text-overflow: ellipsis; padding-bottom: 2px; text-align: center; margin-right: 2px; margin-left: 4px; margin-top: 4px;'>" +
+                "<a href='" + value + "'>" +
+                "<img src=\"images/publication.jpg\" />" +
+                "</ a>" +
+                "</div>";
+        }
+
+
+
+
+            };
 
 
 
     /*
      * Returns HTML to render a link (name) for 'value' (which is a name and URL delimited by '|')
      * e.g. for this xml:
-     *    <InputFormat>Textual format#http://edamontology.org/format_2330</InputFormat>
+     *    <InputFormat>Textual format|http://edamontology.org/format_2330</InputFormat>
      */
 
     var linkrenderer = function (row, column, value)
@@ -816,7 +952,10 @@ function create_grid()
 
         }
         else
+        {
+//            alert("No pipe - returning empty string")
             return "";
+        }
     };
 
 
@@ -827,82 +966,170 @@ function create_grid()
      filtertype: 'checkedlist',
      */
 
-    try{
+
+
+
+
+
+    var initrowdetails = function (index, parentElement, gridElement, datarecord)
+    {
+        var tabsdiv = null;
+        var information = null;
+        var description = null;
+        var credits = null;
+        tabsdiv = $($(parentElement).children()[0]);
+        if (tabsdiv != null)
+        {
+            // .information, .description, .credits and .title are defined in the grid "rowdetailstemplate"
+            information = tabsdiv.find('.information');
+            description = tabsdiv.find('.description');
+            credits     = tabsdiv.find('.credits');
+            var title = tabsdiv.find('.title');
+
+            // Set title of 1st tab
+//            title.text(datarecord.Name);
+
+            // Define container for and columns in 'Summary' tab (rowdetails popup)
+            var container = $('<div style="margin: 5px;"></div>')
+            container.appendTo($(information));
+            var photocolumn = $('<div style="float: left; width: 20%;"></div>');
+            var leftcolumn = $('<div style="float: left; width: 40%;"></div>');
+            var rightcolumn = $('<div style="float: left; width: 40%;"></div>');
+            container.append(photocolumn);
+            container.append(leftcolumn);
+            container.append(rightcolumn);
+
+            // Configure 'Summary' tab column 1 (photo)
+            var photo = $("<div class='jqx-rc-all' style='margin: 10px;'> </div>");
+            var image = $("<div style='margin-top: 10px;'></div>");
+            var imgurl = 'images/BioToolsLogoSmall.png';
+            var img = $('<img height="60" src="' + imgurl + '"/>');
+            image.append(img);
+            image.appendTo(photo);
+            photocolumn.append(photo);
+
+            // Configure 'Summary' tab column 2
+            var name = "<div style='margin: 10px;'><b>Name:</b> " + datarecord.Name + "</div>";
+            var collection = "<div style='margin: 10px;'><b>Collection:</b> " + datarecord.Collection + "</div>";
+            var type = "<div style='margin: 10px;'><b>Type:</b> " + datarecord.Type + "</div>";
+            var address = "<div style='margin: 10px;'><b>Address:</b> " + datarecord.Name + "</div>";
+            $(leftcolumn).append(name);
+            $(leftcolumn).append(collection);
+            $(leftcolumn).append(type);
+            $(leftcolumn).append(address);
+
+            // Configure 'Summary' tab column 3
+            var postalcode = "<div style='margin: 10px;'><b>Postal Code:</b> " + datarecord.Name + "</div>";
+            var city = "<div style='margin: 10px;'><b>City:</b> " + datarecord.Name + "</div>";
+            var phone = "<div style='margin: 10px;'><b>Phone:</b> " + datarecord.Name + "</div>";
+            var hiredate = "<div style='margin: 10px;'><b>Hire Date:</b> " + datarecord.Name + "</div>";
+            $(rightcolumn).append(postalcode);
+            $(rightcolumn).append(city);
+            $(rightcolumn).append(phone);
+            $(rightcolumn).append(hiredate);
+
+            // Configure 'Description' tab
+            var descriptioncontainer = $('<div style="white-space: normal; margin: 5px;"><span>' + datarecord.Description + '</span></div>');
+            $(description).append(descriptioncontainer);
+            $(tabsdiv).jqxTabs({ width: 750, height: 170});
+
+
+            // Define container for and columns in 'Summary' tab (rowdetails popup)
+            var container = $('<div style="margin: 5px;"></div>')
+            container.appendTo($(credits));
+            var leftcolumn = $('<div style="float: left; width: 40%;"></div>');
+            var rightcolumn = $('<div style="float: left; width: 40%;"></div>');
+            container.append(leftcolumn);
+            container.append(rightcolumn);
+
+            // Configure 'Credits' tab column 1
+            var developer        = "<div style='margin: 10px;'><b>Developer:</b> " + datarecord.Developer + "</div>";
+            var interface        = "<div style='margin: 10px;'><b>Interface:</b> " + datarecord.DeveloperInterface + "</div>";
+            var contributors     = "<div style='margin: 10px;'><b>Contributors:</b> " + datarecord.Contributors + "</div>";
+            var institutions     = "<div style='margin: 10px;'><b>Institutions:</b> " + datarecord.Institutions + "</div>";
+            $(leftcolumn).append(developer);
+            $(leftcolumn).append(interface);
+            $(leftcolumn).append(contributors);
+            $(leftcolumn).append(institutions);
+
+            // Configure 'Credits' tab column 2
+            var infrastructures  = "<div style='margin: 10px;'><b>Infrastructures:</b> " + datarecord.Infrastructures + "</div>";
+            var funding          = "<div style='margin: 10px;'><b>Funding:</b> " + datarecord.Funding + "</div>";
+            var workpackages     = "<div style='margin: 10px;'><b>Work packages:</b> " + datarecord.WorkPackages + "</div>";
+
+            $(rightcolumn).append(infrastructures);
+            $(rightcolumn).append(funding);
+            $(rightcolumn).append(workpackages);
+        }
+    }
+
+
 
 
         var columns = [
             // "Summary"
             { text: 'Name', datafield: 'Name', width: 100, rendered: tooltiprenderer, cellsrenderer: linkrenderer, pinned: true},
-//                { text: 'Type', datafield: 'Type', filtertype: 'checkedlist', width: 75, rendered: tooltiprenderer, cellsrenderer: linkrenderer, hidden: false},
-            { text: 'Type', datafield: 'Type', filtertype: 'checkedlist', width: "auto", rendered: tooltiprenderer, hidden: false},
+//            { text: 'Entry ID', datafield: 'EntryID', width: "auto", rendered: tooltiprenderer, hidden: true},
+            { text: 'Type', datafield: 'Type', filtertype: 'checkedlist', width: 100, rendered: tooltiprenderer, hidden: false},
 
-            { text: 'Collection', datafield: 'Collection', filtertype: 'checkedlist', width: "auto", rendered: tooltiprenderer, hidden: true},
+            { text: 'Collection', datafield: 'Collection', filtertype: 'checkedlist', width: "auto", rendered: tooltiprenderer},
+//            { text: 'Uses', datafield: 'Uses', width: "auto", rendered: tooltiprenderer, hidden: true, filterable: false},
             { text: 'Description', datafield: 'Description', width: "auto", rendered: tooltiprenderer},
-//                { text: 'Topics', datafield: 'Topics', width: 125, rendered: tooltiprenderer, cellsrenderer: linkrenderer },
-//                { text: 'Tags', datafield: 'Tags', width: 125, rendered: tooltiprenderer, hidden: true, cellsrenderer: linkrenderer },
             { text: 'Topics', datafield: 'Topics', width: "auto", rendered: tooltiprenderer},
             { text: 'Tags', datafield: 'Tags', width: "auto", rendered: tooltiprenderer, hidden: true},
+            { text: 'Version', datafield: 'Version', width: 75, rendered: tooltiprenderer, hidden: true},
+            { text: 'Download', datafield: 'Download', width: 75, rendered: tooltiprenderer, hidden: true, cellsrenderer: iconlinkrenderer, filterable: false},
+
 
             // "Status"
-            { text: 'Version', datafield: 'Version', width: "auto", rendered: tooltiprenderer, hidden: true},
-//                { text: 'Maturity', datafield: 'Maturity', filtertype: 'checkedlist', width: 75, rendered: tooltiprenderer, hidden: true, cellsrenderer: linkrenderer},
-            { text: 'Maturity', datafield: 'Maturity', filtertype: 'checkedlist', width: "auto", rendered: tooltiprenderer, hidden: true},
-            { text: 'Availability', columntype: 'checkbox', datafield: 'Availability', width: "auto", rendered: tooltiprenderer, hidden: true, filterable: false},
-            { text: 'Downtime', datafield: 'Downtime', columntype: 'number', width: "auto", rendered: tooltiprenderer, hidden: true, filterable: false},
+            { text: 'Maturity', datafield: 'Maturity', filtertype: 'checkedlist', width: 75, rendered: tooltiprenderer, cellsrenderer: iconrenderer, hidden: true},
+//            { text: 'Availability', columntype: 'checkbox', datafield: 'Availability', width: "auto", rendered: tooltiprenderer, hidden: true, filterable: false},
+//            { text: 'Downtime', datafield: 'Downtime', columntype: 'number', width: "auto", rendered: tooltiprenderer, hidden: true, filterable: false},
 
             // "Operations"
-//                { text: 'Functions', datafield: 'Functions', width: 125, rendered: tooltiprenderer, hidden: false, cellsrenderer: linkrenderer },
             { text: 'Functions', datafield: 'Functions', width: "auto", rendered: tooltiprenderer, hidden: false},
-            { text: 'Function Notes', datafield: 'FunctionDescription', width: "auto", rendered: tooltiprenderer, hidden: true},
-            { text: 'Function Handle', datafield: 'FunctionHandle', width: "auto", rendered: tooltiprenderer, hidden: true, filterable: false},
-//                { text: 'Input types', datafield: 'InputTypes', width: 125, rendered: tooltiprenderer, hidden: false, cellsrenderer: linkrenderer},
-//                { text: 'Input formats', datafield: 'InputFormats', width: 125, rendered: tooltiprenderer, hidden: true, cellsrenderer: linkrenderer},
-            { text: 'Input Types', datafield: 'InputTypes', width: "auto", rendered: tooltiprenderer, hidden: false},
-            { text: 'Input Formats', datafield: 'InputFormats', width: "auto", rendered: tooltiprenderer, hidden: true},
-            { text: 'Input Handle', datafield: 'InputHandle', width: "auto", rendered: tooltiprenderer, hidden: true, filterable: false},
-//                { text: 'Output types', datafield: 'OutputTypes', width: 125, rendered: tooltiprenderer, hidden: true, cellsrenderer: linkrenderer},
-//                { text: 'Output formats', datafield: 'OutputFormats', width: 125, rendered: tooltiprenderer, hidden: true, cellsrenderer: linkrenderer},
-            { text: 'Output Types', datafield: 'OutputTypes', width: "auto", rendered: tooltiprenderer, hidden: false},
-            { text: 'Output Formats', datafield: 'OutputFormats', width: "auto", rendered: tooltiprenderer, hidden: true},
-            { text: 'Output Handle', datafield: 'OutputHandle', width: "auto", rendered: tooltiprenderer, hidden: true, filterable: false},
+//            { text: 'Function Notes', datafield: 'FunctionDescription', width: "auto", rendered: tooltiprenderer, hidden: true},
+//            { text: 'Function Handle', datafield: 'FunctionHandle', width: "auto", rendered: tooltiprenderer, hidden: true, filterable: false},
+            { text: 'Input types', datafield: 'InputTypes', width: "auto", rendered: tooltiprenderer, hidden: false},
+            { text: 'Input formats', datafield: 'InputFormats', width: "auto", rendered: tooltiprenderer, hidden: true},
+//            { text: 'Input Handle', datafield: 'InputHandle', width: "auto", rendered: tooltiprenderer, hidden: true, filterable: false},
+            { text: 'Output types', datafield: 'OutputTypes', width: "auto", rendered: tooltiprenderer, hidden: false},
+            { text: 'Output formats', datafield: 'OutputFormats', width: "auto", rendered: tooltiprenderer, hidden: true},
+//            { text: 'Output Handle', datafield: 'OutputHandle', width: "auto", rendered: tooltiprenderer, hidden: true, filterable: false},
 
             // "Interfaces"
-            { text: 'Command line', columntype: 'checkbox', datafield: 'InterfacesCommandLine', filtertype: 'bool', width: 100, rendered: tooltiprenderer, hidden: true},
-            { text: 'Web UI', columntype: 'checkbox', datafield: 'InterfacesWebUI', filtertype: 'bool', width: 100, rendered: tooltiprenderer, hidden: false},
-            { text: 'Desktop GUI', columntype: 'checkbox', datafield: 'InterfacesDesktopGUI', filtertype: 'bool', width: 100, rendered: tooltiprenderer, hidden: true},
-            { text: 'REST API', columntype: 'checkbox', datafield: 'InterfacesRESTAPI', filtertype: 'bool', width: 100, rendered: tooltiprenderer, hidden: false},
-            { text: 'SOAP API', columntype: 'checkbox', datafield: 'InterfacesSOAPAPI', filtertype: 'bool', width: 100, rendered: tooltiprenderer, hidden: true},
-            { text: 'VMI', columntype: 'checkbox', datafield: 'InterfacesVMI', filtertype: 'bool', width: 100, rendered: tooltiprenderer, hidden: true},
+            { text: 'CLI', columntype: 'checkbox', datafield: 'InterfacesCommandLine', filtertype: 'bool', width: 75, rendered: tooltiprenderer, hidden: true},
+            { text: 'Web UI', columntype: 'checkbox', datafield: 'InterfacesWebUI', filtertype: 'bool', width: 75, rendered: tooltiprenderer, hidden: false},
+            { text: 'GUI', columntype: 'checkbox', datafield: 'InterfacesDesktopGUI', filtertype: 'bool', width: 75, rendered: tooltiprenderer, hidden: true},
+            { text: 'REST', columntype: 'checkbox', datafield: 'InterfacesRESTAPI', filtertype: 'bool', width: 75, rendered: tooltiprenderer, hidden: false},
+            { text: 'SOAP', columntype: 'checkbox', datafield: 'InterfacesSOAPAPI', filtertype: 'bool', width: 75, rendered: tooltiprenderer, hidden: true},
+            { text: 'VMI', columntype: 'checkbox', datafield: 'InterfacesVMI', filtertype: 'bool', width: 75, rendered: tooltiprenderer, hidden: true},
 
+            // "Platforms"
+            { text: 'Windows', columntype: 'checkbox', datafield: 'PlatformsWindows', filtertype: 'bool', width: 100, rendered: tooltiprenderer, hidden: true},
+            { text: 'Linux', columntype: 'checkbox', datafield: 'PlatformsLinux', filtertype: 'bool', width: 100, rendered: tooltiprenderer, hidden: true},
+            { text: 'OS X', columntype: 'checkbox', datafield: 'PlatformsOSX', filtertype: 'bool', width: 100, rendered: tooltiprenderer, hidden: true},
 
             // "Usage"
-//                { text: 'Interfaces', datafield: 'Interfaces', filtertype: 'checkedlist', width: 75, rendered: tooltiprenderer, hidden: false, cellsrenderer: linkrenderer},
-//            { text: 'Interfaces', datafield: 'Interfaces', filtertype: 'checkedlist', width: "auto", rendered: tooltiprenderer, hidden: false},
-//                { text: 'Platforms', datafield: 'Platforms', filtertype: 'checkedlist', width: 75, rendered: tooltiprenderer, hidden: true, cellsrenderer: linkrenderer},
-//                { text: 'Languages', datafield: 'Languages', filtertype: 'checkedlist', width: 75, rendered: tooltiprenderer, hidden: true, cellsrenderer: linkrenderer},
-            { text: 'Platforms', datafield: 'Platforms', filtertype: 'checkedlist', width: "auto", rendered: tooltiprenderer, hidden: true},
             { text: 'Languages', datafield: 'Languages', filtertype: 'checkedlist', width: "auto", rendered: tooltiprenderer, hidden: true},
-            { text: 'Download', datafield: 'Download', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: linkrenderer, filterable: false},
 
             // "Docs"
-            { text: 'Docs (Entry Page)', datafield: 'DocsHome', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: simplelinkrenderer, filterable: false },
-            { text: 'Docs (Command Line)', datafield: 'DocsCommandLine', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: simplelinkrenderer, filterable: false },
-            { text: 'Docs (REST)', datafield: 'DocsREST', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: simplelinkrenderer, filterable: false },
-            { text: 'Docs (SOAP)', datafield: 'DocsSOAP', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: simplelinkrenderer, filterable: false },
-            { text: 'Docs (SPARQL)', datafield: 'DocsSPARQL', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: simplelinkrenderer, filterable: false },
-            { text: 'WSDL', datafield: 'WSDL', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: simplelinkrenderer, filterable: false },
+            { text: 'Docs', datafield: 'DocsHome', width: 75, rendered: tooltiprenderer, cellsrenderer: iconlinkrenderer, filterable: false },
+            { text: 'Docs (cmd line)', datafield: 'DocsCommandLine', width: 75, rendered: tooltiprenderer, hidden: true, cellsrenderer: iconlinkrenderer, filterable: false },
+            { text: 'Docs (REST)', datafield: 'DocsREST', width: 75, rendered: tooltiprenderer, hidden: true, cellsrenderer: iconlinkrenderer, filterable: false },
+            { text: 'Docs (SOAP)', datafield: 'DocsSOAP', width: 75, rendered: tooltiprenderer, hidden: true, cellsrenderer: iconlinkrenderer, filterable: false },
+            { text: 'Docs (SPARQL)', datafield: 'DocsSPARQL', width: 75, rendered: tooltiprenderer, hidden: true, cellsrenderer: iconlinkrenderer, filterable: false },
+            { text: 'WSDL', datafield: 'WSDL', width: 75, rendered: tooltiprenderer, hidden: true, cellsrenderer: iconlinkrenderer, filterable: false },
 
             // "Contacts"
-            { text: 'Helpdesk', datafield: 'Helpdesk', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: simplelinkrenderer},
-            { text: 'Contact Page', datafield: 'ContactPage', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: simplelinkrenderer},
-            { text: 'Contact Name', datafield: 'ContactName', width: "auto", rendered: tooltiprenderer, cellsrenderer: linkrenderer, hidden: true},
-//            { text: 'Contact', datafield: 'Contact', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: simplelinkrenderer, filterable: false },
-//            { text: 'Contact ID', datafield: 'ContactID', width: "auto", rendered: tooltiprenderer, hidden: true, filterable: false},
-            { text: 'Contact Tel', datafield: 'ContactTel', width: "auto", rendered: tooltiprenderer, hidden: true, filterable: false},
+            { text: 'Helpdesk', datafield: 'Helpdesk', width: 75, rendered: tooltiprenderer, hidden: true, cellsrenderer: iconlinkrenderer, filterable: false},
+//            { text: 'Contact Page', datafield: 'ContactPage', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: simplelinkrenderer, filterable: false},
+            { text: 'Contact person', datafield: 'ContactName', width: "auto", rendered: tooltiprenderer, cellsrenderer: linkrenderer, hidden: true, filterable: false},
+            { text: 'Contact person (tel.)', datafield: 'ContactTel', width: "auto", rendered: tooltiprenderer, hidden: true, filterable: false},
 
             // "Credits"
             { text: 'Developer', datafield: 'Developer', width: "auto", rendered: tooltiprenderer, hidden: true },
-            { text: 'DeveloperInterface', datafield: 'DeveloperInterface', width: "auto", rendered: tooltiprenderer, hidden: true },
+            { text: 'Developer (interface)', datafield: 'DeveloperInterface', width: "auto", rendered: tooltiprenderer, hidden: true },
             { text: 'Contributors', datafield: 'Contributors', width: "auto", rendered: tooltiprenderer, hidden: true },
             { text: 'Institutions', datafield: 'Institutions', filtertype: 'checkedlist', width: "auto", rendered: tooltiprenderer, hidden: true },
             { text: 'Infrastructures', datafield: 'Infrastructures', filtertype: 'checkedlist', width: "auto", rendered: tooltiprenderer, hidden: true },
@@ -911,23 +1138,20 @@ function create_grid()
 
 
             // "Literature"
-            { text: 'Publications', datafield: 'Publications', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: simplelinkrenderer, filterable: false},
-            { text: 'CitationMap', datafield: 'CitationMap', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: simplelinkrenderer, filterable: false},
-            { text: 'CitationOther', datafield: 'CitationOther', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: simplelinkrenderer, filterable: false},
+            { text: 'Publications (primary)', datafield: 'PublicationsPrimary', width: 75, rendered: tooltiprenderer, hidden: true, cellsrenderer: iconlinkrenderer, filterable: false},
+            { text: 'Publications (other)', datafield: 'PublicationsOther', width: 75, rendered: tooltiprenderer, hidden: true, cellsrenderer: iconlinkrenderer, filterable: false},
+            { text: 'Citations', datafield: 'Citations', width: "auto", rendered: tooltiprenderer, hidden: true, filterable: false},
 
             // "Restrictions"
-//                { text: 'Cost', datafield: 'Cost', filtertype: 'checkedlist', width: 100, rendered: tooltiprenderer, hidden: true, cellsrenderer: linkrenderer},
-//                { text: 'License', datafield: 'License', filtertype: 'checkedlist', width: 100, rendered: tooltiprenderer, hidden: true, cellsrenderer: linkrenderer },
-            { text: 'Cost', datafield: 'Cost', filtertype: 'checkedlist', width: "auto", rendered: tooltiprenderer, hidden: true},
+            { text: 'Cost', datafield: 'Cost', filtertype: 'checkedlist', width: 75, rendered: tooltiprenderer, hidden: true, cellsrenderer: iconrenderer},
             { text: 'License', datafield: 'License', filtertype: 'checkedlist', width: "auto", rendered: tooltiprenderer, hidden: true},
-            { text: 'Terms Of Use', datafield: 'TermsOfUse', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: simplelinkrenderer, filterable: false },
+            { text: 'Terms Of Use', datafield: 'TermsOfUse', width: 75, rendered: tooltiprenderer, hidden: true, cellsrenderer: iconlinkrenderer, filterable: false },
 
             // "Registration"
-            { text: 'Entry URI', datafield: 'EntryURI', width: "auto", rendered: tooltiprenderer, hidden: true},
-            { text: 'Registrant Name', datafield: 'RegistrantName', width: "auto", rendered: tooltiprenderer, hidden: true},
-            { text: 'Registrant Email', datafield: 'RegistrantEmail', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: simplelinkrenderer, filterable: false },
-            { text: 'Addition Date', datafield: 'AdditionDate', width: "auto", rendered: tooltiprenderer, hidden: true},
-            { text: 'Last Update', datafield: 'LastUpdate', width: "auto", rendered: tooltiprenderer, hidden: true},
+//            { text: 'Registrant Name', datafield: 'RegistrantName', width: "auto", rendered: tooltiprenderer, hidden: true},
+//            { text: 'Registrant Email', datafield: 'RegistrantEmail', width: "auto", rendered: tooltiprenderer, hidden: true, cellsrenderer: simplelinkrenderer, filterable: false },
+//            { text: 'Addition Date', datafield: 'AdditionDate', width: "auto", rendered: tooltiprenderer, hidden: true},
+//            { text: 'Last Update', datafield: 'LastUpdate', width: "auto", rendered: tooltiprenderer, hidden: true},
 
         // "Search terms"
         { text: 'Search terms', datafield: 'SearchTerms', hidden: true}];
@@ -941,7 +1165,7 @@ function create_grid()
             width: "100%",
             height: "100%",
             filterable: true,
-//                showfiltermenuitems: true,
+            showfiltermenuitems: true,
             showfilterrow: true,
             autoshowfiltericon: true,
             source: dataAdapter,
@@ -957,13 +1181,24 @@ function create_grid()
             enablebrowserselection: 'true',
             columnsresize: true,
             columnsreorder: true,
+            columnsmenu: false,
             autoshowcolumnsmenubutton: false,
             showfiltercolumnbackground: true,
 //                autorowheight: true,
             pagesize: 25,
             pagesizeoptions: ['10', '25', '50', '100', '250', '500', '1000'],
-            columns: columns
 
+//            rowdetails: true,
+            rowdetailstemplate:
+            {
+//                rowdetails: "<div style='margin: 10px;'><ul style='margin-left: 30px;'><li class='title'></li><li>Description</li></ul><div class='information'></div><div class='description'></div></div>",
+                rowdetails: "<div style='margin: 10px;'><ul style='margin-left: 30px;'><li>Summary</li><li>Description</li><li>Credits</li></ul><div class='information'></div><div class='description'></div><div class='credits'></div></div>",
+                rowdetailsheight: 200
+            },
+            initrowdetails: initrowdetails,
+
+
+            columns: columns
 
 
             /* jqwidget "column group" functions is still unreliable
@@ -984,14 +1219,6 @@ function create_grid()
 //                            { text: 'Registration', align: 'center', name: 'Registration' }]
         });
 
-
-
-
-    }
-    catch(err)
-    {
-        alert("???" +  err.message);
-    }
 
 
     /* Set alignment of column headers */
@@ -1038,7 +1265,6 @@ else
     });
 
 
-try    {
     // Filter
 
 //    // This block includes the uncommented code only
@@ -1092,20 +1318,18 @@ try    {
     });
 
 
-}catch(err){alert(err.message)}
-
-
-
-
 
 
     // create buttons, listbox and the columns chooser dropdownlist
 //    $("#applyfilter").jqxButton({ theme: theme });
-    $("#clearfilter").jqxButton({ theme: theme, width: 100});
-    $("#filterbox").jqxListBox({ checkboxes: true, theme: theme, width: 140, height: 350 });
+    $("#clearfilter").jqxButton({ theme: theme, width: 125});
+
+    // Jon HERE-1
+
     $("#columnchooser").jqxDropDownList({ autoDropDownHeight: true, selectedIndex: 0, theme: theme, width: 140, height: 25,
         source: [{ label: 'Type', value: 'Type' },
             { label: 'Collection', value: 'Collection' },
+//            { label: 'Uses', value: 'Uses' },
             { label: 'Topics', value: 'Topics' },
             { label: 'Tags', value: 'Tags' },
             { label: 'Maturity', value: 'Maturity' },
@@ -1122,7 +1346,9 @@ try    {
             { label: 'REST API', value: 'InterfacesRESTAPI' },
             { label: 'SOAP API', value: 'InterfacesSOAPAPI' },
             { label: 'VMI', value: 'InterfacesVMI' },
-            { label: 'Platforms', value: 'Platforms' },
+            { label: 'Windows', value: 'PlatformsWindows' },
+            { label: 'Linux', value: 'PlatformsLinux' },
+            { label: 'OS X', value: 'PlatformsOSX' },
             { label: 'Languages', value: 'Languages' },
             { label: 'Cost', value: 'Cost' },
             { label: 'License', value: 'License' }
@@ -1130,108 +1356,7 @@ try    {
     });
 
 
-    // updates the listbox with unique records depending on the selected column.
-    var updateFilterBox = function (datafield)
-    {
-        var filterBoxAdapter = new $.jqx.dataAdapter(source,
-            {
-                uniqueDataFields: [datafield],
-                autoBind: true
-            });
-        var uniqueRecords = filterBoxAdapter.records;
-
-        uniqueRecords.splice(0, 0, '(Select All)');
-        $("#filterbox").jqxListBox({ source: uniqueRecords, displayMember: datafield });
-        $("#filterbox").jqxListBox('checkAll');
-    }
-
-    updateFilterBox('Type');
-    // handle select all item.
-    var handleCheckChange = true;
-    $("#filterbox").on('checkChange', function (event)
-    {
-        if (!handleCheckChange)
-            return;
-        if (event.args.label != '(Select All)')
-        {
-            handleCheckChange = false;
-            $("#filterbox").jqxListBox('checkIndex', 0);
-            var checkedItems = $("#filterbox").jqxListBox('getCheckedItems');
-            var items = $("#filterbox").jqxListBox('getItems');
-            if (checkedItems.length == 1)
-            {
-                $("#filterbox").jqxListBox('uncheckIndex', 0);
-            }
-            else if (items.length != checkedItems.length)
-            {
-                $("#filterbox").jqxListBox('indeterminateIndex', 0);
-            }
-            handleCheckChange = true;
-        }
-        else
-        {
-            handleCheckChange = false;
-            if (event.args.checked)
-            {
-                $("#filterbox").jqxListBox('checkAll');
-            }
-            else
-            {
-                $("#filterbox").jqxListBox('uncheckAll');
-            }
-            handleCheckChange = true;
-        }
-    });
-    // handle columns selection.
-    $("#columnchooser").on('select', function (event)
-    {
-        updateFilterBox(event.args.item.value);
-    });
-    // builds and applies the filter.
-
-    var applyFilter = function (datafield)
-    {
-        $("#jqxgrid").jqxGrid('clearfilters');
-        var filtertype = 'stringfilter';
-        if (datafield == 'date') filtertype = 'datefilter';
-        if (datafield == 'price' || datafield == 'quantity') filtertype = 'numericfilter';
-        var filtergroup = new $.jqx.filter();
-        var checkedItems = $("#filterbox").jqxListBox('getCheckedItems');
-        if (checkedItems.length == 0)
-        {
-            var filter_or_operator = 1;
-            var filtervalue = "Empty";
-            var filtercondition = 'equal';
-            var filter = filtergroup.createfilter(filtertype, filtervalue, filtercondition);
-            filtergroup.addfilter(filter_or_operator, filter);
-        }
-        else
-        {
-            for (var i = 0; i < checkedItems.length; i++)
-            {
-                var filter_or_operator = 1;
-                var filtervalue = checkedItems[i].label;
-                var filtercondition = 'equal';
-                var filter = filtergroup.createfilter(filtertype, filtervalue, filtercondition);
-                filtergroup.addfilter(filter_or_operator, filter);
-            }
-        }
-        $("#jqxgrid").jqxGrid('addfilter', datafield, filtergroup);
-        $("#jqxgrid").jqxGrid('applyfilters');
-    }
-    // clears the filter.
-    $("#clearfilter").click(function ()
-    {
-        $("#jqxgrid").jqxGrid('clearfilters');
-    });
-
-    // applies the filter.
-//    $("#applyfilter").click(function ()
-//    {
-//        var dataField = $("#columnchooser").jqxDropDownList('getSelectedItem').value;
-//        applyFilter(dataField);
-//    });
-
+         // Jon HERE-2
 }
 
 
@@ -1251,71 +1376,78 @@ function customiseGrid()
 var tips=
 {
     // Menus
-    "MenuAbout":"Read about the Tools Registry",
-    "MenuPartners":"Links to BioMedBridges partners",
-    "MenuFilters":"Filter the software (rows) you see in the grid",
+    "MenuAbout":"Read about the tools registry",
+    "MenuExport":"Export data in a variety of formats (2MB limit!)",
+    "MenuPartners":"Links to our partners",
     "MenuShow":"Control the information (columns) you see in the grid",
-    "ClearFilters":"Clear all the active filters (to see all content)",
-    "SearchBox":"Type search terms here and press Find; the result will show in the grid below",
-    "Name":"Name of the tool, service or collection",
-    "Type": "Basic type of entity (collection, tool, analytical tool, data service)",
-    "Collection":"Name of the bundle, package, suite, Web portal or other collection that the tool belongs to",
-    "Description":"Short description of the tool",
-    "Topics":"General domain(s) the tool serves",
-    "Tags":"Miscellaneous semantic annotations",
-    "Version":"Version of the tool, e.g. version number",
-    "Maturity":"Software maturity: one of 'alpha', 'beta' or 'production'",
-    "Availability":"Whether a Web service is available for use",
-    "Downtime":"The percentage of time a Web service has been unavailable",
-    "Functions":"Tool function",
-    "FunctionDescription":"Free-text description of the function",
-    "FunctionHandle":"One of WSDL operation name (SOAP services), URL scheme (REST services) or option/flag (command-line)",
-    "InputTypes":"Type(s) of primary input data for the operation",
-    "InputFormats":"Allowed format(s) of the primary operation inputs",
-    "InputHandle":"Input identifier, e.g. command-line flag, parameter name etc.",
-    "OutputTypes":"Type(s) of primary output data for the operation",
-    "OutputFormats":"Allowed format(s) of the primary operation outputs",
-    "OutputHandle":"Output identifier, e.g. command-line flag, parameter name etc.",
-//    "Interfaces":"Tool interfaces: REST service, SOAP service, Web application, Command-line tool or Desktop GUI",
+    "ClearFilters":"Clear all the filters (to see all content in the grid)",
+    "SearchBox":"Control the software (rows) you see in the grid.  Enter filter terms here.",
+    "Name":"Name of the software",
+//    "EntryID":"Stable unique accession (URI) identifying a registry entry",
+    "Type": "Basic type of software entry (tool, database, package etc.)",
+    "Collection":"Name of the bundle, package, suite etc. that the software belongs to",
+//    "Uses":"Name of another registry entry that this software uses, e.g. provides an interface to",
+    "Description":"Short description of the software",
+    "Topics":"General domain(s) the software serves",
+    "Tags":"Miscellaneous keywords describing the software",
+    "Version":"Version of the software, e.g. tool version number",
+    "Download":"Tool or data download instructions (URL)",
 
-    "Commandline":"Command-line interface",
+    "Maturity":"Software maturity: one of 'Alpha', 'Beta' or 'Production'",
+//    "Availability":"Whether a Web service is available for use",
+//    "Downtime":"The percentage of time a Web service has been unavailable",
+    "Functions":"Software function(s): terms describing what it does",
+//    "FunctionDescription":"Free-text description of the function",
+//    "FunctionHandle":"One of WSDL operation name (SOAP services), URL scheme (REST services) or option/flag (command-line)",
+    "Inputtypes":"Type(s) of primary input data of the software",
+    "Inputformats":"Allowed format(s) of the primary inputs",
+//    "InputHandle":"Input identifier, e.g. command-line flag, parameter name etc.",
+    "Outputtypes":"Type(s) of primary output data of the software",
+    "Outputformats":"Allowed format(s) of the primary outputs",
+//    "OutputHandle":"Output identifier, e.g. command-line flag, parameter name etc.",
+
+//    "Interfaces":"Tool interfaces: REST service, SOAP service, Web application, Command-line tool or Desktop GUI",
+    "CLI":"Command-line interface",
     "WebUI":"Web user interface",
-    "DesktopGUI":"Desktop graphical user interface",
-    "RESTAPI":"REST programmatic interface",
-    "SOAPAPI":"SOAP programmatic interface",
+    "GUI":"Desktop graphical user interface",
+    "REST":"REST programmatic interface",
+    "SOAP":"SOAP programmatic interface",
     "VMI":"Virtual machine interface",
 
-    "Platforms":"Platforms (OS and chipset combination) supported by a downloadable software package",
+    "Windows":"Support for MS Windows platform (downloadable packages only)",
+    "Linux":"Support for Linux platform (downloadable packages only)",
+    "OSX":"Support for OS X platform (downloadable packages only)",
+
     "Languages":"Languages (for APIs etc.) or technologies (for Web applications, applets etc.)",
-    "Download":"Tool downloads page (URL)",
-    "Docs(EntryPage)":"Tool documentation entrypoint (URL)",
-    "Docs(CommandLine)":"Command-line documentation (URL)",
+    "Docs":"Tool documentation main page (URL)",
+    "Docs(cmdline)":"Command-line documentation (URL)",
     "Docs(REST)":"REST service documentation (URL)",
     "Docs(SOAP)":"SOAP service documentation (URL)",
     "Docs(SPARQL)":"SPARQL service documentation (URL)",
+    "TermsOfUse":"Link to terms of use (URL)",
     "WSDL":"Location of WSDL (URL)",
     "Helpdesk":"Email/URL of helpdesk",
-    "ContactPage":"URL of page with general contact details",
-    "ContactName":"Name/email of contact person",
+//    "ContactPage":"URL of page with general contact details",
+    "Contactperson":"Name/email of primary contact person",
 //    "Contact":"Email of contact person",
 //    "ContactID":"ID of contact person",
-    "ContactTel":"Telephone no. of contact person",
-    "Contributors":"Name(s) of the people that inspired or developed the tool",
-    "Institutions":"Name(s) of the institution(s) that developed or provide the tool",
+    "Contactperson(tel.)":"Telephone no. of the primary contact person",
+    "Developer":"Name(s) of the people that developed the software",
+    "Developer(interface)":"Name(s) of the people that developed the software interface",
+    "Contributors":"Name(s) of other people that contributed to the software development",
+    "Institutions":"Institution(s) that developed or provide the tool",
     "Infrastructures":"Research infrastructure(s) in which the tool was developed or provided",
     "Funding":"Details of grant funding",
     "WorkPackages":"Work packages in which the tool was developed",
-    "Publications":"Publications that should be cited, or other means of attribution",
-    "CitationMap":"Link to publications that cite the primary publication",
-    "CitationOther":"Link to possibly relevant publications identified by text mining",
-    "Cost":"Cost of purchase: one of 'Free' or 'Not free'",
-    "License":"Tool license",
-    "TermsOfUse":"Link to license text or terms of use",
-    "EntryURI":"Stable unique accession (URI) identifying a registry entry",
-    "RegistrantName":"Name of person who registered the software",
-    "RegistrantEmail":"Email address of person who registered the software",
-    "AdditionDate":"Date the software was registered",
-    "LastUpdate":"Date the metadata was last updated"
+    "Publications(primary)":"The primary publication that should be cited",
+    "Publications(other)":"Other publications that should be cited",
+    "Citations":"Number of citations of the primary publication",
+    "Cost":"Cost of purchase: one of 'Free' (possibly with clauses) or 'Not free'",
+    "License":"Tool license"
+//    "RegistrantName":"Name of person who registered the software",
+//    "RegistrantEmail":"Email address of person who registered the software",
+//    "AdditionDate":"Date the software was registered",
+//    "LastUpdate":"Date the metadata was last updated"
 };
 
 
@@ -1337,70 +1469,78 @@ function create_tooltips()
 
     // Menus
     $("#tipMenuAbout").jqxTooltip({ content: getTip("MenuAbout"), position: 'bottom', theme: theme });
+    $("#tipMenuExport").jqxTooltip({ content: getTip("MenuExport"), position: 'bottom', theme: theme });
     $("#tipMenuPartners").jqxTooltip({ content: getTip("MenuPartners"), position: 'bottom', theme: theme });
     $("#tipMenuFilters").jqxTooltip({ content: getTip("MenuFilters"), position: 'bottom', theme: theme });
-    $("#tipClearFilters").jqxTooltip({ content: getTip("ClearFilters"), position: 'bottom', theme: theme });
-    $("#tipMenuShow").jqxTooltip({ content: getTip("MenuShow"), position: 'bottom', theme: theme });
-    $("#tipSearchBox").jqxTooltip({ content: getTip("SearchBox"), position: 'top', theme: theme });
+    $("#tipClearFilters").jqxTooltip({ content: getTip("ClearFilters"), position: 'top', top: '-18px', left: '45px', theme: theme });
+    $("#tipMenuShow").jqxTooltip({ content: getTip("MenuShow"), position: 'right', left: '18px', theme: theme });
+    $("#tipSearchBox").jqxTooltip({ content: getTip("SearchBox"), position: 'left', left: '12px', top: '20px',  theme: theme });
 
     // Tool attributes
     makeTip("tipName", "Name");
+//    makeTip("tipEntryID","EntryID");
     makeTip("tipType", "Type");
     makeTip("tipCollection","Collection");
+//    makeTip("tipUses","Uses");
     makeTip("tipDescription","Description");
     makeTip("tipTopics","Topics");
     makeTip("tipTags","Tags");
     makeTip("tipVersion","Version");
-    makeTip("tipMaturity","Maturity");
-    makeTip("tipAvailability","Availability");
-    makeTip("tipDowntime","Downtime");
-    makeTip("tipFunctions","Functions");
-    makeTip("tipFunctionDescription","FunctionDescription");
-    makeTip("tipFunctionHandle","FunctionHandle");
-    makeTip("tipInputTypes","InputTypes");
-    makeTip("tipInputFormats","InputFormats");
-    makeTip("tipInputHandle","InputHandle");
-    makeTip("tipOutputTypes","OutputTypes");
-    makeTip("tipOutputFormats","OutputFormats");
-    makeTip("tipOutputHandle","OutputHandle");
-//    makeTip("tipInterfaces","Interfaces");
-    makeTip("tipInterfacesCommandLine","Commandline");
-    makeTip("tipInterfacesWebUI","WebUI");
-    makeTip("tipInterfacesDesktopGUI","DesktopGUI");
-    makeTip("tipInterfacesRESTAPI","RESTAPI");
-    makeTip("tipInterfacesSOAPAPI","SOAPAPI");
-    makeTip("tipInterfacesVMI","VMI");
-    makeTip("tipPlatforms","Platforms");
-    makeTip("tipLanguages","Languages");
     makeTip("tipDownload","Download");
-    makeTip("tipDocsHome","Docs(Home)");
-    makeTip("tipDocsCommandLine","Docs(CommandLine)");
+
+    makeTip("tipMaturity","Maturity");
+//    makeTip("tipAvailability","Availability");
+//    makeTip("tipDowntime","Downtime");
+    makeTip("tipFunctions","Functions");
+//    makeTip("tipFunctionDescription","FunctionDescription");
+//    makeTip("tipFunctionHandle","FunctionHandle");
+    makeTip("tipInputTypes","Inputtypes");
+    makeTip("tipInputFormats","Inputformats");
+//    makeTip("tipInputHandle","InputHandle");
+    makeTip("tipOutputTypes","Outputtypes");
+    makeTip("tipOutputFormats","Outputformats");
+//    makeTip("tipOutputHandle","OutputHandle");
+
+//    makeTip("tipInterfaces","Interfaces");
+    makeTip("tipInterfacesCommandLine","CLI");
+    makeTip("tipInterfacesWebUI","WebUI");
+    makeTip("tipInterfacesDesktopGUI","GUI");
+    makeTip("tipInterfacesRESTAPI","REST");
+    makeTip("tipInterfacesSOAPAPI","SOAP");
+    makeTip("tipInterfacesVMI","VMI");
+    makeTip("tipPlatformsWindows","Windows");
+    makeTip("tipPlatformsLinux","Linux");
+    makeTip("tipPlatformsOSX","OSX");
+    makeTip("tipLanguages","Languages");
+    makeTip("tipDocsHome","Docs");
+    makeTip("tipDocsCommandLine","Docs(cmdLine)");
     makeTip("tipDocsREST","Docs(REST)");
     makeTip("tipDocsSOAP","Docs(SOAP)");
     makeTip("tipDocsSPARQL","Docs(SPARQL)");
     makeTip("tipWSDL","WSDL");
     makeTip("tipHelpdesk","Helpdesk");
-    makeTip("tipContactPage","ContactPage");
-    makeTip("tipContactName","ContactName");
+//    makeTip("tipContactPage","ContactPage");
+    makeTip("tipContactName","Contactperson");
 //    makeTip("tipContact","Contact");
 //    makeTip("tipContactID","ContactID");
-    makeTip("tipContactTel","ContactTel");
+    makeTip("tipContactTel","Contactperson(tel.)");
+    makeTip("tipDeveloper","Developer");
+    makeTip("tipDeveloperInterface","Developer(interface)");
     makeTip("tipContributors","Contributors");
     makeTip("tipInstitutions","Institutions");
     makeTip("tipInfrastructures","Infrastructures");
     makeTip("tipFunding","Funding");
     makeTip("tipWorkPackages","WorkPackages");
-    makeTip("tipPublications","Publications");
-    makeTip("tipCitationMap","CitationMap");
-    makeTip("tipCitationOther","CitationOther");
+    makeTip("tipPublicationsPrimary","Publications(primary)");
+    makeTip("tipPublicationsOther","Publications(other)");
+    makeTip("tipCitations","Citations");
     makeTip("tipCost","Cost");
     makeTip("tipLicense","License");
     makeTip("tipTermsOfUse","TermsOfUse");
-    makeTip("tipEntryURI","EntryURI");
-    makeTip("tipRegistrantName","RegistrantName");
-    makeTip("tipRegistrantEmail","RegistrantEmail");
-    makeTip("tipAdditionDate","AdditionDate");
-    makeTip("tipLastUpdate","LastUpdate");
+//    makeTip("tipRegistrantName","RegistrantName");
+//    makeTip("tipRegistrantEmail","RegistrantEmail");
+//    makeTip("tipAdditionDate","AdditionDate");
+//    makeTip("tipLastUpdate","LastUpdate");
 }
 
 
@@ -1409,7 +1549,7 @@ function makeTip(id, key)
     var theme = getDemoTheme();
 
     var obj = document.getElementById(id);
-    $(obj).jqxTooltip({ content: getTip(key), position: 'right', left: "110px", top:"12px", theme: theme });
+    $(obj).jqxTooltip({ content: getTip(key), position: 'right', left: "120px", top:"13px", theme: theme });
 }
 
 

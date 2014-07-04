@@ -2773,7 +2773,7 @@ IDalt   EMBL-Bank
 <Type>Database </Type>
 <Description>European nucleotide short read and trace archive (ENA). A comprehensive repository for public nucleotide sequence data.  Includes sequencing information including raw data, assembly and mapping information (relating fragmented raw sequence reads into contigs and higher order structures) and functional annotation of nucleic acid molecules.</Description>
 <Publications>http://nar.oupjournals.org/cgi/content/abstract/39/suppl_1/D28</Publications>
-DOI     http://dx.doi.org/10.1093/nar/gkq967
+<Publications>DOI: http://dx.doi.org/10.1093/nar/gkq967</Publications>
 <TopicsURI>Nucleic acid sequence analysis|http://edamontology.org/topic_0640</TopicsURI>
 <Topics>Nucleic acid sequence analysis </Topics>
 <SearchTerms>Nucleic acid sequence analysis </SearchTerms>
@@ -4203,7 +4203,7 @@ Cat     Not available
 <Type>Database </Type>
 <Description>Gene expression information for the mouse, including expression profiles of transcripts and proteins in different mouse strains and mutants. Data are taken from the literature and via submission. </Description>
 <Publications>http://nar.oupjournals.org/cgi/content/abstract/39/suppl_1/D835</Publications>
-DOI: http://dx.doi.org/10.1093/nar/gkq1132
+    <Publications>DOI: http://dx.doi.org/10.1093/nar/gkq1132</Publications>
 <TopicsURI>Gene expression resources|http://edamontology.org/topic_0197</TopicsURI>
 <Topics>Gene expression resources </Topics>
 <TopicsURI>Transcriptomics|http://edamontology.org/topic_0203</TopicsURI>

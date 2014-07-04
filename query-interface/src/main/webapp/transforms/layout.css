@@ -12,10 +12,10 @@
 {
     position:     relative;
     float:        left;
-    top:          5px;
+    /*top:          5px;*/
     margin-left:  1%;               /* Jon - was 5% */
 /*    width:        200px; */   /* Jon - Could specify larger size to exactly accommodate both logos */
-    height:       60px;
+    height:       85px;  /* JON was 60px */
     /*background-color: #ffff00;*/
 }
 
@@ -33,7 +33,7 @@
 #mainmenu
 {
     float: right;
-    width: 225px;
+    width: 310px;
 }
 
 .mainmenu-text
@@ -52,6 +52,11 @@
 {
     width: 100px;
 
+}
+
+#menu-show
+{
+    width: 160px;
 }
 
 
@@ -130,7 +135,7 @@ border-radius: 25px;   /* Jon - adding this back for blurb pages */
 {
     position:     relative;
     height:       5%;
-    min-height:   25px;
+    min-height:   45px;
     width:        100%;
 /*    background-color: #FFCCCC; */
 
@@ -154,14 +159,15 @@ border-radius: 25px;   /* Jon - adding this back for blurb pages */
 
 .menuGridText
 {
-    font-size: 18px;
-    height:    25px;  /* Height of Apply/Clear Filters buttons */
+    font-size: 25px;   /* JON  was 18 px */
+    height:    40px;   /* JON was 25 px */  /* Height of Apply/Clear Filters buttons */
+    width: 135px;
 }
 
 .search
 {
-    height:    25px;  /* Height of Apply/Clear Filters buttons */
-    width:     25px;  /* To match height */
+    height:    40px;  /* Height of Apply/Clear Filters buttons */
+    width:     38px;  /* To match height */
     background: #e8e8e8;   /* was #d1d1d1 */
     border-width: 1px;
     border-style: solid;
@@ -177,15 +183,15 @@ border-radius: 25px;   /* Jon - adding this back for blurb pages */
 {
     float: right;
     /*margin-top: 1px;*/
-    /*width: 150px;*/
-    height: 25px;   /* Matches height of Apply/Clear Filters buttons */
+    width: 200px !important;
+    height: 40px !important;   /* Matches height of Apply/Clear Filters buttons */
 }
 
 #SearchButton
 {
-    float: right;
-    width:  40;
-    height: 25px;  /* Matches height of Apply/Clear Filters buttons */
+    float: left;
+    width:  35px;
+    height: 33px;  /* Not sure why this must be 2 less than height of Apply/Clear Filters buttons to match the height */
     /*background: lightgreen;*/
 }
 
@@ -194,7 +200,7 @@ border-radius: 25px;   /* Jon - adding this back for blurb pages */
 {
     color: #f8fcfe;
     backgroundColor: #e8e8e8;
-    width: 100px;
+    width: 125px;         /* JON was 100px */
 }
 
 
@@ -253,7 +259,8 @@ border-radius: 25px;   /* Jon - adding this back for blurb pages */
 .jqx-grid-column-header
 {
     border-width: 1px 3px 0px 0px;   /* 1px gives top border, 2px makes border easier to pick for column resizing */
-    font-size: 14px !important;
+    font-size: 12px !important;
+    font-weight: bold;
     background-color:#e3f3fa;      /* Jon TRY #bae0f2*/
 }
 
