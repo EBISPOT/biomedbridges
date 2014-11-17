@@ -23,37 +23,55 @@ import java.util.Set;
  * User: jmcmurry
  * Date: 12/02/2014
  * Time: 17:45
- * To change this template use File | Settings | File Templates.
  */
 public class SourcesManifest {
 
     private static final Logger log = LoggerFactory.getLogger(ParserDriver.class);
     private final String rootNodeName;
     private final boolean omitIncompleteRows;
+    private final boolean addSynonyms;
+    private final boolean writeUrisInXml;
+    private final int configIndexForModel;
+    private final int configIndexForDataSource;
 
     private SpreadsheetService authenticatedService;
 
     private SpreadsheetEntry configSpreadsheet;
-    private final HashMap<String, ModelSpreadsheet.ModelWorksheet.ModelAttribute> dataModel;
-    private final ArrayList<ContentSpreadsheet> contentSpreadsheets;
+    private HashMap<String, ModelSpreadsheet.ModelWorksheet.ModelAttribute> dataModel;
+    private ArrayList<ContentSpreadsheet> contentSpreadsheets;
     private int currentNumberForRowNodes = 1;
 
     private String cccKeyForParserConfiguration;
     private String outFilePath;
     private ArrayList<ArrayList<String>> logOfIgnoredRows = new ArrayList<ArrayList<String>>();
-    private Map<String, Set<String>> logOfIgnoredCols= new HashMap<String, Set<String>>();
+    private Map<String, Set<String>> logOfIgnoredCols = new HashMap<String, Set<String>>();
 
-    public SourcesManifest(SpreadsheetService authenticatedService, String cccKeyForParserConfiguration, int configIndexForModel, int configIndexForDataSource, boolean loadLocalOntology, String pathToSerializedOntologies, boolean writeUrisInXml, boolean addSynonyms, int startNumberForRowNodes, boolean omitIncompleteRows, String rootNodeName, String[] acceptableDelims, String outFilePath) throws IOException, ServiceException, URISyntaxException {
+    public SourcesManifest(SpreadsheetService authenticatedService, String cccKeyForParserConfiguration, int configIndexForModel, int configIndexForDataSource, boolean writeUrisInXml, boolean addSynonyms, int startNumberForRowNodes, boolean omitIncompleteRows, String rootNodeName, String outFilePath) throws IOException, ServiceException, URISyntaxException {
 
         System.out.println();
         this.cccKeyForParserConfiguration = cccKeyForParserConfiguration;
         this.authenticatedService = authenticatedService;
-        this.configSpreadsheet = GDataUtils.setSpreadsheet(authenticatedService, cccKeyForParserConfiguration);
-        this.dataModel = loadDataModelSource(loadLocalOntology, addSynonyms, configIndexForModel, pathToSerializedOntologies);
-        this.contentSpreadsheets = loadContentSpreadsheets(configIndexForDataSource, omitIncompleteRows, writeUrisInXml);
+        this.addSynonyms = addSynonyms;
+        this.writeUrisInXml = writeUrisInXml;
+        this.configIndexForModel = configIndexForModel;
+        this.configIndexForDataSource = configIndexForDataSource;
         this.rootNodeName = rootNodeName;
         this.omitIncompleteRows = omitIncompleteRows;
         this.outFilePath = outFilePath;
+    }
+
+    public void loadSources() {
+        try {
+            this.configSpreadsheet = GDataUtils.setSpreadsheet(authenticatedService, cccKeyForParserConfiguration);
+            this.dataModel = loadDataModelSource(false, addSynonyms, configIndexForModel, "");
+        } catch (IOException e) {
+            e.printStackTrace();  //todo:
+        } catch (ServiceException e) {
+            e.printStackTrace();  //todo:
+        } catch (URISyntaxException e) {
+            e.printStackTrace();  //todo:
+        }
+        this.contentSpreadsheets = loadContentSpreadsheets(configIndexForDataSource, omitIncompleteRows, writeUrisInXml);
     }
 
     private ArrayList<ContentSpreadsheet> loadContentSpreadsheets(int configIndexForDataSource, boolean omitIncompleteRows, boolean writeUrisInXml) {

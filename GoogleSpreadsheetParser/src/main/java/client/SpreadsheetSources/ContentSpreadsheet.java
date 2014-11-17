@@ -67,6 +67,7 @@ public class ContentSpreadsheet extends EnhancedSpreadsheet {
     private ArrayList<ContentWorksheet> loadDataSourceWorksheets() throws IOException, ServiceException, URISyntaxException {
         ArrayList<ContentWorksheet> contentWorksheets = new ArrayList<ContentWorksheet>();
         List<WorksheetEntry> worksheets = spreadsheet.getWorksheets();
+        getLog().info("Loading worksheets for " + spreadsheetName + ":" + indicesOfTabsToParse);
         for (WorksheetEntry currentWorksheet : worksheets) {
             int currentIndex = GDataUtils.getIndex(currentWorksheet);
             if (indicesOfTabsToParse.contains(currentIndex)) {
@@ -149,7 +150,7 @@ public class ContentSpreadsheet extends EnhancedSpreadsheet {
                         if (attribute.getAttributeNameSynonyms() != null && attribute.getAttributeNameSynonyms().size() > 0) {
                             String synonymString = "";
                             for (String synonym : attribute.getAttributeNameSynonyms()) {
-                                synonymString += ", "+ synonym;
+                                synonymString += ", " + synonym;
                             }
                             log.error("Column " + nameOfRequiredColumn + " recognized synonyms include " + synonymString);
                         }
@@ -236,7 +237,7 @@ public class ContentSpreadsheet extends EnhancedSpreadsheet {
 
                     xmlNodeNumberForRow++;
 
-                    if (rowIsIncomplete && rowTitleCell != null) {
+                    if (rowIsIncomplete || rowTitleCell.getPlainTextContent().equals("")) {
                         // if row is to be ignored for any reason, just log the row, and reset it to a blank before returning it
                         logOfIncompleteRows.add(rowXml.toString());
                         if (omitIncompleteRows) rowXml = new StringBuilder();

@@ -33,7 +33,7 @@ public abstract class EnhancedSpreadsheet {
     protected String nameOfCollection;
     protected SpreadsheetEntry spreadsheet;
 
-    protected HashMap<String, HashMap<String, String>> termURIMapCollection = new HashMap<String, HashMap<String, String>>();
+    protected HashMap<String, HashMap<String, String>> labelURIMapCollection = new HashMap<String, HashMap<String, String>>();
     protected HashMap<String, HashMap<String, String>> synonymLabelMapCollection = new HashMap<String, HashMap<String, String>>();
 
 
@@ -71,12 +71,12 @@ public abstract class EnhancedSpreadsheet {
     }
 
 
-    public void setTermURIMapCollection(HashMap<String, HashMap<String, String>> ontMapCollection) {
-        this.termURIMapCollection = ontMapCollection;
+    public void setLabelURIMapCollection(HashMap<String, HashMap<String, String>> ontMapCollection) {
+        this.labelURIMapCollection = ontMapCollection;
     }
 
-    public HashMap<String, HashMap<String, String>> getTermURIMapCollection() {
-        return termURIMapCollection;
+    public HashMap<String, HashMap<String, String>> getLabelURIMapCollection() {
+        return labelURIMapCollection;
     }
 
     public void setSynonymLabelMapCollection(HashMap<String, HashMap<String, String>> synonymLabelMapCollection) {

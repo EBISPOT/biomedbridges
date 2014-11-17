@@ -1,667 +1,694 @@
-<Tools>
-<Tool toolid="CBS_EasyGene">
-    <Name>EasyGene|http://cbs.dtu.dk/services/EasyGene/</Name>
-    <Type>Tool </Type>
-    <Institutions>CBS</Institutions>
-    <Homepage>http://cbs.dtu.dk/services/EasyGene/</Homepage>
-    <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-    <Description>Prediction of genes given a sequence of prokaryotic DNA</Description>
-    <InterfacesWebUI>true</InterfacesWebUI>
-    <Version>1.2b</Version>
-    <Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_HMMgene">
-<Name>HMMgene|http://cbs.dtu.dk/services/HMMgene/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/HMMgene/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Prediction of vertebrate and C. elegans genes</Description>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Version>1.1</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_MetaRanker">
-<Name> MetaRanker|http://cbs.dtu.dk/services/MetaRanker/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/MetaRanker/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Prioritizing the entire protein-coding part of the human genome based on heterogeneous user-specified data sets </Description>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Version>2.0</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetAspGene">
-<Name>NetAspGene|http://cbs.dtu.dk/services/NetAspGene/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetAspGene/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Prediction of splice sites in Aspergillus DNA sequences</Description>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Version>1.0</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetGene2">
-<Name>NetGene2|http://cbs.dtu.dk/services/NetGene2/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetGene2/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Neural network predictions of splice sites in human, C. elegans
-    <InterfacesWebUI>true</InterfacesWebUI>
-    and A. thaliana DNA</Description>
+<Tools xmlns="http://wwwdev.ebi.ac.uk/fgpt/toolsui/schema"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        >
+    xsi:schemaLocation="
+    http://www.ebi.ac.uk/fgpt/toolsui/schema
+    http://www.ebi.ac.uk/fgpt/toolsui/2014/10/29/schema.xsd
+    ">
+    <Tool toolid="CBS_EasyGene">
+        <Name>EasyGene|http://cbs.dtu.dk/services/EasyGene/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/EasyGene/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Prediction of genes given a sequence of prokaryotic DNA</Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Version>1.2b</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_HMMgene">
+        <Name>HMMgene|http://cbs.dtu.dk/services/HMMgene/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/HMMgene/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Prediction of vertebrate and C. elegans genes</Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Version>1.1</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_MetaRanker">
+        <Name>MetaRanker|http://cbs.dtu.dk/services/MetaRanker/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/MetaRanker/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Prioritizing the entire protein-coding part of the human genome based on heterogeneous
+            user-specified data sets
+        </Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Version>2.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetAspGene">
+        <Name>NetAspGene|http://cbs.dtu.dk/services/NetAspGene/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetAspGene/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Prediction of splice sites in Aspergillus DNA sequences</Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetGene2">
+        <Name>NetGene2|http://cbs.dtu.dk/services/NetGene2/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetGene2/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Neural network predictions of splice sites in human, C. elegans and A. thaliana DNA
+        </Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
 
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetPlantGene">
-<Name>NetPlantGene|http://cbs.dtu.dk/services/NetPGene/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetPGene/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description> Neural network predictions of splice sites in Arabidopsis thaliana DNA</Description>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetPlantGene">
+        <Name>NetPlantGene|http://cbs.dtu.dk/services/NetPGene/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetPGene/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Neural network predictions of splice sites in Arabidopsis thaliana DNA</Description>
 
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetStart">
-<Name>NetStart|http://cbs.dtu.dk/services/NetStart/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetStart/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Neural network predictions of translation start in vertebrate and Arabidopsis thaliana nucleotide sequences</Description>
-<Version>1.0</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetUTR">
-<Name>NetUTR|http://cbs.dtu.dk/services/NetUTR/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetUTR/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of splice sites in 5' UTR regions of human genes</Description>
-<Version>1.0b</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_Promoter">
-<Name>Promoter|http://cbs.dtu.dk/services/Promoter/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/Promoter/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of transcription start sites of vertebrate PolII promoters in DNA sequences</Description>
-<Version>2.0</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_RNAmmer">
-<Name>RNAmmer|http://cbs.dtu.dk/services/RNAmmer/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/RNAmmer/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of ribosomal RNA sub units in full genome sequences</Description>
-<Version>1.2</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_OligoWiz">
-<Name>OligoWiz|http://cbs.dtu.dk/services/OligoWiz/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/OligoWiz/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Design of oligonucleotides for DNA microarrays</Description>
-<Version>2</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_BepiPred">
-<Name>BepiPred|http://cbs.dtu.dk/services/BepiPred/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/BepiPred/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of linear B-cell epitopes </Description>
-<Version>1.0 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_DiscoTope">
-<Name>DiscoTope|http://cbs.dtu.dk/services/DiscoTope/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/DiscoTope/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>prediction of discontinuous B-cell epitopes </Description>
-<Version>2.0 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_HLArestrictor">
-<Name>HLArestrictor|http://cbs.dtu.dk/services/HLArestrictor/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/HLArestrictor/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Patient-specific prediction of HLA restriction elements and optimal epitopes within peptides </Description>
-<Version>1.2 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_MHCcluster">
-<Name>MHCcluster|http://cbs.dtu.dk/services/MHCcluster/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/MHCcluster/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>A tool to functionally cluster MHC class 1 molecules based on binding specififcity</Description>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Version>2.0</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetChop">
-<Name>NetChop|http://cbs.dtu.dk/services/NetChop/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetChop/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Neural network predictions for proteasomal cleavages (MHC ligands)</Description>
-<Version>3.1</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetCTL">
-<Name>NetCTL|http://cbs.dtu.dk/services/NetCTL/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetCTL/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of CTL epitopes in protein sequences </Description>
-<Version>1.2</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetCTLpan">
-<Name>NetCTLpan|http://cbs.dtu.dk/services/NetCTLpan/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetCTLpan/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Prediction of pan-specific integrated class I antigen presentation </Description>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Version>1.1</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetMHC">
-<Name>NetMHC|http://cbs.dtu.dk/services/NetMHC/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetMHC/</Homepage>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Prediction of binding of peptides to MHC class I alleles </Description>
-<Version>3.4</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetMHCcons">
-<Name>NetMHCcons|http://cbs.dtu.dk/services/NetMHCcons/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetMHCcons/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Prediction of binding of peptides to any known MHC class I molecule </Description>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Version>1.0</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetMHCII">
-<Name>NetMHCII|http://cbs.dtu.dk/services/NetMHCII/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetMHCII/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of binding of peptides to MHC class II alleles</Description>
-<Version>2.2</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetMHCIIpan">
-<Name>NetMHCIIpan|http://cbs.dtu.dk/services/NetMHCIIpan/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetMHCIIpan/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of pan-specific binding of peptides to MHC class II HLA-DR alleles of known sequence </Description>
-<Version>3.0</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetMHCpan">
-<Name>NetMHCpan|http://cbs.dtu.dk/services/NetMHCpan/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetMHCpan/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of pan-specific binding of peptides to MHC class I alleles of known sequence</Description>
-<Version>2.8</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetMHCstab">
-<Name>NetMHCstab|http://cbs.dtu.dk/services/NetMHCstab-1.0/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetMHCstab-1.0/</Homepage>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Prediction of stability of peptide:MHC-I complexes </Description>
-<Version>1.0</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NNAlign">
-<Name>NNAlign|http://cbs.dtu.dk/services/NNAlign/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NNAlign/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Identifying sequence motifs in quantitative peptide data </Description>
-<Version>1.4</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_VDJsolver">
-<Name>VDJsolver|http://cbs.dtu.dk/services/VDJsolver/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/VDJsolver/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Analysis of human immunoglobulin VDJ recombination</Description>
-<Version>1.0</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_ChloroP1.1">
-<Name>ChloroP|http://cbs.dtu.dk/services/ChloroP/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/ChloroP/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of presence of chloroplast transit peptides and their cleavage sites in plant
-    proteins</Description>
-<Version>1.1 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_LipoP">
-<Name>LipoP|http://cbs.dtu.dk/services/LipoP/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/LipoP/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Prediction of lipoproteins and signal peptides in Gram negative
-    <InterfacesWebUI>true</InterfacesWebUI>
-    bacteria</Description>
-<Version>1.0 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetNES">
-<Name>NetNES|http://cbs.dtu.dk/services/NetNES/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetNES/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of leucine-rich nuclear export signals (NES) in eukaryotic
-    proteins</Description>
-<Collection>CBS </Collection>
-</Tool>
-<Version>1.1 </Version>
-<Tool toolid="CBS_SecretomeP">
-<Name>SecretomeP|http://cbs.dtu.dk/services/SecretomeP/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/SecretomeP/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of non-classical and leaderless secretion of proteins</Description>
-<Version>2.0 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_SignalP">
-<Name>SignalP|http://cbs.dtu.dk/services/SignalP/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/SignalP/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Prediction of the presence and location of signal peptide and cleavage sites in gram+, gram- and
-    <InterfacesWebUI>true</InterfacesWebUI>
-    eukaryotic amino acid sequences</Description>
-<Version>4.1 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_TargetP">
-<Name>TargetP|http://cbs.dtu.dk/services/TargetP/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/TargetP/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of subcellular location of proteins: mitochondrial, chloroplastic,
-    secretory pathway, or other</Description>
-<Version>1.1 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_TatP">
-<Name>TatP|http://cbs.dtu.dk/services/TatP/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/TatP/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Prediction of the presence and location of Twin-arginine signal peptides</Description>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Version>1.0 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_ArchaeaFun">
-<Name>ArchaeaFun|http://cbs.dtu.dk/services/ArchaeaFun/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/ArchaeaFun/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>ab initio predictions of enzyme class (if any) from sequence</Description>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Version>1.0</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_CPHmodels">
-<Name>CPHmodels|http://cbs.dtu.dk/services/CPHmodels/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/CPHmodels/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Prediction of protein structure from sequence: distance constraints</Description>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Version>3.2</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_distanceP">
-<Name>distanceP|http://cbs.dtu.dk/services/distanceP/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/distanceP/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>prediction of protein distance constraints between amino acids in proteins from the amino acid sequence</Description>
-<InterfacesWebUI>true</InterfacesWebUI>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetStart">
+        <Name>NetStart|http://cbs.dtu.dk/services/NetStart/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetStart/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Neural network predictions of translation start in vertebrate and Arabidopsis thaliana nucleotide
+            sequences
+        </Description>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetUTR">
+        <Name>NetUTR|http://cbs.dtu.dk/services/NetUTR/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetUTR/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of splice sites in 5' UTR regions of human genes</Description>
+        <Version>1.0b</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_Promoter">
+        <Name>Promoter|http://cbs.dtu.dk/services/Promoter/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/Promoter/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of transcription start sites of vertebrate PolII promoters in DNA sequences
+        </Description>
+        <Version>2.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_RNAmmer">
+        <Name>RNAmmer|http://cbs.dtu.dk/services/RNAmmer/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/RNAmmer/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of ribosomal RNA sub units in full genome sequences</Description>
+        <Version>1.2</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_OligoWiz">
+        <Name>OligoWiz|http://cbs.dtu.dk/services/OligoWiz/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/OligoWiz/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Design of oligonucleotides for DNA microarrays</Description>
+        <Version>2</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_BepiPred">
+        <Name>BepiPred|http://cbs.dtu.dk/services/BepiPred/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/BepiPred/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of linear B-cell epitopes</Description>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_DiscoTope">
+        <Name>DiscoTope|http://cbs.dtu.dk/services/DiscoTope/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/DiscoTope/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>prediction of discontinuous B-cell epitopes</Description>
+        <Version>2.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_HLArestrictor">
+        <Name>HLArestrictor|http://cbs.dtu.dk/services/HLArestrictor/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/HLArestrictor/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Patient-specific prediction of HLA restriction elements and optimal epitopes within peptides
+        </Description>
+        <Version>1.2</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_MHCcluster">
+        <Name>MHCcluster|http://cbs.dtu.dk/services/MHCcluster/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/MHCcluster/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>A tool to functionally cluster MHC class 1 molecules based on binding specififcity</Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Version>2.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetChop">
+        <Name>NetChop|http://cbs.dtu.dk/services/NetChop/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetChop/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Neural network predictions for proteasomal cleavages (MHC ligands)</Description>
+        <Version>3.1</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetCTL">
+        <Name>NetCTL|http://cbs.dtu.dk/services/NetCTL/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetCTL/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of CTL epitopes in protein sequences</Description>
+        <Version>1.2</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetCTLpan">
+        <Name>NetCTLpan|http://cbs.dtu.dk/services/NetCTLpan/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetCTLpan/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Prediction of pan-specific integrated class I antigen presentation</Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Version>1.1</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetMHC">
+        <Name>NetMHC|http://cbs.dtu.dk/services/NetMHC/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetMHC/</Homepage>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Prediction of binding of peptides to MHC class I alleles</Description>
+        <Version>3.4</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetMHCcons">
+        <Name>NetMHCcons|http://cbs.dtu.dk/services/NetMHCcons/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetMHCcons/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Prediction of binding of peptides to any known MHC class I molecule</Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetMHCII">
+        <Name>NetMHCII|http://cbs.dtu.dk/services/NetMHCII/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetMHCII/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of binding of peptides to MHC class II alleles</Description>
+        <Version>2.2</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetMHCIIpan">
+        <Name>NetMHCIIpan|http://cbs.dtu.dk/services/NetMHCIIpan/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetMHCIIpan/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of pan-specific binding of peptides to MHC class II HLA-DR alleles of known sequence
+        </Description>
+        <Version>3.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetMHCpan">
+        <Name>NetMHCpan|http://cbs.dtu.dk/services/NetMHCpan/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetMHCpan/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of pan-specific binding of peptides to MHC class I alleles of known sequence
+        </Description>
+        <Version>2.8</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetMHCstab">
+        <Name>NetMHCstab|http://cbs.dtu.dk/services/NetMHCstab-1.0/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetMHCstab-1.0/</Homepage>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Prediction of stability of peptide:MHC-I complexes</Description>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NNAlign">
+        <Name>NNAlign|http://cbs.dtu.dk/services/NNAlign/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NNAlign/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Identifying sequence motifs in quantitative peptide data</Description>
+        <Version>1.4</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_VDJsolver">
+        <Name>VDJsolver|http://cbs.dtu.dk/services/VDJsolver/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/VDJsolver/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Analysis of human immunoglobulin VDJ recombination</Description>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_ChloroP1.1">
+        <Name>ChloroP|http://cbs.dtu.dk/services/ChloroP/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/ChloroP/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of presence of chloroplast transit peptides and their cleavage sites in plant
+            proteins
+        </Description>
+        <Version>1.1</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_LipoP">
+        <Name>LipoP|http://cbs.dtu.dk/services/LipoP/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/LipoP/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Prediction of lipoproteins and signal peptides in Gram negative
+            bacteria
+        </Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetNES">
+        <Name>NetNES|http://cbs.dtu.dk/services/NetNES/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetNES/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of leucine-rich nuclear export signals (NES) in eukaryotic
+            proteins
+        </Description>
+        <Collection>CBS</Collection>
+        <Version>1.1</Version>
+    </Tool>
+    <Tool toolid="CBS_SecretomeP">
+        <Name>SecretomeP|http://cbs.dtu.dk/services/SecretomeP/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/SecretomeP/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of non-classical and leaderless secretion of proteins</Description>
+        <Version>2.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_SignalP">
+        <Name>SignalP|http://cbs.dtu.dk/services/SignalP/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/SignalP/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Prediction of the presence and location of signal peptide and cleavage sites in gram+, gram- and eukaryotic amino acid sequences
+        </Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Version>4.1</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_TargetP">
+        <Name>TargetP|http://cbs.dtu.dk/services/TargetP/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/TargetP/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of subcellular location of proteins: mitochondrial, chloroplastic,
+            secretory pathway, or other
+        </Description>
+        <Version>1.1</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_TatP">
+        <Name>TatP|http://cbs.dtu.dk/services/TatP/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/TatP/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Prediction of the presence and location of Twin-arginine signal peptides</Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_ArchaeaFun">
+        <Name>ArchaeaFun|http://cbs.dtu.dk/services/ArchaeaFun/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/ArchaeaFun/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>ab initio predictions of enzyme class (if any) from sequence</Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_CPHmodels">
+        <Name>CPHmodels|http://cbs.dtu.dk/services/CPHmodels/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/CPHmodels/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Prediction of protein structure from sequence: distance constraints</Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Version>3.2</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_distanceP">
+        <Name>distanceP|http://cbs.dtu.dk/services/distanceP/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/distanceP/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>prediction of protein distance constraints between amino acids in proteins from the amino acid
+            sequence
+        </Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
 
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_EPipe">
-<Name>EPipe|http://cbs.dtu.dk/services/EPipe/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/EPipe/</Homepage>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>prediction of functional differences of protein variants </Description>
-<Version>0.982</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_InterMap3D">
-<Name>InterMap3D|http://cbs.dtu.dk/services/InterMap3D/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/InterMap3D/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Prediction of co-evolving amino acids in proteins</Description>
-<InterfacesWebUI>true</InterfacesWebUI>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_EPipe">
+        <Name>EPipe|http://cbs.dtu.dk/services/EPipe/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/EPipe/</Homepage>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>prediction of functional differences of protein variants</Description>
+        <Version>0.982</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_InterMap3D">
+        <Name>InterMap3D|http://cbs.dtu.dk/services/InterMap3D/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/InterMap3D/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Prediction of co-evolving amino acids in proteins</Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
 
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetSurfP">
-<Name>NetSurfP|http://cbs.dtu.dk/services/NetSurfP/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetSurfP/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Prediction of protein secondary structure and relative solvent accessibility</Description>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Version>1.1</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetTurnP">
-<Name>NetTurnP|http://cbs.dtu.dk/services/NetTurnP/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetTurnP/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>prediction of beta-turns and beta-turn types in proteins</Description>
-<Version>1.0</Version>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_ProtFun">
-<Name>ProtFun|http://cbs.dtu.dk/services/ProtFun/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/ProtFun/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>ab initio prediction of protein functional category and enzyme class (Eukarya) </Description>
-<Version>2.2</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_RedHom">
-<Name>RedHom|http://cbs.dtu.dk/services/RedHom/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/RedHom/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Reduction of sequence similarity in a data set </Description>
-<InterfacesWebUI>true</InterfacesWebUI>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetSurfP">
+        <Name>NetSurfP|http://cbs.dtu.dk/services/NetSurfP/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetSurfP/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Prediction of protein secondary structure and relative solvent accessibility</Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Version>1.1</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetTurnP">
+        <Name>NetTurnP|http://cbs.dtu.dk/services/NetTurnP/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetTurnP/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>prediction of beta-turns and beta-turn types in proteins</Description>
+        <Version>1.0</Version>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_ProtFun">
+        <Name>ProtFun|http://cbs.dtu.dk/services/ProtFun/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/ProtFun/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>ab initio prediction of protein functional category and enzyme class (Eukarya)</Description>
+        <Version>2.2</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_RedHom">
+        <Name>RedHom|http://cbs.dtu.dk/services/RedHom/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/RedHom/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Reduction of sequence similarity in a data set</Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
 
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_TMHMM">
-<Name>TMHMM|http://cbs.dtu.dk/services/TMHMM/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/TMHMM/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of transmembrane helices in proteins</Description>
-<Version>2.0</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_VarDom">
-<Name>VarDom|http://cbs.dtu.dk/services/VarDom/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/VarDom/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Composition and classification analysis of the malaria antigen familyPfEMP1 </Description>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Version>1.0</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_DictyOGlyc">
-<Name>DictyOGlyc|http://cbs.dtu.dk/services/DictyOGlyc/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/DictyOGlyc/</Homepage>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description> Neural network predictions for O-(alpha)-GlcNAc glycosylation sites (trained on Dictyostelium
-    discoideum proteins)</Description>
-<Version>1.1 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetAcet">
-<Name>NetAcet|http://cbs.dtu.dk/services/NetAcet/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetAcet/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction substrates of N-terminal acetylation in eukaryotic proteins</Description>
-<Version>1.0 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetCGlyc">
-<Name>NetCGlyc|http://cbs.dtu.dk/services/NetCGlyc/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetCGlyc/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Neural network predictions of C-mannosylation sites in mammalian proteins </Description>
-<Version>1.0 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetCorona">
-<Name>NetCorona|http://cbs.dtu.dk/services/NetCorona/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetCorona/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of coronavirus 3C-like proteinase cleavage sites in proteins </Description>
-<Version>1.0 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetGlycate">
-<Name>NetGlycate|http://cbs.dtu.dk/services/NetGlycate/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetGlycate/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of glycation of epsilon amino groups of lysines in mammalian proteins </Description>
-<Version>1.0 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetNGlyc">
-<Name>NetNGlyc|http://cbs.dtu.dk/services/NetNGlyc/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetNGlyc/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of N-linked glycosylation sites in human proteins </Description>
-<Version>1.0 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetOGlyc">
-<Name>NetOGlyc|http://cbs.dtu.dk/services/NetOGlyc/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetOGlyc/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description> Neural network predictions for O-GalNAc (mucin type) glycosylation sites in mammalian proteins </Description>
-<Version>4.0 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetPhorest">
-<Name>NetPhorest|http://www.netphorest.info/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://www.netphorest.info/</Homepage>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Linear motif atlas for phosphorylation-dependent signaling </Description>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetPhos">
-<Name>NetPhos|http://cbs.dtu.dk/services/NetPhos/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetPhos/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Neural network predictions for generic phosphorylation sites in eukaryotic proteins</Description>
-<Version>2.0 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetPhosBac">
-<Name>NetPhosBac|http://cbs.dtu.dk/services/NetPhosBac-1.0/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetPhosBac-1.0/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Predictions of generic phosphorylation sites in bacterial proteins </Description>
-<Version>1.0 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetPhosK">
-<Name>NetPhosK|http://cbs.dtu.dk/services/NetPhosK/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetPhosK/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Neural network predictions of kinase specific phosphorylation sites in eukaryotic proteins </Description>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Version>1.0 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetPhosYeast">
-<Name>NetPhosYeast|http://cbs.dtu.dk/services/NetPhosYeast/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetPhosYeast/</Homepage>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Prediction of serine and threonine phosphorylation sites in yeast proteins </Description>
-<Version>1.0</Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetPicoRNA">
-<Name>NetPicoRNA|http://cbs.dtu.dk/services/NetPicoRNA/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/NetPicoRNA/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Neural network predictions of posttranslational cleavage sites of picornaviral proteases </Description>
-<Version>1.0 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_NetworKIN">
-<Name>NetworKIN|http://www.networkin.info/version_2_0/search.php</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://www.networkin.info/version_2_0/search.php</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<Description>Prediction in in vivo kinase-substrate relationships</Description>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_ProP">
-<Name>ProP|http://cbs.dtu.dk/services/ProP/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/ProP/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Prediction of arginine and lysine propeptide cleavage sites in eukaryotic protein sequences  </Description>
-<Version>1.0 </Version>
-<Collection>CBS </Collection>
-</Tool>
-<Tool toolid="CBS_YinOYang">
-<Name>YinOYang|http://cbs.dtu.dk/services/YinOYang/</Name>
-<Type>Tool </Type>
-<Institutions>CBS</Institutions>
-<Homepage>http://cbs.dtu.dk/services/YinOYang/</Homepage>
-<Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
-<InterfacesWebUI>true</InterfacesWebUI>
-<Description>Neural network predictions for O-(beta)-GlcNAc glycosylation and Yin-Yang sites (intracellular/nuclear proteins) </Description>
-<Version>1.2 </Version>
-<Collection>CBS </Collection>
-</Tool>
-        </Tools>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_TMHMM">
+        <Name>TMHMM|http://cbs.dtu.dk/services/TMHMM/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/TMHMM/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of transmembrane helices in proteins</Description>
+        <Version>2.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_VarDom">
+        <Name>VarDom|http://cbs.dtu.dk/services/VarDom/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/VarDom/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Composition and classification analysis of the malaria antigen familyPfEMP1</Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_DictyOGlyc">
+        <Name>DictyOGlyc|http://cbs.dtu.dk/services/DictyOGlyc/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/DictyOGlyc/</Homepage>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Neural network predictions for O-(alpha)-GlcNAc glycosylation sites (trained on Dictyostelium
+            discoideum proteins)
+        </Description>
+        <Version>1.1</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetAcet">
+        <Name>NetAcet|http://cbs.dtu.dk/services/NetAcet/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetAcet/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction substrates of N-terminal acetylation in eukaryotic proteins</Description>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetCGlyc">
+        <Name>NetCGlyc|http://cbs.dtu.dk/services/NetCGlyc/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetCGlyc/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Neural network predictions of C-mannosylation sites in mammalian proteins</Description>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetCorona">
+        <Name>NetCorona|http://cbs.dtu.dk/services/NetCorona/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetCorona/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of coronavirus 3C-like proteinase cleavage sites in proteins</Description>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetGlycate">
+        <Name>NetGlycate|http://cbs.dtu.dk/services/NetGlycate/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetGlycate/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of glycation of epsilon amino groups of lysines in mammalian proteins</Description>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetNGlyc">
+        <Name>NetNGlyc|http://cbs.dtu.dk/services/NetNGlyc/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetNGlyc/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of N-linked glycosylation sites in human proteins</Description>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetOGlyc">
+        <Name>NetOGlyc|http://cbs.dtu.dk/services/NetOGlyc/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetOGlyc/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Neural network predictions for O-GalNAc (mucin type) glycosylation sites in mammalian proteins
+        </Description>
+        <Version>4.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetPhorest">
+        <Name>NetPhorest|http://www.netphorest.info/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://www.netphorest.info/</Homepage>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Linear motif atlas for phosphorylation-dependent signaling</Description>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetPhos">
+        <Name>NetPhos|http://cbs.dtu.dk/services/NetPhos/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetPhos/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Neural network predictions for generic phosphorylation sites in eukaryotic proteins</Description>
+        <Version>2.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetPhosBac">
+        <Name>NetPhosBac|http://cbs.dtu.dk/services/NetPhosBac-1.0/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetPhosBac-1.0/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Predictions of generic phosphorylation sites in bacterial proteins</Description>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetPhosK">
+        <Name>NetPhosK|http://cbs.dtu.dk/services/NetPhosK/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetPhosK/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Neural network predictions of kinase specific phosphorylation sites in eukaryotic proteins
+        </Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetPhosYeast">
+        <Name>NetPhosYeast|http://cbs.dtu.dk/services/NetPhosYeast/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetPhosYeast/</Homepage>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Prediction of serine and threonine phosphorylation sites in yeast proteins</Description>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetPicoRNA">
+        <Name>NetPicoRNA|http://cbs.dtu.dk/services/NetPicoRNA/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/NetPicoRNA/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Neural network predictions of posttranslational cleavage sites of picornaviral proteases
+        </Description>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_NetworKIN">
+        <Name>NetworKIN|http://www.networkin.info/version_2_0/search.php</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://www.networkin.info/version_2_0/search.php</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <Description>Prediction in in vivo kinase-substrate relationships</Description>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_ProP">
+        <Name>ProP|http://cbs.dtu.dk/services/ProP/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/ProP/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Prediction of arginine and lysine propeptide cleavage sites in eukaryotic protein sequences
+        </Description>
+        <Version>1.0</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+    <Tool toolid="CBS_YinOYang">
+        <Name>YinOYang|http://cbs.dtu.dk/services/YinOYang/</Name>
+        <Type>Tool</Type>
+        <Institutions>CBS</Institutions>
+        <Homepage>http://cbs.dtu.dk/services/YinOYang/</Homepage>
+        <Helpdesk>mailto:rapacki@cbs.dtu.dk</Helpdesk>
+        <InterfacesWebUI>true</InterfacesWebUI>
+        <Description>Neural network predictions for O-(beta)-GlcNAc glycosylation and Yin-Yang sites
+            (intracellular/nuclear proteins)
+        </Description>
+        <Version>1.2</Version>
+        <Collection>CBS</Collection>
+    </Tool>
+</Tools>

@@ -23,36 +23,6 @@ public class GDataUtils {
 
     private static Logger log = LoggerFactory.getLogger(GDataUtils.class);
 
-    private static Map<Integer, String> worksheetMapByIndex = fillMapByIndex();
-    private static Map<String, Integer> worksheetMapByID = fillMapByID();
-    private static final String ids = "od6,od7,od4,od5,oda,odb,od8,od9,ocy,ocz,ocw,ocx,od2,od3,od0,od1,ocq,ocr,oco,ocp,ocu,ocv,ocs,oct,oci,ocj,ocg,och,ocm,ocn,ock,ocl,oe2,oe3,oe0,oe1,oe6,oe7,oe4,oe5,odu,odv,ods,odt,ody,odz,odw,odx,odm,odn,odk,odl,odq,odr,odo,odp,ode,odf,odc,odd,odi,odj,odg,odh,obe,obf,obc,obd,obi,obj,obg,obh,ob6,ob7,ob4,ob5,oba,obb,ob8,ob9,oay,oaz,oaw,oax,ob2,ob3,ob0,ob1,oaq,oar,oao,oap,oau,oav,oas,oat,oca,ocb,oc8,oc9";
-
-
-//
-//    public static SSpreadsheet makeSpreadsheetToParse(GDataSelectionParams params) {
-//
-//        boolean isOntSource = params.isOntologySource();
-//
-//        try {
-//            SpreadsheetService service = authenticate(params.getUsername(), params.getPassword());
-//            SpreadsheetEntry spreadsheetToParse = setSpreadsheet(service, params.getCccSpreadsheetKey());
-//
-//            if (isOntSource && (params.getOntMapSource() == null || params.getOntMapSource().size() == 0)) {
-//                log.warn("Warning, OntMapSource was not generated; it is missing or empty.");
-//            } else {
-//                return new SSpreadsheet(service, spreadsheetToParse, params);
-//            }
-//
-//        } catch (IOException e) {
-//            e.printStackTrace();  //todo:
-//        } catch (ServiceException e) {
-//            e.printStackTrace();  //todo:
-//        } catch (URISyntaxException e) {
-//            e.printStackTrace();  //todo:
-//        }
-//        return null;
-//    }
-
     public static SpreadsheetService authenticate(String username, String password) throws ServiceException, IOException {
         //todo: rename this
         SpreadsheetService service = new SpreadsheetService("MySpreadsheetIntegration-v1");
@@ -91,9 +61,8 @@ public class GDataUtils {
         for (SpreadsheetEntry spreadsheetEntry : spreadsheets) {
 
             String link = spreadsheetEntry.getSpreadsheetLink().getHref();
-            String linkKey = link.substring(link.lastIndexOf("=") + 1);
 
-            if (linkKey.equals(keyOfSpreadsheet)) {
+            if (link.contains(keyOfSpreadsheet)) {
                 return spreadsheetEntry;
             }
         }
@@ -163,29 +132,27 @@ public class GDataUtils {
     }
 
     public static int getSingleIndexFromID(String worksheetId) {
-        return worksheetMapByID.get(worksheetId);
+        boolean idIsNewStyle = worksheetId.length() > 3;
+
+        // if the id is in the new style, first strip the first character before converting
+        worksheetId = idIsNewStyle ? worksheetId.substring(1) : worksheetId;
+
+        // determine the integer to use for bitwise XOR
+        int xorValue = idIsNewStyle ? 474 : 31578;
+
+        // convert to gid
+        return Integer.parseInt(worksheetId, 36) ^ xorValue;
     }
 
     public static String getSingleIdFromIndex(int worksheetIndex) {
-        String id = worksheetMapByIndex.get(worksheetIndex);
-        if (id.equals("")) log.error("Illegal worksheet index: " + worksheetIndex);
-        return id;
-    }
+// if worksheet ids are greater than 31578, they are in the new style
+        boolean idIsNewStyle = worksheetIndex > 31578;
 
-    private static Map<Integer, String> fillMapByIndex() {
-        // It is reprehensible that Google's API doesn't allow you to fetch these, but Google will be Google.
-        Map<Integer, String> indexMap = new HashMap<Integer, String>();
-        String[] idArray = ids.split(",");
-        for (int i = 0; i < idArray.length; i++) indexMap.put(i, idArray[i]);
-        return indexMap;
-    }
+        // determine the integer to use for bitwise XOR
+        int xorValue = idIsNewStyle ? 474 : 31578;
+        // convert to worksheet id
+        return idIsNewStyle ? 'o' + Integer.toString((worksheetIndex ^ xorValue), 36): Integer.toString((worksheetIndex ^ xorValue), 36);
 
-    private static Map<String, Integer> fillMapByID() {
-        // It is reprehensible that Google's API doesn't allow you to fetch these, but Google will be Google.
-        Map<String, Integer> indexMap = new HashMap<String, Integer>();
-        String[] idArray = ids.split(",");
-        for (int i = 0; i < idArray.length; i++) indexMap.put(idArray[i], i);
-        return indexMap;
     }
 
     public static int[] stringToIntArr(String delimString) {
@@ -416,7 +383,7 @@ public class GDataUtils {
         return worksheetAsMap;
     }
 
-    private static List<CellEntry> getCellEntries(WorksheetEntry worksheetEntry, SpreadsheetService authenticatedService)  {
+    private static List<CellEntry> getCellEntries(WorksheetEntry worksheetEntry, SpreadsheetService authenticatedService) {
         int maxRow = worksheetEntry.getRowCount();
         int maxCol = worksheetEntry.getColCount();
 
@@ -425,7 +392,7 @@ public class GDataUtils {
 
         try {
             rowFeedURL = new URI(worksheetEntry.getCellFeedUrl().toString() + "?max-row=" + maxRow + "&max-col=" + maxCol).toURL();
-             rowFeed = authenticatedService.getFeed(rowFeedURL, CellFeed.class);
+            rowFeed = authenticatedService.getFeed(rowFeedURL, CellFeed.class);
         } catch (MalformedURLException e) {
             e.printStackTrace();  //todo:
         } catch (URISyntaxException e) {
@@ -459,7 +426,7 @@ public class GDataUtils {
 
     public static WorksheetEntry getWorksheetFromUrl(SpreadsheetService authenticatedService, String fullWorksheetUrl) {
 
-        if(fullWorksheetUrl==null||fullWorksheetUrl.equals("")){
+        if (fullWorksheetUrl == null || fullWorksheetUrl.equals("")) {
             log.error("Full worksheet url must not be null or blank.");
             System.exit(0);
         }
@@ -514,5 +481,39 @@ public class GDataUtils {
         }
 
         return colTitles;
+    }
+
+    // "od4" to 2  (legacy style)
+    // "ogtw0h0" to 1017661118 (new style)
+    public static int widToGid(String worksheetId) {
+
+        boolean idIsNewStyle = worksheetId.length() > 3;
+
+        // if the id is in the new style, first strip the first character before converting
+        worksheetId = idIsNewStyle ? worksheetId.substring(1) : worksheetId;
+
+        // determine the integer to use for bitwise XOR
+        int xorValue = idIsNewStyle ? 474 : 31578;
+
+        // convert to gid
+        return Integer.parseInt(worksheetId, 36) ^ xorValue;
+
+    }
+
+    // Convert 2 to "od4" (legacy style)
+    // Convert 1017661118 to "ogtw0h0"  (new style)
+    public static String gidToWid(int gid) {
+
+        // if worksheet ids are greater than 31578, they are in the new style
+        boolean idIsNewStyle = gid > 31578;
+
+        // determine the integer to use for bitwise XOR
+        int xorValue = idIsNewStyle ? 474 : 31578;
+
+        // determine whether to prefix the id with 'o' or not
+        char letter = idIsNewStyle ? 'o' : '\u0000';
+
+        // convert to worksheet id
+        return letter + Integer.toString((gid ^ xorValue), 36);
     }
 }
