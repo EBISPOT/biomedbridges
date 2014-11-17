@@ -6,8 +6,10 @@ import com.google.gdata.data.spreadsheet.CellEntry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.*;
 
 /**
@@ -38,6 +40,10 @@ public class XmlParseUtils {
     private static Set<String> searchTermsCache = new HashSet<String>();
     private static Set<String> brokenLinks = new HashSet<String>();
     private static String trailingspace = "";
+
+    private static String doiPrefix = "https://www.google.co.uk/search?q=";
+    private static String pmcIdPrefix = "http://www.ncbi.nlm.nih.gov/pmc/articles/";
+    private static String pmIdPrefix = "http://www.ncbi.nlm.nih.gov/pubmed/";
 
 
     public static Map<String, Set<String>> getTermRequests() {
@@ -100,35 +106,66 @@ public class XmlParseUtils {
         // if the contents of the cell are empty or to be ignored
         if (treatAsEmpty(originalText)) return bindEmpty(modelAttribute);
 
-        // remove line breaks, clean double spaces, check urls, emails etc
-        String normalisedText = normaliseText(modelAttribute, originalText);
-
-        // clean ampersands
-        normalisedText = cleanAmpersands(modelAttribute.isURL(), normalisedText);
-
-        // build up the search term string for later
-        buildSearchTerms(modelAttribute, normalisedText);
-
-        // fetch the string that will be used as the open xml tag
-        // if the column has enumerated values to be written in the style of <interfacesWebGUI>true</interfacesWebGUI>
-        // the tag name will be stored accordingly
-
-        String tagName = getTagName(modelAttribute, normalisedText);
-        String nodeContent = getNodeContent(modelAttribute, normalisedText, writeUrisInXml, false);
-
+        String normalisedText = "";
         String result = "";
 
-        if (modelAttribute.isJoinWithNext()) result = openTag(tagName) + nodeContent + xmlDelimiter;
-        else if (modelAttribute.isJoinWithPrevious()) result = nodeContent + closeTag(tagName);
-        else result = openTag(tagName) + nodeContent + closeTag(tagName);
+        if (modelAttribute.getAttributeName().contains("Publication")) {
+            try {
+                result = getPubURL(originalText);
+            } catch (UnsupportedEncodingException e) {
+                log.error("Could not encode "+originalText);
+                e.printStackTrace();
+            }
+        } else {
 
-        if (modelAttribute.isWriteElementsAsBool()) {
-            result += openTag(modelAttribute.getAttributeName()) + getNodeContent(modelAttribute, normalisedText, writeUrisInXml, true) + closeTag(modelAttribute.getAttributeName());
+            // remove line breaks, clean double spaces, check urls, emails etc
+            normalisedText = normaliseText(modelAttribute, originalText);
+
+            // clean ampersands
+            normalisedText = cleanAmpersands(modelAttribute.isURL(), normalisedText);
+
+            // build up the search term string for later
+            buildSearchTerms(modelAttribute, normalisedText);
+
+            // fetch the string that will be used as the open xml tag
+            // if the column has enumerated values to be written in the style of <interfacesWebGUI>true</interfacesWebGUI>
+            // the tag name will be stored accordingly
+
+            String tagName = getTagName(modelAttribute, normalisedText);
+            String nodeContent = getNodeContent(modelAttribute, normalisedText, writeUrisInXml, false);
+
+
+            if (modelAttribute.isJoinWithNext()) result = openTag(tagName) + nodeContent + xmlDelimiter;
+            else if (modelAttribute.isJoinWithPrevious()) result = nodeContent + closeTag(tagName);
+            else result = openTag(tagName) + nodeContent + closeTag(tagName);
+
+            if (modelAttribute.isWriteElementsAsBool()) {
+                result += openTag(modelAttribute.getAttributeName()) + getNodeContent(modelAttribute, normalisedText, writeUrisInXml, true) + closeTag(modelAttribute.getAttributeName());
+            }
+
+            result = result.replace("true <", "true<");
         }
 
-        result = result.replace("true <", "true<");
-
         return result;
+    }
+
+    private static String getPubURL(String originalText) throws UnsupportedEncodingException {
+        String pubUrl = "";
+        if (originalText.toLowerCase().startsWith("doi:")) {
+            pubUrl = originalText.replaceAll("doi:", "").replaceAll("DOI:", "");
+            pubUrl = pubUrl.trim();
+            pubUrl = doiPrefix + URLEncoder.encode(pubUrl, "UTF-8");
+        } else if (originalText.toLowerCase().startsWith("pmid:")) {
+            pubUrl = originalText.replaceAll("pmid:", "").replaceAll("PMID:", "");
+            pubUrl = pubUrl.trim();
+            pubUrl = pmIdPrefix + URLEncoder.encode(pubUrl, "UTF-8");
+        } else if (originalText.toLowerCase().startsWith("pmcid:")) {
+            pubUrl = originalText.replaceAll("pmcid:", "").replaceAll("PMCID:", "");
+            pubUrl = pubUrl.trim();
+            pubUrl = pmcIdPrefix + URLEncoder.encode(pubUrl, "UTF-8");
+        }
+
+        return pubUrl;
     }
 
     private static String getNodeContent(ModelSpreadsheet.ModelWorksheet.ModelAttribute modelAttribute, String normalisedText, boolean writeUrisInXml, boolean overrideWriteAsBoolean) {
@@ -445,7 +482,7 @@ public class XmlParseUtils {
 
         String cleanString = originalString
                 .replaceAll("\\r?\\n", " ").replaceAll(" +", " ")
-                .replaceAll("<","&lt;").replaceAll(">","&gt;").trim();
+                .replaceAll("<", "&lt;").replaceAll(">", "&gt;").trim();
 
 
         if (modelAttribute.isEmail())
@@ -474,7 +511,7 @@ public class XmlParseUtils {
         else return originalString;
     }
 
-    public static boolean urlExists(String URLName){
+    public static boolean urlExists(String URLName) {
         try {
             HttpURLConnection.setFollowRedirects(false);
             // note : you may also need
@@ -483,9 +520,8 @@ public class XmlParseUtils {
                     (HttpURLConnection) new URL(URLName).openConnection();
             con.setRequestMethod("HEAD");
             return (con.getResponseCode() == HttpURLConnection.HTTP_OK);
-        }
-        catch (Exception e) {
-            log.error(URLName+" is broken.");
+        } catch (Exception e) {
+            log.error(URLName + " is broken.");
             return false;
         }
     }
