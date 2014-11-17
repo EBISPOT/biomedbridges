@@ -40,7 +40,7 @@ public class ParserDriver {
 
         sourcesManifest.loadSources();
         StringBuilder xml = sourcesManifest.parseSpreadsheets();
-        writeXmlToFile(xml, outfileBasePath + "src/main/Outputs/RegistryContent.xml");
+        writeXmlToFile(xml, outfileBasePath + "src/main/Outputs/tools.xml");
 
         logToFile(sourcesManifest.getLogOfIgnoredRows(), outfileBasePath + "src/main/Outputs/IgnoredRows.txt");
         logToFile(sourcesManifest.getLogOfIgnoredCols(), outfileBasePath + "src/main/Outputs/IgnoredColumns.txt");

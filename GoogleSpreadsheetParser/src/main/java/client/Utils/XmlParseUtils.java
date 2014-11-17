@@ -531,7 +531,7 @@ public class XmlParseUtils {
         sb.append("<?xml version=\"1.0\" ?>");
         sb.append("<" + groupName);
         //todo: parameterise this
-        sb.append(" xmlns=\"http://www.ebi.ac.uk/fgpt/toolsui/schema\"\n" +
+        sb.append(" xmlns=\"http://wwwdev.ebi.ac.uk/fgpt/toolsui/schema\"\n" +
                 "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n");
         sb.append(">");
         return sb;
