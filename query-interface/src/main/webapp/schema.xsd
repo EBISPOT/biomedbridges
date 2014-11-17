@@ -139,7 +139,7 @@
                         minOccurs="0"
                         xmlns:sch="http://wwwdev.ebi.ac.uk/fgpt/toolsui/schema">
                 <xs:annotation>
-                    <xs:documentation>&lt;Tools xmlns="http://www.ebi.ac.uk/fgpt/toolsui/schema"xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"xsi:schemaLocation="http://www.ebi.ac.uk/fgpt/toolsui/schemahttp://www.ebi.ac.uk/fgpt/toolsui/2014/10/29/schema.xsd"></xs:documentation>
+                    <xs:documentation>&lt;Tools xmlns="http://wwwdev.ebi.ac.uk/fgpt/toolsui/schema"xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"xsi:schemaLocation="http://wwwdev.ebi.ac.uk/fgpt/toolsui/schemahttp://wwwdev.ebi.ac.uk/fgpt/toolsui/2014/10/29/schema.xsd"></xs:documentation>
                 </xs:annotation>
                 <xs:unique name="testUnique">
                     <xs:selector xpath="tool"/>
