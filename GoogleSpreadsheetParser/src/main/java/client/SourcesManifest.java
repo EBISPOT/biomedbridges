@@ -64,11 +64,7 @@ public class SourcesManifest {
         try {
             this.configSpreadsheet = GDataUtils.setSpreadsheet(authenticatedService, cccKeyForParserConfiguration);
             this.dataModel = loadDataModelSource(false, addSynonyms, configIndexForModel, "");
-        } catch (IOException e) {
-            e.printStackTrace();  //todo:
-        } catch (ServiceException e) {
-            e.printStackTrace();  //todo:
-        } catch (URISyntaxException e) {
+        } catch (IOException | ServiceException | URISyntaxException e) {
             e.printStackTrace();  //todo:
         }
         this.contentSpreadsheets = loadContentSpreadsheets(configIndexForDataSource, omitIncompleteRows, writeUrisInXml);

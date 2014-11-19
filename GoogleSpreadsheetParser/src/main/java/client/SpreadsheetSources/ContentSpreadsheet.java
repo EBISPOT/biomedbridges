@@ -56,6 +56,7 @@ public class ContentSpreadsheet extends EnhancedSpreadsheet {
         log.info("Parsing xml for spreadsheet " + spreadsheet.getTitle().getPlainText());
 
         StringBuilder spreadsheetXml = new StringBuilder();
+
         for (ContentWorksheet contentWorksheet : contentWorksheets) {
             StringBuilder worksheetXml = contentWorksheet.parseWorksheet();
             spreadsheetXml.append(worksheetXml);
@@ -220,7 +221,7 @@ public class ContentSpreadsheet extends EnhancedSpreadsheet {
                     rowIsIncomplete = true;
                 } else {
                     int numCols = ContentWorksheet.this.getColCount();
-                    for (int colIndex = 1; colIndex < numCols; colIndex++) {
+                    for (int colIndex = 1; colIndex <= numCols; colIndex++) {
                         if (!columnsToIgnore.contains(correspondingHeaders[colIndex])) {
                             String cellXml = processToolRowAtColumn(colIndex, rowTitleCell.getPlainTextContent());
                             rowXml.append(cellXml);

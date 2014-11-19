@@ -53,7 +53,8 @@
             <xs:element type="xs:string" name="PlatformsOSX"/>
             <xs:element type="xs:string" name="PlatformsWindows"/>
             <xs:element type="xs:string" name="Provider"/>
-            <xs:element type="xs:string" name="PublicationsPrimary"/>
+            <xs:element type="xs:string" name="Publications"/>
+            <xs:element type="xs:string" name="PublicationsOther"/>
             <xs:element type="xs:string" name="SearchTerms"/>
             <xs:element type="xs:string" name="Tags"/>
             <xs:element type="xs:string" name="WSDL"/>

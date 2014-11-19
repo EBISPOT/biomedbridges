@@ -38,6 +38,7 @@ public class ParserDriver {
 
     private void run() {
 
+        XmlParseUtils.initialiseSearchTermsCache("/Users/jmcmurry/code/bmb-registry/GoogleSpreadsheetParser/src/main/resources/AutocompleteFederated.txt");
         sourcesManifest.loadSources();
         StringBuilder xml = sourcesManifest.parseSpreadsheets();
         writeXmlToFile(xml, outfileBasePath + "src/main/Outputs/tools.xml");

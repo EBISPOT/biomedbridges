@@ -6,7 +6,7 @@ import com.google.gdata.data.spreadsheet.CellEntry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -39,9 +39,9 @@ public class XmlParseUtils {
 
     private static Set<String> searchTermsCache = new HashSet<String>();
     private static Set<String> brokenLinks = new HashSet<String>();
-    private static String trailingspace = "";
+    private static String trailingspace = " ";
 
-    private static String doiPrefix = "https://www.google.co.uk/search?q=";
+    private static String doiPrefix = "http://dx.doi.org/";
     private static String pmcIdPrefix = "http://www.ncbi.nlm.nih.gov/pmc/articles/";
     private static String pmIdPrefix = "http://www.ncbi.nlm.nih.gov/pubmed/";
 
@@ -107,13 +107,17 @@ public class XmlParseUtils {
         if (treatAsEmpty(originalText)) return bindEmpty(modelAttribute);
 
         String normalisedText = "";
+        String nodeContent = "";
         String result = "";
 
-        if (modelAttribute.getAttributeName().contains("Publication")) {
+        if (modelAttribute.getAttributeName().contains("ublication")) {
             try {
-                result = getPubURL(originalText);
+                nodeContent = getPubURL(originalText);
+                String tagName = getTagName(modelAttribute, normalisedText);
+                result = openTag(tagName) + nodeContent + closeTag(tagName);
+
             } catch (UnsupportedEncodingException e) {
-                log.error("Could not encode "+originalText);
+                log.error("Could not encode " + originalText);
                 e.printStackTrace();
             }
         } else {
@@ -132,7 +136,7 @@ public class XmlParseUtils {
             // the tag name will be stored accordingly
 
             String tagName = getTagName(modelAttribute, normalisedText);
-            String nodeContent = getNodeContent(modelAttribute, normalisedText, writeUrisInXml, false);
+            nodeContent = getNodeContent(modelAttribute, normalisedText, writeUrisInXml, false);
 
 
             if (modelAttribute.isJoinWithNext()) result = openTag(tagName) + nodeContent + xmlDelimiter;
@@ -150,19 +154,21 @@ public class XmlParseUtils {
     }
 
     private static String getPubURL(String originalText) throws UnsupportedEncodingException {
+
+        if (originalText.indexOf('|') != -1) {
+            originalText = originalText.substring(0, originalText.indexOf('|'));
+        }
         String pubUrl = "";
-        if (originalText.toLowerCase().startsWith("doi:")) {
+        String lowercaseString = originalText.toLowerCase();
+        if (lowercaseString.startsWith("doi:")) {
             pubUrl = originalText.replaceAll("doi:", "").replaceAll("DOI:", "");
-            pubUrl = pubUrl.trim();
-            pubUrl = doiPrefix + URLEncoder.encode(pubUrl, "UTF-8");
-        } else if (originalText.toLowerCase().startsWith("pmid:")) {
+            pubUrl = doiPrefix + pubUrl.trim();
+        } else if (lowercaseString.startsWith("pmid:")) {
             pubUrl = originalText.replaceAll("pmid:", "").replaceAll("PMID:", "");
-            pubUrl = pubUrl.trim();
-            pubUrl = pmIdPrefix + URLEncoder.encode(pubUrl, "UTF-8");
-        } else if (originalText.toLowerCase().startsWith("pmcid:")) {
+            pubUrl = pmIdPrefix + pubUrl.trim();
+        } else if (lowercaseString.startsWith("pmcid:")) {
             pubUrl = originalText.replaceAll("pmcid:", "").replaceAll("PMCID:", "");
-            pubUrl = pubUrl.trim();
-            pubUrl = pmcIdPrefix + URLEncoder.encode(pubUrl, "UTF-8");
+            pubUrl = pmcIdPrefix + pubUrl.trim();
         }
 
         return pubUrl;
@@ -527,14 +533,44 @@ public class XmlParseUtils {
     }
 
     public static StringBuilder initalizeXml(String groupName) {
+
         StringBuilder sb = new StringBuilder();
         sb.append("<?xml version=\"1.0\" ?>");
         sb.append("<" + groupName);
         //todo: parameterise this
+//        sb.append(" xmlns=\"http://wwwdev.ebi.ac.uk/fgpt/toolsui/schema\"\n" +
+//                "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n");
         sb.append(" xmlns=\"http://wwwdev.ebi.ac.uk/fgpt/toolsui/schema\"\n" +
-                "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n");
-        sb.append(">");
+                "       xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n" +
+                "        >\n" +
+                "    xsi:schemaLocation=\"\n" +
+                "    http://www.ebi.ac.uk/fgpt/toolsui/schema\n" +
+                "    http://www.ebi.ac.uk/fgpt/toolsui/2014/10/29/schema.xsd\n" +
+                "    \">");
         return sb;
+    }
+
+    public static void initialiseSearchTermsCache(String filename)  {
+
+        BufferedReader in = null;
+        try {
+            in = new BufferedReader(new FileReader(new File(filename)));
+        } catch (FileNotFoundException e) {
+            log.error(filename + " could not be found." );
+            e.printStackTrace();  //todo:
+        }
+
+        try {
+            assert in != null;
+            while (in.ready()) {
+                String line = in.readLine();
+                searchTermsCache.add("<Term><TermName>"+line+"</TermName></Term>");
+            }
+            in.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();  //todo:
+        }
     }
 
     public static StringBuilder finaliseXml(String groupName) {
@@ -546,4 +582,5 @@ public class XmlParseUtils {
     public static Set<String> getBrokenLinks() {
         return brokenLinks;
     }
+
 }
