@@ -6,6 +6,10 @@ import com.google.gdata.data.spreadsheet.CellEntry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.util.*;
 
 /**
@@ -34,39 +38,18 @@ public class XmlParseUtils {
     private static String tagTextForJoins = "";
 
     private static Set<String> searchTermsCache = new HashSet<String>();
+    private static Set<String> brokenLinks = new HashSet<String>();
     private static String trailingspace = " ";
+
+    private static String doiPrefix = "http://dx.doi.org/";
+    private static String pmcIdPrefix = "http://www.ncbi.nlm.nih.gov/pmc/articles/";
+    private static String pmIdPrefix = "http://www.ncbi.nlm.nih.gov/pubmed/";
 
 
     public static Map<String, Set<String>> getTermRequests() {
 
         return termRequests;
     }
-
-//    private static void checkDuplicateEntries(ContentSpreadsheet.ContentWorksheet worksheet) {
-//
-//        Set<String> duplicates = new HashSet<String>();
-//
-//        List<CellEntry> rowTitleCells = worksheet.getRowTitleCells();
-//        List<String> rowTitles = new ArrayList<String>();
-//
-//        for (int i = 1; i < rowTitleCells.size(); i++) {
-//            String rowTitle = rowTitleCells.getLabel(i).getPlainTextContent();
-//            rowTitles.add(rowTitle);
-//        }
-//
-//        for (String text : rowTitles) {
-//            int occurrences = Collections.frequency(rowTitles, text);
-//            if (occurrences > 1) duplicates.add(text + " occurs " + occurrences + " times in the worksheet.");
-//
-//        }
-//
-//        if (duplicates.size() > 0) for (String duplicate : duplicates) {
-//            log.warn(duplicate);
-//        }
-//
-//        else log.info("No duplicates found.");
-//
-//    }
 
     public static String openTag(String tagName) {
         return "\n<" + tagName + ">";
@@ -80,6 +63,10 @@ public class XmlParseUtils {
     public static String closeTag(String tagName) {
         return trailingspace + "</" + tagName + ">";
     }
+
+//    public static String bindNode(){
+//
+//    }
 
 
     public static String bindCell(ModelSpreadsheet.ModelWorksheet.ModelAttribute modelAttribute, CellEntry cell, boolean writeUrisInXml) {
@@ -101,7 +88,7 @@ public class XmlParseUtils {
 //            String colDelimiter = modelAttribute.getDelimiter();
 //            if (colDelimiter.equals("|")) colDelimiter = "\\|";
                 //todo: configure delims and check for presence of actual tags containing commas
-                String[] multiVals = cellText.split("\\n|\\||,|;");
+                String[] multiVals = cellText.split("\\||,|;");
 
                 // per Jon's request, adding a trailing space to all multival nodes
                 for (String val : multiVals) {
@@ -119,29 +106,107 @@ public class XmlParseUtils {
         // if the contents of the cell are empty or to be ignored
         if (treatAsEmpty(originalText)) return bindEmpty(modelAttribute);
 
-        // remove line breaks, clean double spaces, check urls, emails etc
-        String normalisedText = normaliseText(modelAttribute, originalText);
+        String normalisedText = "";
+        String nodeContent = "";
+        String result = "";
 
-        // clean ampersands
-        normalisedText = cleanAmpersands(modelAttribute.isURL(), normalisedText);
+        if (modelAttribute.getAttributeName().contains("ublication")) {
+            try {
+                nodeContent = getPubURL(originalText);
+                String tagName = getTagName(modelAttribute, normalisedText);
+                result = openTag(tagName) + nodeContent + closeTag(tagName);
 
-        if (modelAttribute.isSemantic()) {
-            String ontologyLabel = modelAttribute.getOntologyWorksheet().getLabel(normalisedText);
-            if(ontologyLabel == null){
-                storeTermRequest(modelAttribute.getOntologySourceUrl(),normalisedText);
+            } catch (UnsupportedEncodingException e) {
+                log.error("Could not encode " + originalText);
+                e.printStackTrace();
             }
+        } else {
+
+            // remove line breaks, clean double spaces, check urls, emails etc
+            normalisedText = normaliseText(modelAttribute, originalText);
+
+            // clean ampersands
+            normalisedText = cleanAmpersands(modelAttribute.isURL(), normalisedText);
+
+            // build up the search term string for later
+            buildSearchTerms(modelAttribute, normalisedText);
+
+            // fetch the string that will be used as the open xml tag
+            // if the column has enumerated values to be written in the style of <interfacesWebGUI>true</interfacesWebGUI>
+            // the tag name will be stored accordingly
+
+            String tagName = getTagName(modelAttribute, normalisedText);
+            nodeContent = getNodeContent(modelAttribute, normalisedText, writeUrisInXml, false);
+
+
+            if (modelAttribute.isJoinWithNext()) result = openTag(tagName) + nodeContent + xmlDelimiter;
+            else if (modelAttribute.isJoinWithPrevious()) result = nodeContent + closeTag(tagName);
+            else result = openTag(tagName) + nodeContent + closeTag(tagName);
+
+            if (modelAttribute.isWriteElementsAsBool()) {
+                result += openTag(modelAttribute.getAttributeName()) + getNodeContent(modelAttribute, normalisedText, writeUrisInXml, true) + closeTag(modelAttribute.getAttributeName());
+            }
+
+            result = result.replace("true <", "true<");
         }
 
-        // fetch the string that will be used as the open xml tag
-        String tagName = getTagName(modelAttribute, normalisedText);
+        return result;
+    }
 
-        // build up the search term string for later
-        buildSearchTerms(modelAttribute, normalisedText);
+    private static String getPubURL(String originalText) throws UnsupportedEncodingException {
 
-        String result = getElementResult(modelAttribute, openTag(tagName), normalisedText, closeTag(tagName), writeUrisInXml);
+        if (originalText.indexOf('|') != -1) {
+            originalText = originalText.substring(0, originalText.indexOf('|'));
+        }
+        String pubUrl = "";
+        String lowercaseString = originalText.toLowerCase();
+        if (lowercaseString.startsWith("doi:")) {
+            pubUrl = originalText.replaceAll("doi:", "").replaceAll("DOI:", "");
+            pubUrl = doiPrefix + pubUrl.trim();
+        } else if (lowercaseString.startsWith("pmid:")) {
+            pubUrl = originalText.replaceAll("pmid:", "").replaceAll("PMID:", "");
+            pubUrl = pmIdPrefix + pubUrl.trim();
+        } else if (lowercaseString.startsWith("pmcid:")) {
+            pubUrl = originalText.replaceAll("pmcid:", "").replaceAll("PMCID:", "");
+            pubUrl = pmcIdPrefix + pubUrl.trim();
+        }
 
-        // todo: this is a hack for jon as the only values that need to omit trailing spaces are the boolean ones
-        return result.replace("true <", "true<");
+        return pubUrl;
+    }
+
+    private static String getNodeContent(ModelSpreadsheet.ModelWorksheet.ModelAttribute modelAttribute, String normalisedText, boolean writeUrisInXml, boolean overrideWriteAsBoolean) {
+        String nodeContent = "";
+        String ontologyLabel = "";
+
+        // node content will either be an ontologyLabel, "true", or the normalised text, depending on whether the model attribute is
+        // semantic, writeasboolean, or neither of these
+        // if it is writeasboolean, but overridden, it should be treated as a simple semantic
+
+        if (modelAttribute.isSemantic() || modelAttribute.isWriteElementsAsBool()) {// isWriteElementsAsBool is elements in the style of <interfaceWebUI>true</interfaceWebUI>
+            ArrayList<String> labelAndURI = getLabelAndURI(modelAttribute, normalisedText);
+
+            if (modelAttribute.isWriteElementsAsBool() && !overrideWriteAsBoolean) {
+                nodeContent = "true";
+            }
+            // if issemantic, check that normalised text corresponds to an ontology term
+            // if it does, fetch the uri
+            if ((modelAttribute.isSemantic() && !modelAttribute.isWriteElementsAsBool()) || overrideWriteAsBoolean) {
+                ontologyLabel = labelAndURI.get(0);
+
+                nodeContent = ontologyLabel;
+                if (writeUrisInXml)
+                    nodeContent = normalisedText + "|" + labelAndURI.get(1);
+            }
+        }
+        // if neither semantic nor writeasboolean
+        if (!modelAttribute.isSemantic() && !modelAttribute.isWriteElementsAsBool()) nodeContent = normalisedText;
+
+        // pair node content with the appropriate tags
+
+        if (nodeContent == null)
+            System.out.println();
+
+        return nodeContent;
 
     }
 
@@ -166,121 +231,48 @@ public class XmlParseUtils {
         return treatAsEmpty;
     }
 
-    private static String getElementResult(ModelSpreadsheet.ModelWorksheet.ModelAttribute modelAttribute, String openTag, String normalisedText, String closeTag, boolean writeUrisInXml) {
+    private static String getElementResult(ModelSpreadsheet.ModelWorksheet.ModelAttribute modelAttribute, String openTag, String normalisedText, String closeTag, boolean writeUrisInXml, boolean overrideWriteAsBoolean) {
         String nodeContent = "";
         String ontologyLabel = "";
 
-        String elementURI = getElementURI(modelAttribute, normalisedText);
+        // node content will either be an ontologyLabel, "true", or the normalised text, depending on whether the model attribute is
+        // semantic, writeasboolean, or neither of these
+        // if it is writeasboolean, but overridden, it should be treated as a simple semantic
 
-        // isWriteElementsAsBool is elements in the style of <interfaceWebUI>true</interfaceWebUI>
-        if (modelAttribute.isWriteElementsAsBool()) {
-            if (elementURI != null) {
+        if (modelAttribute.isSemantic() || modelAttribute.isWriteElementsAsBool()) {// isWriteElementsAsBool is elements in the style of <interfaceWebUI>true</interfaceWebUI>
+            ArrayList<String> labelAndURI = getLabelAndURI(modelAttribute, normalisedText);
+
+            if (modelAttribute.isWriteElementsAsBool() && !overrideWriteAsBoolean) {
                 nodeContent = "true";
-            } else nodeContent = "not found";
-        }
-        // if issemantic, check that normalised text corresponds to an ontology term
-        // if it does, fetch the uri
-        else if (modelAttribute.isSemantic()) {
-            if (elementURI != null) {
-                ontologyLabel = normalisedText;
-            } else ontologyLabel = modelAttribute.getOntologyWorksheet().getLabel(normalisedText);
+            }
+            // if issemantic, check that normalised text corresponds to an ontology term
+            // if it does, fetch the uri
+            if ((modelAttribute.isSemantic() && !modelAttribute.isWriteElementsAsBool()) || overrideWriteAsBoolean) {
+                ontologyLabel = labelAndURI.get(0);
 
-            nodeContent = ontologyLabel;
-            if (writeUrisInXml)
-                nodeContent = normalisedText + "|" + elementURI;
+                nodeContent = ontologyLabel;
+                if (writeUrisInXml)
+                    nodeContent = normalisedText + "|" + labelAndURI.get(1);
+            }
         }
         // if neither semantic nor writeasboolean
-        else nodeContent = normalisedText;
+        if (!modelAttribute.isSemantic() && !modelAttribute.isWriteElementsAsBool()) nodeContent = normalisedText;
 
         // pair node content with the appropriate tags
 
+        if (nodeContent == null)
+            System.out.println();
+
         if (modelAttribute.isJoinWithNext()) return openTag + nodeContent + xmlDelimiter;
         if (modelAttribute.isJoinWithPrevious()) return nodeContent + closeTag;
+
         else return openTag + nodeContent + closeTag;
     }
 //
-//    private static String getOntologyLabel(ModelSpreadsheet.ModelWorksheet.ModelAttribute modelAttribute, String synonym) {
-//
-//        if (modelAttribute == null) {
-//            log.error("ModelAttribute corresponding to " + synonym + " is null.");
-//            System.exit(1);
-//        }
-//
-//        if (synonym == null || synonym.equals(""))
-//            log.warn("Entered term is null for this column: " + modelAttribute.getTitle());
-//
-//        if (modelAttribute.getOntologyWorkbook() == null) {
-//            log.error("The OntTermMap for ModelAttribute corresponding to \"" + synonym + "\" is null.");
-//            System.exit(1);
-//        }
-//
-//        String matchingLabel = modelAttribute.getOntologyWorksheet().getLabel();
-//
-//        // if there is no exact match for term
-//        if (matchingLabel == null) {
-//            log.warn("No exact match label found within: \"" + modelAttribute.getAttributeName() + "\" for \"" + synonym + "\""); //todo: link to spreadsheet
-//
-//            // getLabel fuzzy matches
-//            ArrayList<String> matchedLabels = getFuzzyMatch(synonym, synonymLabelMap);
-//
-//            int numLabelsMached = matchedLabels.size();
-//
-//            // if numURIsMatched == 0, log the term request
-//            if (numLabelsMached == 0) {
-//                storeTermRequest(modelAttribute, synonym);
-//                // so that the xml parsing can continue, just return a temporary value.
-//                matchingLabel = synonym;
-//            }
-//
-//            // if only one fuzzy match matchingURI, take it and warn
-//            else if (numLabelsMached == 1) {
-//                String matchedLabel = matchedLabels.getLabel(0);
-//                log.warn("Fuzzy match accepted for \"" + synonym + "\":\"" + matchedLabel + "\"");
-//                //todo: dynamically prompt user in each case?
-//                matchingLabel = synonymLabelMap.getLabel(matchedLabel);
-//            }
-//
-//
-//            // if more than one fuzzy match matchingURI, don't make assumptions
-//            else if (numLabelsMached >= 1) {
-//                //todo: fix this
-//                String matchedLabel = matchedLabels.getLabel(0);
-//                matchingLabel = synonymLabelMap.getLabel(matchedLabel);
-//                log.warn("Fuzzy match accepted for \"" + synonym + "\":\"" + matchedLabel + "\"");
-////                return matchingURI;
-//
-////                int matchedTermsSize = matchedTerms.size();
-////
-////                String msg = "The following " + matchedTermsSize + " matches found: ";
-////
-////                for (int i = 0; i < matchedTermsSize; i++) {
-////
-////                    msg += "\n" + i + ": " + matchedTerms.getLabel(i);
-////                }
-////
-////                log.warn("Please select the number corresponding to the desired match or enter -1 to indicate none of these: " + msg);
-////
-////                int selection = 0;
-////                try {
-////                    selection = getIntegerFromUser();
-////                } catch (IOException e) {
-////                    e.printStackTrace();  //todo:
-////                }
-////                if (selection > -1 && selection < matchedTermsSize) return matchedTerms.getLabel(selection);
-////                else return termRequestNowIssued;
-//
-//            }
-//
-//
-//        }
-//
-//        assert matchingLabel != null;
-//
-//        return matchingLabel;
-//    }
-//
 
     private static void buildSearchTerms(ModelSpreadsheet.ModelWorksheet.ModelAttribute modelAttribute, String text) {
+
+        text = text.replaceAll("\n", " ");
 
         //todo: this is currently hackery to get search to work easily
         // the program will use this single node of text to execute the search
@@ -307,25 +299,6 @@ public class XmlParseUtils {
         }
     }
 
-//    private static String getCloseTag(ModelAttribute columnProfile, String text) {
-//        if (columnProfile.isJoinWithPrevious()) {
-//            return closeTag(tagTextForJoins);
-//        }
-//
-//        // Else, use the column header name as the close tag
-//        String tagName = columnProfile.getAttributeName();
-//
-//        // if the column has enumerated values in it
-//        if (columnProfile.doParseEnum()) {
-//
-//            // and change the tag name by appending the value
-//            tagName += text.replaceAll(" |-", "");
-//        }
-//
-//        return closeTag(tagName);
-//
-//    }
-
     private static String getTagName(ModelSpreadsheet.ModelWorksheet.ModelAttribute modelAttribute, String nodeContent) {
 
         if (modelAttribute.isJoinWithPrevious()) return tagTextForJoins;
@@ -337,13 +310,13 @@ public class XmlParseUtils {
         if (modelAttribute.isWriteElementsAsBool()) {
             String label = "";
 
-            if (modelAttribute.getOntologyWorksheet().containsKey(nodeContent)) {
+            if (modelAttribute.getOntologyWorksheet().containsKey(nodeContent.toLowerCase().replaceAll("-", " "))) {
                 label = modelAttribute.getOntologyWorksheet().getLabel(nodeContent);
                 if (label == null) {
-                    label = nodeContent;
+                    label = "Other";
                     log.warn("No ontology term label for " + nodeContent);
                 }
-            } else label = nodeContent;
+            } else label = "Other";
 
             // and change the tag name by appending the value
             tagName += label.replaceAll(" |-", "");
@@ -384,30 +357,21 @@ public class XmlParseUtils {
         return normalisedEmail;
     }
 
-    private static String getElementURI(ModelSpreadsheet.ModelWorksheet.ModelAttribute modelAttribute, String enteredTerm) {
+    private static ArrayList<String> getLabelAndURI(ModelSpreadsheet.ModelWorksheet.ModelAttribute modelAttribute, String enteredTerm) {
 
-        if (modelAttribute == null) {
-            log.error("ModelAttribute corresponding to " + enteredTerm + " is null.");
-            System.exit(1);
-        }
+        checkParams(modelAttribute, enteredTerm);
 
-        if (!modelAttribute.isSemantic()){
-            log.warn("Model attribute "+modelAttribute.getAttributeName()+" does not call for ontology terms.");
+
+        if (!modelAttribute.isSemantic()) {
+            log.warn("Model attribute " + modelAttribute.getAttributeName() + " does not call for ontology terms.");
             return null;
         }
 
-        if (enteredTerm == null || enteredTerm.equals(""))
-            log.warn("Entered term is null for this column: " + modelAttribute.getTitle());
-
-        if (modelAttribute.getOntologyWorksheet() == null) {
-            log.error("The OntTermMap for ModelAttribute corresponding to \"" + enteredTerm + "\" is null.");
-            System.exit(1);
-        }
-
-        String matchingURI = modelAttribute.getOntologyWorksheet().getUri(enteredTerm);
+        String uri = modelAttribute.getOntologyWorksheet().getUri(enteredTerm.toLowerCase());
+        String label = modelAttribute.getOntologyWorksheet().getLabel(enteredTerm.toLowerCase());
 
         // if there is no exact match for term
-        if (matchingURI == null) {
+        if (uri == null) {
             log.warn("No exact match URI found within: \"" + modelAttribute.getAttributeName() + "\" for \"" + enteredTerm + "\""); //todo: link to spreadsheet
 
             // getLabel fuzzy matches
@@ -420,7 +384,8 @@ public class XmlParseUtils {
             if (numURIsMatched == 0) {
                 storeTermRequest(modelAttribute.getOntologySourceUrl(), enteredTerm);
                 // so that the xml parsing can continue, just return a temporary value.
-                matchingURI = termRequestNowIssued;
+                uri = termRequestNowIssued;
+                label = enteredTerm;
             }
 
             // if only one fuzzy match matchingURI, take it and warn
@@ -428,7 +393,8 @@ public class XmlParseUtils {
                 String matchedTerm = matchedTerms.get(0);
                 log.warn("Fuzzy match accepted for \"" + enteredTerm + "\":\"" + matchedTerm + "\"");
                 //todo: dynamically prompt user in each case?
-                matchingURI = ontologyEntryHashMap.get(matchedTerm).getUri();
+                uri = ontologyEntryHashMap.get(matchedTerm.toLowerCase()).getUri();
+                label = matchedTerm;
             }
 
 
@@ -436,41 +402,39 @@ public class XmlParseUtils {
             else if (numURIsMatched >= 1) {
                 //todo: fix this
                 String matchedTerm = matchedTerms.get(0);
-                matchingURI = ontologyEntryHashMap.get(matchedTerm).getUri();
+                uri = ontologyEntryHashMap.get(matchedTerm.toLowerCase()).getUri();
+                label = matchedTerm;
                 log.warn("Fuzzy match accepted for \"" + enteredTerm + "\":\"" + matchedTerm + "\"");
-//                return matchingURI;
-
-//                int matchedTermsSize = matchedTerms.size();
-//
-//                String msg = "The following " + matchedTermsSize + " matches found: ";
-//
-//                for (int i = 0; i < matchedTermsSize; i++) {
-//
-//                    msg += "\n" + i + ": " + matchedTerms.getLabel(i);
-//                }
-//
-//                log.warn("Please select the number corresponding to the desired match or enter -1 to indicate none of these: " + msg);
-//
-//                int selection = 0;
-//                try {
-//                    selection = getIntegerFromUser();
-//                } catch (IOException e) {
-//                    e.printStackTrace();  //todo:
-//                }
-//                if (selection > -1 && selection < matchedTermsSize) return matchedTerms.getLabel(selection);
-//                else return termRequestNowIssued;
-
             }
 
 
         }
 
-        assert matchingURI != null;
-        if (matchingURI.equals("TBD")) matchingURI = termRequestAlreadyPending;
+        assert uri != null;
+        if (uri.equals("TBD")) uri = termRequestAlreadyPending;
 
-        matchingURI = cleanAmpersands(true, matchingURI);
+        uri = cleanAmpersands(true, uri);
 
-        return matchingURI;
+        ArrayList<String> labelAndUri = new ArrayList<String>();
+        labelAndUri.add(label);
+        labelAndUri.add(uri);
+        return labelAndUri;
+    }
+
+    private static void checkParams(ModelSpreadsheet.ModelWorksheet.ModelAttribute modelAttribute, String enteredTerm) {
+        if (modelAttribute == null) {
+            log.error("ModelAttribute corresponding to " + enteredTerm + " is null.");
+            System.exit(1);
+        }
+
+
+        if (enteredTerm == null || enteredTerm.equals(""))
+            log.warn("Entered term is null for this column: " + modelAttribute.getTitle());
+
+        if (modelAttribute.getOntologyWorksheet() == null) {
+            log.error("The OntTermMap for ModelAttribute corresponding to \"" + enteredTerm + "\" is null.");
+            System.exit(1);
+        }
     }
 
     public static void storeTermRequest(String ontUrl, String enteredTerm) {
@@ -495,7 +459,7 @@ public class XmlParseUtils {
 
         for (Map.Entry<String, OntologyWorksheet.OntologyEntry> entry : ontologyEntryHashMap.entrySet()) {
             if (TextUtils.isFuzzyMatch(enteredTerm.toLowerCase(), entry.getKey().toLowerCase(), 3, 5)) {
-                matchedEntities.add(entry.getKey());
+                matchedEntities.add(entry.getValue().getLabel());
             }
         }
 
@@ -522,7 +486,9 @@ public class XmlParseUtils {
 
     public static String normaliseText(ModelSpreadsheet.ModelWorksheet.ModelAttribute modelAttribute, String originalString) {
 
-        String cleanString = originalString.replaceAll("\\r?\\n", " ").replaceAll(" +", " ").trim();
+        String cleanString = originalString
+                .replaceAll("\\r?\\n", " ").replaceAll(" +", " ")
+                .replaceAll("<", "&lt;").replaceAll(">", "&gt;").trim();
 
 
         if (modelAttribute.isEmail())
@@ -539,6 +505,7 @@ public class XmlParseUtils {
     public static String cleanAmpersands(boolean isURL, String originalString) {
         // if the string is a URL
         if (isURL) {
+//            if(!urlExists(originalString))brokenLinks.add(originalString);
             return originalString.replaceAll("&", "&amp;").replaceAll("&amp;amp;", "&amp;");
         }
         // if the string isn't a URL, but contains "&" (an illegal character), clean it
@@ -550,17 +517,70 @@ public class XmlParseUtils {
         else return originalString;
     }
 
+    public static boolean urlExists(String URLName) {
+        try {
+            HttpURLConnection.setFollowRedirects(false);
+            // note : you may also need
+            //        HttpURLConnection.setInstanceFollowRedirects(false)
+            HttpURLConnection con =
+                    (HttpURLConnection) new URL(URLName).openConnection();
+            con.setRequestMethod("HEAD");
+            return (con.getResponseCode() == HttpURLConnection.HTTP_OK);
+        } catch (Exception e) {
+            log.error(URLName + " is broken.");
+            return false;
+        }
+    }
+
     public static StringBuilder initalizeXml(String groupName) {
+
         StringBuilder sb = new StringBuilder();
         sb.append("<?xml version=\"1.0\" ?>");
-        sb.append(openTag(groupName));
+        sb.append("<" + groupName);
+        //todo: parameterise this
+//        sb.append(" xmlns=\"http://wwwdev.ebi.ac.uk/fgpt/toolsui/schema\"\n" +
+//                "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n");
+        sb.append(" xmlns=\"http://wwwdev.ebi.ac.uk/fgpt/toolsui/schema\"\n" +
+                "       xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n" +
+                "        >\n" +
+                "    xsi:schemaLocation=\"\n" +
+                "    http://www.ebi.ac.uk/fgpt/toolsui/schema\n" +
+                "    http://www.ebi.ac.uk/fgpt/toolsui/2014/10/29/schema.xsd\n" +
+                "    \">");
         return sb;
+    }
+
+    public static void initialiseSearchTermsCache(String filename)  {
+
+        BufferedReader in = null;
+        try {
+            in = new BufferedReader(new FileReader(new File(filename)));
+        } catch (FileNotFoundException e) {
+            log.error(filename + " could not be found." );
+            e.printStackTrace();  //todo:
+        }
+
+        try {
+            assert in != null;
+            while (in.ready()) {
+                String line = in.readLine();
+                searchTermsCache.add("<Term><TermName>"+line+"</TermName></Term>");
+            }
+            in.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();  //todo:
+        }
     }
 
     public static StringBuilder finaliseXml(String groupName) {
         StringBuilder sb = new StringBuilder();
         sb.append(closeTag(groupName));
         return sb;
+    }
+
+    public static Set<String> getBrokenLinks() {
+        return brokenLinks;
     }
 
 }

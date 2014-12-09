@@ -11,17 +11,13 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.io.Serializable;
 import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA.
  * User: jmcmurry
  * Date: 26/02/2014
  * Time: 15:15
- * To change this template use File | Settings | File Templates.
  */
 public class OntologyWorksheet {
 
@@ -43,15 +39,15 @@ public class OntologyWorksheet {
         this.fullWorksheetUrl = fullWorksheetUrl;
         this.ontWorksheetTable = GDataUtils.getTableOfStrings(worksheetEntry, authenticatedService);
         this.indexOfFirstDataRow = indexOfFirstDataRow;
-        this.ontologyRowsCache = loadOntologyRows();
         this.addSynonyms = addSynonyms;
+        this.ontologyRowsCache = loadOntologyRows();
     }
 
     private HashMap<String, OntologyEntry> loadOntologyRows() {
 
         HashMap<String, OntologyEntry> queryStringOntEntryMap = new HashMap<String, OntologyEntry>();
 
-        for (int row = indexOfFirstDataRow; row < worksheetEntry.getRowCount(); row++) {
+        for (int row = indexOfFirstDataRow; row <= worksheetEntry.getRowCount(); row++) {
 
             String ontLabel = ontWorksheetTable[row][1];
             String uri = ontWorksheetTable[row][2];
@@ -60,21 +56,12 @@ public class OntologyWorksheet {
 
             OntologyEntry ontologyEntry = null;
 
-//            getLog().debug("Parsing row " + row + ". " + ontLabel + ": " + uri);
+            getLog().debug("Parsing row " + row + ". " + ontLabel + ": " + uri);
 
-//                if (addSynonyms) {
-//                    String synonymString = ontologyWorksheetTable[row][3];
-//                    if (synonymString != null) {
-//                        String delim = "\\|";
-//                        String[] synonyms = synonymString.split(delim);
-//
-//                        String label = ontLabel;
-//
-//                        for (String synonym : synonyms) {
-//                            synonymLabelMap.put(synonym, label);
-//                        }
-//                    }
-//                }
+            if (addSynonyms) {
+                synonymString = ontWorksheetTable[row][3];
+            }
+
             if (!ontLabel.equals("")) {
                 if (uri.equals("")) {
                     getLog().warn("URI is blank at " + worksheetEntry + "at row " + row + " column " + 2
@@ -83,7 +70,7 @@ public class OntologyWorksheet {
 
                 ontologyEntry = new OntologyEntry(fullWorksheetUrl, ontLabel, synonymString, uri, row);
 
-                ArrayList<String> queryStrings = ontologyEntry.getQueryStringsInLowercase();
+                Set<String> queryStrings = ontologyEntry.getQueryStringsInLowercase();
 
                 // so that URI can be fetched from termLabel and from synonyms
 
@@ -94,13 +81,6 @@ public class OntologyWorksheet {
         }
         return queryStringOntEntryMap;
     }
-
-//    public String getLabel(String queryString) {
-//
-//        queryString = queryString.toLowerCase();
-//
-//        return null;  //To change body of created methods use File | Settings | File Templates.
-//    }
 
     public boolean containsKey(String nodeContent) {
         return (ontologyRowsCache.containsKey(nodeContent));
@@ -117,7 +97,7 @@ public class OntologyWorksheet {
         log.debug("Getting label from query string: '" + queryString + "'");
         if (ontologyRowsCache.get(queryString) != null) {
             ontologyLabel = ontologyRowsCache.get(queryString).label;
-            log.debug("Query result from ontolgy entry cache" + ontologyLabel);
+            log.debug("Query result from ontolgy entry cache: " + ontologyLabel);
         }
         return ontologyLabel;
     }
@@ -134,9 +114,25 @@ public class OntologyWorksheet {
 
         if (ontologyRowsCache.get(queryString) != null) {
             uri = ontologyRowsCache.get(queryString).uri;
-            log.debug("Query result from ontolgy entry cache" + uri);
+            log.debug("Query result from ontology entry cache: " + uri);
         }
         return uri;
+    }
+
+    public OntologyEntry getOntologyEntry(String queryString){
+        OntologyEntry entry = null;
+
+        if (queryString == null || queryString.equals("")) {
+            log.warn("Query string is null or empty");
+            Thread.dumpStack();
+
+        } else queryString = queryString.toLowerCase();
+
+        if (ontologyRowsCache.get(queryString) != null) {
+            entry = ontologyRowsCache.get(queryString);
+            log.debug("Query result from ontology entry cache: " + entry);
+        }
+        return entry;
     }
 
 
@@ -145,7 +141,6 @@ public class OntologyWorksheet {
      * User: jmcmurry
      * Date: 29/05/2013
      * Time: 17:25
-     * To change this template use File | Settings | File Templates.
      */
     public class OntologyEntry implements Serializable {
 
@@ -164,7 +159,9 @@ public class OntologyWorksheet {
             this.label = label.trim();
             this.uri = uri.trim();
             this.row = row;
-            this.synonymsInLowercase = TextUtils.stringArrayToLowercase(Arrays.asList(synonymString.split("\\|,")));
+            this.synonymsInLowercase = new ArrayList<String>();
+            if (synonymString != null)
+                synonymsInLowercase.addAll(TextUtils.stringArrayToLowercase(Arrays.asList(synonymString.split("[\\|,]+"))));
             getLog().debug(toString());
         }
 
@@ -193,9 +190,9 @@ public class OntologyWorksheet {
             }
         }
 
-        public ArrayList<String> getQueryStringsInLowercase() {
+        public Set<String> getQueryStringsInLowercase() {
 
-            ArrayList<String> queryStrings = new ArrayList<String>();
+            Set<String> queryStrings = new HashSet<String>();
             queryStrings.addAll(synonymsInLowercase);
             queryStrings.add(label.toLowerCase());
             return queryStrings;
@@ -207,6 +204,9 @@ public class OntologyWorksheet {
         }
 
 
+        public String getLabel() {
+            return label;
+        }
     }
 
     public Logger getLog() {

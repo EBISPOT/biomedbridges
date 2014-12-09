@@ -18,7 +18,6 @@ import java.util.*;
  * User: jmcmurry
  * Date: 14/02/2014
  * Time: 09:25
- * To change this template use File | Settings | File Templates.
  */
 public class ModelSpreadsheet extends EnhancedSpreadsheet {
 
@@ -320,8 +319,9 @@ public class ModelSpreadsheet extends EnhancedSpreadsheet {
             private final String xsdType;
             private final boolean required;
             private final String ontologySourceUrl;
-            //            private final String attributeNameSynonymString;
             protected OntologyWorksheet ontologyWorksheet;
+            private boolean firstInNode;
+            private boolean lastInNode;
 
 //            HashMap<String, String> termUriMap = null;
 //            HashMap<String, String> synonymLabelMap = null;
@@ -490,6 +490,13 @@ public class ModelSpreadsheet extends EnhancedSpreadsheet {
                 return ontologyWorksheet;
             }
 
+            public boolean isFirstInNode() {
+                return firstInNode;
+            }
+
+            public boolean isLastInNode() {
+                return lastInNode;
+            }
         }
     }
 
