@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="toolsui:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="toolsui.war">
-      <element id="artifact" artifact-name="toolsui:war exploded" />
-    </root>
-  </artifact>
-</component>
