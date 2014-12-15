@@ -12,6 +12,9 @@ function addheader(e)
         "<a href=\"http://www.elixir-europe.org/\"><img style=\"padding-left:10px\" src=\"./images/ElixirLogo.png\" alt=\"ELIXIR\"></a>" +
     "<a href=\"http://www.biomedbridges.eu/\"><img  style=\"padding-left:10px\" src=\"./images/BMBLogo.jpg\" alt=\"BioMedBridges\"></a>" +
 
+        "This registry is a prototype. Please visit the <a href=\"http://elixir-node.cbs.dtu.dk/\">ELIXIR Tools and Data Services Registry.</a> " +
+
+
 //        "<a href=\"http://bioregistry.cbs.dtu.dk/\"><img  style=\"padding-left:10px\" src=\"./images/notice.png\" alt=\"CBS-DTU\"></a>" +
 
     "</div>" +

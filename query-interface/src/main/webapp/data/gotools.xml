@@ -1,0 +1,1444 @@
+<Tools>
+    <Tool toolid='nlx_149321'>
+        <Name>APID: Agile Protein Interaction DataAnalyzer|http://bioinfow.dep.usal.es/apid </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Integrate and analyze in a unified and comparative platform known information about protein-protein interactions demonstrated by specific small-scale or large-scale experimental methods. </Description>
+        <Institutions>University of Salamanca; Salamanca; Spain </Institutions>
+        <Funding>PI030920, PI061153, SA104/03, CSI03A06, BOCyL no. 119, EDU/777/2005 </Funding>
+        <Infrastructures>Spanish Ministerio de Sanidad y Consumo, ISCIII, Junta de Castilla y Leon, Fundacion BBVA </Infrastructures>
+        <Publications>PMID:16845013, 17644818 </Publications>
+        <Citations>73 </Citations>
+        <Tags>protein-protein interaction analysis, protein-protein interaction, protein interaction, Protein, interaction, cluster coefficient, Gene Ontology, functional environment, environment enrichment, Gene Ontology overlapping, Pfam domain-domain interaction, Visualization, domain-domain interaction, GO Environment, GO Environment Enrichment, interactome, graph </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-20935'>
+        <Name>AmiGO|http://amigo.geneontology.org/cgi-bin/amigo/go.cgi </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Official Web-based set tools for searching and browsing the Gene Ontology database, which consists of a controlled vocabulary of terms covering biological concepts, and a large number of genes or gene products whose attributes have been annotated using GO terms. </Description>
+        <Institutions>GO </Institutions>
+        <Funding>P41 5P41HG002273-08 </Funding>
+        <Infrastructures>NHGRI </Infrastructures>
+        <Publications>PMID:19033274 </Publications>
+        <Citations>237 </Citations>
+        <Tags>gene, gene ontology, gene product, annotation, bioinformatics, biological, blast, concept, protein, search engine, visualization, Ontology, Browser, ontology or annotation browser, ontology or annotation search engine, ontology or annotation visualization, slimmer-type tool, term enrichment, other analysis </Tags>
+   </Tool>
+    <Tool toolid='nlx_149208'>
+        <Name>Avadis|http://www.avadis-ngs.com </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>A data analysis and visualization tool for gene expression data. Avadis has a built-in Gene Ontology browser to view ontology hierarchies. </Description>
+        <Institutions>Strand Life Sciences </Institutions>
+        <Tags>gene expression, statistical analysis, Gene Ontology, browser, ontology, gene, text mining, statistical mining, modelling, analysis, algorithm, microarray, QSAR modelling, biological network, PCA, ANOVA, T-test, clustering, classification, regression </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-30144'>
+        <Name>Babelomics 4: Gene Expression and Functional Profiling Analysis Suite|http://babelomics.bioinfo.cipf.es </Name>
+        <Type>Suite </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Babelomics is a complete suite of web tools for the functional profiling of genome scale experiments, with new and improved methods as well as more types of functional definitions. </Description>
+        <Institutions>CIPF Bioinformatics and Genomics Department </Institutions>
+        <Funding>BIO2008-04212, CEN-2008-1002, RD06/0020/1019 </Funding>
+        <Infrastructures>Spanish Ministry of Science and Innovation, Red Temtica de Investigacin Cooperativa en Cancer, Instituto de Salud Carlos III </Infrastructures>
+        <Publications>PMID:20478823, 18515841, 16845052, 14990455, 15980512, 17478504 </Publications>
+        <Citations>72 </Citations>
+        <Tags>Integration, Platform, Analysis, Transcriptomics, Proteomics, Genomics, Normalization, Clustering, Tool, Environment, Gene, MiRNA, Protein, Interaction, Text mining, Genotyping, Bioentity, Functional profiling, Statistical analysis, Functional annotation, Regulatory motif, Microarray, FatiGO, Biclustering, NetworkMiner, GEPAS </Tags>
+   </Tool>
+    <Tool toolid='nlx_149196'>
+        <Name>BiNGO: A Biological Networks Gene Ontology tool|http://www.psb.ugent.be/cbd/papers/BiNGO/Home.html </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Determine which Gene Ontology (GO) terms are significantly overrepresented in a set of genes. BiNGO can be used either on a list of genes, pasted as text, or interactively on subgraphs of biological networks visualized in Cytoscape. </Description>
+        <Institutions>Ghent University; Ghent; Belgium </Institutions>
+        <Publications>PMID:15972284 </Publications>
+        <Citations>575 </Citations>
+        <Tags>Gene Ontology, Gene, Ontology, statistical analysis, term enrichment, biological network, Plugin </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-30188'>
+        <Name>BioPerl|http://www.bioperl.org </Name>
+        <Type>Library </Type>
+        <Collection>GO Tools </Collection>
+        <Description>BioPerl is a community effort to produce Perl code which is useful in biology. This toolkit of perl modules is useful in building bioinformatics solutions in Perl. </Description>
+        <Institutions>Duke University; North Carolina; USA, European Bioinformatics Institute </Institutions>
+        <Funding>T32 GM0775422, K22 HG00056, K22 HG-00064-01, HG00739, P41HG02223 </Funding>
+        <Infrastructures>Association for the Promotion of Science and Humanities in Germany, Open Bioinformatics Foundation, NIH, NHGRI, EMBL, Wyeth Research </Infrastructures>
+        <Publications>PMID:12368254 </Publications>
+        <Citations>643 </Citations>
+        <Tags>Perl, Biology, Ontology, Library, Sequence, Analysis, Computational, Application, Pipeline, bioinformatics, Sequence, annotation, Module, Life science, Python, Java, Genome, software library, Parse, Manipulate </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-10445'>
+        <Name>Bioconductor|http://www.bioconductor.org/ </Name>
+        <Type>Package </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Open source, open development software project providing tools for the analysis and comprehension of high-throughput genomic data. It is based primarily on the R programming language. </Description>
+        <Institutions>Fred Hutchinson Cancer Research Center </Institutions>
+        <Funding>#1R33 HG002708 </Funding>
+        <Infrastructures>NIH, Catt Family Foundation, Dana-Farber Cancer Institute </Infrastructures>
+        <Publications>PMID:15461798 </Publications>
+        <Citations>3340 </Citations>
+        <Tags>analysis, biological, development, genomic, graphical, metadata, microarray, software, statistical, variant, annotation, High throughput assay, Sequence data, Sequence, Flow, Gene, term enrichment, text mining, Genetic, ontology or annotation browser, ontology or annotation search engine, ontology or annotation visualization, database or data warehouse, software library, statistical analysis, other analysis, Flexible integration of GO into statistical analysis and comprehension of high-throughput genetic data, browser, search engine, visualization, high-throughput, genetics, GenAddiction Tool </Tags>
+   </Tool>
+    <Tool toolid='nlx_149335'>
+        <Name>Blast2GO|http://www.blast2go.com/b2ghome </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Blast2GO (B2G) joins in one universal application similarity search based GO annotation and functional analysis. B2G offers the possibility of direct statistical analysis on gene function information and visualization of relevant functional features on a highlighted GO direct acyclic graph (DAG). </Description>
+        <Institutions>Principe Felipe Research Centre; Valencia; Spain </Institutions>
+        <Funding>GEN 2001 - 4885-C05-03, FP6-2002-LIFESCIHEALTH 503094 </Funding>
+        <Infrastructures>MCyT, eTumour Project </Infrastructures>
+        <Publications>PMID:16081474 </Publications>
+        <Citations>1078 </Citations>
+        <Tags>annotation, visualization, analysis, functional genomics, editor, statistical analysis, slimmer-type tool, ontology or annotation editor, functional analysis, direct acyclic graph, analysis, high throughput, functional genomics </Tags>
+   </Tool>
+    <Tool toolid='nlx_149193'>
+        <Name>Blip: Biomedical Logic Programming|http://www.blipkit.org/ </Name>
+        <Type>Framework </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Biomedical Logical Programming (Blip) is a research-oriented deductive database and prolog application library for handling biological and biomedical data. It includes packages for advanced querying of ontologies and annotations. </Description>
+        <Institutions>Berkeley Bioinformatics Open-Source Projects, </Institutions>
+        <Tags>biology, biomedical, ontology, annotation, software library, bioinformatics, module </Tags>
+   </Tool>
+    <Tool toolid='nlx_149116'>
+        <Name>CGAP GO Browser|http://cgap.nci.nih.gov/Genes/GOBrowser </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>With the CGAP GO browser, you can browse through the GO vocabularies, and find human and mouse genes assigned to each term. </Description>
+        <Institutions>Cancer Genome Anatomy Project </Institutions>
+        <Infrastructures>NCI </Infrastructures>
+        <Tags>Gene, Biological process, Cellular component, Molecular function, Browser, Ontology, ontology or annotation browser </Tags>
+   </Tool>
+    <Tool toolid='nlx_149216'>
+        <Name>CLENCH|http://www.stanford.edu/~nigam/cgi-bin/dokuwiki/doku.php?id=clench </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Cluster Enrichment (CLENCH) allows A. thaliana researchers to perform automated retrieval of GO annotations from TAIR and calculate enrichment of GO terms in gene group with respect to a reference set. </Description>
+        <Institutions>Stanford Center for Biomedical Informatics Research </Institutions>
+        <Publications>PMID:14764555 </Publications>
+        <Citations>23 </Citations>
+        <Tags>Gene, microarray, function, functional categorization, statistical analysis, slimmer-type tool, Gene Ontology, annotation </Tags>
+   </Tool>
+    <Tool toolid='nlx_149117'>
+        <Name>COBrA|http://www.xspan.org/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>COBrA is a Java-based ontology editor for bio-ontologies that distinguishes itself from other editors by supporting the linking of concepts between two ontologies, and providing sophisticated analysis and verification functions. </Description>
+        <Institutions>University of Edinburgh; Scotland; United Kingdom </Institutions>
+        <Funding>BBSRC 15/BEP 17046 </Funding>
+        <Infrastructures>BBSRC </Infrastructures>
+        <Publications>PMID:15513995 </Publications>
+        <Citations>10 </Citations>
+        <Tags>Ontology, Anatomy, Browser, ontology or annotation browser </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-21162'>
+        <Name>Candidate Genes to Inherited Diseases|http://coot.embl.de/g2d/ </Name>
+        <Type>Database </Type>
+        <Collection>GO Tools </Collection>
+        <Description>A database of candidate genes for mapped inherited human diseases. Candidate priorities are automatically established by a data mining algorithm that extracts putative genes in the chromosomal region where the disease is mapped, and evaluates their possible relation to the disease based on the phenotype of the disorder. </Description>
+        <Institutions>European Molecular Biology Laboratory, EMBL - Bork Group </Institutions>
+        <Publications>PMID:16115313 </Publications>
+        <Citations>49 </Citations>
+        <Tags>function, gene, genetic, chromosome, disease, disorder, genome, homology, human, phenotype, protein, region, candidate gene, database, data warehouse, Data Set </Tags>
+   </Tool>
+    <Tool toolid='nlx_149197'>
+        <Name>CateGOrizer|http://www.animalgenome.org/bioinfo/tools/catego/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>CateGOrizer takes batch input of GO term IDs in a list format or unformatted plain text file, allows users to choose one of the available classifications such as GO_slim, GOA, EGAD, MGI_GO_slim, GO-ROOT, or a self-defined classification list, find its parental branch and performs an accumulative classification count, and returns the results in a sorted table of counts, percentages, and a pie chart (if it takes longer than standard time out period, it will email the user with a URL link to the results). </Description>
+        <Institutions>NAGRP Bioinformatics Coordination Program </Institutions>
+        <Tags>Gene ontology, statistical analysis, slimmer-type tool, GO term classification, classification, Analysis, GO Slim </Tags>
+   </Tool>
+    <Tool toolid='nlx_149209'>
+        <Name>ClueGO|http://www.ici.upmc.fr/cluego/ </Name>
+        <Type>Plugin </Type>
+        <Collection>GO Tools </Collection>
+        <Description>A Cytoscape plug-in that visualizes the non-redundant biological terms for large clusters of genes in a functionally grouped network. </Description>
+        <Institutions>National Institute of Health and Medical Research; Rennes; France </Institutions>
+        <Funding>202230 (GENINCA) </Funding>
+        <Infrastructures>National Institute of Health and Medical Research; Rennes; France, Ville de Paris, INCa, Austrian Ministry for Science and Research, BINII, European Union, (7FP) </Infrastructures>
+        <Publications>PMID:19237447 </Publications>
+        <Citations>126 </Citations>
+        <Tags>statistical analysis, function, gene ontology, pathway, annotation, network, Plugin, Gene </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-02683'>
+        <Name>Comparative Toxicogenomics Database|http://ctd.mdibl.org </Name>
+        <Type>Database </Type>
+        <Collection>GO Tools </Collection>
+        <Description>A public database that enhances understanding about the effects of environmental chemicals on human health. Integrated GO data and a GO browser add functionality to CTD by allowing users to understand biological functions, processes and cellular locations that are the targets of chemical exposures. </Description>
+        <Institutions>Mount Desert Island Biological Laboratory, North Carolina State University; North Carolina; USA </Institutions>
+        <Funding>ES014065, R01 ES019604, P20 RR016463 </Funding>
+        <Infrastructures>Pfizer, American Chemistry Council, NCRR, NIEHS </Infrastructures>
+        <Publications>PMID:16902965, 16675512, 14735110, 12760826, </Publications>
+        <Citations>8 </Citations>
+        <Tags>Environment, Chemical, Disease, Gene, Pathway, Protein, Interaction, Animal model, ontology, annotation, Toxin, ontology or annotation browser </Tags>
+   </Tool>
+    <Tool toolid='nlx_149185'>
+        <Name>DBD - Slim Gene Ontology|http://www.dbfordummies.com/go.asp </Name>
+        <Type>Database </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Db for Dummies! is a small database that imports the Generic GO Slim. It allows data to be viewed in a tree. </Description>
+        <Institutions>Db for Dummies! </Institutions>
+        <Tags>Gene ontology, Gene, Hierarchy, Visualization, database or data warehouse </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-30408'>
+        <Name>Database for Annotation Visualization and Integrated Discovery|http://david.abcc.ncifcrf.gov/ </Name>
+        <Type>Database </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The Database for Annotation, Visualization and Integrated Discovery (DAVID ) v6.7 is an update to the sixth version of our original web-accessible programs. DAVID now provides a comprehensive set of functional annotation tools for investigators to understand biological meaning behind large list of genes. </Description>
+        <Institutions>NCI-Frederick </Institutions>
+        <Funding>Contract No. NO1-C0-56000 </Funding>
+        <Infrastructures>NIAID </Infrastructures>
+        <Publications>PMID:19131956, 12734009 </Publications>
+        <Citations>3039 </Citations>
+        <Tags>Web service, Bioinformatics, Microarray, Gene, Annotation, Visualization, Discovery, term enrichment, text mining, Proteomic </Tags>
+   </Tool>
+    <Tool toolid='nlx_149118'>
+        <Name>DynGO|http://www.softpedia.com/get/Science-CAD/DynGO.shtml </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>DynGO is a client-server application that provides several advanced functionalities in addition to the standard browsing capability. DynGO allows users to conduct batch retrieval of GO annotations for a list of genes and gene products, and semantic retrieval of genes and gene products sharing similar GO annotations (which requires more disk and memory to handle the semantic retrieval). The result are shown in an association tree organized according to GO hierarchies and supported with many dynamic display options such as sorting tree nodes or changing orientation of the tree. For GO curators and frequent GO users, DynGO provides fast and convenient access to GO annotation data. DynGO is generally applicable to any data set where the records are annotated with GO terms, as illustrated by two examples. </Description>
+        <Institutions>Georgetown University Medical Center; Washington D.C.; USA, Softpedia </Institutions>
+        <Funding>IIS-0430743 </Funding>
+        <Infrastructures>NSF </Infrastructures>
+        <Publications>PMID:16091147 </Publications>
+        <Citations>10 </Citations>
+        <Tags>Gene, Annotation, Browser, ontology or annotation browser </Tags>
+   </Tool>
+    <Tool toolid='nlx_149218'>
+        <Name>EASE: the Expression Analysis Systematic Explorer|http://david.abcc.ncifcrf.gov/content.jsp?file=/ease/ease1.htm&amp;type=1 </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Facilitates the biological interpretation of gene lists derived from the results of microarray, proteomic, and SAGE experiments. Provides statistical methods for discovering enriched biological themes within gene lists, generates gene annotation tables, and enables automated linking to online analysis tools. Offers statistical models to deal with multi-test comparison problem. </Description>
+        <Institutions>Database for Annotation Visualization and Integrated Discovery </Institutions>
+        <Infrastructures>NIAID </Infrastructures>
+        <Publications>PMID:12734009, 19131956, 19033363 </Publications>
+        <Citations>2036 </Citations>
+        <Tags>Gene, Microarray, Genome, Gene Ontology, Statistical analysis, enrichment analysis </Tags>
+   </Tool>
+    <Tool toolid='nlx_149222'>
+        <Name>EGAN: Exploratory Gene Association Networks|http://akt.ucsf.edu/EGAN/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Allows a bench biologist to visualize and interpret the results of high-throughput exploratory assays in an interactive hypergraph of genes, relationships (protein-protein interactions, literature co-occurrence, etc.) and meta-data (annotation, signaling pathways, etc.). </Description>
+        <Institutions>UCSF Helen Diller Family Comprehensive Cancer Center Biostatistics Core </Institutions>
+        <Funding>P30 CA92103 </Funding>
+        <Infrastructures>NIH </Infrastructures>
+        <Publications>PMID:19933825 </Publications>
+        <Citations>20 </Citations>
+        <Tags>Gene, Gene association, Network, Protein-protein interaction, Pathway, Interaction, Annotation, Signaling pathway, Enrichment, Cytoscape, visualization </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-07758'>
+        <Name>ErmineJ|http://bioinformatics.ubc.ca/ermineJ/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Data analysis software for gene sets in expression microarray data or other genome-wide data that results in rankings of genes. A typical goal is to determine whether particular biological pathways are doing something interesting in the data. </Description>
+        <Institutions>University of British Columbia; British Columbia; Canada, Columbia University; New York; USA </Institutions>
+        <Publications>PMID:16280084 </Publications>
+        <Citations>99 </Citations>
+        <Tags>Microarray, Gene Ontology, Analysis, High-throughput, Gene, Gene expression, Statistical analysis, Term enrichment, genome </Tags>
+   </Tool>
+    <Tool toolid='nlx_149245'>
+        <Name>FIVA - Functional Information Viewer and Analyzer|http://bioinformatics.biol.rug.nl/standalone/fiva/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Functional Information Viewer and Analyzer (FIVA) aids researchers in the prokaryotic community to quickly identify relevant biological processes following transcriptome analysis. Our software is able to assist in functional profiling of large sets of genes and generates a comprehensive overview of affected biological processes. </Description>
+        <Institutions>MolGen </Institutions>
+        <Funding>QLK3-CT-2001-01473 </Funding>
+        <Infrastructures>Netherlands Organization for Scientific Research, industrial partners in the NWO-BMI project number 050.50.206 on Computational Genomics of Prokaryotes, Center IOP Genomics, EU </Infrastructures>
+        <Publications>PMID:17237043 </Publications>
+        <Citations>17 </Citations>
+        <Tags>gene, gene expression, gene expression pattern, functional profile, statistical analysis, metabolic pathway, Gene ontology, Function, ortholog, gene regulatory interaction, biological process, transcriptome, Visualization, analysis </Tags>
+   </Tool>
+    <Tool toolid='nlx_149320'>
+        <Name>FSST - Functional Similarity Search Tool|http://www.gotaxexplorer.de/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The Functional Similarity Search Tool (FSST) has been implemented for comparing user defined sets of annotated entities. FSST supports the computation of functional similarity scores based on an individual ontology and of combined scores. </Description>
+        <Institutions>Max-Planck-Institute for Informatics; Saarbrucken; Germany </Institutions>
+        <Funding>016R0453, contract # KFO 129/1-1, contract # LSHG-CT-2003-503265 </Funding>
+        <Infrastructures>BMBF, European Commission , (FP6), DFG </Infrastructures>
+        <Publications>PMID:17346342 </Publications>
+        <Citations>5 </Citations>
+        <Tags>other analysis, functional similarity search, annotation, ontology, Java, Training Tools </Tags>
+   </Tool>
+    <Tool toolid='nlx_149309'>
+        <Name>FastSemSim|http://sourceforge.net/p/fastsemsim/home/Home/ </Name>
+        <Type>Package </Type>
+        <Collection>GO Tools </Collection>
+        <Description>A package that implements several semantic similarity measures. It is both a library and an end-user application, featuring an intuitive graphical user interface (GUI). </Description>
+        <Institutions>University of Padua; Padua; Italy, SourceForge </Institutions>
+        <Tags>software library, functional similarity, semantic similarity, graphical user interface, Gene Ontology, annotation, parse, gene, protein </Tags>
+   </Tool>
+    <Tool toolid='nlx_149333'>
+        <Name>Flash Gviewer|http://gmod.org/wiki/Flash_GViewer </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Flash GViewer is a customizable Flash movie that can be easily inserted into a web page to display each chromosome in a genome along with the locations of individual features on the chromosomes. </Description>
+        <Institutions>Medical College of Wisconsin; Wisconsin; USA </Institutions>
+        <Tags>visualization, chromosome, video, Gene, QTL, Genome, Navitgation, Phenotype, ontology or annotation visualization </Tags>
+   </Tool>
+    <Tool toolid='nlx_149242'>
+        <Name>FunCluster|http://corneliu.henegar.info/FunCluster.htm </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>FunCluster is a genomic data analysis algorithm which performs functional analysis of  gene expression data obtained from cDNA microarray experiments. Besides automated functional annotation of gene expression data, FunCluster functional analysis aims to detect co-regulated biological processes through a specially designed clustering procedure involving biological annotations and gene expression data. </Description>
+        <Institutions>Cordelier Research Center </Institutions>
+        <Publications>PMID:17007070, 16506959, 16046292 </Publications>
+        <Citations>8 </Citations>
+        <Tags>Genomic, Gene, functional analysis, Gene expression, cDNA microarray, cDNA, Microarray, Function, Cluster, Annotation, Biological process, statistical analysis </Tags>
+   </Tool>
+    <Tool toolid='nlx_149243'>
+        <Name>FunNet - Transcriptional Networks Analysis|http://www.funnet.info/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Functional Analysis of Transcriptional Networks (FunNet) is designed as an integrative tool for analyzing gene co-expression networks built from microarray expression data. The analytical model implemented in this tool involves two abstraction layers: transcriptional (i.e. gene expression profiles) and functional (i.e. biological themes indicating the roles of the analyzed transcripts). </Description>
+        <Institutions>Cordelier Research Center </Institutions>
+        <Publications>PMID:18208606 </Publications>
+        <Citations>58 </Citations>
+        <Tags>Genome, transcriptional interaction, microarray, gene expression, statistical analysis </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-02860'>
+        <Name>FunSimMat|http://funsimmat.bioinf.mpi-inf.mpg.de </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>FunSimMat is a comprehensive resource of semantic and functional similarity values. It allows ranking disease candidate proteins for OMIM diseases and searching for functional similarity values for proteins (extracted from UniProt), and protein families (Pfam, SMART). </Description>
+        <Institutions>Max-Planck-Institute for Informatics; Saarbrucken; Germany </Institutions>
+        <Funding>01GR0453, KFO 129/1-1, KFO 129/1-2, LSHG-CT-2003-503265 </Funding>
+        <Infrastructures>German National Genome Research Network, European Commission, DFG </Infrastructures>
+        <Publications>PMID:19923227, 17932054, </Publications>
+        <Citations>7 </Citations>
+        <Tags>functional similarity value, protein family, protein similarity, semantic similarity value, similarity value, functional similarity, disease gene candidate prioritization, Disease, Protein, Protein family, Disease candidate prioritization, Semantic similarity, Gene ontology, Visualization, Annotation, database or data warehouse, </Tags>
+   </Tool>
+    <Tool toolid='nlx_149246'>
+        <Name>FunSpec|http://funspec.med.utoronto.ca/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>FunSpec is a web-based tool for statistical evaluation of groups of genes and proteins (e.g. co-regulated genes, protein complexes, genetic interactors) with respect to existing annotations, including GO terms. </Description>
+        <Institutions>University of Toronto; Ontario; Canada, </Institutions>
+        <Infrastructures>Genome Canada, CIHR, University of Toronto Connaught Foundation </Infrastructures>
+        <Publications>PMID:12431279 </Publications>
+        <Citations>139 </Citations>
+        <Tags>Gene, Protein, Annotation, Gene ontology, gene expression, clustering, prediction, statistical analysis, functional class, cellular localization, protein complex, Yeast </Tags>
+   </Tool>
+    <Tool toolid='nlx_149127'>
+        <Name>GOProfiler|http://agbase.msstate.edu/cgi-bin/tools/goprofiler_select.pl </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GOProfiler provides a summary of the GO annotations available in AgBase. The user provides a species (taxon id) and GOProfiler displays the number of GO associations and the number of annotated proteins for that species. The results are listed by evidence code and a separate list of unannotated proteins is also provided. </Description>
+        <Institutions>AgBase </Institutions>
+        <Tags>ontology or annotation browser, annotation, protein, Gene Ontology </Tags>
+   </Tool>
+    <Tool toolid='nlx_149233'>
+        <Name>FuncAssociate: The Gene Set Functionator|http://llama.mshri.on.ca/funcassociate/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>FuncAssociate is a web-based tool that accepts as input a list of genes, and returns a list of GO attributes that are over- (or under-) represented among the genes in the input list. </Description>
+        <Institutions>Roth Laboratory </Institutions>
+        <Funding>NS054052, NS035611, HL081341, HG0017115, HG004233, HG003224 </Funding>
+        <Infrastructures>NIH, Canadian Institute for Advanced Research </Infrastructures>
+        <Publications>PMID:19717575, 14668247 </Publications>
+        <Citations>69 </Citations>
+        <Tags>Gene, Gene Ontology, Statistical analysis, </Tags>
+   </Tool>
+    <Tool toolid='nlx_149313'>
+        <Name>G-SESAME - Gene Semantic Similarity Analysis and Measurement Tools|http://bioinformatics.clemson.edu/G-SESAME/ </Name>
+        <Type>Suite </Type>
+        <Collection>GO Tools </Collection>
+        <Description>G-SESAME contains a set of tools. They include: tools for measuring the semantic similarity of GO terms; tools for measuring the functional similarity of genes; and tools for clustering genes based on their GO term annotation information. </Description>
+        <Institutions>Clemson University; South Carolina; USA </Institutions>
+        <Funding>DBI-0960586, DBI-0960443 </Funding>
+        <Infrastructures>NSF </Infrastructures>
+        <Publications>PMID:19491312, 17344234, </Publications>
+        <Citations>16 </Citations>
+        <Tags>gene ontology, semantic similarity, functional similarity, cluster, gene, annotation, gene annotation </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-31975'>
+    <Name>G:Profiler|http://biit.cs.ut.ee/gprofiler/ </Name>
+    <Type>Tool </Type>
+    <Collection>GO Tools </Collection>
+    <Description>g:Profiler is a public web server for characterizing and manipulating gene lists from high-throughput genomic data.
+    </Description>
+    <Institutions>BIIT - Bioinformatics Algorithmics and Data Mining Group </Institutions>
+    <Infrastructures>EU, (FP6 COBRED), ENFIN, ETF7437 MEM, EITSA, ERDF through EXCS funding projects, University of Tartu; Tartu; Estonia </Infrastructures>
+    <Publications>PMID:17478515 </Publications>
+    <Citations>119 </Citations>
+    <Tags>Gene, high-throughput, Genomics, Visualization, statistical analysis, slimmer-type tool, term enrichment, protein interaction, functional similarity, analysis, coexpression similarity search, coexpression similarity, Gene ID conversion, network enrichment analysis, orthology mapping, search by genomic locus, genomic locus, ontology or annotation visualization, other analysis, </Tags>
+</Tool>
+    <Tool toolid='nlx_149256'>
+        <Name>GFINDer: Genome Function INtegrated Discoverer|http://www.medinfopoli.polimi.it/GFINDer/ </Name>
+        <Type>Database </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Genome Function INtegrated Discoverer (GFINDer) is a multi-database system providing large-scale lists of user-classified sequence identifiers with genome-scale biological information and functional profiles biologically characterizing the different gene classes in the list. </Description>
+        <Institutions>Politecnico di Milano; Milan; Italy </Institutions>
+        <Publications>PMID:15980570, 15215397 </Publications>
+        <Citations>22 </Citations>
+        <Tags>annotation, statistical analysis, mining, Genome, Function, Sequence, functional profile, Gene, microarray </Tags>
+   </Tool>
+    <Tool toolid='nlx_149322'>
+    <Name>GO-Module|http://lussierlab.org/GO-Module/GOModule.cgi </Name>
+    <Type>Tool </Type>
+    <Collection>GO Tools </Collection>
+    <Description>GO-Module provides an interface to reduce the dimensionality of GO enrichment results and produce interpretable biomodules of significant GO terms organized by hierarchical knowledge that contain only true positive results.
+    </Description>
+    <Institutions>University of Illinois at Chicago; Illinois; USA </Institutions>
+    <Funding>K22 LM008308, 1U54CA121852, UL1 RR024999 </Funding>
+    <Infrastructures>NIH, Cancer Research Foundation </Infrastructures>
+    <Publications>PMID:21421553 </Publications>
+    <Citations>8 </Citations>
+    <Tags>Functional similarity, visualization, other analysis, reduce the dimensionality of GO enrichment results, produce interpretable biomodules of significant GO terms, Gene Ontology, ontology or annotation visualization, annotation </Tags>
+</Tool>
+    <Tool toolid='nlx_149255'>
+        <Name>GOALIE|http://bioinformatics.nyu.edu/Projects/GOALIE/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Generalized Ontological Algorithmic Logical Invariants Extractor (GOALIE) is a tool for the construction of time-course dependent enrichments. Requires an ODBC connection to an instance of the GO database. </Description>
+        <Institutions>NYU Bioinformatics Group </Institutions>
+        <Tags>Gene ontology, statistical analysis, time-course </Tags>
+   </Tool>
+    <Tool toolid='nlx_149259'>
+        <Name>GOArray|http://goarray.med.yale.edu/GOArray/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GOArray is a Perl program which inputs a lists of genes annotated as of interest (GOI) or not, and determines if any associated GO terms have an overrepresentation of GOI. </Description>
+        <Institutions>Yale School of Medicine; Connecticut; USA </Institutions>
+        <Tags>Perl, Gene, visualization, Gene ontology, statistical analysis, </Tags>
+   </Tool>
+    <Tool toolid='nlx_149324'>
+        <Name>GOChase|http://www.snubi.org/software/GOChase/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GOChase is a set of web-based utilities to detect and correct the errors in GO-based annotations. </Description>
+        <Institutions>Seoul National University College of Medicine; Seoul; South Korea </Institutions>
+        <Funding>0405-BC0206040004 </Funding>
+        <Infrastructures>Ministry of Health and Welfare - Republic of Korea </Infrastructures>
+        <Publications>PMID:15513987 </Publications>
+        <Citations>6 </Citations>
+        <Tags>other analysis, historical views of GO, Gene Ontology, Annotation </Tags>
+   </Tool>
+    <Tool toolid='nlx_149248'>
+        <Name>GOEAST - Gene Ontology Enrichment Analysis Software Toolkit|http://omicslab.genetics.ac.cn/GOEAST/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Gene Ontology Enrichment Analysis Software Toolkit (GOEAST) is a web based software toolkit providing easy to use, visualizable, comprehensive and unbiased Gene Ontology (GO) analysis for high-throughput experimental results, especially for results from microarray hybridization experiments. The main function of GOEAST is to identify significantly enriched GO terms among give lists of genes using accurate statistical methods. </Description>
+        <Institutions>Chinese Academy of Sciences; Beijing; China </Institutions>
+        <Funding>30725014, 90612019, 2007CB946901, KSCX2-YW-R-134, KSCX2-YW-N-024 </Funding>
+        <Infrastructures>National Natural Science Foundation of China, Ministry of Science and Technology of China, Chinese Academy of Sciences; Beijing; China </Infrastructures>
+        <Publications>PMID:18487275 </Publications>
+        <Citations>149 </Citations>
+        <Tags>statistical analysis, Gene Ontology, high-throughput, Microarray, hybridization, Gene, Visualization </Tags>
+   </Tool>
+    <Tool toolid='nlx_149249'>
+        <Name>GOEx - Gene Ontology Explorer|http://pcarvalho.com/patternlab/goex.shtml </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Gene Ontology Explorer (GOEx) combines data from protein fold changes with GO over-representation statistics to help draw conclusions in proteomic experiments. It is tightly integrated within the PatternLab for Proteomics project and, thus, lies within a complete computational environment that provides parsers and pattern recognition tools designed for spectral counting. </Description>
+        <Institutions>The Scripps Research Institute -Yates Lab </Institutions>
+        <Funding>UCSD/MCB0237059, P41RR011823, 5R01 MH067880 </Funding>
+        <Infrastructures>CNPq, CAPES, FAPERJ BBP grant, PAPES, PDTIS, Ary Frauzino Foundation, NIAID, NIH, genesis molecular biology laboratory, Fiocruz-INCA collaboration </Infrastructures>
+        <Publications>PMID:19239707 </Publications>
+        <Citations>10 </Citations>
+        <Tags>proteomics, visualization, statistical analysis, gene ontology, parse, pattern recognition, spectral counting, analysis, protein fold </Tags>
+   </Tool>
+    <Tool toolid='nlx_149267'>
+        <Name>GOHyperGAll|http://manuals.bioinformatics.ucr.edu/home/R_BioCondManual#GOHyperGAll </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>To test a sample population of genes for overrepresentation of GO terms, the R/BioC function GOHyperGAll computes for all GO nodes a hypergeometric distribution test and returns the corresponding p-values. </Description>
+        <Institutions>University of California at Riverside; California; USA </Institutions>
+        <Publications>PMID:18354039 </Publications>
+        <Citations>52 </Citations>
+        <Tags>Gene, Gene Ontology, annotation, statistical analysis, slimmer-type tool </Tags>
+   </Tool>
+    <Tool toolid='nlx_149250'>
+        <Name>GOMO - Gene Ontology for Motifs|http://meme.nbcr.net/meme/cgi-bin/gomo.cgi </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Gene Ontology for Motifs (GOMO) is an alignment- and threshold-free comparative genomics approach for assigning functional roles to DNA regulatory motifs from DNA sequence. The algorithm detects associations between a user-specified DNA regulatory motif (expressed as a position weight matrix; PWM) and Gene Ontology terms. </Description>
+        <Institutions>University of Queensland; Brisbane; Australia, MEME Suite - Motif-based sequence analysis tools </Institutions>
+        <Funding>R01 RR021692 </Funding>
+        <Infrastructures>NCRR, ARC Centre of Excellence in Bioinformatics, University of Queensland; Brisbane; Australia, (International Research Tuition Award) </Infrastructures>
+        <Publications>PMID:20147307, 18544606 </Publications>
+        <Citations>14 </Citations>
+        <Tags>Gene, Motif, Genomics, Gene Ontology, Function, Compare, ontology or annotation editor, statistical analysis, DNA binding motif, DNA binding, DNA, Transcription factor, Sequence </Tags>
+   </Tool>
+    <Tool toolid='nlx_30164'>
+        <Name>GONUTS|http://gowiki.tamu.edu/wiki/index.php/Main_Page </Name>
+        <Type>Database </Type>
+        <Collection>GO Tools </Collection>
+        <Description>This Gene Ontology Normal Usage Tracking System (GONUTS) is a wiki where users of the Gene Ontology can contribute and view notes about how specific GO terms are used. GONUTS can also be used as a GO term browser, or to search for GO annotations of specific genes from included organisms. </Description>
+        <Institutions>EcoliHub </Institutions>
+        <Funding>1U24 GM077905-01, 511-1960-01, U24 GM088849 </Funding>
+        <Infrastructures>NIGMS </Infrastructures>
+        <Publications>PMID:22110029 </Publications>
+        <Citations>5 </Citations>
+        <Tags>ontology or annotation browser, ontology or annotation search engine, ontology or annotation editor </Tags>
+   </Tool>
+    <Tool toolid='nlx_149140'>
+        <Name>GORetriever|http://agbase.msstate.edu/cgi-bin/tools/goretriever_select.pl </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GORetriever is used to find all of the GO annotations corresponding to a list of user-supplied protein identifiers. GORetriever produces a list of proteins and their annotations and a separate list of entries with no GO annotation. </Description>
+        <Institutions>AgBase </Institutions>
+        <Funding>J-10924 </Funding>
+        <Infrastructures>USDA, Mississippi State University; Mississippi; USA, (MSU Office of Research, MSU Bagley College of Engineering, MSU College of College of Veterinary Medicine, MSU Life Science and Biotechnology institute) </Infrastructures>
+        <Publications>PMID:17135208, 16961921 </Publications>
+        <Citations>35 </Citations>
+        <Tags>Gene, Annotation, Protein, ontology or annotation search engine </Tags>
+   </Tool>
+    <Tool toolid='nlx_149103'>
+        <Name>GOSlimViewer|http://agbase.msstate.edu/cgi-bin/tools/goslimviewer_select.pl </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GOSlimViewer is used to summarize the GO function associated with a data set using prepared GO Slim sets. The input is a tab separated list of gene product IDs and GO IDs. </Description>
+        <Institutions>AgBase </Institutions>
+        <Funding>J11020 </Funding>
+        <Infrastructures>USDA, Mississippi State University; Mississippi; USA, (MSU Office of Research, MSU Bagley College of Engineering, MSU College of Veterinary Medicine, MSU Life Science and Biotechnology institute) </Infrastructures>
+        <Publications>PMID:17135208 </Publications>
+        <Citations>35 </Citations>
+        <Tags>agriculture, browser, slimmer-type tool, Gene ontology, Gene, ontology, ontology or annotation browser </Tags>
+   </Tool>
+    <Tool toolid='nlx_149179'>
+        <Name>GOTaxExplorer|http://www.gotaxexplorer.de/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GOTaxExplorer presents a new approach to comparative genomics that integrates functional information and families with the taxonomic classification. It integrates UniProt, Gene Ontology, NCBI Taxonomy, Pfam and SMART in one database. </Description>
+        <Institutions>Max-Planck-Institute for Informatics; Saarbrucken; Germany </Institutions>
+        <Funding>016R0453, contract # KFO 129/1-1, contract # LSHG-CT-2003-503265 </Funding>
+        <Infrastructures>BMBF, European Commission, (FP6), DFG </Infrastructures>
+        <Publications>PMID:17346342 </Publications>
+        <Citations>5 </Citations>
+        <Tags>Gene, molecular function, protein family, Taxonomy, Visualization, functional similarity, semantic similarity, Analysis, comparative genomics analysis, comparative genomics, search engine, ontology or annotation search engine, ontology or annotation visualization, database or data warehouse, function, other analysis </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-30623'>
+        <Name>GOToolBox Functional Investigation of Gene Datasets|http://genome.crg.es/GOToolBox/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The GOToolBox web server provides a series of programs allowing the functional investigation of groups of genes, based on the Gene Ontology resource. </Description>
+        <Institutions>Center for Genomic Regulation; Barcelona; Spain </Institutions>
+        <Infrastructures>Action Bioinformatique inter-EPST, French Ministere de l'Education de la Recherche et de la Technologie, Fondation pour la Recherche Medicale </Infrastructures>
+        <Publications>PMID:15575967 </Publications>
+        <Citations>135 </Citations>
+        <Tags>Gene, annotation, statistical analysis, slimmer-type tool, function, cluster, gene association, Gene Ontology </Tags>
+   </Tool>
+    <Tool toolid='nlx_151682'>
+        <Name>GO Online SQL Environment (GOOSE)|http://www.berkeleybop.org/goose/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>A web utility providing a direct interface to perform SQL queries directly on the GO database, allowing users to run custom queries without having to install a copy of the GO database locally. </Description>
+        <Institutions>Gene Ontology - AmiGO, Berkeley Bioinformatics Open-Source Projects, </Institutions>
+        <Publications>PMID:19033274 </Publications>
+        <Citations>237 </Citations>
+        <Tags>Database, Gene ontology, SQL, database or data warehouse </Tags>
+   </Tool>
+    <Tool toolid='nlx_149139'>
+        <Name>GOanna|http://www.agbase.msstate.edu/cgi-bin/tools/GOanna.cgi </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GOanna is used to find annotations for proteins using a similarity search. The input can be a list of IDs or it can be a list of sequences in FASTA format. GOanna will retrieve the sequences if necessary and conduct the specified BLAST search against a user-specified database of GO annotated proteins. The resulting file contains GO annotations of the top BLAST hits. The sequence alignments are also provided so the user can use these to access the quality of the match. </Description>
+        <Institutions>AgBase </Institutions>
+        <Funding>J-10924 </Funding>
+        <Infrastructures>USDA, Mississippi State University; Mississippi; USA, (MSU Office of Research, MSU Bagley College of Engineering, MSU College of College of Veterinary Medicine, MSU Life Science and Biotechnology institute) </Infrastructures>
+        <Publications>PMID:17135208, 16961921 </Publications>
+        <Citations>35 </Citations>
+        <Tags>Agriculture, Annotation, Protein, ontology or annotation search engine, ontology or annotation editor </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-30624'>
+        <Name>GOblet|http://goblet.molgen.mpg.de/cgi-bin/goblet2008/goblet.cgi </Name>
+        <Type>Package </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GOblet is a software package that performs annotation based on GO terms for anonymous cDNA or protein sequences. It uses the species independent GO structure and vocabulary together with a series of protein databases collected from various sites, to perform a detailed GO annotation by sequence similarity searches. The sensitivity and the reference protein sets can be selected by the user. </Description>
+        <Institutions>Max Planck Institute for Molecular Genetics; Berlin; Germany </Institutions>
+        <Infrastructures>BMBF </Infrastructures>
+        <Publications>PMID:15215401, 12824400 </Publications>
+        <Citations>27 </Citations>
+        <Tags>Gene, Sequence, Protein, cDNA, ontology or annotation browser </Tags>
+   </Tool>
+    <Tool toolid='nlx_149260'>
+        <Name>GOdist|http://basalganglia.huji.ac.il/links.htm </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GOdist is a Matlab program that analyzes Affymetrix microarray expression data implementing Kolmogorov-Smirnov (KS) continuous statistics approach. It also implements the discrete approach using Fisher exact test employing a two-tailed hypergeometric distribution. </Description>
+        <Institutions>Hebrew University of Jerusalem; Jerusalem; Israel </Institutions>
+        <Publications>PMID:15550480 </Publications>
+        <Citations>28 </Citations>
+        <Tags>statistical analysis, function, gene, gene expression, gene ontology, Matlab, Affymetrix, microarray, biological process, molecular function, cellular component, Fisher exact test, Kolmogorov-Smirnov </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-30625'>
+        <Name>GOstat|http://gostat.wehi.edu.au </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GOstat is a tool that allows you to find statistically overrepresented Gene Ontologies within a group of genes. </Description>
+        <Institutions>Walter and Eliza Hall Institute of Medical Research; Parkville; Australia </Institutions>
+        <Infrastructures>DFG </Infrastructures>
+        <Publications>PMID:14962934 </Publications>
+        <Citations>476 </Citations>
+        <Tags>Gene, Gene ontology, Annotation, statistical analysis </Tags>
+   </Tool>
+    <Tool toolid='nlx_149269'>
+        <Name>GOtcha|http://www.compbio.dundee.ac.uk/Software/GOtcha/gotcha.html </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GOtcha provides a prediction of a set of GO terms that can be associated with a given query sequence. Each term is scored independently and the scores calibrated against reference searches to give an accurate percentage likelihood of correctness. These results can be displayed graphically. </Description>
+        <Institutions>University of Dundee; Scotland; United Kingdom </Institutions>
+        <Funding>060269, QLRI-CT-2000-00127 </Funding>
+        <Infrastructures>Wellcome Trust, EU, (fifth framework) </Infrastructures>
+        <Publications>PMID:15550167 </Publications>
+        <Citations>82 </Citations>
+        <Tags>Function, protein, prediction, genome, annotation, gene, statistical analysis, </Tags>
+   </Tool>
+    <Tool toolid='nlx_149295'>
+        <Name>GREAT: Genomic Regions Enrichment of Annotations Tool|http://great.stanford.edu/public/html/splash.php </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>We developed the Genomic Regions Enrichment of Annotations Tool (GREAT) to analyze the functional significance of cis-regulatory regions identified by localized measurements of DNA binding events across an entire genome. </Description>
+        <Institutions>Stanford University; California; USA </Institutions>
+        <Funding>fellowship LT000896/2009-l, 1R01HD059862 </Funding>
+        <Infrastructures>Bio-X, Human Frontier Science Program, Howard Hughes Medical Institute, Stanford University; California; USA, Packard, Searle Scholar, Microsoft Research, Alfred P. Sloan Foundation, Edward Mallinckrodt Jr. Foundation, NIH, DFG </Infrastructures>
+        <Publications>PMID:20436461 </Publications>
+        <Citations>212 </Citations>
+        <Tags>term enrichment, cis-regulatory region, function, gene, genomic, annotation, ontology, chromatin immunoprecipitation, sequencing, ChIP-seq, comparative genomics, transcription factor binding </Tags>
+   </Tool>
+    <Tool toolid='nlx_149123'>
+        <Name>GenNav|http://mor.nlm.nih.gov/perl/gennav.pl </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GenNav searches GO terms and annotated gene products, and provides a graphical display of a term's position in the GO DAG. </Description>
+        <Institutions>NLM </Institutions>
+        <Tags>Image, Gene, ontology or annotation browser </Tags>
+   </Tool>
+    <Tool toolid='nlx_149254'>
+        <Name>GeneCodis|http://genecodis.cnb.csic.es/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GENECODIS is a web-based tool for the functional analysis of gene lists. It integrates different sources of information to search for annotations that frequently co-occur in a set of genes and rank them by their statistical significance. It allows the analysis of annotations from different databases such as GO, KEGG or SwissProt. </Description>
+        <Institutions>Complutense University of Madrid; Madrid; Spain </Institutions>
+        <Funding>BIO2007-67150-C03-02, S-Gen-0166/2006, CYTED-505PI0058, TIN2005-5619, PS-010000-2008-1, FP7-HEALTH-F4-2008-202047, CICYT BFU2004-00217/BMC, GEN2003-20235-c05-05, CYTED-505PI0058, TIN2005-5619, PR27/05-13964-BSCH, S-GEN-0166-2006, CSIC-050402040003 </Funding>
+        <Infrastructures>Spain, European Union, Spanish CSIC, Canadian NRC </Infrastructures>
+        <Publications>PMID:19465387, 17204154 </Publications>
+        <Citations>88 </Citations>
+        <Tags>functional analysis, gene, annotation, statistical analysis </Tags>
+   </Tool>
+    <Tool toolid='nlx_149121'>
+        <Name>GeneInfoViz|http://genenet2.uthsc.edu/geneinfoviz/search.php </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GeneInfoViz is a web based tool for batch retrieval of gene function information, visualization of GO structure and construction of gene relation networks. It takes a input list of genes in the form of LocusLink ID, UniGeneID, gene symbol, or accession number and returns their functional genomic information. Based on the GO annotations of the given genes, GeneInfoViz allows users to visualize these genes in the DAG structure of GO, and construct a gene relation network at a selected level of the DAG. </Description>
+        <Institutions>University of Tennessee Health Science Center; Tennessee; USA </Institutions>
+        <Publications>PMID:15724283 </Publications>
+        <Citations>6 </Citations>
+        <Tags>Gene network, Gene ontology, Visualization, Gene, ontology or annotation browser </Tags>
+   </Tool>
+    <Tool toolid='nlx_149159'>
+        <Name>GeneMANIA|http://genemania.org/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GeneMANIA helps you predict the function of your favorite genes and gene sets. Indexing 1,421 association networks containing 266,984,699 interactions mapped to 155,238 genes from 7 organisms. </Description>
+        <Institutions>University of Toronto; Ontario; Canada, </Institutions>
+        <Funding>2007-OGI-TD-05 </Funding>
+        <Infrastructures>Genome Canada, Ontario Ministry of Research and Innovation </Infrastructures>
+        <Publications>PMID:20576703, 18613948, 20926419 </Publications>
+        <Citations>123 </Citations>
+        <Tags>Gene, Association data, protein interaction, genetic interaction, pathway, co-expression, co-localization, protein, software library, statistical analysis, term enrichment, Analysis, Browser, Gene ontology, Gene predicting, gene prioritization, database or data warehouse, other analysis, interaction browser, GeneMANIA suggests annotations for genes based on Gene Ontology term enrichment of highly interacting genes with the gene of interest, GeneMANIA is also a gene recommendation system </Tags>
+   </Tool>
+    <Tool toolid='nlx_149203'>
+        <Name>GeneMerge|http://genemerge.cbcb.umd.edu/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GeneMerge is a web-based and standalone application that returns a wide range of functional genomic data for a given set of study genes and provides rank scores for over-representation of particular functions or categories in the data. </Description>
+        <Institutions>University of Maryland; Maryland; USA, </Institutions>
+        <Publications>PMID:12724301 </Publications>
+        <Citations>120 </Citations>
+        <Tags>Gene, Genomics, functional genomic data, analysis, post-genomic analysis, data mining, hypothesis testing, statistical analysis, slimmer-type tool, term enrichment, text mining, false discovery rate, Bonferroni correction, false discovery rate and Bonferroni correction, PERL </Tags>
+   </Tool>
+    <Tool toolid='nlx_149102'>
+        <Name>GeneTools - a collection of resources for functional annotations|http://www.genetools.microarray.ntnu.no/common/intro.php </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GeneTools is a collection of web-based tools that brings together information from a broad range of resources, and provides this in a manner particularly useful for genome-wide analyses. </Description>
+        <Institutions>Norwegian University of Science and Technology; Trondheim; Norway </Institutions>
+        <Infrastructures>National Council on Cardiovascular Diseases, Norwegian University of Science and Technology; Trondheim; Norway, Norwegian Research Council </Infrastructures>
+        <Publications>PMID:17062145 </Publications>
+        <Citations>38 </Citations>
+        <Tags>genome-wide analyses, annotation, gene, Visualization, ontology or annotation browser, ontology or annotation search engine, ontology or annotation visualization, database or data warehouse, statistical analysis, term enrichment, Browser, search engine, </Tags>
+   </Tool>
+    <Tool toolid='nlx_80425'>
+        <Name>GOrilla: Gene Ontology Enrichment Analysis and Visualization Tool|http://cbl-gorilla.cs.technion.ac.il/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GOrilla is a web-based application that identifies enriched GO terms in ranked lists of genes, without requiring the user to provide explicit target and background sets. </Description>
+        <Institutions>Weizmann Institute of Science; Rehovot; Israel </Institutions>
+        <Infrastructures>European Union, (FP6), Yeshaya Horowitz Association </Infrastructures>
+        <Publications>PMID:19192299 </Publications>
+        <Citations>187 </Citations>
+        <Tags>Gene, Genetic, Ontology, ontology or annotation visualization, statistical analysis, term enrichment, visualization, Analysis </Tags>
+   </Tool>
+    <Tool toolid='nlx_149098'>
+        <Name>Gene Ontology Browsing Utility (GOBU)|http://bc02.iis.sinica.edu.tw/gobu/manual/index.html </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Gene Ontology Browsing Utility (GOBU) (GOBU) is a Java-based software program for integrating biological annotation catalogs under an extendable software architecture. </Description>
+        <Institutions>Academia Sinica; Taipei; Taiwan </Institutions>
+        <Tags>Annotation, Gene, Browser, Computation, Visualization, software library, statistical analysis, term enrichment, ontology or annotation browser, ontology or annotation visualization </Tags>
+   </Tool>
+    <Tool toolid='nlx_149101'>
+        <Name>Gene Ontology For Functional Analysis (GOFFA)|http://www.fda.gov/ScienceResearch/BioinformaticsTools/Arraytrack/default.htm </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Gene Ontology For Functional Analysis (GOFFA) is a tool developed for ArrayTrack that takes a list of genes and identifies terms in Gene Ontology associated with those genes. </Description>
+        <Institutions>National Center for Toxicological Research </Institutions>
+        <Publications>PMID:17118145 </Publications>
+        <Citations>22 </Citations>
+        <Tags>Gene, Genomic, Gene Ontology, Proteomic, Visualization, Fisher's exact test, Browser, Search engine, Term enrichment, Text mining, ontology or annotation browser, ontology or annotation search engine, ontology or annotation visualization, database or data warehouse </Tags>
+   </Tool>
+    <Tool toolid='nlx_149293'>
+        <Name>Generic GO Term Finder|http://go.princeton.edu/cgi-bin/GOTermFinder </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The Generic GO Term Finder finds the significant GO terms shared among a list of genes from an organism, displaying the results in a table and as a graph (showing the terms and their ancestry). </Description>
+        <Institutions>Princeton University; New Jersey; USA, Comprehensive Perl Archive Network </Institutions>
+        <Funding>1R01HG002732 </Funding>
+        <Infrastructures>NIH </Infrastructures>
+        <Publications>PMID:15297299 </Publications>
+        <Citations>410 </Citations>
+        <Tags>Gene Ontology, Gene, graph, visualization, Genomics, gene association, ontology or annotation visualization, term enrichment, Ontology, Process, Function, Component, enrichment </Tags>
+   </Tool>
+    <Tool toolid='nlx_149294'>
+        <Name>Generic GO Term Mapper|http://go.princeton.edu/cgi-bin/GOTermMapper </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The Generic GO Term Mapper finds the GO terms shared among a list of genes from your organism of choice within a slim ontology, allowing them to be binned into broader categories. </Description>
+        <Institutions>Princeton University; New Jersey; USA </Institutions>
+        <Tags>Gene Ontology, Gene, gene association, slim ontology, slimmer-type tool, term enrichment, Gene annotation, Genomics, Ontology, Process, Function, Component </Tags>
+   </Tool>
+    <Tool toolid='nlx_149303'>
+        <Name>GoAnnotator|http://xldb.fc.ul.pt/biotools/rebil/goa/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>A tool for assisting the GO annotation of UniProt entries by linking the GO terms present in the uncurated annotations with evidence text automatically extracted from the documents linked to UniProt entries. </Description>
+        <Institutions>University of Lisbon; Lisbon; Portugal </Institutions>
+        <Funding>Contract no. QLRI-1999-50595 </Funding>
+        <Infrastructures>European Commission, (Quality of Life Programme) </Infrastructures>
+        <Publications>PMID:17181854 </Publications>
+        <Citations>19 </Citations>
+        <Tags>text mining, protein, Gene Ontology, annotation </Tags>
+   </Tool>
+    <Tool toolid='nlx_149296'>
+        <Name>GoBean: a Java application for Gene Ontology enrichment analysis|http://neon.gachon.ac.kr/GoBean/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GoBean is a Java application for gene ontology enrichment analysis. It utilizes the NetBeans platform framework. </Description>
+        <Institutions>Gachon University of Medicine and Science; Incheon; South Korea </Institutions>
+        <Tags>Java, Gene Ontology, ontology, gene association, analysis, enrichment, term enrichment </Tags>
+   </Tool>
+    <Tool toolid='nlx_149126'>
+        <Name>GoFish|http://llama.mshri.on.ca/Software.html </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The GoFish program, available as a Java applet online or to download, allows the user to construct arbitrary Boolean queries using GO attributes, and orders gene products according to the extent they satisfy such queries. </Description>
+        <Institutions>University of Toronto; Ontario; Canada, Harvard Medical School; Massachusetts; USA, </Institutions>
+        <Infrastructures>Aventis Pharmaceuticals, Howard Hughes Medical Institute, NHGRI </Infrastructures>
+        <Publications>PMID:12691998 </Publications>
+        <Citations>7 </Citations>
+        <Tags>Gene, ontology or annotation browser </Tags>
+   </Tool>
+    <Tool toolid='nlx_149328'>
+        <Name>GoPubMed|http://gopubmed.org/web/gopubmed/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GoPubMed is a web server which allows users to explore PubMed search results with the Gene Ontology. GoPubMed submits a user's keywords to PubMed, retrieves the abstracts, detects Gene Ontology terms in the abstracts, displays the subset of Gene Ontology relevant to the original query, and allows the user to browse through the ontology displaying associated papers and their GO annotation. </Description>
+        <Institutions>Biotechnology Center of the TU Dresden </Institutions>
+        <Funding>IST-2004-506779 </Funding>
+        <Infrastructures>EU,(REWERSE) </Infrastructures>
+        <Publications>PMID:15980585 </Publications>
+        <Citations>94 </Citations>
+        <Tags>other analysis, literature curation and exploration, Gene Ontology, PubMed, literature </Tags>
+   </Tool>
+    <Tool toolid='nlx_149268'>
+        <Name>GoSurfer|http://bioinformatics.bioen.illinois.edu/gosurfer/index.htm </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GoSurfer uses Gene Ontology (GO) information to analyze gene sets obtained from genome-wide computations or microarray analyses. GoSurfer is a graphical interactive data mining tool. It associates user input genes with GO terms and visualizes such GO terms as a hierarchical tree. </Description>
+        <Institutions>University of Illinois at Urbana-Champaign; Illinois; USA, Harvard School of Public Health; Massachusetts; USA </Institutions>
+        <Publications>PMID:15702958 </Publications>
+        <Citations>33 </Citations>
+        <Tags>Gene, Gene Ontology, genome-wide, microarray, graph, data mining, statistical analysis, Bioinformatics, Genomics, Gene cluster, Multiple hypothesis testing, False discovery rate, </Tags>
+   </Tool>
+    <Tool toolid='nlx_149205'>
+        <Name>GraphWeb|http://biit.cs.ut.ee/graphweb/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>GraphWeb allows the detection of modules from biological, heterogeneous and multi-species networks, and the interpretation of detected modules using Gene Ontology, cis-regulatory motifs and biological pathways. </Description>
+        <Institutions>BIIT - Bioinformatics Algorithmics and Data Mining Group </Institutions>
+        <Funding>ENFIN LSHG-CT-2005-518254, COBRED LSHB-CT-2007-037730, ETF7437 </Funding>
+        <Infrastructures>EU, (FP6), Estonian Science Foundation, Estonian Information Technology Foundation </Infrastructures>
+        <Publications>PMID:18460544 </Publications>
+        <Citations>20 </Citations>
+        <Tags>Analysis, Biological network, ontology or annotation visualization, protein interaction, Gene ID conversion, orthology mapping, network visualization, graph clustering, Gene Ontology, cis-regulatory motif, Module, Network, Pathway, Biological pathway, Motif, Visualization, Protein interaction, orthology mapping, network visualization, graph clustering, Analysis, Statistical analysis, Term enrichment, </Tags>
+   </Tool>
+    <Tool toolid='nlx_149300'>
+        <Name>High-Throughput GoMiner|http://discover.nci.nih.gov/gominer/GoCommandWebInterface.jsp </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>We have previously developed GoMiner, a program that organizes lists of 'interesting' genes (for example, under- and overexpressed genes from a microarray experiment) for biological interpretation in the context of the Gene Ontology. </Description>
+        <Institutions>NCI </Institutions>
+        <Infrastructures>NCI, Cancer Biomedical Informatics Grid, </Infrastructures>
+        <Publications>PMID:15998470 </Publications>
+        <Citations>131 </Citations>
+        <Tags>term enrichment, gene ontology, gene, microarray, Common Variable Immune Deficiency, High-Throughput, visualization, database </Tags>
+   </Tool>
+    <Tool toolid='nlx_149310'>
+        <Name>IT-GOM: Integrated Tool for IC-based GO Semantic Similarity Measures|http://web.cbio.uct.ac.za/ITGOM/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The Integrated Tool for IC-based GO Semantic Similarity Measures (IT-GOM) integrates the currently known GO semantic similarity measures into a single tool. It provides the information content (IC) of GO terms, semantic similarity between GO terms and GO-based protein functional similarity scores. </Description>
+        <Institutions>University of Cape Town; Western Cape; South Africa </Institutions>
+        <Infrastructures>National Bioinformatics Network in South Africa, University of Cape Town; Western Cape; South Africa, (Computational Biology research group at the Institute of Infectious Disease and Molecular Medicine) </Infrastructures>
+         <Tags>semantic similarity, Gene Ontology, protein, functional similarity, function, annotation, topology </Tags>
+   </Tool>
+    <Tool toolid='nlx_149337'>
+        <Name>InterProScan|http://www.ebi.ac.uk/Tools/pfa/iprscan/ </Name>
+        <Type>Database </Type>
+        <Collection>GO Tools </Collection>
+        <Description>InterProScan is a perl-based program which combines these different protein signature recognition methods into one resource. </Description>
+        <Institutions>European Bioinformatics Institute </Institutions>
+        <Funding>QLRI-CT-2000-00517, QLRI-CT-2001000015 </Funding>
+        <Infrastructures>European Union, MRC </Infrastructures>
+        <Publications>PMID:15980438, 17202162 </Publications>
+        <Citations>437 </Citations>
+        <Tags>Protein, Prediction, protein domain, protein function, Sequence, editor, statistical analysis, Database, DNA sequence, Analysis, ontology or annotation editor </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-10463'>
+        <Name>L2L Microarray Analysis Tool|http://depts.washington.edu/l2l/about.html </Name>
+        <Type>Database </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Database of published microarray gene expression data, and a software tool for comparing that published data to a user's own microarray results. </Description>
+        <Institutions>University of Washington; Washington; USA </Institutions>
+        <Funding>GM41624 </Funding>
+        <Infrastructures>NIGMS, Cora May Poncin Foundation, NIH </Infrastructures>
+        <Publications>PMID:16168088 </Publications>
+        <Citations>67 </Citations>
+        <Tags>microarray, gene expression, adipogenesis, aging, biological, biological process, cancer, cell cycle regulator, cellular component, chromatin, cockayne syndrome, DNA damage, growth factor, hormone, human biology, hypoxic response, immune mediator, inflammatory mediator, molecular function, molecular neuroanatomy resource, adipocyte, development, hypoxia, immune, inflammation, metabolism, mitogen, neuro, RNA, vascular, transcription, tissue, splicing, mouse, human, rat, Source code, statistical analysis, gene, chromatin structure, </Tags>
+   </Tool>
+    <Tool toolid='nlx_149194'>
+        <Name>LexGrid|https://wiki.nci.nih.gov/display/LexEVS/LexGrid </Name>
+        <Type>Framework </Type>
+        <Collection>GO Tools </Collection>
+        <Description>LexGrid (Lexical Grid) provides support for a distributed network of lexical resources such as terminologies and ontologies via standards-based tools, storage formats, and access/update mechanisms. </Description>
+        <Institutions>NCI, European Bioinformatics Institute </Institutions>
+        <Funding>LM07319 </Funding>
+        <Infrastructures>NIH, Cancer Biomedical Informatics Grid </Infrastructures>
+        <Publications>PMID:19261933 </Publications>
+        <Citations>14 </Citations>
+        <Tags>software library, Parse, Ontology </Tags>
+   </Tool>
+    <Tool toolid='nlx_149270'>
+        <Name>MAPPFinder|http://www.genmapp.org/help_v2/UsingMAPPFinder.htm </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>MAPPFinder is an accessory program for GenMAPP. This program allows users to query any existing GenMAPP Expression Dataset Criterion against GO gene associations and GenMAPP MAPPs (microarray pathway profiles). </Description>
+        <Institutions>University of California at San Francisco; California; USA, Gene Map Annotator and Pathway Profiler </Institutions>
+        <Funding>MO1RR00083 </Funding>
+        <Infrastructures>University of California at San Francisco; California; USA, San Francisco General Hospital; California; USA, NHLBI, </Infrastructures>
+        <Publications>PMID:12540299 </Publications>
+        <Citations>356 </Citations>
+        <Tags>Gene, Gene Ontology, gene association, gene expression, profile, microarray, pathway, statistical analysis </Tags>
+   </Tool>
+    <Tool toolid='nlx_149104'>
+        <Name>MGI GO Browser|http://www.informatics.jax.org/searches/GO_form.shtml </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>With the MGI GO Browser, you can search for a GO term and view all mouse genes annotated to the term or any subterms. You can also browse the ontologies to view relationships between terms, term definitions, as well as the number of mouse genes annotated to a given term and its subterms. </Description>
+        <Institutions>MGI </Institutions>
+       <Tags>Gene, Ontology, Browser, Molecular function, Biological process, Cellular component, ontology or annotation browser, ontology or annotation search engine, ontology or annotation visualization </Tags>
+   </Tool>
+    <Tool toolid='nlx_149128'>
+        <Name>Manatee|http://manatee.sourceforge.net/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Manatee is a web-based gene evaluation and genome annotation tool; Manatee can store and view annotation for prokaryotic and eukaryotic genomes. The Manatee interface allows biologists to quickly identify genes and make high quality functional assignments, such as GO classifications, using search data, paralogous families, and annotation suggestions generated from automated analysis. Manatee can be downloaded and installed to run under the CGI area of a web server, such as Apache. </Description>
+        <Institutions>J. Craig Venter Institute, University of Maryland School of Medicine; Maryland; USA, SourceForge </Institutions>
+        <Tags>Gene, Genome, Annotation, ontology or annotation browser, ontology or annotation editor </Tags>
+   </Tool>
+    <Tool toolid='nlx_149271'>
+        <Name>MetaGeneProfiler|http://metagp.ism.ac.jp/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Meta Gene Profiler (MetaGP) is a web application tool for discovering differentially expressed gene sets (meta genes) from the gene set library registered in our database. </Description>
+        <Institutions>Institute of Statistical Mathematics; Tokyo; Japan </Institutions>
+         <Tags>Gene, Gene expression, differentially expressed, Gene Ontology, meta gene, gene set, statistical analysis, </Tags>
+   </Tool>
+    <Tool toolid='nlx_149105'>
+        <Name>Network Ontology Analysis|http://app.aporc.org/NOA/ </Name>
+        <Type>Suite </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Network Ontology Analysis (NOA) (abbreviated to NOA) is a freely available collection of Gene Ontology tools aiming to analyze functions of gene network instead of gene list. </Description>
+        <Institutions>Chinese Academy of Sciences; Beijing; China </Institutions>
+        <Funding>60873205, 10801131, 60970091, kjcs-yw-s7, 2009CSP002, KSCX2-EW-R-01, 61072149, 91029301, 11ZR1443100, 60873205 </Funding>
+        <Infrastructures>National Natural Science Foundation of China, Chinese Academy of Sciences; Beijing; China, NSF Shanghai </Infrastructures>
+        <Publications>PMID:21543451 </Publications>
+        <Citations>15 </Citations>
+        <Tags>Gene, Ontology, ontology or annotation browser, statistical analysis, term enrichment, browser </Tags>
+   </Tool>
+    <Tool toolid='nlx_149107'>
+        <Name>OBO-Edit|http://oboedit.org/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>OBO-Edit is an open source, platform-independent application written in Java for viewing and editing any OBO format ontologies. </Description>
+        <Institutions>GO </Institutions>
+        
+        
+        <Publications>PMID:17545183 </Publications>
+        <Citations>84 </Citations>
+        <Tags>Ontology, Browser, Search engine, Visualization, Editor, software library, ontology or annotation browser, ontology or annotation search engine, ontology or annotation visualization, ontology or annotation editor </Tags>
+   </Tool>
+    <Tool toolid='nlx_149191'>
+        <Name>ONTO-PERL|http://search.cpan.org/dist/ONTO-PERL/ </Name>
+        <Type>Library </Type>
+        <Collection>GO Tools </Collection>
+        <Description>ONTO-PERL is a collection of Perl modules to handle OBO-formatted ontologies (like the Gene Ontology). </Description>
+        <Institutions>Comprehensive Perl Archive Network, Norwegian University of Science and Technology; Trondheim; Norway </Institutions>
+        <Funding>LSHG-CT-2004-512143, MEST-CT-2004-414632 </Funding>
+        <Infrastructures>EU, (FP6), </Infrastructures>
+        <Publications>PMID:18245124 </Publications>
+        <Citations>6 </Citations>
+        <Tags>Application Programming Interface, Software library, Ontology, Analysis, Development, Biomedical </Tags>
+   </Tool>
+    <Tool toolid='nlx_149192'>
+        <Name>OWLTools|http://code.google.com/p/owltools/ </Name>
+        <Type>Library </Type>
+        <Collection>GO Tools </Collection>
+        <Description>OWLTools (aka OWL2LS - OWL2 Life Sciences) is a java API for accessing ontologies in either OBO or OWL. OWLTools provides a bio-ontologies friendly wrapper on top of the Manchester OWL API. </Description>
+        <Institutions>GO, Google Project Hosting </Institutions>
+        
+        
+        
+        
+        <Tags>Software library, Ontology </Tags>
+   </Tool>
+    <Tool toolid='nlx_149195'>
+        <Name>OWL API|http://owlapi.sourceforge.net/ </Name>
+        <Type>Library </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The OWL API is a Java API and reference implementation for creating, manipulating and serializing OWL Ontologies. </Description>
+        <Institutions>University of Manchester; Manchester; United Kingdom, SourceForge </Institutions>
+        
+        
+        
+        
+        <Tags>ontology, OWL, API, Java, software library, Parser, Writer </Tags>
+   </Tool>
+    <Tool toolid='nlx_149129'>
+        <Name>OnEx - Ontology Evolution Explorer|http://dbserv2.informatik.uni-leipzig.de:8080/onex/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The Ontology Evolution Explorer (OnEx) is a web-based system for exploring ontology changes. It provides access to several versions of 16 well-known life science ontologies including the Gene Ontology. </Description>
+        <Institutions>University of Leipzig; Saxony; Germany </Institutions>
+        <Funding>01AK803E </Funding>
+        <Infrastructures>BMBF, DFG </Infrastructures>
+        <Publications>PMID:19678926 </Publications>
+        <Citations>5 </Citations>
+        <Tags>Ontology, Gene, Protein, Function, Process, Component, ontology or annotation browser </Tags>
+   </Tool>
+    <Tool toolid='nlx_149108'>
+        <Name>Onto-Compare|http://vortex.cs.wayne.edu/projects.htm#Onto-Compare </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Microarrays are at the center of a revolution in biotechnology, allowing researchers to screen tens of thousands of genes simultaneously. </Description>
+        <Institutions>Wayne State University; Michigan; USA </Institutions>
+        
+        
+        <Publications>PMID:12664686, 15215428, </Publications>
+        <Citations>7 </Citations>
+        <Tags>Microarray, Gene, Ontology, Gene expression, Data-mining, Browser, Visualization, Analysis, Compare, Search engine, ontology or annotation browser, ontology or annotation search engine, ontology or annotation visualization, database or data warehouse, other analysis, compare commercially available microarrays based on GO </Tags>
+   </Tool>
+    <Tool toolid='nlx_149109'>
+        <Name>Onto-Design|http://vortex.cs.wayne.edu/projects.htm#Onto-Design </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Many Laboratories chose to design and print their own microarrays. At present, the choice of the genes to include on a certain microarray is a very laborious process requiring a high level of expertise. </Description>
+        <Institutions>Wayne State University; Michigan; USA </Institutions>
+        
+        
+        <Publications>PMID:15215428 </Publications>
+        <Citations>62 </Citations>
+        <Tags>Microarray, Gene, biological process, molecular function, Cellular component, Data-mining, Browser, Visualization, Analysis, Design, Search engine, ontology or annotation browser, ontology or annotation search engine, ontology or annotation visualization, database or data warehouse, other analysis, design custom microarrays based on GO terms of interest </Tags>
+   </Tool>
+    <Tool toolid='nlx_149110'>
+        <Name>Onto-Express|http://vortex.cs.wayne.edu/projects.htm#Onto-Express </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The typical result of a microarray experiment is a list of tens or hundreds of genes found to be differentially regulated in the condition under study. </Description>
+        <Institutions>Wayne State University; Michigan; USA </Institutions>
+        <Funding>HD36512 </Funding>
+        <Infrastructures>NIH, Wayne State University School of Medicine; Michigan; USA </Infrastructures>
+        <Publications>PMID:12620386, 11829497, 15215428 </Publications>
+        <Citations>230 </Citations>
+        <Tags>Microarray, Gene, Ontology, Gene expression, biochemical function, biological process, cellular role, cellular component, molecular function, chromosome location, Java, Data-mining, Browser, Visualization, Analysis, statistical analysis, term enrichment, Search engine, other analysis, ontology or annotation browser, ontology or annotation search engine, ontology or annotation visualization, database or data warehouse, custom level of abstraction of the Gene Ontology </Tags>
+   </Tool>
+    <Tool toolid='nlx_149112'>
+        <Name>Onto-Express To Go (OE2GO)|http://vortex.cs.wayne.edu/projects.htm#OE2GO </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Onto-Express is a web-based tool in the Onto-Tools suite that performs automated function profiling for a list of differentially expressed genes. </Description>
+        <Institutions>Wayne State University; Michigan; USA </Institutions>
+        
+        
+        <Publications>PMID:17584796 </Publications>
+        <Citations>44 </Citations>
+        <Tags>Gene, Gene expression, annotation, Data mining, ontology browser, annotation browser, ontology search engine, annotation search engine, ontology visualization, annotation visualization, statistical analysis, term enrichment, Browser, Visualization, Search engine, </Tags>
+   </Tool>
+    <Tool toolid='nlx_149181'>
+        <Name>Onto-Miner|http://vortex.cs.wayne.edu/projects.htm#Onto-Miner </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Onto-Miner (OM) provides a single and convenient interface that allows the user to interrogate our databases regarding annotations of known genes. </Description>
+        <Institutions>Wayne State University; Michigan; USA </Institutions>
+        
+        
+        <Publications>PMID:15215428, 17584796 </Publications>
+        <Citations>62 </Citations>
+        <Tags>Gene, Annotation, Search engine, database, analysis, ontology or annotation search engine, database or data warehouse, other analysis, scripted search of the Onto-Tools database for gene annotations </Tags>
+   </Tool>
+    <Tool toolid='nlx_149182'>
+        <Name>Onto-Translate|http://vortex.cs.wayne.edu/projects.htm#Onto-Translate </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>In the annotation world, the same piece of information can be stored and viewed differently across different databases. </Description>
+        <Institutions>Wayne State University; Michigan; USA </Institutions>
+        
+        
+        <Publications>PMID:15215428 </Publications>
+        <Citations>62 </Citations>
+        <Tags>Annotation, Gene, analysis, database or data warehouse, other analysis, Affymetrix probe ID, Affymetrix, probe ID, translate GO terms into other identifiers like GenBank accession number, GenBank accession number, Uniprot ID, Gene ontology, translate </Tags>
+   </Tool>
+    <Tool toolid='nlx_149289'>
+        <Name>Ontologizer|http://compbio.charite.de/contao/index.php/ontologizer2.html </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The Ontologizer is a Java webstart application for GO term enrichment analysis that provides browsing and graph visualization capabilities. </Description>
+        <Institutions>Charite - Universitatsmedizin Berlin; Berlin; Germany </Institutions>
+        <Funding>SFB 760 </Funding>
+        <Infrastructures>DFG </Infrastructures>
+        <Publications>PMID:18511468, 17848398 </Publications>
+        <Citations>115 </Citations>
+        <Tags>High-Throughput, Biological Data, Gene Ontology, statistical analysis, Fisher exact test, Visualization, Graph, Java, annotation, parent-child, topology </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-10390'>
+        <Name>Ontology Lookup Service|http://www.ebi.ac.uk/ontology-lookup/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The Ontology Lookup Service (OLS) provides interactive and programmatic interfaces to query, browse and navigate an ever increasing number of biomedical ontologies and controlled vocabularies. </Description>
+        <Institutions>European Bioinformatics Institute </Institutions>
+        <Funding>contract 021902 (RII3) </Funding>
+        <Infrastructures>BBSRC, (iSPIDER), EU, (FP6 'Felics') </Infrastructures>
+        <Publications>PMID:18467421, 16507094 </Publications>
+        <Citations>29 </Citations>
+        <Tags>Gold standard or authority, Ontology, ontology or annotation browser, ontology or annotation search engine </Tags>
+   </Tool>
+    <Tool toolid='nlx_149312'>
+        <Name>OwlSim|http://code.google.com/p/owltools/wiki/OwlSim </Name>
+        <Type>Package </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The OWLSim package provides the ability to do a number of standard semantic similarity methods and includes novel methods for combining these with dynamic selection of anonymous grouping classes. </Description>
+        <Institutions>Berkeley Bioinformatics Open-Source Projects, OWLTools </Institutions>
+        <Funding>U54 HG004028, HG002659 </Funding>
+        <Infrastructures>Biomedical Information Science and Technology Initiative, National Center for Biomedical Ontology, NIH </Infrastructures>
+        <Publications>PMID:19956802 </Publications>
+        <Citations>69 </Citations>
+        <Tags>functional similarity, semantic similarity, ontology, phenotype, annotation </Tags>
+   </Tool>
+    <Tool toolid='nlx_149131'>
+        <Name>Pandora - Protein ANnotation Diagram ORiented Analysis|http://www.pandora.cs.huji.ac.il/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>With PANDORA, you can search for any non-uniform sets of proteins and detect subsets of proteins that share unique biological properties and the intersections of such sets. </Description>
+        <Institutions>Hebrew University of Jerusalem; Jerusalem; Israel </Institutions>
+        
+        <Infrastructures>Israeli Ministry of Defense, Hebrew University of Jerusalem; Jerusalem; Israel </Infrastructures>
+        <Publications>PMID:14500825 </Publications>
+        <Citations>17 </Citations>
+        <Tags>Protein, Annotation, Mass spectrometry, ontology or annotation browser </Tags>
+   </Tool>
+    <Tool toolid='nlx_149330'>
+        <Name>PiNGO|http://www.psb.ugent.be/esb/PiNGO/Home.html </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>PiNGO is a Java-based tool to easily find unknown genes in a network that are significantly associated with user-defined target Gene Ontology (GO) categories. </Description>
+        <Institutions>Ghent University; Ghent; Belgium </Institutions>
+        
+        
+        
+        
+        <Tags>Gene, Annotation, Network, Candidate gene, biological network, ontology or annotation search engine, statistical analysis, term enrichment, functional similarity,  functional prediction, search engine </Tags>
+   </Tool>
+    <Tool toolid='nlx_149275'>
+        <Name>ProbeExplorer|http://probeexplorer.cicancer.org/principal.php </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Probe Explorer is an open access web-based bioinformatics application designed to show the association between microarray oligonucleotide probes and transcripts in the genomic context, but flexible enough to serve as a simplified genome and transcriptome browser. </Description>
+        <Institutions>University of Salamanca; Salamanca; Spain </Institutions>
+        
+        
+        
+        
+        <Tags>bioinformatics, microarray, oligonucleotide probe, transcript, genomic, genome, transcriptome, Alignment, Affymetrix, probe sequence, DNA, protein, sequence, statistical analysis, </Tags>
+   </Tool>
+    <Tool toolid='nlx_149276'>
+        <Name>ProfCom - Profiling of complex functionality|http://webclu.bio.wzw.tum.de/profcom/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Profiling of Complex Functionality (ProfCom) is a web-based tool for the functional interpretation of a gene list that was identified to be related by experiments. </Description>
+        <Institutions>Institute of Bioinformatics and Systems Biology; Neuherberg; Germany </Institutions>
+        
+        <Infrastructures>DFG </Infrastructures>
+        <Publications>PMID:16959266 </Publications>
+        <Citations>7 </Citations>
+        <Tags>Gene, Function, Profile, Gene Ontology, complex function, statistical analysis </Tags>
+   </Tool>
+    <Tool toolid='nlx_149206'>
+        <Name>ProteInOn| </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>ProteInOn calculates semantic similarity between GO terms or proteins annotated with GO terms. It also calculates term enrichment of protein sets, by applying a term representativity score, and gives additional information on protein interactions. </Description>
+        <Institutions>University of Lisbon; Lisbon; Portugal </Institutions>
+        
+        
+        
+        
+        <Tags>Protein, Ontology, Gene ontology, Annotation, statistical analysis, term enrichment, protein interaction, semantic similarity, other analysis </Tags>
+   </Tool>
+    <Tool toolid='nlx_149338'>
+        <Name>PubSearch|http://pubsearch.stanford.edu/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>PubSearch is a web-based literature curation tool, allowing curators to search and annotate genes to keywords from articles. </Description>
+        <Institutions>TAIR, Stanford University; California; USA </Institutions>
+        <Funding>R01HG02728 </Funding>
+        <Infrastructures>NHGRI </Infrastructures>
+        
+        
+        <Tags>Gene, Annotate, editor, literature curation tool, Literature, ontology or annotation editor </Tags>
+   </Tool>
+    <Tool toolid='nlx_60318'>
+        <Name>QuickGO|http://www.ebi.ac.uk/QuickGO/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>QuickGO is a fast web-based browser for Gene Ontology terms and annotations, which is provided by the UniProtKB-GOA group at the EBI. </Description>
+        <Institutions>European Bioinformatics Institute </Institutions>
+        <Funding>BB/E023541/1 </Funding>
+        <Infrastructures>BBSRC, </Infrastructures>
+        <Publications>PMID:19744993, 20157483 </Publications>
+        <Citations>51 </Citations>
+        <Tags>Gold standard or authority, Gene, Ontology, annotation, Browser, Visualization, Search engine, Slimmer-type tool, ontology or annotation browser, ontology or annotation search engine, ontology or annotation visualization, database or data warehouse </Tags>
+   </Tool>
+    <Tool toolid='nlx_149332'>
+        <Name>EViGO|http://revigo.irb.hr/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>REViGO summarizes lists of Gene Ontology terms by removing redundant terms and visualizing the remaining ones in scatterplots, interactive graphs, treemaps, or tag clouds. </Description>
+        <Institutions>Rudjer Boskovic Institute; Zagreb; Croatia </Institutions>
+        
+        
+        <Publications>PMID:20585573 </Publications>
+        <Citations>22 </Citations>
+        <Tags>Gene ontology, visualization, statistical analysis, ontology or annotation visualization </Tags>
+   </Tool>
+    <Tool toolid='nlx_149331'>
+        <Name>amiGO|http://bioconductor.org/packages/2.9/bioc/html/RamiGO.html </Name>
+        <Type>Package </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Bioconductor.org software package available for the statistical programming language R and provides an interface for sending requests to the AmiGO visualize web server, retrieving DAG GO trees, parsing GraphViz DOT format files, exporting GML files for Cytoscape and also for interactively displaying GO trees, received from AmiGO visualize, in Cytoscape without importing or exporting them. RamiGO utilizes the visualization of GO trees from AmiGO and makes it available from R. </Description>
+        <Institutions>Dana-Farber Cancer Institute,  Bioconductor </Institutions>
+        
+        
+        
+        
+        <Tags>Visualization, Search engine, Analysis, ontology or annotation search engine, ontology or annotation visualization, other analysis </Tags>
+   </Tool>
+    <Tool toolid='nlx_149258'>
+        <Name>SGD Gene Ontology Slim Mapper|http://www.yeastgenome.org/cgi-bin/GO/goSlimMapper.pl </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The GO Slim Mapper (aka GO Term Mapper) maps the specific, granular GO terms used to annotate a list of budding yeast gene products to corresponding more general parent GO slim terms. Uses the SGD GO Slim sets. </Description>
+        <Institutions>SGD </Institutions>
+        
+        
+        
+        
+        <Tags>Gene, annotation, Gene ontology, protein complex, Biological process, Molecular function, Cellular component, Gene Ontology, ORF, Yeast, statistical analysis, slimmer-type tool, Function </Tags>
+   </Tool>
+    <Tool toolid='nlx_149287'>
+        <Name>SOURCE|http://smd.stanford.edu/cgi-bin/source/sourceSearch </Name>
+        <Type>Database </Type>
+        <Collection>GO Tools </Collection>
+        <Description>SOURCE compiles information from several publicly accessible databases, including UniGene, dbEST, UniProt Knowledgebase, GeneMap99, RHdb, GeneCards and LocusLink. GO terms associated with LocusLink entries appear in SOURCE. </Description>
+        <Institutions>SMD </Institutions>
+        <Funding>CA85129-04, GM07365 </Funding>
+        <Infrastructures>NIH, NIGMS </Infrastructures>
+        <Publications>PMID:12519986 </Publications>
+        <Citations>187 </Citations>
+        <Tags>genomic, functional annotation, ontology, gene expression, gene, genome, statistical analysis </Tags>
+   </Tool>
+    <Tool toolid='nlx_149115'>
+        <Name>STRAP|http://www.bumc.bu.edu/cardiovascularproteomics/cpctools/strap/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The Software Tool for Rapid Annotation of Proteins saves you time by automatically annotating a protein list with information that helps you meaningfully interpret your mass spectrometry data. </Description>
+        <Institutions>Boston University School of Medicine; Massachusetts; USA </Institutions>
+        <Funding>Contract N01 HV28178, P41 RR10888 </Funding>
+        <Infrastructures>NHLBI, NCRR </Infrastructures>
+        <Publications>PMID:19839595 </Publications>
+        <Citations>41 </Citations>
+        <Tags>Protein, Gene, Annotation, Mass spectrometry, Proteomics, Visualization, Browser, Differential analysis, Analysis, ontology or annotation browser, ontology or annotation visualization, Differential analysis of proteomics data sets </Tags>
+   </Tool>
+    <Tool toolid='nlx_152555'>
+        <Name>Semantic Measures Library|http://www.semantic-measures-library.org </Name>
+        <Type>Library </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Open source Java library dedicated to semantic measures computation and analysis. Tools based on the SML are also provided through the SML-Toolkit, a command line software giving access to some of the functionalities of the library. </Description>
+        <Institutions>Ecole des Mines d'Ales; Ales; France </Institutions>
+        
+        <Infrastructures>Ecole des Mines d'Ales; Ales; France, (LGI2P Research Center) </Infrastructures>
+        
+        
+        <Tags>Software library, semantic measure, semantic similarity, semantic relatedness, functional similarity, Gene Ontology, annotation, parse, gene, Disease Ontology, MeSH, RDF, OWL, UMLS, Snomed-CT, Java, semantic </Tags>
+   </Tool>
+    <Tool toolid='nlx_149285'>
+        <Name>SeqExpress|http://www.seqexpress.com/ </Name>
+        <Type>Package </Type>
+        <Collection>GO Tools </Collection>
+        <Description>SeqExpress is a comprehensive analysis and visualization package for gene expression experiments. GO is used to assign functional enrichment scores to clusters, using a combination of specially developed techniques and general statistical methods. </Description>
+        <Institutions>Institute of Bioinformatics and Systems Biology; Neuherberg; Germany </Institutions>
+        
+        
+        <Publications>PMID:14988116 </Publications>
+        <Citations>11 </Citations>
+        <Tags>Gene, Gene expression, Function, analysis, visualization, statistical analysis </Tags>
+   </Tool>
+    <Tool toolid='nlx_149286'>
+        <Name>SerbGO|http://estbioinfo.stat.ub.es/apli/serbgov131/index.php </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>SerbGO is a web-based tool intended to assist researchers determine which microarray tools for gene expression analysis which make use of the GO ontologies are best suited to their projects. SerbGO is a bidirectional application. </Description>
+        <Institutions>University of Barcelona; Barcelona; Spain </Institutions>
+        
+        
+        <Publications>PMID:18480123 </Publications>
+        <Citations>4 </Citations>
+        <Tags>microarray, gene expression, statistical analysis, Gene Ontology </Tags>
+   </Tool>
+    <Tool toolid='nlx_97053'>
+        <Name>Short Time-series Expression Miner (STEM)|http://www.cs.cmu.edu/~jernst/stem/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The Short Time-series Expression Miner (STEM) is a Java program for clustering, comparing, and visualizing short time series gene expression data from microarray experiments (~8 time points or fewer). </Description>
+        <Institutions>Carnegie Mellon University; Pennsylvania; USA </Institutions>
+        <Funding>NO1 AI-5001, 0448453 </Funding>
+        <Infrastructures>NIH, NSF </Infrastructures>
+        <Publications>PMID:16597342, 15961453 </Publications>
+        <Citations>102 </Citations>
+        <Tags>statistical analysis, term enrichment, Visualization, Cluster, Compare, short time series, gene expression, microarray, expression profile, Gene, Gene Ontology, gene enrichment analyses </Tags>
+   </Tool>
+    <Tool toolid='nlx_149169'>
+        <Name>Spotfire|http://spotfire.tibco.com/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The Spotfire Gene Ontology Advantage Application integrates GO annotations with gene expression analysis in Spotfire DecisionSite for Functional Genomics. </Description>
+        <Institutions>TIBCO </Institutions>
+        
+        
+        
+        
+        <Tags>Analysis, Predictive analytics, Big data, Visualization, Gene Ontology, annotation, gene expression, Functional Genomics, gene, function, cellular location, statistical analysis, genomics </Tags>
+   </Tool>
+    <Tool toolid='nlx_25932'>
+        <Name>StRAnGER|http://www.grissom.gr/stranger/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>StRAnGER (Statistical Ranking of ANotated Genomic Experimental Results) is a web application for the automated statistical analysis of annotated gene profiling experiments, exploiting controlled biological vocabularies, like the Gene Ontology or the KEGG pathways terms. </Description>
+        <Institutions>National Hellenic Research Foundation </Institutions>
+        
+        
+        <Publications>PMID:21293737 </Publications>
+        <Citations>1 </Citations>
+        <Tags>controlled vocabulary, functional analysis, genomics, Annotation, visualization, statistical analysis, term enrichment, ontology or annotation visualization </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-33354'>
+        <Name>T-profiler|http://www.t-profiler.org </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>One of the key challenges in the analysis of gene expression data is how to relate the expression level of individual genes to the underlying transcriptional programs and cellular state. </Description>
+        <Institutions>Columbia University; New York; USA, University of Amsterdam; Amsterdam; Netherlands </Institutions>
+        <Funding>APB.5504, R01HG003008 </Funding>
+        <Infrastructures>Netherlands Foundation for Technical Research, NIH </Infrastructures>
+        <Publications>PMID:15980543 </Publications>
+        <Citations>79 </Citations>
+        <Tags>expression, gene, binding, cellular, transcriptional, Gene expression, Microarray, Gene Ontology, transcription factor, binding motif, ChIP-chip, Chip, Motif, t-test, statistical analysis, transcriptome, </Tags>
+   </Tool>
+    <Tool toolid='nlx_149132'>
+        <Name>TAIR Keyword Browser|http://www.arabidopsis.org/servlets/Search?type=keyword&amp;action=new_search </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>TAIR Keyword Browser searches and browses for Gene Ontology, TAIR Anatomy, and TAIR Developmental stage terms, and allows you to view term details and relationships among terms. It includes links to genes, publications, microarray experiments and annotations associated with the term or any children terms. </Description>
+        <Institutions>TAIR </Institutions>
+        
+        
+        
+        
+        <Tags>Gene ontology, Gene, Publication, Microarray, Annotation, Cellular component, Biological process, Molecular function, Plant, Growth, Development, Stage, Anatomical entity, Anatomy, Ontology, Browser, ontology or annotation browser </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-10486'>
+        <Name>TM4 Microarray Software Suite: TIGR MultiExperiment Viewer|http://www.tm4.org/mev.html </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>MeV is a desktop application for the analysis, visualization and data-mining of large-scale genomic data. It is a versatile microarray tool, incorporating sophisticated algorithms for clustering, visualization, classification, statistical analysis and biological theme discovery. </Description>
+        <Institutions>Dana-Farber Cancer Institute, J. Craig Venter Institute, University of Washington; Washington; USA </Institutions>
+        
+        <Infrastructures>NLM, Dana-Farber Cancer Institute, Claudia Adams Barr Program, NHLBI, NCI, NSF, J. Craig Venter Institute, (Institute for Genomic Research) </Infrastructures>
+        <Publications>PMID:16939790, 12613259 </Publications>
+        <Citations>468 </Citations>
+        <Tags>gene expression, analysis, annotation, biological, classification, data, java, microarray, visualization, statistical analysis, clustering, biological theme, graphic, annotation, data-mining, genomic </Tags>
+   </Tool>
+    <Tool toolid='nlx_149305'>
+        <Name>TXTGate|http://tomcat.esat.kuleuven.be/txtgate/ </Name>
+        <Type>Database </Type>
+        <Collection>GO Tools </Collection>
+        <Description>TXTGate is a literature index database and is part of an experimental platform to evaluate (combinations of) information extraction and indexing from a variety of biological annotation databases. It is designed towards the summarization and analysis of groups of genes based on text. </Description>
+        <Institutions>Catholic University of Leuven; Flemish Brabant; Belgium </Institutions>
+        <Funding>GOA-Mefisto-666, GOA-Ambiorics, IDO, G.0115.01, G.0240.99, G.0407.02, G.0413.03, G.0388.03, G.0229.03, G.0241.04 </Funding>
+        <Infrastructures>Catholic University of Leuven; Flemish Brabant; Belgium, Fonds voor Wetenschappelijk Onderzoek - Vlaanderen, Instituut voor de aanmoediging van Innovatie door Wetenschap en Technologie Vlaanderen (STWW-Genprom, GBOU-McKnow, GBOU-SQUAD, GBOU-ANA), Belgian Federal Science Policy Office (IUAP V-22), European Union, (FP5 CAGE, ERNSI, FP6 NoE Biopattern, NoE E-tumours) </Infrastructures>
+        <Publications>PMID:15186494 </Publications>
+        <Citations>30 </Citations>
+        <Tags>gene, annotation, database, text mining </Tags>
+   </Tool>
+    <Tool toolid='nlx_149133'>
+        <Name>Tk-GO|https://github.com/manveru/tkgo </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Tk-GO is a GUI wrapping the basic functions of the GO AppHandle library from BDGP. GO terms are presented in an explorer-like browser, and behavior can be configured by altering Perl scripts. </Description>
+        <Institutions>Illuminae, GitHub </Institutions>
+        
+        
+        
+        
+        <Tags>Browser, Gene, ontology or annotation browser </Tags>
+   </Tool>
+    <Tool toolid='nlx_149183'>
+        <Name>ToppGene Suite|http://toppgene.cchmc.org/ </Name>
+        <Type>Suite </Type>
+        <Collection>GO Tools </Collection>
+        <Description>ToppGene Suite is a one-stop portal for gene list enrichment analysis and candidate gene prioritization based on functional annotations and protein interactions network. </Description>
+        <Institutions>Cincinnati Childrens Hospital Medical Center; Ohio; USA </Institutions>
+        <Funding>ODD TECH 04-042, 1U01 DK70219, P30 DK078392 </Funding>
+        <Infrastructures>State of Ohio Computational Medicine Center, NIDDK, PHS </Infrastructures>
+        <Publications>PMID:19465376 </Publications>
+        <Citations>119 </Citations>
+        <Tags>Gene, functional enrichment, candidate gene prioritization, gene prioritization, disease candidate gene, disease candidate gene prioritization, Annotation, Protein, Protein interaction, slimmer-type tool, term enrichment, functional similarity, Analysis, database or data warehouse, other analysis, disease gene ranking based on functional annotation similarity </Tags>
+   </Tool>
+    <Tool toolid='nlx_149334'>
+        <Name>WEGO - Web Gene Ontology Annotation Plot|http://wego.genomics.org.cn/cgi-bin/wego/index.pl </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Web Gene Ontology Annotation Plot (WEGO) is a simple but useful tool for plotting Gene Ontology (GO) annotation results. Different from other commercial software for chart creating, WEGO is designed to deal with the directed acyclic graph (DAG) structure of GO to facilitate histogram creation of GO annotation results. </Description>
+        <Institutions>Beijing Genomics Institute; Shenzhen; China </Institutions>
+        <Funding>2002AA104250, CNGI-04-15-7A, 30399120, 90208019, 30200163, 90403130 </Funding>
+        <Infrastructures>Ministry of Science and Technology of China, National Natural Science Foundation of China, Zhejiang University; Zhejiang Province; China, Chinese Academy of Sciences; Beijing; China </Infrastructures>
+        <Publications>PMID:16845012 </Publications>
+        <Citations>203 </Citations>
+        <Tags>visualization, Gene ontology, Gene, Annotation, comparative genomics, histogram, directed acyclic graph, Genomics, Genome, ontology or annotation visualization </Tags>
+   </Tool>
+    <Tool toolid='nlx_149134'>
+        <Name>Wandora|http://www.wandora.org/wandora/wiki/index.php?title=Main_Page </Name>
+        <Type>Framework </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Wandora is a general purpose information extraction, management and publishing application based on Topic Maps and Java. Wandora has graphical user interface, layered and merging information model, multiple visualization models, huge collection of information extraction, import and export options, embedded HTTP server with several output modules and open plug-in architecture. </Description>
+        <Institutions>Grip Studios Interactive </Institutions>
+        
+        
+        
+        
+        <Tags>Visualization, Ontology, ontology or annotation browser, knowledge management system </Tags>
+   </Tool>
+    <Tool toolid='nif-0000-30622'>
+        <Name>WebGestalt: WEB-based GEne SeT AnaLysis Toolkit|http://bioinfo.vanderbilt.edu/webgestalt/ </Name>
+        <Type>Framework </Type>
+        <Collection>GO Tools </Collection>
+        <Description>WebGestalt is a WEB-based GEne SeT AnaLysis Toolkit. It is designed for functional genomic, proteomic and large-scale genetic studies from which large number of gene lists (e.g. differentially expressed gene sets, co-expressed gene sets etc) are continuously generated. WebGestalt incorporates information from different public resources and provides an easy way for biologists to make sense out of gene lists. </Description>
+        <Institutions>Vanderbilt University; Tennessee; USA </Institutions>
+        <Funding>U01AA016662, U01AA013512, P01-DA015027, P50MH078028 </Funding>
+        <Infrastructures>NIAAA, NIDA, NIMH </Infrastructures>
+        <Publications>PMID:15980575, 14975175 </Publications>
+        <Citations>322 </Citations>
+        <Tags>Gene, genomic, proteomic, genetic, Gene expression, GWAS, Protein, statistical analysis </Tags>
+   </Tool>
+    <Tool toolid='nlx_149329'>
+        <Name>Whatizit|http://www.ebi.ac.uk/webservices/whatizit/info.jsf </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Whatizit is a web application which highlights all kinds of interesting things in a document. One of its modules marks all GO terms as well as protein and gene names from UniProt and links them to their entries in GO and UniProt respectively. </Description>
+        <Institutions>European Bioinformatics Institute </Institutions>
+        
+        
+        
+        
+        <Tags>other analysis, textual analysis, protein, gene, Gene Ontology, text-mining, annotation </Tags>
+   </Tool>
+    <Tool toolid='nlx_149099'>
+        <Name>agriGO|http://bioinfo.cau.edu.cn/agriGO/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>The agriGO is a web-based tool and database for the gene ontology analysis. It supports specicial focus on agricultural species and is user-friendly. </Description>
+        <Institutions>China Agricultural University; Beijing; China </Institutions>
+        <Funding>90817006, 2006CB100105 </Funding>
+        <Infrastructures>Ministry of Science and Technology of China </Infrastructures>
+        <Publications>PMID:20435677 </Publications>
+        <Citations>173 </Citations>
+        <Tags>Browser, Gene, Online tool, visualization, statistical analysis, term enrichment, text mining, ontology or annotation browser, ontology or annotation visualization, database or data warehouse </Tags>
+   </Tool>
+    <Tool toolid='nlx_151493'>
+        <Name>lk-reasoner|http://code.google.com/p/elk-reasoner/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>ELK is an ontology reasoner with the goal of supporting the OWL 2 EL profile. </Description>
+        <Institutions>University of Oxford; Oxford; United Kingdom, Ulm University; Baden-Wurttemberg; Germany </Institutions>
+        <Funding>EP/G02085X/1 </Funding>
+        <Infrastructures>EPSRC </Infrastructures>
+        
+        
+        <Tags>OWL ontology reasoning EL, OWL, Ontology, Semantic Web, Reasoner, Description Logic, reasoner, ontology reasoner, OWL EL </Tags>
+   </Tool>
+    <Tool toolid='nlx_149180'>
+        <Name>go-db-perl|http://search.cpan.org/~cmungall/go-db-perl/ </Name>
+        <Type>Tool </Type>
+        <Collection>GO Tools </Collection>
+        <Description>Software resource that extends the functionality of go-perl (on which it depends) with GO Database access functionality. go-db-perl comes bundled with various scripts and a shell command line interface that can be used as standalone tools. Installation is more involved than for go-perl; you will need a MySQL database plus the requisite DBI and DBD Perl modules. Full installation instructions are included in the download. </Description>
+        <Institutions>Comprehensive Perl Archive Network, GO, </Institutions>
+        
+        
+        
+        
+        <Tags>Software library, database, Gene ontology, database or data warehouse </Tags>
+   </Tool>
+    <Tool toolid='nlx_149189'>
+        <Name>go-moose|http://geneontology.svn.sourceforge.net/viewvc/geneontology/go-moose/ </Name>
+        <Type>Library </Type>
+        <Collection>GO Tools </Collection>
+        <Description>go-moose is intended as a replacement for the aging go-perl and go-db-perl Perl libraries. It is written using the object oriented Moose libraries. </Description>
+        <Institutions>SourceForge, Berkeley Bioinformatics Open-Source Projects, Lawrence Berkeley National Laboratory </Institutions>
+        
+        
+        
+        
+        <Tags>software library, slimmer-type tool, Analysis, Gene Ontology, other analysis </Tags>
+   </Tool>
+    <Tool toolid='nlx_149190'>
+        <Name>go-perl|http://search.cpan.org/~cmungall/go-perl/ </Name>
+        <Type>Library </Type>
+        <Collection>GO Tools </Collection>
+        <Description>go-perl is a set of Perl modules for parsing, manipulating and exporting ontologies and annotations. It includes parsers for the OBO and GO gene association file formats. </Description>
+        <Institutions>Comprehensive Perl Archive Network, GO, </Institutions>
+        
+        
+        
+        
+        <Tags>ontology, annotation, software library, slimmer-type tool, Parser </Tags>
+   </Tool>
+</Tools>
