@@ -53,7 +53,7 @@
             <xs:element type="xs:string" name="PlatformsOSX"/>
             <xs:element type="xs:string" name="PlatformsWindows"/>
             <xs:element type="xs:string" name="Provider"/>
-            <xs:element type="xs:string" name="Publications"/>
+            <xs:element type="xs:string" name="PublicationsPrimary"/>
             <xs:element type="xs:string" name="PublicationsOther"/>
             <xs:element type="xs:string" name="SearchTerms"/>
             <xs:element type="xs:string" name="Tags"/>
@@ -68,12 +68,12 @@
             <xs:element name="Maturity">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:enumeration value="Alpha"/>
-                        <xs:enumeration value="Beta"/>
-                        <xs:enumeration value="Production"/>
-                        <xs:enumeration value="In development"/>
-                        <xs:enumeration value="In testing"/>
-                        <xs:enumeration value="not specified"/>
+                        <xs:enumeration value="Alpha "/>
+                        <xs:enumeration value="Beta "/>
+                        <xs:enumeration value="Production "/>
+                        <xs:enumeration value="In development "/>
+                        <xs:enumeration value="In testing "/>
+                        <xs:enumeration value="not specified "/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
@@ -81,11 +81,11 @@
             <xs:element name="Platforms">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:enumeration value="not specified"/>
-                        <xs:enumeration value="Unix"/>
-                        <xs:enumeration value="Windows"/>
-                        <xs:enumeration value="Linux"/>
-                        <xs:enumeration value="OS X"/>
+                        <xs:enumeration value="not specified "/>
+                        <xs:enumeration value="Unix "/>
+                        <xs:enumeration value="Windows "/>
+                        <xs:enumeration value="Linux "/>
+                        <xs:enumeration value="OS X "/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
@@ -93,10 +93,10 @@
             <xs:element name="Languages">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:enumeration value="not specified"/>
-                        <xs:enumeration value="Java"/>
-                        <xs:enumeration value="Perl"/>
-                        <xs:enumeration value="Python"/>
+                        <xs:enumeration value="not specified "/>
+                        <xs:enumeration value="Java "/>
+                        <xs:enumeration value="Perl "/>
+                        <xs:enumeration value="Python "/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
@@ -105,14 +105,14 @@
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
                         <xs:enumeration value="not specified"/>
-                        <xs:enumeration value="WP10"/>
-                        <xs:enumeration value="WP6"/>
-                        <xs:enumeration value="WP3"/>
-                        <xs:enumeration value="WP7"/>
-                        <xs:enumeration value="WP8"/>
-                        <xs:enumeration value="WP9"/>
-                        <xs:enumeration value="WP4"/>
-                        <xs:enumeration value="WP5"/>
+                        <xs:enumeration value="WP10 "/>
+                        <xs:enumeration value="WP6 "/>
+                        <xs:enumeration value="WP3 "/>
+                        <xs:enumeration value="WP7 "/>
+                        <xs:enumeration value="WP8 "/>
+                        <xs:enumeration value="WP9 "/>
+                        <xs:enumeration value="WP4 "/>
+                        <xs:enumeration value="WP5 "/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
@@ -120,10 +120,10 @@
             <xs:element name="Cost">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:enumeration value="not specified"/>
-                        <xs:enumeration value="Free"/>
-                        <xs:enumeration value="Free for non profit"/>
-                        <xs:enumeration value="Free for academic use"/>
+                        <xs:enumeration value="not specified "/>
+                        <xs:enumeration value="Free "/>
+                        <xs:enumeration value="Free for non profit "/>
+                        <xs:enumeration value="Free for academic use "/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
