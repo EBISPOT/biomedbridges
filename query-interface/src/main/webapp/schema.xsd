@@ -97,6 +97,7 @@
                         <xs:enumeration value="Java "/>
                         <xs:enumeration value="Perl "/>
                         <xs:enumeration value="Python "/>
+                        <xs:enumeration value="R "/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
@@ -104,7 +105,7 @@
             <xs:element name="WorkPackages">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:enumeration value="not specified"/>
+                        <xs:enumeration value="not specified "/>
                         <xs:enumeration value="WP10 "/>
                         <xs:enumeration value="WP6 "/>
                         <xs:enumeration value="WP3 "/>
