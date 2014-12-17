@@ -34,7 +34,7 @@
             <xs:element type="xs:string" name="InputTypesURI"/>
             <xs:element type="xs:string" name="Institutions"/>
             <xs:element type="xs:string" name="Interfaces"/>
-            <xs:element type="xs:string" name="InterfacesCommandline"/>
+            <xs:element type="xs:string" name="InterfacesCommandLine"/>
             <xs:element type="xs:string" name="InterfacesDesktopGUI"/>
             <xs:element type="xs:string" name="InterfacesOther"/>
             <xs:element type="xs:string" name="InterfacesRESTAPI"/>
@@ -55,7 +55,7 @@
             <xs:element type="xs:string" name="Provider"/>
             <xs:element type="xs:string" name="PublicationsPrimary"/>
             <xs:element type="xs:string" name="PublicationsOther"/>
-            <xs:element type="xs:string" name="SearchTerms"/>
+            <xs:element type="xs:string" name="SearchTerms" minOccurs="1" maxOccurs="1"/>
             <xs:element type="xs:string" name="Tags"/>
             <xs:element type="xs:string" name="WSDL"/>
             <xs:element type="xs:string" name="TagsURI"/>
