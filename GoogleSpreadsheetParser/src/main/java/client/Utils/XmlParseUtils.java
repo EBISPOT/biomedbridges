@@ -41,7 +41,7 @@ public class XmlParseUtils {
     private static Set<String> brokenLinks = new HashSet<String>();
     private static String trailingspace = " ";
 
-    private static String doiPrefix = "http://dx.doi.org/";
+    private static String doiPrefix = "https://doi.org/";
     private static String pmcIdPrefix = "http://www.ncbi.nlm.nih.gov/pmc/articles/";
     private static String pmIdPrefix = "http://www.ncbi.nlm.nih.gov/pubmed/";
 
